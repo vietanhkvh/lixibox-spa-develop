@@ -1,0 +1,26 @@
+.nRowList {
+  display: grid;
+  justify-content: space-around;
+  grid-gap: 0;
+  width: 100%;
+
+  .item {
+    display: flex;
+    margin-left: 0;
+    margin-right: 0;
+    white-space: nowrap;
+  }
+
+  .moreButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--colorE4);
+    border-radius: 4px;
+    cursor: pointer;
+
+    .content {
+      color: var(--color4D);
+    }
+  }
+}

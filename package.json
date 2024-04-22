@@ -1,0 +1,166 @@
+{
+  "name": "lixibox",
+  "version": "1.0.0",
+  "private": true,
+  "description": "LixiBox",
+  "scripts": {
+    "precoverage": "rimraf coverage",
+    "coverage": "react-scripts test --coverageReporters=lcov --coverage",
+    "coverage:ci": "npm run precoverage && CI=true react-scripts test --logHeapUsage --coverage -w=4 --coverageReporters=json",
+    "emulator": "sudo ./bin/emulator.sh",
+    "emulator-docker": "./bin/emulator.sh",
+    "lint:all": "npm run lint:es 'src/**/*.{js,jsx,ts,tsx}' && npm run lint:prettier 'src/**/*.{js,jsx,ts,tsx,json,css,scss,sass,md}' && npm run lint:style 'src/**/*.{sass,scss,css}'",
+    "lint:all:fix": "npm run lint:es:fix 'src/**/*.{js,jsx,ts,tsx}' && npm run lint:prettier:fix 'src/**/*.{js,jsx,ts,tsx,json,css,scss,sass,md}' && npm run lint:style:fix 'src/**/*.{sass,scss,css}'",
+    "lint:es": "eslint --ext .js,.jsx,.ts,.tsx",
+    "lint:es:all": "npm run lint:es 'src/**/*.{js,jsx,ts,tsx}'",
+    "lint:es:fix": "eslint --ext .js,.jsx,.ts,.tsx --fix",
+    "lint:style": "stylelint",
+    "lint:style:all": "npm run lint:style 'src/**/*.{sass,scss,css}'",
+    "lint:style:fix": "stylelint --fix",
+    "lint:prettier": "prettier --check",
+    "lint:prettier:all": "npm run lint:prettier 'src/**/*.{js,jsx,ts,tsx,json,css,scss,sass,md}'",
+    "lint:prettier:fix": "prettier --write",
+    "test:acceptance": "env-cmd -f .env.test ./bin/cucumber-suite-runner.js",
+    "prestart": "env-cmd -f .env.development ./bin/prestart.sh",
+    "start": ". ./bin/revision.sh && react-scripts start",
+    "start:secure": ". ./bin/revision.sh && export HTTPS=true && react-scripts start",
+    "start:env": ". ./bin/revision.sh && export HTTPS=true && env-cmd -f .env.tmp react-scripts start",
+    "prebuild": "./bin/prebuild.sh",
+    "build": "react-scripts build",
+    "postbuild": "./bin/postbuild.sh",
+    "build:staging": ". ./bin/revision.sh && export PUBLIC_URL=\"https://d13dqpzwi0phht.cloudfront.net/frontend/assets/staging/$REVISION/\" && env-cmd -f .env.staging yarn build",
+    "build:staging-fe": ". ./bin/revision.sh && export PUBLIC_URL=\"https://d13dqpzwi0phht.cloudfront.net/frontend/assets/staging-fe/$REVISION/\" && env-cmd -f .env.staging-fe yarn build",
+    "build:staging-be": ". ./bin/revision.sh && export PUBLIC_URL=\"https://d13dqpzwi0phht.cloudfront.net/frontend/assets/staging-be/$REVISION/\" && env-cmd -f .env.staging-be yarn build",
+    "build:staging-mb": ". ./bin/revision.sh && export PUBLIC_URL=\"https://d13dqpzwi0phht.cloudfront.net/frontend/assets/staging-mb/$REVISION/\" && env-cmd -f .env.staging-mb yarn build",
+    "build:qa": ". ./bin/revision.sh && export PUBLIC_URL=\"https://d13dqpzwi0phht.cloudfront.net/frontend/assets/qa/$REVISION/\" && env-cmd -f .env.qa yarn build",
+    "build:production": ". ./bin/revision.sh && export PUBLIC_URL=\"https://js.lixibox.com/assets/$REVISION/\" && env-cmd -f .env.production yarn build",
+    "deploy:qa:all": "./bin/build_and_deploy_qa_all.sh",
+    "test": "react-scripts test",
+    "test:ci": "CI=true react-scripts test -w=7 --logHeapUsage",
+    "eject": "react-scripts eject",
+    "prepare": "husky install"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@peculiar/webcrypto": "^1.1.7",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/react-hooks": "^8.0.1",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/history": "^5.0.0",
+    "@types/jest": "^29.4.0",
+    "@types/node": "^18.18.2",
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.11",
+    "@types/react-router-dom": "^5.1.3",
+    "@types/redux-logger": "^3.0.7",
+    "@types/redux-persist": "^4.3.1",
+    "@types/styled-components": "^5.0.1",
+    "autoprefixer": "^9.7.5",
+    "babel-polyfill": "6.26.0",
+    "cucumber": "^6.0.5",
+    "env-cmd": "^10.1.0",
+    "husky": ">=6",
+    "identity-obj-proxy": "^3.0.0",
+    "json-loader": "0.5.7",
+    "lint-staged": ">=10",
+    "prettier": "^2.8.8",
+    "react-scripts": "^5.0.1",
+    "rimraf": "^3.0.2",
+    "selenium-webdriver": "^4.0.0-alpha.7",
+    "style-loader": "^1.1.3",
+    "stylelint": "^15.6.2",
+    "stylelint-config-standard-scss": "^9.0.0",
+    "ts-helpers": "1.1.2",
+    "ts-jest": "^25.2.1",
+    "ts-loader": "4.2.0",
+    "tslint": "^5.20.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "typescript": "4.4.4",
+    "typescript-plugin-css-modules": "^3.4.0",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "@googlemaps/react-wrapper": "1.1.24",
+    "@hookform/resolvers": "^1.3.7",
+    "@reduxjs/toolkit": "^1.9.3",
+    "@sentry/react": "^7.5.0",
+    "classnames": "^2.2.6",
+    "dompurify": "^2.3.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "firebase": "9.0.0-beta.2",
+    "highlight-words-core": "^1.2.2",
+    "lixibox-react-on-screen": "^2.1.1-alpha.1",
+    "localforage": "^1.10.0",
+    "moment": "^2.29.4",
+    "moment-duration-format": "^2.3.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-ga": "2.4.1",
+    "react-helmet-async": "^1.3.0",
+    "react-hook-form": "^6.15.5",
+    "react-modal": "^3.11.2",
+    "react-optimize": "^2.4.1",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^5.3.4",
+    "react-router-dom-v5-compat": "^6.9.0",
+    "react-structured-data": "0.0.9",
+    "react-tooltip": "^4.2.21",
+    "redux-logger": "^3.0.6",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "2.4.2",
+    "styled-components": "^5.0.1",
+    "ua-parser": "^0.3.5",
+    "ua-parser-js": "^0.7.24",
+    "web-vitals": "^3.1.1",
+    "yup": "^1.0.0"
+  },
+  "eslintConfig": {
+    "extends": "react-app",
+    "rules": {
+      "react-hooks/exhaustive-deps": "off"
+    },
+    "overrides": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.tsx"
+        ],
+        "rules": {
+          "import/first": "off"
+        }
+      }
+    ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "<rootDir>/src/components/**/*.{ts,tsx}",
+      "<rootDir>/src/utils/**/*.{ts,tsx}"
+    ],
+    "coverageReporters": [
+      "lcov",
+      "json"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 0,
+        "functions": 0,
+        "lines": 0,
+        "statements": 0
+      }
+    },
+    "globalSetup": "<rootDir>/config/test/global-setup.js",
+    "moduleNameMapper": {
+      "\\.(css|css|sass|scss)$": "identity-obj-proxy",
+      "\\.svg$": "<rootDir>/src/utils/jest/svgMock.ts"
+    }
+  },
+  "engines": {
+    "node": ">=18.18.2 <19"
+  },
+  "lint-staged": {
+    "*.{css,scss,sass}": "stylelint --fix",
+    "*.{js,jsx,ts,tsx,css,scss,sass,json,md}": "prettier --write",
+    "*.{js,jsx,ts,tsx}": "eslint --fix"
+  }
+}

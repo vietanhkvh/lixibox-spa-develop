@@ -1,0 +1,32 @@
+.modalContainerMobile {
+  display: flex;
+  flex-direction: column;
+  overflow: initial;
+
+  .header {
+    position: static;
+  }
+
+  .clientArea {
+    padding-top: inherit;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 52px);
+  }
+}
+
+.modalContainerDesktop {
+  display: flex;
+  width: 400px;
+}
+
+.redeemDiscountCodeModal {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  overflow: auto;
+  height: 100%;
+  margin: 0;
+  padding: 16px;
+}

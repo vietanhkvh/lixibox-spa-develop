@@ -1,0 +1,30 @@
+.tag {
+  display: flex;
+  background-color: var(--colorPrimary);
+  padding: 4px 8px;
+  border-radius: 4px;
+  align-items: center;
+
+  .tagIcon {
+    width: 12px;
+    height: 12px;
+
+    svg {
+      fill: var(--colorWhite);
+    }
+  }
+
+  .tagText {
+    font-size: 12px;
+    font-weight: var(--fontSemiBold);
+    color: var(--colorWhite);
+  }
+
+  .tagTextWithIcon {
+    margin-left: 8px;
+  }
+}
+
+.tagClickable {
+  cursor: pointer;
+}

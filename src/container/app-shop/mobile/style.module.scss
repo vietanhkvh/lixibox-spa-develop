@@ -1,0 +1,37 @@
+.headerLogo {
+  @media screen and (width >= 960px) {
+    display: none;
+  }
+}
+
+.headerContent {
+  @media screen and (width >= 960px) {
+    padding: 100px 60px 70px;
+  }
+}
+
+.content {
+  @media screen and (width >= 960px) {
+    padding: 50px 80px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.contentLeft {
+  @media screen and (width >= 960px) {
+    width: 31%;
+  }
+}
+
+.contentRight {
+  @media screen and (width >= 960px) {
+    width: 31%;
+  }
+}
+
+.contentPhone {
+  @media screen and (width >= 960px) {
+    display: block;
+  }
+}

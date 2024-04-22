@@ -1,0 +1,100 @@
+.container {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.item {
+  flex: 1;
+  transform: scale(0.5);
+  transition: var(--transitionNormal);
+
+  // selected-index
+  &.selected {
+    transform: scale(1);
+  }
+}
+
+.panel {
+  transition: var(--transitionNormal);
+  display: flex;
+
+  // number-item
+  &.number-item-3 {
+    .item {
+      width: 33.33%;
+      min-width: 33.33%;
+      max-width: 33.33%;
+    }
+  }
+
+  &.number-item-5 {
+    .item {
+      width: 20%;
+      min-width: 20%;
+      max-width: 20%;
+    }
+  }
+}
+
+.navList {
+  background: red;
+  -webkit-touch-callout: none;
+  user-select: none;
+
+  .navItem {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 40px;
+    cursor: pointer;
+
+    svg {
+      width: 10px;
+    }
+
+    &:first-child {
+      left: 0;
+
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+
+    &:last-child {
+      right: 0;
+    }
+  }
+
+  &.desktop {
+    .navItem {
+      width: 55px;
+      height: 80px;
+
+      svg {
+        width: 18px;
+      }
+    }
+  }
+
+  &.type-light {
+    .navItem {
+      background: var(--colorWhite07);
+
+      svg {
+        fill: var(--color20);
+      }
+    }
+  }
+
+  &.type-dark {
+    .navItem {
+      background: var(--color20);
+
+      svg {
+        fill: var(--colorWhite);
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.redeemCategory {
+  font-size: initial;
+
+  @media (width >= 1024px) {
+    padding-top: 20px;
+  }
+}
+
+.noContentPlaceholder {
+  padding: 50px 0;
+}
+
+.mobileProductsHeading {
+  padding: 0 16px;
+  color: var(--color20);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: var(--fontSemiBold);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

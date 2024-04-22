@@ -1,0 +1,26 @@
+// TODO: Factor out reusable chunks and apply on GeneralModal
+
+.discountCodeTabs {
+  .headerEntry {
+    height: 40px !important;
+    line-height: 40px !important;
+  }
+
+  .tabBody {
+    margin-top: 40px;
+  }
+}
+
+.discountCodes {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 10px;
+}
+
+.errorPlaceholder {
+  margin-top: 50px;
+
+  .logo {
+    max-width: 100px;
+  }
+}

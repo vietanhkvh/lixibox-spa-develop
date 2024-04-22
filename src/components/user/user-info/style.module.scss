@@ -1,0 +1,123 @@
+.emailVerificationWarning,
+.phoneVerificationWarning {
+  font-size: 12px;
+  font-weight: var(--fontRegular);
+  color: var(--colorYellowF7);
+  text-align: center;
+
+  span {
+    font-size: inherit;
+    font-weight: var(--fontSemiBold);
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.authButton {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.newContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 12px;
+  background: #fff;
+  border-radius: 8px;
+
+  @media screen and (width >= 1024px) {
+    margin-bottom: 12px;
+  }
+
+  .userSection {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 16px;
+
+    .userInfo {
+      flex: 1;
+      padding-left: 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      .username {
+        font-size: 20px;
+        color: var(--color20);
+        font-weight: var(--fontBold);
+        margin-bottom: 4px;
+      }
+
+      .levelInfo {
+        height: 28px;
+        display: block;
+
+        img {
+          height: 28px;
+          width: auto;
+          display: block;
+        }
+      }
+    }
+  }
+
+  .statSection {
+    width: 100%;
+    display: flex;
+    padding: 12px;
+    background: var(--colorF0);
+    border-radius: 8px;
+    margin-bottom: 12px;
+
+    .item {
+      flex: 1;
+      padding: 0 4px;
+      display: flex;
+      justify-content: flex-start;
+      position: relative;
+
+      &:first-child {
+        &::after {
+          position: absolute;
+          width: 1px;
+          height: 100%;
+          content: ' ';
+          background: var(--colorE4);
+          top: 0;
+          right: 8px;
+        }
+      }
+
+      .icon {
+        width: 16px;
+        height: 16px;
+        min-width: 16px;
+      }
+
+      .info {
+        padding-left: 8px;
+
+        .heading {
+          font-size: 12px;
+          font-weight: var(--fontRegular);
+          color: var(--color8A);
+        }
+
+        .value {
+          font-size: 14px;
+          font-weight: var(--fontBold);
+          color: var(--color20);
+
+          &.highLight {
+            color: var(--colorPrimary);
+          }
+        }
+      }
+    }
+  }
+}

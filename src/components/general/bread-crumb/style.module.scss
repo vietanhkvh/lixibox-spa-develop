@@ -1,0 +1,31 @@
+.title {
+  white-space: nowrap;
+  color: var(--color8A);
+  font-size: 14px;
+  font-weight: var(--fontLight);
+  line-height: 40px;
+  transition: var(--transitionColor);
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+
+  &:hover {
+    color: var(--colorPink);
+  }
+}
+
+.titleSub {
+  width: 100%;
+  padding: 0 20px;
+  line-height: 36px;
+  font-size: 14px;
+  font-weight: var(--fontLight);
+  color: var(--color8A);
+  display: block;
+  text-align: left;
+  background: var(--colorFA);
+
+  &:hover {
+    background-color: var(--colorF0);
+  }
+}

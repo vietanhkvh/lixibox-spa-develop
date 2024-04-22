@@ -1,0 +1,41 @@
+.productItemWithAction {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  padding: 0 8px;
+}
+
+.trashExtraAction {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 32px;
+  height: 32px;
+  background-color: var(--colorF5);
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: var(--zIndex4);
+  transition: var(--transitionBackground);
+
+  .icon {
+    width: 16px;
+    height: 16px;
+
+    svg {
+      fill: var(--color20);
+      transition: var(--transitionNormal);
+    }
+  }
+
+  &:hover {
+    background-color: var(--colorRed);
+
+    svg {
+      fill: var(--colorWhite);
+    }
+  }
+}

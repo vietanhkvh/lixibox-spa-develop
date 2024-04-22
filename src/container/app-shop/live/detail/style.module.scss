@@ -1,0 +1,41 @@
+.modalContent {
+  padding: 16px 16px 26px;
+
+  @media (width >= 960px) {
+    min-width: 350px;
+    max-width: 350px;
+  }
+
+  .content {
+    display: flex;
+    margin-bottom: 20px;
+
+    .img {
+      width: 90px;
+      margin-right: 20px;
+      height: 90px;
+      object-fit: contain;
+    }
+
+    .info {
+      flex: 1;
+
+      .name {
+        font-size: 13px;
+        font-weight: 300;
+        margin-bottom: 10px;
+        line-height: 20px;
+        max-height: 60px;
+        overflow: hidden;
+      }
+
+      .price {
+        color: var(--color20);
+        font-weight: var(--fontSemiBold);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+}

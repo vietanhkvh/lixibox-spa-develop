@@ -1,0 +1,24 @@
+.link {
+  display: block;
+  margin: 5px 10px 10px 0;
+}
+
+.name {
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  background: var(--colorF5);
+  justify-content: center;
+  color: var(--color20);
+  border-radius: 8px;
+  line-height: 40px;
+  height: 40px;
+  padding: 0 16px;
+  font-weight: var(--fontRegular);
+}
+
+.nameSelected {
+  font-weight: var(--fontSemiBold);
+  color: var(--colorWhite);
+  background-color: var(--color20);
+}

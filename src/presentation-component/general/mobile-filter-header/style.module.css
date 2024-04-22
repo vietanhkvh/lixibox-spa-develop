@@ -1,0 +1,151 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 44px;
+  padding: 0 16px 0 0;
+  border-bottom: 1px solid var(--colorE9);
+}
+
+.sortContainer {
+  display: flex;
+  position: relative;
+}
+
+.sortIcon {
+  width: 44px;
+  height: 44px;
+}
+
+.sortIcon svg {
+  width: 20px;
+  fill: var(--colorr3E);
+}
+
+.sortTitle {
+  color: var(--color20);
+  font-size: 14px;
+  line-height: 44px;
+  font-weight: var(--fontRegular);
+}
+
+.angleIcon {
+  width: 26px;
+  height: 44px;
+}
+
+.angleIcon svg {
+  width: 12px;
+  fill: var(--colorr3E);
+  transform: rotate(-90deg);
+  transition: var(--transitionNormal);
+}
+
+.filterIcon {
+  width: 44px;
+  height: 44px;
+}
+
+.filterIcon svg {
+  width: 20px;
+  fill: var(--colorr3E);
+}
+
+.tickIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.tickIcon svg {
+  width: 17px;
+  fill: var(--color20);
+}
+
+.openSortContainer .angleIcon svg {
+  transform: rotate(-270deg);
+}
+
+.filterContainer {
+  display: flex;
+}
+
+.activeFilterContainer .filterIcon svg {
+  fill: var(--colorPrimary);
+}
+
+.filterTitle {
+  color: var(--color20);
+  font-size: 14px;
+  line-height: 44px;
+  font-weight: var(--fontRegular);
+}
+
+.activeFilterContainer .filterTitle {
+  color: var(--colorPrimary);
+  font-weight: var(--fontSemiBold);
+}
+
+.sortPanel {
+  position: absolute;
+  z-index: var(--zIndex9);
+  top: 44px;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  visibility: hidden;
+  opacity: 0;
+  transition: var(--transitionNormal);
+}
+
+.openSortContainer .sortPanel {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sortOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  transition: var(--transitionNormal);
+  background-color: var(--colorBlack05);
+}
+
+.openSortContainer .sortOverlay {
+  opacity: 1;
+}
+
+.sortList {
+  width: 100%;
+  padding: 10px 0;
+  background-color: var(--colorWhite);
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: var(--transitionNormal);
+}
+
+.openSortContainer .sortList {
+  transform: scaleY(1);
+}
+
+.sortItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  padding: 0 16px;
+}
+
+.sortItem:hover {
+  background: var(--colorFA);
+}
+
+.sortItemTitle {
+  line-height: 40px;
+  color: var(--color20);
+  font-size: 14px;
+  font-weight: var(--fontRegular);
+}

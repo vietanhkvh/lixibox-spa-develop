@@ -1,0 +1,27 @@
+.stores {
+  display: flex;
+  flex-direction: column;
+
+  .searchHeader {
+    margin-top: 30px;
+  }
+
+  .index {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+
+    .storePreview {
+      width: calc(50% - 18px);
+      margin-top: 35px;
+
+      &:nth-child(even) {
+        margin-left: 36px;
+      }
+    }
+  }
+}
+
+.noContentPlaceholderDesktop {
+  margin: 100px 0;
+}

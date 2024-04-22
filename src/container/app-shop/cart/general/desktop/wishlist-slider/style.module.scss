@@ -1,0 +1,54 @@
+.addonSlider {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--colorWhite);
+  margin-bottom: 16px;
+
+  .titleSection {
+    font-weight: var(--fontSemiBold);
+    font-size: 22px;
+    text-transform: uppercase;
+    color: var(--color20);
+    margin: 34px 0 28px 21px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 16px;
+  }
+
+  .sliderSection {
+    padding: 0 16px;
+  }
+
+  .infoIcon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+
+    svg {
+      width: 18px;
+    }
+  }
+
+  .viewMore {
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color8A);
+    font-weight: var(--fontRegular);
+    font-size: 14px;
+    text-transform: none;
+    cursor: pointer;
+  }
+
+  .icon {
+    width: 22px;
+    height: 16px;
+
+    svg {
+      width: 8px;
+      fill: var(--color8A);
+    }
+  }
+}

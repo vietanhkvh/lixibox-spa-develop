@@ -1,0 +1,70 @@
+.tabCapsule {
+  display: flex;
+  border-radius: 16px;
+  padding: 8px;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+
+  .tabIconContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: var(--colorPinkFF);
+
+    .tabIcon {
+      width: 20px;
+      height: 20px;
+      min-width: 20px;
+      min-height: 20px;
+
+      svg {
+        fill: var(--colorPrimary);
+      }
+    }
+  }
+
+  .tabInfo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+
+    .value {
+      font-size: 20px;
+      font-weight: var(--fontBold);
+      color: var(--colorWhite);
+    }
+
+    .title {
+      font-size: 13px;
+      font-weight: var(--fontRegular);
+      color: var(--colorWhite);
+    }
+  }
+}
+
+.tabCapsuleActive {
+  background-color: var(--colorWhite);
+
+  .tabIconContainer {
+    background-color: var(--colorPrimary);
+
+    .tabIcon {
+      svg {
+        fill: var(--colorWhite);
+      }
+    }
+  }
+
+  .tabInfo {
+    .value {
+      color: var(--color20);
+    }
+
+    .title {
+      color: var(--color20);
+    }
+  }
+}

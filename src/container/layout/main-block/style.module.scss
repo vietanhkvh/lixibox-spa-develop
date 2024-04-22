@@ -1,0 +1,13 @@
+.textAlign {
+  @media screen and (width >= 960px) {
+    text-align: center;
+  }
+}
+
+.headingTitle {
+  font-size: 22px;
+}
+
+.displayNone {
+  display: none;
+}

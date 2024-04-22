@@ -1,0 +1,26 @@
+.showMoreInline {
+  display: inline-block;
+  position: relative;
+
+  span {
+    display: inline;
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+  }
+
+  .contentCollapsed {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-weight: var(--fontSemiBold);
+    cursor: pointer;
+    padding-left: 50px;
+  }
+}

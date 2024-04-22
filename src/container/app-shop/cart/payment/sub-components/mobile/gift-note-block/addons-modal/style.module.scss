@@ -1,0 +1,39 @@
+.giftNoteModal {
+  display: flex;
+  flex-direction: column;
+
+  &.giftNoteModalDesktop {
+    display: flex;
+    width: 440px;
+  }
+
+  .content {
+    overflow: auto;
+    flex: 1;
+  }
+
+  .body {
+    display: flex;
+    flex-direction: column;
+
+    .scrollableContent {
+      font-size: inherit;
+    }
+
+    .primaryButton {
+      // TODO: Remove `important`. Dependency: SubmitButton (inline style removal required)
+      background-color: var(--color3E) !important;
+    }
+  }
+}
+
+.loader {
+  top: 52px;
+  height: calc(100% - 52px);
+
+  svg {
+    circle {
+      stroke: #eee;
+    }
+  }
+}

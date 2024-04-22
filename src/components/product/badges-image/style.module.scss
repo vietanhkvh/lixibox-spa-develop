@@ -1,0 +1,96 @@
+.imageBadgeLegacy {
+  position: absolute;
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  transition: var(--transitionOpacity);
+  pointer-events: none;
+
+  &.top_left {
+    top: 0;
+    left: 0;
+  }
+
+  &.top_right {
+    top: 0;
+    right: 0;
+  }
+
+  &.bottom_right {
+    bottom: 0;
+    right: 0;
+  }
+
+  &.bottom_left {
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.imageBadge {
+  position: absolute;
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  transition: var(--transitionOpacity);
+  pointer-events: none;
+
+  &.top_left {
+    top: 0;
+    left: 0;
+  }
+
+  &.top_right {
+    top: 0;
+    right: 0;
+  }
+
+  &.bottom_right {
+    bottom: 0;
+    right: 0;
+  }
+
+  &.bottom_left {
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.textBadge {
+  position: absolute;
+  padding: 2px 8px;
+  line-height: 16px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: var(--fontSemiBold);
+  margin: 4px;
+  box-shadow: var(--shadow2);
+  transition: var(--transitionOpacity);
+  pointer-events: none;
+
+  $stackItemSpacing: 22px;
+
+  &.top_left {
+    top: calc(var(--stack-index, 0) * #{$stackItemSpacing});
+    left: 0;
+  }
+
+  &.top_right {
+    top: calc(var(--stack-index, 0) * #{$stackItemSpacing});
+    right: 0;
+  }
+
+  &.bottom_right {
+    bottom: calc(var(--stack-index, 0) * #{$stackItemSpacing});
+    right: 0;
+  }
+
+  &.bottom_left {
+    bottom: calc(var(--stack-index, 0) * #{$stackItemSpacing});
+    left: 0;
+  }
+}

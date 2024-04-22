@@ -1,0 +1,14 @@
+.servicesModal {
+  .body {
+    padding: 20px 16px;
+
+    > div:not(:first-child) {
+      margin-top: 10px;
+    }
+  }
+}
+
+.servicesModalDesktop {
+  display: flex;
+  width: 440px;
+}

@@ -1,0 +1,49 @@
+.container {
+  width: 100%;
+}
+
+.unboxingGuidelineImage {
+  padding: 20px 30px;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.unboxingGuidelineComponentDesktop {
+  padding: 20px 48px 48px;
+  background-color: var(--colorWhite);
+  margin-bottom: 60px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.unboxingGuidelineComponentMobile {
+  padding: 26px;
+}
+
+.desktopHeading {
+  line-height: 44px;
+  font-weight: var(--fontSemiBold);
+  text-transform: uppercase;
+  font-size: 16px;
+  color: var(--color20);
+  padding: 0 16px 0 0;
+  border-bottom: 1px solid var(--colorE9);
+
+  // background: var(--colorWhite);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tabContainerDesktop {
+  margin-bottom: 10px;
+}
+
+.tabIcon {
+  width: 20px;
+  height: 20px;
+}

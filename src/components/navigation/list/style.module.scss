@@ -1,0 +1,18 @@
+.itemTitle {
+  font-size: 14px;
+  line-height: 36px;
+  color: var(--color2E);
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.itemMobileInner {
+  display: flex;
+  background: var(--colorTransparent);
+
+  &:hover {
+    background: rgb(0 0 0 / 3%);
+  }
+}

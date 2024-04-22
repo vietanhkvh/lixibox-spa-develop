@@ -1,0 +1,598 @@
+/* BUTTON */
+.buttonIcon {
+  width: 12px;
+  height: inherit;
+  line-height: inherit;
+  text-align: center;
+  color: inherit;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+  margin-left: 5px;
+  font-size: 11px;
+}
+
+@mixin buttonBase {
+  display: inline-block;
+  text-transform: capitalize;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 15px;
+  font-size: 15px;
+  transition: var(--transitionNormal);
+  white-space: nowrap;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.buttonBase {
+  @include buttonBase;
+}
+
+.button {
+  @include buttonBase;
+
+  background-color: var(--colorBlack);
+  color: var(--colorWhite);
+}
+
+.buttonPink {
+  background-color: var(--colorPink);
+  color: var(--colorWhite);
+
+  &:hover {
+    background-color: var(--colorBlack);
+  }
+}
+
+.buttonFacebook {
+  @include buttonBase;
+
+  background-color: var(--colorBrandFacebook);
+  color: var(--colorWhite);
+
+  &:hover {
+    background-color: var(--colorBrandFacebookLighter);
+  }
+}
+
+.buttonBorder {
+  @include buttonBase;
+
+  line-height: 34px;
+  border: 1px solid var(--colorBlack05);
+  background-color: var(--colorWhite);
+  color: var(--colorBlack07);
+
+  &:hover {
+    border: 1px solid var(--colorPink);
+    background-color: var(--colorPink);
+    color: var(--colorWhite);
+  }
+}
+
+.buttonBorderPink {
+  border: 1px solid var(--colorPink);
+  color: var(--colorPink);
+
+  &:hover {
+    background-color: var(--colorPink);
+    color: var(--colorWhite);
+  }
+}
+
+.block {
+  display: block;
+}
+
+.blockHeading {
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  margin-bottom: 0;
+
+  @media screen and (width >= 960px) {
+    margin-bottom: 10px;
+    height: 56px;
+  }
+}
+
+.blockHeadingAlignLeft {
+  text-align: left;
+}
+
+.blockHeadingAutoAlign {
+  text-align: left;
+
+  @media screen and (width >= 960px) {
+    text-align: center;
+  }
+}
+
+.blockHeadingHeadingWithoutViewMore {
+  height: 50px;
+}
+
+.blockHeadingMultiLine {
+  height: auto;
+  min-height: 50px;
+}
+
+.blockHeadingLine {
+  height: 1px;
+  width: 100%;
+  background-color: var(--color75);
+  position: absolute;
+  top: 25px;
+}
+
+.blockHeadingLineSmall {
+  width: 1px;
+  height: 30px;
+  transform: rotate(45deg);
+  position: absolute;
+  background-color: var(--colorPink04);
+  top: 4px;
+  left: 17px;
+}
+
+.blockHeadingLineFirst {
+  width: 1px;
+  height: 70px;
+  transform: rotate(45deg);
+  position: absolute;
+  background-color: var(--colorPink03);
+  top: -12px;
+  right: 7px;
+}
+
+.blockHeadingLineLast {
+  width: 1px;
+  height: 70px;
+  transform: rotate(45deg);
+  position: absolute;
+  background-color: var(--colorPink03);
+  top: -3px;
+  right: 20px;
+}
+
+.blockHeadingTitle {
+  height: 40px;
+  display: block;
+  text-align: left;
+  position: relative;
+  z-index: var(--zIndex2);
+  padding: 0 10px;
+
+  @media screen and (width >= 960px) {
+    text-align: left;
+    height: 50px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+.blockHeadingTitleMultiLine {
+  max-width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: auto;
+  min-height: 50px;
+}
+
+.blockHeadingTitleText {
+  letter-spacing: 1px;
+  display: inline-block;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--colorBlack);
+  font-size: 18px;
+  font-weight: var(--fontSemiBold);
+  line-height: 40px;
+  height: 40px;
+}
+
+.blockHeadingTitleTextMultiLine {
+  white-space: wrap;
+  overflow: visible;
+  text-overflow: unset;
+  line-height: 30px;
+  height: auto;
+
+  @media screen and (width >= 960px) {
+    font-size: 22px;
+    line-height: 50px;
+    height: 50px;
+  }
+}
+
+@mixin blockHeadingDescription {
+  line-height: 20px;
+  display: inline-block;
+  font-size: 14px;
+  position: relative;
+  z-index: var(--zIndex2);
+  background-color: var(--colorWhite);
+  color: var(--colorBlack08);
+  padding: 0 32px 0 12px;
+  width: 100%;
+}
+
+.blockHeadingDescriptionGeneral {
+  @include blockHeadingDescription;
+}
+
+.blockHeadingDescriptionMobile {
+  @include blockHeadingDescription;
+
+  text-align: left;
+}
+
+.blockHeadingDescriptionDesktop {
+  @include blockHeadingDescription;
+
+  text-align: center;
+}
+
+.blockHeadingCloseButton {
+  height: 50px;
+  width: 50px;
+  color: var(--color4D);
+  position: absolute;
+  background-color: var(--colorWhite);
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.blockHeadingCloseButtonInner {
+  width: 20px;
+}
+
+.blockHeadingViewMore {
+  white-space: nowrap;
+  font-size: 13px;
+  height: 16px;
+  line-height: 16px;
+  background-color: var(--colorWhite);
+  color: var(--color4D);
+  display: block;
+  cursor: pointer;
+  padding: 0 10px 0 5px;
+  position: absolute;
+  transition: var(--transitionColor);
+  right: 0;
+  bottom: 0;
+
+  &:hover {
+    color: var(--colorPink);
+  }
+}
+
+.blockHeadingViewMoreAutoAlign {
+  top: 14px;
+  bottom: auto;
+
+  @media screen and (width >= 960px) {
+    top: 18px;
+  }
+}
+
+.blockHeadingViewMoreIcon {
+  width: 10px;
+  height: 10px;
+  color: var(--colorBlack);
+  display: inline-block;
+  margin-left: 5px;
+  padding-right: 5px;
+}
+
+/**  BLOCK */
+.blockContent {
+  padding: 20px 0 10px;
+  position: relative;
+}
+
+/** DOT DOT DOT SLIDE PAGINATION */
+.slidePagination {
+  position: absolute;
+  z-index: var(--zIndex9);
+  left: 0;
+  bottom: 20px;
+  width: 100%;
+}
+
+.slidePaginationItem {
+  display: block;
+  min-width: 12px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 5px;
+  background-color: var(--colorBlack);
+  cursor: pointer;
+}
+
+.slidePaginationItemActive {
+  background-color: var(--colorWhite);
+  box-shadow: 0 0 0 1px var(--colorBlack) inset;
+}
+
+/* SLIDE NAVIGATION BUTTON */
+.slideNavigation {
+  position: absolute;
+  line-height: 100%;
+  background: var(--colorBlack);
+  transition: var(--transitionNormal);
+  z-index: var(--zIndex9);
+  cursor: pointer;
+  top: 50%;
+}
+
+.slideNavigationBlack {
+  background: var(--colorWhite05);
+}
+
+.slideNavigationIcon {
+  color: var(--colorWhite);
+  width: 14px !important;
+}
+
+.slideNavigationLeft {
+  left: 0;
+}
+
+.slideNavigationRight {
+  right: 0;
+}
+
+/** ASIDE BLOCK (FILTER CATEOGRY) */
+.asideBlock {
+  display: block;
+}
+
+.asideBlockHeading {
+  position: relative;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 5px;
+
+  @media screen and (width >= 768px) {
+    height: 40px;
+  }
+}
+
+.asideBlockHeadingText {
+  width: auto;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: var(--fontSemiBold);
+  line-height: 40px;
+  color: var(--colorBlack);
+  white-space: nowrap;
+
+  @media screen and (width >= 768px) {
+    font-size: 18px;
+    line-height: 40px;
+  }
+
+  @media screen and (width >= 1024px) {
+    font-size: 18px;
+  }
+}
+
+.asideBlockHeadingClose {
+  height: 40px;
+  width: 40px;
+  min-width: 40px;
+  text-align: center;
+  line-height: 40px;
+  margin-bottom: 4px;
+  border-radius: 3px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--colorF7);
+  }
+}
+
+.asideBlockContent {
+  padding: 5px 0;
+}
+
+/** AUTH SIGN IN / UP COMPONENT */
+@mixin authBlockRelatedLinkContainer {
+  width: 100%;
+}
+
+.authBlockRelatedLinkContainerGeneral {
+  @include authBlockRelatedLinkContainer;
+}
+
+.authBlockRelatedLinkContainerMobile {
+  @include authBlockRelatedLinkContainer;
+
+  text-align: right;
+}
+
+.authBlockRelatedLinkContainerDesktop {
+  @include authBlockRelatedLinkContainer;
+
+  text-align: center;
+}
+
+@mixin authBlockRelatedLinkText {
+  line-height: 40px;
+}
+
+.authBlockRelatedLinkTextGeneral {
+  @include authBlockRelatedLinkText;
+}
+
+.authBlockRelatedLinkTextMobile {
+  @include authBlockRelatedLinkText;
+
+  color: var(--colorWhite);
+  font-size: 13px;
+  font-weight: var(--fontSemiBold);
+}
+
+.authBlockRelatedLinkTextDesktop {
+  @include authBlockRelatedLinkText;
+
+  color: var(--color20);
+  font-size: 14px;
+  font-weight: var(--fontRegular);
+}
+
+@mixin authBlockRelatedLinkLink {
+  font-weight: var(--fontSemiBold);
+  line-height: 40px;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-decoration: underline;
+}
+
+.authBlockRelatedLinkLinkGeneral {
+  @include authBlockRelatedLinkLink;
+}
+
+.authBlockRelatedLinkLinkMobile {
+  @include authBlockRelatedLinkLink;
+
+  color: var(--colorWhite);
+  font-size: 13px;
+  font-weight: var(--fontSemiBold);
+}
+
+.authBlockRelatedLinkLinkDesktop {
+  @include authBlockRelatedLinkLink;
+
+  color: var(--color20);
+  font-size: 14px;
+  font-weight: var(--fontRegular);
+}
+
+.authBlockErrorMessage {
+  color: var(--colorRed);
+  font-size: 13px;
+  line-height: 18px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  overflow: hidden;
+  transition: var(--transitionNormal);
+}
+
+.authBlockSuccessMessage {
+  color: var(--colorGreen);
+  font-size: 13px;
+  line-height: 18px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  overflow: hidden;
+  transition: var(--transitionNormal);
+}
+
+.emtyText {
+  display: block;
+  text-align: center;
+  line-height: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 30px;
+  color: var(--color4D);
+}
+
+/** Tab Component */
+.tabs {
+  height: 100%;
+}
+
+.tabsHeading {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: var(--zIndex9);
+}
+
+.tabsHeadingIconContainer {
+  background: var(--colorF0);
+  display: flex;
+  position: relative;
+  box-shadow: 0 -1px 1px var(--colorD2) inset;
+}
+
+.tabsHeadingContainer {
+  white-space: nowrap;
+  background: var(--colorWhite);
+}
+
+.tabsHeadingItemIcon {
+  flex: 1;
+  position: relative;
+  z-index: var(--zIndex5);
+}
+
+.tabsHeadingItemIconIcon {
+  height: 40px;
+  color: var(--colorBlack06);
+}
+
+.tabsHeadingItemIconIconActive {
+  color: var(--colorPink);
+}
+
+.tabsHeadingItemIconIconInner {
+  width: 18px;
+  height: 18px;
+}
+
+.tabsHeadingItem {
+  height: 50px;
+  display: inline-block;
+  line-height: 50px;
+  font-size: 15px;
+  color: var(--color4D);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.tabsHeadingStatusBar {
+  background: var(--colorWhite);
+  position: absolute;
+  z-index: var(--zIndex1);
+  bottom: 0;
+  left: 0;
+  width: 25%;
+  height: 40px;
+  transition: var(--transitionNormal);
+  box-shadow: var(--shadowReverse2);
+}
+
+.tabsContent {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: var(--zIndex1);
+}
+
+.tabsContentContainer {
+  height: 100%;
+  transition: var(--transitionNormal);
+  display: flex;
+}
+
+.tabsContentTab {
+  height: 100%;
+  overflow: auto;
+  flex: 1;
+}

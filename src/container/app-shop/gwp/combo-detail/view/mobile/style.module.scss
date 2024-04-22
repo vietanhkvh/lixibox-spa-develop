@@ -1,0 +1,221 @@
+.gwpDetailContainer {
+  display: flex;
+  flex-direction: column;
+
+  .banner {
+    width: 100%;
+    padding-bottom: 75%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    position: relative;
+
+    .outOfStockLabel {
+      display: flex;
+      position: absolute;
+      left: calc(50% - 33.5px);
+      top: calc(50% - 12px);
+      padding: 4px 12px;
+      border-radius: 4px;
+      background-color: rgb(32 32 32 / 80%);
+      color: var(--colorWhite);
+      font-size: 12px;
+      font-weight: var(--fontRegular);
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .bottomSection {
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px calc(22px + 70px);
+    background-color: var(--colorWhite);
+
+    .schemeTitle {
+      margin-top: 15px;
+      font-size: 16px;
+      font-weight: var(--fontBold);
+      color: var(--color20);
+      align-self: center;
+    }
+
+    .valueInfo {
+      margin-top: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .valueIcon {
+        width: 15px;
+        height: 15px;
+
+        svg {
+          fill: var(--colorPrimary);
+        }
+      }
+
+      .valueText {
+        margin-left: 5px;
+        font-size: 14px;
+        font-weight: var(--fontRegular);
+        color: var(--colorPrimary);
+      }
+    }
+
+    .description {
+      margin-top: 8px;
+      font-size: 13px;
+      font-weight: var(--fontLight);
+      color: var(--color20);
+    }
+
+    .warningMessage {
+      margin-top: 16px;
+      font-size: 14px;
+      font-weight: var(--fontSemiBold);
+      color: var(--colorRed);
+    }
+
+    .discountCodeSection {
+      margin-top: 30px;
+
+      .discountCodeTitle {
+        margin-bottom: 16px;
+      }
+    }
+
+    .countdownSection {
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+      margin-top: 16px;
+
+      .countdownTitle {
+        align-self: center;
+        font-size: 14px;
+        font-weight: var(--fontSemiBold);
+        color: var(--color20);
+      }
+
+      .countdown {
+        justify-content: center;
+        margin-top: 12px;
+      }
+    }
+
+    .suggestion {
+      margin-top: 24px;
+      font-size: 14px;
+      font-weight: var(--fontRegular);
+      color: var(--color8A);
+
+      .suggestionTitle {
+        font-size: inherit;
+        font-weight: inherit;
+        color: inherit;
+        white-space: nowrap;
+      }
+
+      .suggestionContent {
+        font-size: inherit;
+        font-weight: inherit;
+        color: inherit;
+        text-decoration: underline;
+        margin-left: 5px;
+      }
+    }
+
+    .giftBoxesSection {
+      display: flex;
+      flex-direction: column;
+      margin-top: 34px;
+
+      .giftBoxesTitle {
+        font-size: 14px;
+        font-weight: var(--fontSemiBold);
+        color: var(--color20);
+        margin-bottom: 12px;
+      }
+
+      .giftBoxesIndex {
+        display: flex;
+        flex-direction: column;
+
+        .giftBox {
+          display: flex;
+          cursor: pointer;
+
+          &:not(:first-child) {
+            margin-top: 12px;
+          }
+
+          .giftBoxLeftSection {
+            height: 50px;
+            width: 50px;
+            min-width: 50px;
+
+            img {
+              width: 100%;
+              max-width: 100%;
+              min-width: 50px;
+            }
+          }
+
+          .giftBoxRightSection {
+            display: flex;
+            flex-direction: column;
+            padding: 5px 10px;
+
+            .giftBoxTitle {
+              display: flex;
+
+              .giftBoxTitleQuantity {
+                font-size: 14px;
+                font-weight: var(--fontBold);
+                color: var(--color2E);
+              }
+
+              .giftBoxTitleName {
+                margin-left: 5px;
+                font-size: 14px;
+                font-weight: var(--fontRegular);
+                color: var(--color2E);
+              }
+            }
+
+            .giftBoxPrice {
+              font-size: 14px;
+              font-weight: var(--fontBold);
+              color: var(--color2E);
+              margin-top: 2px;
+            }
+          }
+        }
+      }
+    }
+
+    .buttonContainer {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      padding: 15px 16px 11px;
+      box-shadow: rgb(0 0 0 / 8%) 0 -2px 10px;
+      background-color: var(--colorWhite);
+      z-index: var(--zIndex4);
+
+      .button {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.noContentPlaceholder {
+  padding: 100px 0;
+}

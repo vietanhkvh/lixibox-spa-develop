@@ -1,0 +1,25 @@
+.brandPills {
+  &.desktop {
+    .pills {
+      .pill {
+        margin-right: 16px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .header {
+    margin-bottom: 12px;
+  }
+
+  .pills {
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .pill {
+      margin-right: 8px;
+      margin-bottom: 12px;
+    }
+  }
+}

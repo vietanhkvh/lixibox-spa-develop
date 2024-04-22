@@ -1,0 +1,119 @@
+.pickupStoreSelector {
+  display: flex;
+  flex-direction: column;
+
+  .searchBar {
+    position: relative;
+
+    input {
+      width: 100%;
+      height: 40px;
+      padding: 12px 15px 12px 41px;
+      background-color: var(--colorF5);
+      border: none;
+      border-radius: 8px;
+      font-weight: var(--fontRegular);
+      font-size: 14px;
+      color: var(--color20);
+
+      &::placeholder {
+        font-weight: var(--fontLight);
+        font-size: 14px;
+        color: var(--color8E);
+      }
+    }
+
+    .icon {
+      position: absolute;
+      left: 15px;
+      top: calc(50% - 8px);
+      width: 16px;
+      height: 16px;
+
+      svg {
+        fill: var(--color8E);
+      }
+    }
+  }
+
+  .stores {
+    margin: 20px 13px;
+    display: flex;
+    flex-direction: column;
+    transition: var(--transitionNormal);
+    max-height: 175px;
+    overflow: auto;
+
+    .store {
+      display: flex;
+      transition: var(--transitionNormal);
+      cursor: pointer;
+
+      &:not(:first-child) {
+        margin-top: 10px;
+      }
+
+      .status {
+        width: 16px;
+        height: 16px;
+
+        svg {
+          fill: var(--color8A);
+        }
+      }
+
+      .statusSelected {
+        svg {
+          fill: var(--colorSecondaryBlue);
+        }
+      }
+
+      .address {
+        margin-left: 10px;
+        font-weight: var(--fontLight);
+        font-size: 14px;
+        color: var(--color20);
+      }
+    }
+  }
+
+  .recipientForm {
+    border-top: 1px solid var(--colorE4);
+    margin: 0 0 4px;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .field {
+      width: 50% !important;
+      width: calc(50% - 29px) !important;
+
+      &:nth-child(odd) {
+        margin-right: 29px;
+      }
+
+      &:nth-child(even) {
+        margin-left: 29px;
+      }
+    }
+  }
+
+  .actions {
+    margin-top: 10px;
+    display: flex;
+
+    .action {
+      flex: 0;
+      background-color: var(--color20) !important;
+      margin: 0 !important;
+
+      .actionTitle {
+        color: var(--colorWhite) !important;
+      }
+    }
+
+    .actionDisabled {
+      filter: opacity(0.25);
+    }
+  }
+}

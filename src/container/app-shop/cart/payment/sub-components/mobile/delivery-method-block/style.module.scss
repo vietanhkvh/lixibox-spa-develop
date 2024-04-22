@@ -1,0 +1,230 @@
+.deliveryMethodEntry {
+  margin-top: 10px;
+  padding: 13px 9px 12px 15px;
+  border: 1px solid var(--colorE8);
+  border-radius: 8px;
+
+  .header {
+    display: flex;
+    align-items: center;
+
+    .iconContainer {
+      flex: 0 0 17px;
+      height: 17px;
+
+      .icon {
+        max-width: 17px;
+        max-height: 17px;
+
+        svg {
+          fill: var(--color8A);
+        }
+      }
+
+      .iconSelected svg {
+        fill: var(--colorSecondaryBlue);
+      }
+    }
+
+    .title {
+      font-weight: var(--fontSemiBold);
+      font-size: 14px;
+      color: var(--color20);
+      margin-left: 15px;
+
+      span {
+        padding-left: 10px;
+        font-weight: inherit;
+
+        &.free {
+          color: var(--colorBlue18);
+        }
+
+        &.paid {
+          color: var(--colorPrimary);
+        }
+      }
+    }
+  }
+
+  .brief {
+    margin: 0 0 11px 32px;
+
+    .timeline {
+      font-weight: var(--fontLight);
+      font-size: 13px;
+      line-height: 19px;
+      color: var(--color20);
+
+      span {
+        font-weight: var(--fontSemiBold);
+        padding-left: 5px;
+        color: var(--color20);
+      }
+    }
+
+    .description {
+      font-weight: var(--fontLight);
+      font-size: 13px;
+      line-height: 19px;
+      color: var(--color8A);
+      margin-top: 8px;
+    }
+
+    .notification {
+      font-weight: var(--fontSemiBold);
+      font-size: 13px;
+      line-height: 18px;
+      color: var(--colorPrimary);
+    }
+  }
+}
+
+.deliveryMethodEntrySelected {
+  box-shadow: 0 0 0 1.5px var(--colorBlue5E);
+}
+
+.deliveryMethodEntryDisabled {
+  background-color: var(--colorF5);
+  box-shadow: none;
+
+  .header,
+  .brief .description {
+    filter: opacity(0.5);
+  }
+}
+
+.deliveryMethodBlock {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--colorWhite);
+  padding: 12px 16px;
+  margin-top: 1px;
+  cursor: pointer;
+  transition: var(--transitionBoxShadow);
+
+  .header {
+    display: flex;
+    align-items: center;
+
+    .status {
+      flex: 0 0 1px;
+
+      .icon {
+        width: 20px;
+        height: 20px;
+
+        svg {
+          fill: var(--color20);
+        }
+      }
+    }
+
+    .title {
+      font-weight: var(--fontSemiBold);
+      font-size: 14px;
+      color: var(--color20);
+      margin-left: 12px;
+    }
+
+    .action {
+      margin-left: auto;
+      padding-left: 15px;
+      font-weight: var(--fontSemiBold);
+      font-size: 13px;
+      color: var(--color8A);
+
+      .icon {
+        width: 9px;
+        height: 15px;
+
+        svg {
+          fill: var(--color20);
+        }
+      }
+    }
+  }
+
+  .brief {
+    display: flex;
+    align-items: center;
+    margin: 4px 32px 0;
+
+    .header {
+      font-weight: var(--fontSemiBold);
+      color: var(--color20);
+
+      span {
+        font-weight: inherit;
+        padding-left: 7px;
+        color: var(--colorPrimary);
+      }
+    }
+
+    .timeline {
+      font-weight: var(--fontLight);
+      color: var(--color20);
+
+      span {
+        font-size: 14px;
+        font-weight: var(--fontRegular);
+        padding: 0 5px;
+        color: var(--color20);
+      }
+    }
+
+    .free {
+      font-size: 14px;
+      font-weight: var(--fontRegular);
+      color: var(--colorPrimary);
+    }
+
+    .hint {
+      font-weight: var(--fontLight);
+      color: var(--color20);
+      margin-top: 5px;
+    }
+  }
+}
+
+.deliveryMethodModal {
+  .body {
+    padding: 14px 16px 24px;
+
+    .hint {
+      font-weight: var(--fontLight);
+      font-size: 13px;
+      color: var(--color8A);
+      margin-bottom: 10px;
+    }
+
+    .entry {
+      background-color: var(--colorF5);
+      border-radius: 8px;
+      border: none;
+      padding: 14px 15px;
+      width: 100%;
+      font-weight: var(--fontLight);
+      font-size: 14px;
+      color: var(--color20);
+      resize: none;
+
+      &::placeholder {
+        color: var(--color8E);
+      }
+    }
+  }
+
+  .primaryButton {
+    // TODO: Remove `important`. Dependency: SubmitButton (inline style removal required)
+    background-color: var(--color3E) !important;
+  }
+}
+
+.noDisplay {
+  display: none;
+}
+
+.blockError {
+  background-color: var(--colorPinkFE29);
+}

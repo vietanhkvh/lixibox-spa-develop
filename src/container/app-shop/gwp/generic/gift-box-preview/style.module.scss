@@ -1,0 +1,131 @@
+.container {
+  display: flex;
+  cursor: pointer;
+
+  .giftBoxLeftSection {
+    position: relative;
+    height: 40px;
+    width: 40px;
+    min-width: 40px;
+
+    img {
+      width: 100%;
+      max-width: 100%;
+      min-width: 40px;
+    }
+
+    .outOfStockContainer {
+      display: flex;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      align-items: center;
+      justify-content: center;
+
+      .label {
+        background-color: rgb(32 32 32 / 80%);
+        color: var(--colorWhite);
+        font-size: 10px;
+        font-weight: var(--fontRegular);
+        border-radius: 4px;
+        padding: 1px 2px;
+      }
+    }
+  }
+
+  .giftBoxRightSection {
+    margin-left: 8px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 5px 10px;
+
+    .giftBoxTitle {
+      display: flex;
+
+      .giftBoxTitleQuantity {
+        font-size: 14px;
+        font-weight: var(--fontBold);
+        color: var(--color20);
+      }
+
+      .giftBoxTitleName {
+        margin-left: 5px;
+        font-size: 14px;
+        font-weight: var(--fontRegular);
+        color: var(--color20);
+      }
+    }
+
+    .giftBoxRightBottomSection {
+      margin-top: 4px;
+      display: flex;
+      justify-content: space-between;
+
+      .giftBoxPrice {
+        display: flex;
+        align-items: center;
+
+        .priceIcon {
+          width: 15px;
+          height: 15px;
+          min-width: 15px;
+          min-height: 15px;
+
+          svg {
+            fill: var(--colorPrimary);
+          }
+        }
+
+        .priceValue {
+          margin-left: 4px;
+          font-size: 14px;
+          font-weight: var(--fontRegular);
+          color: var(--colorPrimary);
+        }
+      }
+
+      .comboBadge {
+        display: flex;
+        align-items: center;
+        padding: 2px 8px;
+        background-color: var(--colorGreenE7);
+        border-radius: 4px;
+
+        &.disabled {
+          background-color: var(--colorF1);
+
+          .buttonIcon {
+            svg {
+              fill: var(--color5C);
+            }
+          }
+
+          .buttonText {
+            color: var(--color5C);
+          }
+        }
+
+        .buttonIcon {
+          margin-right: 6px;
+          width: 15px;
+          height: 15px;
+          min-width: 15px;
+          min-height: 15px;
+
+          svg {
+            fill: var(--colorGreenDark);
+          }
+        }
+
+        .buttonText {
+          font-size: 14px;
+          font-weight: var(--fontRegular);
+          color: var(--colorGreenDark);
+        }
+      }
+    }
+  }
+}

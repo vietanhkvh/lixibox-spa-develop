@@ -1,0 +1,15 @@
+.component {
+  position: relative;
+  width: 100%;
+  min-height: 60px;
+
+  .container {
+    background-color: var(--color20);
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    top: var(--sticky-top-banner-height, 0);
+    left: 0;
+    z-index: var(--zIndexMax);
+  }
+}

@@ -1,0 +1,100 @@
+.main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .header {
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+
+.imageWrapper {
+  position: relative;
+  padding-top: 50%;
+
+  .image {
+    padding: 0 !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.templateContainer {
+  * {
+    color: var(--color20);
+  }
+
+  ol {
+    list-style: decimal;
+    padding-left: 15px;
+
+    li {
+      font-weight: var(--fontBold);
+
+      &:not(:first-child) {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  ul {
+    list-style: disc;
+
+    li {
+      margin-left: 16px;
+      margin-top: 10px;
+
+      ul {
+        li {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+
+  .ulTick {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+
+    li {
+      text-indent: -1em;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &::before {
+        content: '✔';
+        padding-right: 5px;
+      }
+    }
+  }
+
+  strong {
+    font-weight: var(--fontBold);
+  }
+
+  table {
+    width: 100%;
+    margin-top: 10px;
+
+    td,
+    th {
+      border: 1px solid var(--color20);
+      padding: 5px;
+    }
+  }
+
+  p {
+    margin-top: 5px;
+  }
+}
+
+.highlightBackgroundGreen {
+  background: var(--colorGreenHighlight);
+}

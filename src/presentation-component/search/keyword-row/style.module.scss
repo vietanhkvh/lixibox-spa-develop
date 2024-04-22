@@ -1,0 +1,46 @@
+.keywordRow {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: var(--transitionNormal);
+
+  &:hover,
+  &:focus {
+    background-color: var(--colorF5);
+    color: var(--colorPrimary);
+  }
+
+  .keyword {
+    font-weight: var(--fontRegular);
+    font-size: 14px;
+    color: var(--color2E);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .keywordGroup {
+    margin-left: 4px;
+    font-weight: var(--fontRegular);
+    font-size: 14px;
+    color: var(--color8A);
+    text-transform: capitalize;
+  }
+
+  .arrowPasteIcon {
+    margin-left: auto;
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    min-height: 16px;
+
+    svg {
+      fill: var(--color8A);
+    }
+  }
+
+  // MOBILE: [{ padding: '0 20px 0 16px' }] as any,
+  // DESKTOP: [{ padding: '0 26px' }] as any,
+}

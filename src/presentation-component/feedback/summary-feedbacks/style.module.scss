@@ -1,0 +1,32 @@
+.container {
+  .title {
+    font-size: 16px;
+    font-weight: var(--fontBold);
+    color: var(--color20);
+    margin-bottom: 8px;
+  }
+
+  .feedbacks {
+    display: flex;
+    flex-direction: column;
+
+    .feedback {
+      &:not(:first-child) {
+        margin-top: 8px;
+      }
+
+      .feedbackTitle {
+        font-size: 14px;
+        font-weight: var(--fontBold);
+        color: var(--color20);
+      }
+
+      .feedbackReview {
+        margin-left: 5px;
+        font-size: 14px;
+        font-weight: var(--fontRegular);
+        color: var(--color20);
+      }
+    }
+  }
+}

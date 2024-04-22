@@ -1,0 +1,12 @@
+.normalContainer {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 3px;
+  overflow: hidden;
+  transition: var(--transitionNormal);
+  border: 1px solid var(--colorBlack);
+
+  &:hover {
+    box-shadow: var(--shadow4);
+  }
+}

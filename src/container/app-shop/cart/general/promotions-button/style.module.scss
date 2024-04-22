@@ -1,0 +1,171 @@
+.discountBlock {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 10px;
+  padding: 16px;
+  background-color: var(--colorWhite);
+
+  .titleSection {
+    display: flex;
+    align-items: center;
+    margin-bottom: 9px;
+
+    .primaryIcon {
+      width: 20px;
+      height: 14px;
+
+      svg {
+        fill: var(--color20);
+      }
+    }
+
+    .title {
+      font-weight: var(--fontSemiBold);
+      font-size: 14px;
+      margin-left: 10px;
+    }
+  }
+
+  .entrySection {
+    margin-top: 9px;
+
+    .entry {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 14px;
+      border: 1px solid var(--colorC7);
+      border-radius: 8px;
+      margin-bottom: 13px;
+      height: 40px;
+      font-size: 14px;
+
+      .checkedIcon {
+        background: var(--colorGreen);
+        border-radius: 50%;
+        margin-right: 8px;
+        width: 16px;
+        height: 16px;
+        position: relative;
+        transform: rotate(-135deg);
+
+        &::before {
+          display: block;
+          content: ' ';
+          width: 4px;
+          height: 1px;
+          background: #fff;
+          position: absolute;
+          top: 5px;
+          left: 6px;
+          border-radius: 1px;
+        }
+
+        &::after {
+          display: block;
+          content: ' ';
+          width: 1px;
+          height: 7px;
+          background: #fff;
+          position: absolute;
+          top: 5px;
+          left: 6px;
+          border-radius: 1px;
+        }
+      }
+
+      .appliedCode {
+        color: var(--colorGreen);
+        margin-right: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .noAppliedCode {
+        color: var(--color8E);
+        margin-right: 14px;
+      }
+
+      .action {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0 14px;
+
+        .icon {
+          width: 14px;
+          height: 14px;
+
+          svg {
+            fill: var(--color8E);
+          }
+        }
+
+        .removeText {
+          color: var(--colorBlue);
+          font-weight: 500;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.suggestionPlaceholder {
+  height: 88px;
+  width: initial;
+}
+
+.bold {
+  font-weight: var(--fontSemiBold);
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+// -----
+
+.promotionsButton {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  background-color: #faf2f2;
+  cursor: pointer;
+
+  .programIcon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+
+    svg {
+      fill: var(--colorPrimary);
+      width: 20px;
+      height: 20px;
+      min-width: 20px;
+      min-height: 20px;
+    }
+  }
+
+  .content {
+    font-size: 14px;
+    font-weight: var(--fontSemiBold);
+    color: var(--color20);
+  }
+
+  .navIcon {
+    width: 16px;
+    height: 16px;
+    margin-left: auto;
+    padding-left: 8px;
+
+    svg {
+      fill: var(--color8A);
+      width: 16px;
+      height: 16px;
+      min-width: 16px;
+      min-height: 16px;
+    }
+  }
+}

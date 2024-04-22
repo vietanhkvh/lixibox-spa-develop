@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <!-- DEFAULT -->
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="smartbanner:icon-google" content="%REACT_APP_ICON%" />
+    <meta name="msapplication-TileImage" content="%REACT_APP_ICON%" />
+    <link rel="icon" href="%REACT_APP_ICON%" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display&display=swap" rel="stylesheet" />
+
+    <!-- INFO -->
+    <meta content="%REACT_APP_FB_APP_ID%" property="fb:app_id" />
+    <meta content="app-id=%REACT_APP_APPLE_ITUNES_APP_ID%" name="apple-itunes-app" />
+    <meta content="Lixibox" name="smartbanner:title" />
+    <meta content="Lixibox Inc" name="smartbanner:author" />
+    <meta content="FREE" name="smartbanner:price" />
+    <meta content=" - In Google Play" name="smartbanner:price-suffix-google" />
+    <meta content="VIEW" name="smartbanner:button" />
+    <meta content="%REACT_APP_ANDROID_APP_URL%" name="smartbanner:button-url-google" />
+    <meta content="android" name="smartbanner:enabled-platforms" />
+    <meta content="#000000" name="msapplication-TileColor" />
+    <meta content="#000000" name="theme-color" />
+
+    <!-- DEVICE -->
+    <meta content="no-cache, no-store, must-revalidate, max-age=1" httpEquiv="Cache-Control" />
+    <meta content="IE=edge,chrome=1" httpEquiv="X-UA-Compatible" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="0" httpEquiv="Expires" />
+    <base href="/" />
+
+    <!-- DNS PREFETCH -->
+    <meta http-equiv="x-dns-prefetch-control" content="on" />
+    <link rel="dns-prefetch" href="%REACT_APP_API_FQDN%" />
+    <link rel="dns-prefetch" href="//upload.lixibox.com" />
+    <link rel="dns-prefetch" href="//js.lixibox.com" />
+
+    <script src="%REACT_APP_SCRIPT_PATH%/init-web-worker.js"></script>
+    <script
+      async
+      defer
+      type="text/javascript"
+      src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/vi_VN/appleid.auth.js"
+    ></script>
+    <script async defer src="https://js.pusher.com/7.0/pusher.min.js"></script>
+    <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C72JTC8Q3W"></script>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-PF5WZ8C');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', '%REACT_APP_GOOGLE_ANALYTIC_4_ID%');
+    </script>
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="lixiapp"></div>
+
+    <!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
+    <!-- Chat plugin code -->
+    <div
+      id="fb-customer-chat"
+      class="fb-customerchat"
+      attribution="biz_inbox"
+      page_id="%REACT_APP_FB_PAGE_ID%"
+      theme_color="#000000"
+      greeting_dialog_display="hide"
+      logged_in_greeting="Lixibox xin chào!"
+      logged_out_greeting="Lixibox xin chào!"
+    ></div>
+    <script async src="https://www.googleoptimize.com/optimize.js?id=%REACT_APP_GOOGLE_OPTIMIZE_ID%"></script>
+  </body>
+</html>

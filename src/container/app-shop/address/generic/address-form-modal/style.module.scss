@@ -1,0 +1,22 @@
+.addressFormModal {
+  overflow: auto;
+
+  .body {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 17px 16px 15px;
+  }
+
+  .primaryButton {
+    // TODO: Remove `important`. Dependency: SubmitButton (inline style removal required)
+    background-color: var(--color3E) !important;
+  }
+}
+
+.noDisplay {
+  display: none;
+}
+
+.entry {
+  margin-top: 8px;
+}

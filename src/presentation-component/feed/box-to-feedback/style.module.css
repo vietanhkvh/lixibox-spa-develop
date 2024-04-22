@@ -1,0 +1,95 @@
+.container {
+  width: 100%;
+  background-color: var(--colorF5);
+}
+
+.heading {
+  height: 50px;
+  padding: 0 12px 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headingTitle {
+  font-weight: var(--fontSemiBold);
+  line-height: 50px;
+  font-size: 14px;
+  flex: 1;
+  color: var(--color20);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.viewAll {
+  font-size: 12px;
+  color: var(--color8A);
+  white-space: nowrap;
+  font-weight: var(--fontSemiBold);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.viewAllIcon {
+  width: 18px;
+  height: 20px;
+}
+
+.viewAllIcon svg {
+  fill: var(--color8A);
+  width: 11px;
+  transform: rotate(180deg);
+}
+
+.content {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.panel {
+  display: flex;
+  padding: 0 16px 20px;
+}
+
+.item {
+  width: 200px;
+  min-width: 200px;
+  height: 60px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--colorWhite);
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.isLastItem {
+  min-width: 6px;
+  height: 10px;
+}
+
+.itemImage {
+  width: 50px;
+  min-width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  overflow: hidden;
+  background-color: var(--colorWhite);
+  object-fit: contain;
+}
+
+.itemName {
+  font-size: 13px;
+  font-weight: var(--fontSemiBold);
+  line-height: 20px;
+  max-height: 40px;
+  overflow: hidden;
+  color: var(--color20);
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}

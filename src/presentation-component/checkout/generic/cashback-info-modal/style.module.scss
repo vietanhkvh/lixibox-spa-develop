@@ -1,0 +1,46 @@
+.cashbackInfoModal {
+  margin-bottom: 70px;
+
+  .body {
+    margin-bottom: 70px;
+    padding: 10px 16px;
+
+    .dashedDivider {
+      border-bottom: 1px dashed var(--colorC5);
+      margin: 10px 0;
+    }
+
+    .descriptionSection {
+      margin: 2px 0 10px;
+
+      .title {
+        font-size: 12px;
+        font-weight: var(--fontSemiBold);
+        color: var(--color20);
+        padding-top: 5px;
+      }
+
+      .content {
+        .paragraph {
+          margin-top: 10px;
+          font-size: 12px;
+          font-weight: var(--fontLight);
+          color: var(--color20);
+        }
+
+        .spacing {
+          padding-top: 10px;
+        }
+      }
+    }
+  }
+
+  .primaryButton {
+    // TODO: Remove `important`. Dependency: SubmitButton (inline style removal required)
+    background-color: var(--color3E) !important;
+  }
+}
+
+.cashbackInfoModalDesktop {
+  width: 400px;
+}

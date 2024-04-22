@@ -1,0 +1,66 @@
+.referralStatistics {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(359.59deg, #ff749f -66.11%, #fe2c6d 171.6%);
+  padding: 20px;
+  align-items: center;
+
+  .header {
+    font-size: 14px;
+    font-weight: var(--fontBold);
+    color: var(--colorWhite);
+  }
+
+  .statistics {
+    display: flex;
+    margin-top: 15px;
+
+    .divider {
+      border-right: 1px solid var(--colorWhite);
+      height: 60px;
+      margin: 0 50px;
+    }
+  }
+}
+
+.metric {
+  display: flex;
+  align-items: center;
+
+  .iconWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    background-color: var(--colorWhite);
+
+    .icon {
+      width: 20px;
+      height: 20px;
+
+      svg {
+        fill: var(--colorPrimary);
+      }
+    }
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+
+    .value {
+      font-size: 20px;
+      font-weight: var(--fontBold);
+      color: var(--colorWhite);
+    }
+
+    .name {
+      font-size: 14px;
+      font-weight: var(--fontRegular);
+      color: var(--colorWhite);
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.avatarWrapper {
+  width: 144px;
+  height: 144px;
+  border-radius: 50%;
+  background: var(--colorE1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 12px;
+
+  .avatarSplitter {
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: var(--colorWhite);
+  }
+
+  .avatar {
+    background-size: cover;
+    background-position: center center;
+    background-color: var(--colorWhite);
+    min-width: calc(100% - 18px);
+    min-height: calc(100% - 18px);
+    width: calc(100% - 18px);
+    height: calc(100% - 18px);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3.5px var(--colorWhite);
+    cursor: pointer;
+    position: relative;
+  }
+
+  .avatarSmallView {
+    min-width: calc(100% - 14px);
+    min-height: calc(100% - 14px);
+    width: calc(100% - 14px);
+    height: calc(100% - 14px);
+  }
+}

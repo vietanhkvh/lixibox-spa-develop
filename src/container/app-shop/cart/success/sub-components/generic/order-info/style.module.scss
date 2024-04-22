@@ -1,0 +1,245 @@
+.orderInfoBlock {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--colorWhite);
+  margin-top: 10px;
+
+  .accumulationsFromOrderBlock {
+    margin: 0 16px 30px;
+  }
+
+  .overlay {
+    position: absolute;
+    width: 100%;
+    background-size: cover;
+    height: 250px;
+    filter: opacity(0.1);
+  }
+}
+
+.thankYouMessage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 0 36px;
+
+  .icon {
+    width: 60px;
+    height: 60px;
+    z-index: var(--zIndex1);
+    border: 2px solid var(--colorGreenDark);
+    border-radius: 50%;
+
+    svg {
+      fill: var(--colorGreenDark);
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  .title {
+    font-weight: var(--fontSemiBold);
+    font-size: 18px;
+    color: var(--color20);
+    margin-top: 12px;
+  }
+}
+
+.accumulationsFromOrder {
+  .header {
+    font-size: 14px;
+    font-weight: var(--fontSemiBold);
+    color: var(--color3E);
+  }
+
+  .accumulations {
+    border: 1px solid var(--colorF0F0);
+    border-radius: 8px;
+    padding: 6px 0;
+    margin-top: 10px;
+
+    .accumulation {
+      display: flex;
+      align-items: center;
+      padding: 6px 13px;
+
+      &:not(:first-child) {
+        margin-top: 1px;
+      }
+
+      .title {
+        font-weight: var(--fontLight);
+        font-size: 14px;
+        color: var(--color20);
+        cursor: pointer;
+      }
+
+      .icon {
+        width: 16px;
+        height: 16px;
+        margin-left: 5px;
+        cursor: pointer;
+
+        svg {
+          fill: var(--color8A);
+          width: 16px;
+          height: 16px;
+          min-width: 16px;
+          min-height: 16px;
+        }
+      }
+
+      .value {
+        font-weight: var(--fontSemiBold);
+        font-size: 14px;
+        color: var(--colorGreenDark);
+        padding-left: 8px;
+        margin-left: auto;
+      }
+    }
+  }
+}
+
+.orderDetails {
+  display: flex;
+  flex-direction: column;
+  margin: 0 15px 10px 17px;
+  z-index: var(--zIndex1);
+
+  .title {
+    font-weight: var(--fontBold);
+    font-size: 14px;
+    color: var(--color3E);
+    margin-bottom: 10px;
+  }
+
+  .details {
+    width: 100%;
+    border: 1px solid var(--colorF0F0);
+    border-radius: 8px;
+    padding: 6px 19px 14px;
+
+    .properties {
+      .row {
+        min-height: 40px;
+
+        .key {
+          font-weight: var(--fontLight);
+          font-size: 14px;
+          color: var(--color20);
+          min-width: 94px; // FIXME
+        }
+
+        .value {
+          font-weight: var(--fontSemiBold);
+          font-size: 14px;
+          color: var(--color20);
+          display: flex;
+          align-items: center;
+          min-height: 40px;
+          justify-content: space-between;
+
+          .text {
+            font-weight: inherit;
+            font-size: inherit;
+          }
+
+          .highlight {
+            color: var(--colorBlue);
+          }
+
+          .copyAction {
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+
+            svg {
+              fill: var(--color8A);
+            }
+          }
+
+          .label {
+            line-height: 20px;
+            padding: 0 12px;
+            border-radius: 4px;
+          }
+
+          .label-red {
+            color: var(--colorPrimary);
+            background-color: var(--colorPinkFE29);
+          }
+
+          .label-green {
+            color: var(--colorGreenDark);
+            background-color: var(--colorGreenE7);
+          }
+
+          .label-yellow {
+            color: var(--colorYellowF7);
+            background-color: var(--colorYellowFE);
+          }
+
+          .label-blue {
+            color: var(--colorBlue);
+            background-color: var(--colorBlueE5F2);
+          }
+        }
+      }
+    }
+
+    .notes {
+      padding-top: 10px;
+
+      .note {
+        font-weight: var(--fontLight);
+        font-size: 14px;
+        color: var(--color20);
+
+        &:not(:first-child) {
+          margin-top: 24px;
+        }
+      }
+    }
+  }
+
+  .actions {
+    margin: 20px 0;
+  }
+}
+
+.orderInfoBlockDesktop {
+  margin-top: 0;
+  border-radius: 8px;
+  background-size: cover;
+
+  .thankYouMessage {
+    .title {
+      margin-top: 10px;
+      font-size: 24px;
+    }
+  }
+
+  .accumulationsFromOrderBlock {
+    margin: 0 24% 30px;
+  }
+
+  .orderDetails {
+    margin: 0 24% 20px;
+    z-index: var(--zIndex1);
+
+    .details {
+      width: 100%;
+      border: 1px solid var(--colorF0F0);
+      border-radius: 8px;
+      padding: 6px 19px 14px;
+    }
+
+    .actions {
+      display: none;
+    }
+  }
+
+  .overlay {
+    display: none;
+  }
+}

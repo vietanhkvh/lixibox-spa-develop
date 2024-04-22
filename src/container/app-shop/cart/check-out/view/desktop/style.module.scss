@@ -1,0 +1,45 @@
+.cartListPlaceholder {
+  width: 100%;
+  margin-bottom: 20px;
+  height: 100px;
+  background-color: var(--colorWhite);
+  border-radius: 8px;
+}
+
+.checkoutContainer {
+  display: block;
+
+  .filler {
+    margin-bottom: 20px;
+  }
+}
+
+.blockContainer {
+  margin: 0 0 15px;
+  background-color: var(--colorWhite);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.blockContainerSibling {
+  padding-top: 15;
+}
+
+.blockContainerChildrenAware {
+  &:has(*) {
+    margin: 0 0 15px;
+    background-color: var(--colorWhite);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+}
+
+.smartBlockContainerSiblingChildrenAware {
+  &:has(*) {
+    padding-top: 15;
+  }
+}
+
+.highlight {
+  box-shadow: 0 0 0 1px var(--color3E);
+}

@@ -1,0 +1,3621 @@
+[
+  {
+    "id": 1,
+    "keys": [
+      "halio-facial-cleansing-massaging-device-sky-blue",
+      "halio-facial-cleansing-massaging-device-baby-pink",
+      "halio-facial-cleansing-massaging-device-mustard",
+      "halio-facial-cleansing-massaging-grey-smoke"
+    ],
+    "data": [
+      {
+        "layout": "fixed",
+        "size": "medium",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": null,
+        "content": null,
+        "componentType": "VideoGallery",
+        "componentData": {
+          "size": "medium",
+          "list": [
+            {
+              "thumbnailImage": "https://js.lixibox.com/image-assets/halio-landing-page/thumb-1.png",
+              "url": "https://upload.lixibox.com/videos/halio-1.mp4?t=1",
+              "youtubeVideoId": "",
+              "type": "original",
+              "title": "Kiểm chứng hiệu quả làm sạch của Máy rửa mặt HALIO"
+            },
+            {
+              "thumbnailImage": "https://js.lixibox.com/image-assets/halio-landing-page/thumb-6.png",
+              "url": "https://upload.lixibox.com/videos/halio-6.mp4?t=1",
+              "youtubeVideoId": "",
+              "type": "original",
+              "title": "Kiểm chứng hiệu quả làm sạch của Máy rửa mặt HALIO"
+            },
+            {
+              "thumbnailImage": "https://js.lixibox.com/image-assets/halio-landing-page/thumb-3.png",
+              "url": "https://upload.lixibox.com/videos/halio-3.mp4?t=1",
+              "youtubeVideoId": "",
+              "type": "original",
+              "title": "Hướng dẫn sử dụng máy rửa mặt HALIO"
+            },
+            {
+              "thumbnailImage": "https://js.lixibox.com/image-assets/halio-landing-page/thumb-5.png",
+              "url": "https://upload.lixibox.com/videos/halio-5.mp4?t=1",
+              "youtubeVideoId": "",
+              "type": "original",
+              "title": "Vì sao MISOA chọn HALIO mà không phải máy rửa mặt khác"
+            }
+          ]
+        }
+      },
+      {
+        "layout": "fixed",
+        "size": "medium",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": null,
+        "content": null,
+        "componentType": "Image",
+        "componentData": {
+          "src": "https://js.lixibox.com/image-assets/halio-landing-page/info-1.png",
+          "ratio": "2:1"
+        }
+      },
+      {
+        "layout": "fixed",
+        "size": "medium",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": null,
+        "content": null,
+        "componentType": "ImageCenterContent",
+        "componentData": {
+          "image": {
+            "src": "https://js.lixibox.com/image-assets/halio-landing-page/info-2.png",
+            "size": "33%"
+          },
+          "leftContent": [
+            {
+              "title": "Công nghệ Sonic Wave Cleansing",
+              "content": "GIúp làm sạch sâu gấp 10 lần.Loại bỏ 99% dầu thừa, bụi bẩn và lớp trang điểm mà vẫn dịu nhẹ với làn da kể cả da khô và lão hóa."
+            },
+            {
+              "title": "Bề mặt cọ rộng <br >Thiết kế thông minh",
+              "content": "Dễ dàng đi vào những góc khó nhất trên khuôn mặt, làm sạch toàn diện."
+            }
+          ],
+          "rightContent": [
+            {
+              "title": "Chất liệu Silicon kháng khuẩn",
+              "content": "An toàn cho da, dễ vệ sinh, không cần phải thay đầu cọ."
+            },
+            {
+              "title": "Massage nâng cơ mặt",
+              "content": "Giúp thẩm thấu nhanh dưỡng chất ở các bước dưỡng da."
+            },
+            {
+              "title": "Thay đổi tới 14 chế độ rung",
+              "content": "Phù hợp với cả những làn da nhạy cảm nhất."
+            }
+          ]
+        }
+      },
+      {
+        "layout": "full",
+        "contentLayout": "full",
+        "size": "large",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": null,
+        "content": null,
+        "componentType": "ImageCarousel",
+        "componentData": {
+          "list": [
+            {
+              "ratio": "1:1",
+              "radius": "none",
+              "link": "",
+              "src": "https://js.lixibox.com/image-assets/halio-landing-page/new-1.png",
+              "position": "center-center",
+              "display": "contain"
+            },
+            {
+              "ratio": "1:1",
+              "radius": "none",
+              "link": "",
+              "src": "https://js.lixibox.com/image-assets/halio-landing-page/new-2.png",
+              "position": "center-center",
+              "display": "contain"
+            },
+            {
+              "ratio": "1:1",
+              "radius": "none",
+              "link": "",
+              "src": "https://js.lixibox.com/image-assets/halio-landing-page/new-3.png",
+              "position": "center-center",
+              "display": "contain"
+            },
+            {
+              "ratio": "1:1",
+              "radius": "none",
+              "link": "",
+              "src": "https://js.lixibox.com/image-assets/halio-landing-page/new-4.png",
+              "position": "center-center",
+              "display": "contain"
+            },
+            {
+              "ratio": "1:1",
+              "radius": "none",
+              "link": "",
+              "src": "https://js.lixibox.com/image-assets/halio-landing-page/new-5.png",
+              "position": "center-center",
+              "display": "contain"
+            }
+          ]
+        }
+      },
+      {
+        "layout": "fixed",
+        "size": "large",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": {
+          "size": "large",
+          "text": "Thương hiệu được triệu cô gái tin dùng"
+        },
+        "content": null,
+        "componentType": "ImageGallery",
+        "componentData": {
+          "column": 3,
+          "mobileColumn": 1,
+          "size": "small",
+          "list": [
+            {
+              "size": "small",
+              "imageFlexRatio": 5,
+              "link": "",
+              "imagePosition": "top",
+              "textWrapAlign": "center",
+              "image": {
+                "ratio": "4:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/halio-landing-page/nf-1-2.jpg",
+                "position": "center-center",
+                "display": "contain",
+                "style": {
+                  "opacity": 0.4
+                }
+              },
+              "heading": null,
+              "content": {
+                "text": "Thời lượng sử dụng pin lên đến <br /> 4 tháng cho 1 lần sạc đầy",
+                "size": "small",
+                "color": "#757779",
+                "fontSize": "medium",
+                "fontWeight": "regular",
+                "textAlign": "center"
+              }
+            },
+            {
+              "size": "small",
+              "imageFlexRatio": 5,
+              "link": "",
+              "imagePosition": "top",
+              "textWrapAlign": "center",
+              "image": {
+                "ratio": "4:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/halio-landing-page/nf-2.jpg",
+                "position": "center-center",
+                "display": "contain",
+                "style": {
+                  "opacity": 0.4
+                }
+              },
+              "heading": null,
+              "content": {
+                "text": "Bảo hành 1 năm<br />(1 đổi 1 máy mới)<br /> (*) chi tiết xem tại mô tả sản phẩm",
+                "size": "small",
+                "color": "#757779",
+                "fontSize": "medium",
+                "fontWeight": "regular",
+                "textAlign": "center"
+              }
+            },
+            {
+              "size": "small",
+              "imageFlexRatio": 5,
+              "link": "",
+              "imagePosition": "top",
+              "textWrapAlign": "center",
+              "image": {
+                "ratio": "4:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/halio-landing-page/nf-3.jpg",
+                "position": "center-center",
+                "display": "contain",
+                "style": {
+                  "opacity": 0.4
+                }
+              },
+              "heading": null,
+              "content": {
+                "text": "Giá thành phải chăng <br /> Tiết kiệm hơn khi mua box",
+                "size": "small",
+                "color": "#757779",
+                "fontSize": "medium",
+                "fontWeight": "regular",
+                "textAlign": "center"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "layout": "full",
+        "contentLayout": "full",
+        "size": "small",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": null,
+        "content": null,
+        "componentType": "Image",
+        "componentData": {
+          "ratio": "4:1",
+          "radius": "none",
+          "link": "/sensitive",
+          "src": "https://js.lixibox.com/image-assets/halio-landing-page/sensitive.jpg",
+          "position": "center-center",
+          "display": "contain",
+          "style": {
+            "paddingTop": "32%"
+          }
+        }
+      },
+      {
+        "layout": "fixed",
+        "size": "large",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": {
+          "size": "small",
+          "text": "Tìm kiếm về #halio"
+        },
+        "content": {
+          "size": "small",
+          "text": "<img style='align-self: center;' src='https://js.lixibox.com/image-assets/halio-landing-page/insta.png' />"
+        },
+        "componentType": "ImageGallery",
+        "componentData": {
+          "column": 4,
+          "size": "small",
+          "list": [
+            {
+              "size": "small",
+              "imageFlexRatio": 5,
+              "link": "https://www.instagram.com/p/BWXC4dxgaX2/",
+              "imagePosition": "top",
+              "textWrapAlign": "center",
+              "image": {
+                "ratio": "1:1",
+                "radius": "large",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/halio/instagram1.jpg",
+                "position": "center-center",
+                "display": "cover"
+              },
+              "heading": null,
+              "content": null
+            },
+            {
+              "size": "small",
+              "imageFlexRatio": 5,
+              "link": "https://www.instagram.com/p/BgjGpdYABFP/",
+              "imagePosition": "top",
+              "textWrapAlign": "center",
+              "image": {
+                "ratio": "1:1",
+                "radius": "large",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/halio/instagram2.jpg",
+                "position": "center-center",
+                "display": "cover"
+              },
+              "heading": null,
+              "content": null
+            },
+            {
+              "size": "small",
+              "imageFlexRatio": 5,
+              "link": "https://www.instagram.com/p/BcL6paKgFvd/",
+              "imagePosition": "top",
+              "textWrapAlign": "center",
+              "image": {
+                "ratio": "1:1",
+                "radius": "large",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/halio/instagram3.jpg",
+                "position": "center-center",
+                "display": "cover"
+              },
+              "heading": null,
+              "content": null
+            },
+            {
+              "size": "small",
+              "imageFlexRatio": 5,
+              "link": "https://www.instagram.com/p/BZ4_ERvgsZT/",
+              "imagePosition": "top",
+              "textWrapAlign": "center",
+              "image": {
+                "ratio": "1:1",
+                "radius": "large",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/halio/instagram4.jpg",
+                "position": "center-center",
+                "display": "cover"
+              },
+              "heading": null,
+              "content": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "keys": [
+      "halio-facial-cleansing-massaging-device-for-sensitive-skin",
+      "halio-sensitive-facial-cleansing-massaging-device-mint"
+    ],
+    "data": [
+      {
+        "layout": "fixed",
+        "size": "medium",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": null,
+        "content": null,
+        "componentType": "VideoGallery",
+        "componentData": {
+          "size": "medium",
+          "list": [
+            {
+              "thumbnailImage": "https://js.lixibox.com/image-assets/halio-sensitive-landing-page/video/t-1.png",
+              "url": "https://lixibox-production-uploads.s3-ap-southeast-1.amazonaws.com/frontend/image-assets/halio-sensitive-landing-page/video/1-2.mp4",
+              "youtubeVideoId": "",
+              "type": "original",
+              "title": "Giới thiệu sản phẩm Halio Sensitive"
+            },
+            {
+              "thumbnailImage": "https://js.lixibox.com/image-assets/halio-sensitive-landing-page/video/t-2.png",
+              "url": "https://lixibox-production-uploads.s3-ap-southeast-1.amazonaws.com/frontend/image-assets/halio-sensitive-landing-page/video/2-2.mov",
+              "youtubeVideoId": "",
+              "type": "original",
+              "title": "Khả năng làm sạch sâu, hiệu quả bất ngờ"
+            },
+            {
+              "thumbnailImage": "https://js.lixibox.com/image-assets/halio-sensitive-landing-page/video/t-3.png",
+              "url": "https://lixibox-production-uploads.s3-ap-southeast-1.amazonaws.com/frontend/image-assets/halio-sensitive-landing-page/video/3-2.mp4",
+              "youtubeVideoId": "",
+              "type": "original",
+              "title": "Loại bỏ mụn đầu đen, thông thoáng tận sâu lỗ chân lông"
+            },
+            {
+              "thumbnailImage": "https://js.lixibox.com/image-assets/halio-sensitive-landing-page/video/t-4.png",
+              "url": "https://lixibox-production-uploads.s3-ap-southeast-1.amazonaws.com/frontend/image-assets/halio-sensitive-landing-page/video/4-2.mp4",
+              "youtubeVideoId": "",
+              "type": "original",
+              "title": "Điểm khác biệt của Halio Sensitive và Halio"
+            }
+          ]
+        }
+      },
+      {
+        "layout": "full",
+        "contentLayout": "full",
+        "size": "small",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": null,
+        "content": null,
+        "componentType": "Image",
+        "componentData": {
+          "ratio": "4:1",
+          "radius": "none",
+          "link": "",
+          "src": "https://js.lixibox.com/image-assets/halio-sensitive-landing-page/feature-7.jpg",
+          "position": "center-center",
+          "display": "contain",
+          "style": {
+            "paddingTop": "32%"
+          }
+        }
+      },
+      {
+        "layout": "full",
+        "contentLayout": "full",
+        "size": "large",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": {
+          "text": "Thiết kế đặc biệt dành cho da nhạy cảm",
+          "size": "large"
+        },
+        "content": null,
+        "componentType": "ImageCarousel",
+        "componentData": {
+          "isDisplaySelectedContent": true,
+          "list": [
+            {
+              "ratio": "1:1",
+              "radius": "none",
+              "link": "",
+              "src": "https://media.giphy.com/media/dtnjdtuVFAh5ctosWo/giphy.gif",
+              "position": "center-center",
+              "display": "contain",
+              "content": "3 chế độ rung được nghiên cứu và chọn lọc kĩ nhằm hạn chế làm tổn thương làn da vốn nhạy cảm"
+            },
+            {
+              "ratio": "1:1",
+              "radius": "none",
+              "link": "",
+              "src": "https://js.lixibox.com/image-assets/halio-sensitive-landing-page/feature-3.jpg",
+              "position": "center-center",
+              "display": "contain",
+              "content": "Công nghệ chống nước IPX7 bảo vệ sản phẩm khỏi tác động của việc ngâm trong nước với độ sâu lên tới 1 mét và trong thời gian đến 30 phút"
+            },
+            {
+              "ratio": "1:1",
+              "radius": "none",
+              "link": "",
+              "src": "https://js.lixibox.com/image-assets/halio-sensitive-landing-page/feature-1.jpg",
+              "position": "center-center",
+              "display": "contain",
+              "content": "Đầu gai silicon cao cấp, kháng khuẩn, siêu mảnh chỉ 0.6mm giúp Halio Sensitive nhẹ nhàng với cả những làn da nhạy cảm nhất"
+            },
+            {
+              "ratio": "1:1",
+              "radius": "none",
+              "link": "",
+              "src": "https://js.lixibox.com/image-assets/halio-sensitive-landing-page/feature-4.jpg",
+              "position": "center-center",
+              "display": "contain",
+              "content": "Được thiết kế với chu trình làm sạch da tiêu chuẩn và khoa học, máy sẽ được ngắt tự động sau 2 phút để đảm bảo thời gian chạy máy của bạn vừa đủ để làm sạch da mà không quá lâu khiến da đau rát."
+            },
+            {
+              "ratio": "1:1",
+              "radius": "none",
+              "link": "",
+              "src": "https://js.lixibox.com/image-assets/halio-sensitive-landing-page/feature-5.jpg",
+              "position": "center-center",
+              "display": "contain",
+              "content": "Hộp treo nam châm tiện lợi, dễ dàng bảo quản máy tránh ẩm mốc hiệu quả "
+            }
+          ],
+          "idContainerCarousel": "group2-img-carousel-ld-pg-1"
+        }
+      },
+      {
+        "contentLayout": "fixed",
+        "size": "large",
+        "background": "linear-gradient(to bottom, rgba(254,245,247,1) 0%,rgba(255,255,255,1) 50%,rgba(254,245,247,1) 100%)",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": {
+          "size": "small",
+          "text": "Lý do bạn nên mua"
+        },
+        "content": null,
+        "componentType": "ImageGallery",
+        "componentData": {
+          "column": 3,
+          "mobileColumn": 1,
+          "size": "small",
+          "list": [
+            {
+              "size": "small",
+              "imageFlexRatio": 5,
+              "link": "",
+              "imagePosition": "top",
+              "textWrapAlign": "center",
+              "image": {
+                "ratio": "3:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/halio-sensitive-landing-page/buy-icon-1.png",
+                "position": "center-center",
+                "display": "contain",
+                "style": {}
+              },
+              "heading": null,
+              "content": {
+                "text": "Làm sạch sâu và loại bỏ <br /> tới 99.5% bụi bẩn và dầu thừa",
+                "size": "small",
+                "color": "#757779",
+                "fontSize": "medium",
+                "fontWeight": "regular",
+                "textAlign": "center"
+              }
+            },
+            {
+              "size": "small",
+              "imageFlexRatio": 5,
+              "link": "",
+              "imagePosition": "top",
+              "textWrapAlign": "center",
+              "image": {
+                "ratio": "3:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/halio-sensitive-landing-page/buy-icon-2.png",
+                "position": "center-center",
+                "display": "contain",
+                "style": {}
+              },
+              "heading": null,
+              "content": {
+                "text": "Thời lượng sử dụng pin <br /> lên đến 4 tháng cho 1 lần sạc",
+                "size": "small",
+                "color": "#757779",
+                "fontSize": "medium",
+                "fontWeight": "regular",
+                "textAlign": "center"
+              }
+            },
+            {
+              "size": "small",
+              "imageFlexRatio": 5,
+              "link": "",
+              "imagePosition": "top",
+              "textWrapAlign": "center",
+              "image": {
+                "ratio": "3:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/halio-sensitive-landing-page/buy-icon-3.png",
+                "position": "center-center",
+                "display": "contain",
+                "style": {}
+              },
+              "heading": null,
+              "content": {
+                "text": "Chế độ bảo hành 1 đổi 1 <br /> trong vòng 1 năm ",
+                "size": "small",
+                "color": "#757779",
+                "fontSize": "medium",
+                "fontWeight": "regular",
+                "textAlign": "center"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "layout": "full",
+        "contentLayout": "full",
+        "size": "large",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": {
+          "text": "Sản phẩm triệu cô gái tin dùng",
+          "size": "large"
+        },
+        "content": null,
+        "componentType": "ImageCarousel",
+        "componentData": {
+          "isDisplaySelectedContent": true,
+          "list": [
+            {
+              "ratio": "1:1",
+              "radius": "none",
+              "link": "",
+              "src": "https://js.lixibox.com/image-assets/halio-sensitive-landing-page/kol/7.jpg",
+              "position": "center-center",
+              "display": "contain",
+              "content": "<b>Katleen</b><br />Thiết kế máy nhỏ gọn xinh xắn, lại sở hữu đầu gai siêu mảnh làm sạch da một cách mềm mại chính là lí do Katleen luôn mang mang em theo bên mình khắp các phim trường"
+            },
+            {
+              "ratio": "1:1",
+              "radius": "none",
+              "link": "",
+              "src": "https://js.lixibox.com/image-assets/halio-sensitive-landing-page/kol/602.jpg",
+              "position": "center-center",
+              "display": "contain",
+              "content": "<b>Hằng Đỗ</b><br />Cảm giác sau mỗi lần rửa mặt là làn da sạch sâu, rất mềm mại và thông thoáng lỗ chân lông"
+            },
+            {
+              "ratio": "1:1",
+              "radius": "none",
+              "link": "",
+              "src": "https://js.lixibox.com/image-assets/halio-sensitive-landing-page/kol/4.jpg",
+              "position": "center-center",
+              "display": "contain",
+              "content": "<b>Vân Tôn</b><br />Máy ghi nhớ chế độ rung gần nhất nên tiện ghê nè. Độ rung nhẹ nên thật sự rất thích hợp làn da mỏng của mình"
+            },
+            {
+              "ratio": "1:1",
+              "radius": "none",
+              "link": "",
+              "src": "https://js.lixibox.com/image-assets/halio-sensitive-landing-page/kol/2.jpg",
+              "position": "center-center",
+              "display": "contain",
+              "content": "<b>Camay</b><br />\"Yêu từ cái nhìn đầu tiên\" với thiết kế hộp tròn của em nó, mình có thể treo ở bất kỳ đâu mà không lăn tăn về vấn đề vệ sinh, nhỏ gọn cực kỳ có thể mang đi du lịch khắp nơi."
+            },
+            {
+              "ratio": "1:1",
+              "radius": "none",
+              "link": "",
+              "src": "https://js.lixibox.com/image-assets/halio-sensitive-landing-page/kol/5.jpg",
+              "position": "center-center",
+              "display": "contain",
+              "content": "<b>Tiny Loly</b><br />Sóng rung nhẹ nhàng của ẻm như đã vỗ về cho làn da đã ghi điểm tuyệt đối với mình, nhẹ nhàng vậy thôi chứ làn da sạch bong giảm hẳn dầu nhờn luôn"
+            }
+          ],
+          "idContainerCarousel": "group2-img-carousel-ld-pg-2"
+        }
+      },
+      {
+        "layout": "fixed",
+        "size": "large",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": {
+          "size": "small",
+          "text": "Tìm kiếm về #halio"
+        },
+        "content": {
+          "size": "small",
+          "text": "<img style='align-self: center;' src='https://js.lixibox.com/image-assets/halio-landing-page/insta.png' />"
+        },
+        "componentType": "ImageGallery",
+        "componentData": {
+          "column": 4,
+          "size": "small",
+          "list": [
+            {
+              "size": "small",
+              "imageFlexRatio": 5,
+              "link": "https://www.instagram.com/p/BwsxR6_l03Q/",
+              "imagePosition": "top",
+              "textWrapAlign": "center",
+              "image": {
+                "ratio": "1:1",
+                "radius": "large",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/halio-sensitive-landing-page/insta/1.jpg",
+                "position": "center-center",
+                "display": "cover"
+              },
+              "heading": null,
+              "content": null
+            },
+            {
+              "size": "small",
+              "imageFlexRatio": 5,
+              "link": "https://www.instagram.com/p/Bwo98GaD266/",
+              "imagePosition": "top",
+              "textWrapAlign": "center",
+              "image": {
+                "ratio": "1:1",
+                "radius": "large",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/halio-sensitive-landing-page/insta/5.jpg",
+                "position": "center-center",
+                "display": "cover"
+              },
+              "heading": null,
+              "content": null
+            },
+            {
+              "size": "small",
+              "imageFlexRatio": 5,
+              "link": "https://www.instagram.com/p/BxKYZcTlWgV/",
+              "imagePosition": "top",
+              "textWrapAlign": "center",
+              "image": {
+                "ratio": "1:1",
+                "radius": "large",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/halio-sensitive-landing-page/insta/3.jpg",
+                "position": "center-center",
+                "display": "cover"
+              },
+              "heading": null,
+              "content": null
+            },
+            {
+              "size": "small",
+              "imageFlexRatio": 5,
+              "link": "https://www.instagram.com/p/BvgGvrOJ88t/",
+              "imagePosition": "top",
+              "textWrapAlign": "center",
+              "image": {
+                "atio": "1:1",
+                "radius": "large",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/halio-sensitive-landing-page/insta/4.jpg",
+                "position": "center-center",
+                "display": "cover"
+              },
+              "heading": null,
+              "content": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "keys": [
+      "ban-chai-dien-halio-sonic-whitening-electric-toothbrush",
+      "ban-chai-dien-halio-sonic-whitening-toothbrush",
+      "nhap-brushhead-free-qua-260k-ban-chai-dien-lam-trang-rang-halio-sonic-whitening-electric-toothbrush-pro-purple",
+      "ban-chai-dien-lam-trang-rang-halio-sonic-whitening-electric-toothbrush-pro-limited-edition-midnight-blue"
+    ],
+    "data": [
+      {
+        "layout": "fixed",
+        "size": "medium",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": {
+          "size": "small",
+          "text": "Đánh giá từ khách hàng",
+          "isDisplayViewMore": true
+        },
+        "content": null,
+        "componentType": "Rating",
+        "componentData": {
+          "size": "medium",
+          "isDisplaySold": false
+        }
+      },
+      {
+        "layout": "fixed",
+        "size": "medium",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": null,
+        "content": null,
+        "componentType": "VideoGallery",
+        "componentData": {
+          "size": "medium",
+          "list": [
+            {
+              "thumbnailImage": "https://upload.lixibox.com/image-assets/4-new-landing-pages/1-tooth-brush/video-1-thumb.jpg",
+              "url": "https://video.lixibox.com/image-assets/4-new-landing-pages/1-tooth-brush/video-1.mp4",
+              "youtubeVideoId": "",
+              "ratio": "1:1",
+              "type": "original",
+              "title": "Bàn Chải Điện Halio Sonic Pro - Sạch mảng bám x10 lần bàn chải thường"
+            }
+          ]
+        }
+      },
+      {
+        "layout": "fixed",
+        "size": "medium",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": null,
+        "content": null,
+        "componentType": "Image",
+        "componentData": {
+          "src": "https://js.lixibox.com/image-assets/4-new-landing-pages/1-tooth-brush/banner-1.jpg",
+          "ratio": "1.2:1"
+        }
+      },
+      {
+        "layout": "full",
+        "contentLayout": "full",
+        "size": "large",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": null,
+        "content": null,
+        "ratio": "1:1",
+        "componentType": "ImageCarousel",
+        "componentData": {
+          "list": [
+            {
+              "ratio": "1:1",
+              "radius": "none",
+              "link": "",
+              "src": "https://js.lixibox.com/image-assets/4-new-landing-pages/1-tooth-brush/carousel-1-1.jpg",
+              "position": "center-center",
+              "display": "contain"
+            },
+            {
+              "ratio": "1:1",
+              "radius": "none",
+              "link": "",
+              "src": "https://js.lixibox.com/image-assets/4-new-landing-pages/1-tooth-brush/carousel-1-2.jpg",
+              "position": "center-center",
+              "display": "contain"
+            },
+            {
+              "ratio": "1:1",
+              "radius": "none",
+              "link": "",
+              "src": "https://js.lixibox.com/image-assets/4-new-landing-pages/1-tooth-brush/carousel-1-3.jpg",
+              "position": "center-center",
+              "display": "contain"
+            },
+            {
+              "ratio": "1:1",
+              "radius": "none",
+              "link": "",
+              "src": "https://js.lixibox.com/image-assets/4-new-landing-pages/1-tooth-brush/carousel-1-4.jpg",
+              "position": "center-center",
+              "display": "contain"
+            },
+            {
+              "ratio": "1:1",
+              "radius": "none",
+              "link": "",
+              "src": "https://js.lixibox.com/image-assets/4-new-landing-pages/1-tooth-brush/carousel-1-5.jpg",
+              "position": "center-center",
+              "display": "contain"
+            },
+            {
+              "ratio": "1:1",
+              "radius": "none",
+              "link": "",
+              "src": "https://js.lixibox.com/image-assets/4-new-landing-pages/1-tooth-brush/carousel-1-6.jpg",
+              "position": "center-center",
+              "display": "contain"
+            }
+          ]
+        }
+      },
+      {
+        "layout": "fixed",
+        "size": "large",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": {
+          "size": "small",
+          "text": "Tìm kiếm về #halio"
+        },
+        "content": {
+          "size": "small",
+          "text": "<img style='align-self: center;' src='https://js.lixibox.com/image-assets/halio-landing-page/insta.png' />"
+        },
+        "componentType": "ImageGallery",
+        "componentData": {
+          "column": 4,
+          "size": "small",
+          "list": [
+            {
+              "size": "small",
+              "imageFlexRatio": 5,
+              "link": "https://www.instagram.com/p/CPUhm56hRZo/",
+              "imagePosition": "top",
+              "textWrapAlign": "center",
+              "image": {
+                "ratio": "1:1",
+                "radius": "large",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/4-new-landing-pages/1-tooth-brush/insta-1-1.jpg",
+                "position": "center-center",
+                "display": "cover"
+              },
+              "heading": null,
+              "content": null
+            },
+            {
+              "size": "small",
+              "imageFlexRatio": 5,
+              "link": "https://www.instagram.com/p/CO1mgj3FkdB/",
+              "imagePosition": "top",
+              "textWrapAlign": "center",
+              "image": {
+                "ratio": "1:1",
+                "radius": "large",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/4-new-landing-pages/1-tooth-brush/insta-1-2.jpg",
+                "position": "center-center",
+                "display": "cover"
+              },
+              "heading": null,
+              "content": null
+            },
+            {
+              "size": "small",
+              "imageFlexRatio": 5,
+              "link": "https://www.instagram.com/p/CN7jLy3nDWL/",
+              "imagePosition": "top",
+              "textWrapAlign": "center",
+              "image": {
+                "ratio": "1:1",
+                "radius": "large",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/4-new-landing-pages/1-tooth-brush/insta-1-3.jpg",
+                "position": "center-center",
+                "display": "cover"
+              },
+              "heading": null,
+              "content": null
+            },
+            {
+              "size": "small",
+              "imageFlexRatio": 5,
+              "link": "https://www.instagram.com/p/CNgodIqnfR-/",
+              "imagePosition": "top",
+              "textWrapAlign": "center",
+              "image": {
+                "ratio": "1:1",
+                "radius": "large",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/4-new-landing-pages/1-tooth-brush/insta-1-4.jpg",
+                "position": "center-center",
+                "display": "cover"
+              },
+              "heading": null,
+              "content": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "keys": ["okame-brightening-uv-shield-sunscreen-spf-50"],
+    "data": [
+      {
+        "layout": "fixed",
+        "size": "medium",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": {
+          "size": "small",
+          "text": "Đánh giá từ khách hàng",
+          "isDisplayViewMore": true
+        },
+        "content": null,
+        "componentType": "Rating",
+        "componentData": {
+          "size": "medium",
+          "isDisplaySold": false
+        }
+      },
+      {
+        "layout": "fixed",
+        "size": "medium",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": null,
+        "content": null,
+        "componentType": "VideoGallery",
+        "componentData": {
+          "size": "medium",
+          "list": [
+            {
+              "thumbnailImage": "https://upload.lixibox.com/image-assets/4-new-landing-pages/2-okame-suncreen/video-2-thumb.jpg",
+              "url": "https://video.lixibox.com/image-assets/4-new-landing-pages/2-okame-suncreen/video-2.mp4",
+              "youtubeVideoId": "",
+              "ratio": "1:1",
+              "type": "original",
+              "title": "Cận cảnh texture kem chống nắng nhà OKAME, vừa chống nắng - vừa nâng tone - vừa không bết dính"
+            }
+          ]
+        }
+      },
+      {
+        "layout": "full",
+        "contentLayout": "full",
+        "size": "medium",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": null,
+        "content": null,
+        "componentType": "Image",
+        "componentData": {
+          "src": "https://js.lixibox.com/image-assets/4-new-landing-pages/2-okame-suncreen/banner-2.jpg",
+          "ratio": "2:1"
+        }
+      },
+      {
+        "layout": "full",
+        "size": "large",
+        "contentLayout": "full",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": null,
+        "content": null,
+        "ratio": "1:1",
+        "componentType": "ImageCarousel",
+        "componentData": {
+          "list": [
+            {
+              "ratio": "1:1",
+              "radius": "none",
+              "link": "",
+              "src": "https://js.lixibox.com/image-assets/4-new-landing-pages/2-okame-suncreen/carousel-2-4.jpg",
+              "position": "center-center",
+              "display": "contain"
+            },
+            {
+              "ratio": "1:1",
+              "radius": "none",
+              "link": "",
+              "src": "https://js.lixibox.com/image-assets/4-new-landing-pages/2-okame-suncreen/carousel-2-2.jpg",
+              "position": "center-center",
+              "display": "contain"
+            },
+            {
+              "ratio": "1:1",
+              "radius": "none",
+              "link": "",
+              "src": "https://js.lixibox.com/image-assets/4-new-landing-pages/2-okame-suncreen/carousel-2-1.jpg",
+              "position": "center-center",
+              "display": "contain"
+            },
+            {
+              "ratio": "1:1",
+              "radius": "none",
+              "link": "",
+              "src": "https://js.lixibox.com/image-assets/4-new-landing-pages/2-okame-suncreen/carousel-2-2.jpg",
+              "position": "center-center",
+              "display": "contain"
+            },
+            {
+              "ratio": "1:1",
+              "radius": "none",
+              "link": "",
+              "src": "https://js.lixibox.com/image-assets/4-new-landing-pages/2-okame-suncreen/carousel-2-3.jpg",
+              "position": "center-center",
+              "display": "contain"
+            }
+          ]
+        }
+      },
+      {
+        "layout": "fixed",
+        "size": "large",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": {
+          "size": "small",
+          "text": "Tìm kiếm về #okame"
+        },
+        "content": {
+          "size": "small",
+          "text": "<img style='align-self: center;' src='https://js.lixibox.com/image-assets/halio-landing-page/insta.png' />"
+        },
+        "componentType": "ImageGallery",
+        "componentData": {
+          "column": 4,
+          "size": "small",
+          "list": [
+            {
+              "size": "small",
+              "imageFlexRatio": 5,
+              "link": "https://www.instagram.com/p/CRSpYe3gw75/",
+              "imagePosition": "top",
+              "textWrapAlign": "center",
+              "image": {
+                "ratio": "1:1",
+                "radius": "large",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/4-new-landing-pages/2-okame-suncreen/insta-2-1.jpg",
+                "position": "center-center",
+                "display": "cover"
+              },
+              "heading": null,
+              "content": null
+            },
+            {
+              "size": "small",
+              "imageFlexRatio": 5,
+              "link": "https://www.instagram.com/p/CRQDR7eljdq/",
+              "imagePosition": "top",
+              "textWrapAlign": "center",
+              "image": {
+                "ratio": "1:1",
+                "radius": "large",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/4-new-landing-pages/2-okame-suncreen/insta-2-2.jpg",
+                "position": "center-center",
+                "display": "cover"
+              },
+              "heading": null,
+              "content": null
+            },
+            {
+              "size": "small",
+              "imageFlexRatio": 5,
+              "link": "https://www.instagram.com/p/CQ-AWbtsjUN/",
+              "imagePosition": "top",
+              "textWrapAlign": "center",
+              "image": {
+                "ratio": "1:1",
+                "radius": "large",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/4-new-landing-pages/2-okame-suncreen/insta-2-3.jpg",
+                "position": "center-center",
+                "display": "cover"
+              },
+              "heading": null,
+              "content": null
+            },
+            {
+              "size": "small",
+              "imageFlexRatio": 5,
+              "link": "https://www.instagram.com/p/CQhtYs7nwaS/",
+              "imagePosition": "top",
+              "textWrapAlign": "center",
+              "image": {
+                "ratio": "1:1",
+                "radius": "large",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/4-new-landing-pages/2-okame-suncreen/insta-2-4.jpg",
+                "position": "center-center",
+                "display": "cover"
+              },
+              "heading": null,
+              "content": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "keys": [
+      "may-day-tinh-chat-duong-trang-nong-lanh-halio-ion-hot-cool-beauty-device-mau-hong",
+      "halio-hot-cool-beauty-device"
+    ],
+    "data": [
+      {
+        "layout": "fixed",
+        "size": "medium",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": {
+          "size": "small",
+          "text": "Đánh giá từ khách hàng",
+          "isDisplayViewMore": true
+        },
+        "content": null,
+        "componentType": "Rating",
+        "componentData": {
+          "size": "medium",
+          "isDisplaySold": false
+        }
+      },
+      {
+        "layout": "fixed",
+        "size": "medium",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": null,
+        "content": null,
+        "componentType": "VideoGallery",
+        "componentData": {
+          "size": "medium",
+          "list": [
+            {
+              "thumbnailImage": "https://upload.lixibox.com/image-assets/4-new-landing-pages/3-hot-cool/video-3-thumb.jpg",
+              "url": "https://video.lixibox.com/image-assets/4-new-landing-pages/3-hot-cool/video-3.mp4",
+              "youtubeVideoId": "",
+              "ratio": "1:1",
+              "type": "original",
+              "title": "Hướng dẫn sử dụng Máy Đẩy Tinh Chất Nóng Lạnh Halio Ion Hot & Cool"
+            }
+          ]
+        }
+      },
+      {
+        "layout": "full",
+        "contentLayout": "full",
+        "size": "medium",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": null,
+        "content": null,
+        "componentType": "Image",
+        "componentData": {
+          "src": "https://js.lixibox.com/image-assets/4-new-landing-pages/3-hot-cool/banner-3.jpg",
+          "ratio": "2:1"
+        }
+      },
+      {
+        "layout": "full",
+        "contentLayout": "full",
+        "size": "large",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": null,
+        "content": null,
+        "ratio": "1:1",
+        "componentType": "ImageCarousel",
+        "componentData": {
+          "list": [
+            {
+              "ratio": "1:1",
+              "radius": "none",
+              "link": "",
+              "src": "https://js.lixibox.com/image-assets/4-new-landing-pages/3-hot-cool/carousel-3-1.jpg",
+              "position": "center-center",
+              "display": "contain"
+            },
+            {
+              "ratio": "1:1",
+              "radius": "none",
+              "link": "",
+              "src": "https://js.lixibox.com/image-assets/4-new-landing-pages/3-hot-cool/carousel-3-2.jpg",
+              "position": "center-center",
+              "display": "contain"
+            },
+            {
+              "ratio": "1:1",
+              "radius": "none",
+              "link": "",
+              "src": "https://js.lixibox.com/image-assets/4-new-landing-pages/3-hot-cool/carousel-3-3.jpg",
+              "position": "center-center",
+              "display": "contain"
+            },
+            {
+              "ratio": "1:1",
+              "radius": "none",
+              "link": "",
+              "src": "https://js.lixibox.com/image-assets/4-new-landing-pages/3-hot-cool/carousel-3-4.jpg",
+              "position": "center-center",
+              "display": "contain"
+            },
+            {
+              "ratio": "1:1",
+              "radius": "none",
+              "link": "",
+              "src": "https://js.lixibox.com/image-assets/4-new-landing-pages/3-hot-cool/carousel-3-5.jpg",
+              "position": "center-center",
+              "display": "contain"
+            }
+          ]
+        }
+      },
+      {
+        "layout": "fixed",
+        "size": "large",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": {
+          "size": "small",
+          "text": "Tìm kiếm về #halio"
+        },
+        "content": {
+          "size": "small",
+          "text": "<img style='align-self: center;' src='https://js.lixibox.com/image-assets/halio-landing-page/insta.png' />"
+        },
+        "componentType": "ImageGallery",
+        "componentData": {
+          "column": 4,
+          "size": "small",
+          "list": [
+            {
+              "size": "small",
+              "imageFlexRatio": 5,
+              "link": "https://www.instagram.com/p/CRffOborqez/",
+              "imagePosition": "top",
+              "textWrapAlign": "center",
+              "image": {
+                "ratio": "1:1",
+                "radius": "large",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/4-new-landing-pages/3-hot-cool/insta-3-1.jpg",
+                "position": "center-center",
+                "display": "cover"
+              },
+              "heading": null,
+              "content": null
+            },
+            {
+              "size": "small",
+              "imageFlexRatio": 5,
+              "link": "https://www.instagram.com/p/B_7e9d-HU-w/",
+              "imagePosition": "top",
+              "textWrapAlign": "center",
+              "image": {
+                "ratio": "1:1",
+                "radius": "large",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/4-new-landing-pages/3-hot-cool/insta-3-2.jpg",
+                "position": "center-center",
+                "display": "cover"
+              },
+              "heading": null,
+              "content": null
+            },
+            {
+              "size": "small",
+              "imageFlexRatio": 5,
+              "link": "https://www.instagram.com/p/CKRNmArBPtm/",
+              "imagePosition": "top",
+              "textWrapAlign": "center",
+              "image": {
+                "ratio": "1:1",
+                "radius": "large",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/4-new-landing-pages/3-hot-cool/insta-3-3.jpg",
+                "position": "center-center",
+                "display": "cover"
+              },
+              "heading": null,
+              "content": null
+            },
+            {
+              "size": "small",
+              "imageFlexRatio": 5,
+              "link": "https://www.instagram.com/p/CK0KSNVnXvg/",
+              "imagePosition": "top",
+              "textWrapAlign": "center",
+              "image": {
+                "ratio": "1:1",
+                "radius": "large",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/4-new-landing-pages/3-hot-cool/insta-3-4.jpg",
+                "position": "center-center",
+                "display": "cover"
+              },
+              "heading": null,
+              "content": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "keys": [
+      "nuoc-hoa-hong-the-auragins-gentle-brightening-toner",
+      "nuoc-hoa-hong-the-auragins-gentle-brightening-toner-20-ml"
+    ],
+    "data": [
+      {
+        "layout": "fixed",
+        "size": "medium",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": {
+          "size": "small",
+          "text": "Đánh giá từ khách hàng",
+          "isDisplayViewMore": true
+        },
+        "content": null,
+        "componentType": "Rating",
+        "componentData": {
+          "size": "medium",
+          "isDisplaySold": false
+        }
+      },
+      {
+        "layout": "fixed",
+        "size": "medium",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": null,
+        "content": null,
+        "componentType": "VideoGallery",
+        "componentData": {
+          "size": "medium",
+          "list": [
+            {
+              "thumbnailImage": "https://upload.lixibox.com/image-assets/4-new-landing-pages/4-auragins/video-4-thumb.jpg",
+              "url": "https://video.lixibox.com/image-assets/4-new-landing-pages/4-auragins/video-4.mp4",
+              "youtubeVideoId": "",
+              "ratio": "16:9",
+              "type": "original",
+              "title": "Bí quyết tẩy da chết, sáng da, ngừa mụn của 1M88"
+            }
+          ]
+        }
+      },
+      {
+        "layout": "full",
+        "contentLayout": "full",
+        "size": "medium",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": null,
+        "content": null,
+        "componentType": "Image",
+        "componentData": {
+          "src": "https://js.lixibox.com/image-assets/4-new-landing-pages/4-auragins/banner-4-2.jpg",
+          "ratio": "2:1"
+        }
+      },
+      {
+        "layout": "full",
+        "contentLayout": "full",
+        "size": "large",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": null,
+        "content": null,
+        "ratio": "1:1",
+        "componentType": "ImageCarousel",
+        "componentData": {
+          "list": [
+            {
+              "ratio": "1:1",
+              "radius": "none",
+              "link": "",
+              "src": "https://js.lixibox.com/image-assets/4-new-landing-pages/4-auragins/carousel-4-1.jpg",
+              "position": "center-center",
+              "display": "contain"
+            },
+            {
+              "ratio": "1:1",
+              "radius": "none",
+              "link": "",
+              "src": "https://js.lixibox.com/image-assets/4-new-landing-pages/4-auragins/carousel-4-2.jpg",
+              "position": "center-center",
+              "display": "contain"
+            },
+            {
+              "ratio": "1:1",
+              "radius": "none",
+              "link": "",
+              "src": "https://js.lixibox.com/image-assets/4-new-landing-pages/4-auragins/carousel-4-3.jpg",
+              "position": "center-center",
+              "display": "contain"
+            },
+            {
+              "ratio": "1:1",
+              "radius": "none",
+              "link": "",
+              "src": "https://js.lixibox.com/image-assets/4-new-landing-pages/4-auragins/carousel-4-4.jpg",
+              "position": "center-center",
+              "display": "contain"
+            },
+            {
+              "ratio": "1:1",
+              "radius": "none",
+              "link": "",
+              "src": "https://js.lixibox.com/image-assets/4-new-landing-pages/4-auragins/carousel-4-1.jpg",
+              "position": "center-center",
+              "display": "contain"
+            },
+            {
+              "ratio": "1:1",
+              "radius": "none",
+              "link": "",
+              "src": "https://js.lixibox.com/image-assets/4-new-landing-pages/4-auragins/carousel-4-2.jpg",
+              "position": "center-center",
+              "display": "contain"
+            },
+            {
+              "ratio": "1:1",
+              "radius": "none",
+              "link": "",
+              "src": "https://js.lixibox.com/image-assets/4-new-landing-pages/4-auragins/carousel-4-3.jpg",
+              "position": "center-center",
+              "display": "contain"
+            },
+            {
+              "ratio": "1:1",
+              "radius": "none",
+              "link": "",
+              "src": "https://js.lixibox.com/image-assets/4-new-landing-pages/4-auragins/carousel-4-4.jpg",
+              "position": "center-center",
+              "display": "contain"
+            }
+          ]
+        }
+      },
+      {
+        "layout": "fixed",
+        "size": "large",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": {
+          "size": "small",
+          "text": "Tìm kiếm về #theauragins"
+        },
+        "content": {
+          "size": "small",
+          "text": "<img style='align-self: center;' src='https://js.lixibox.com/image-assets/halio-landing-page/insta.png' />"
+        },
+        "componentType": "ImageGallery",
+        "componentData": {
+          "column": 4,
+          "size": "small",
+          "list": [
+            {
+              "size": "small",
+              "imageFlexRatio": 5,
+              "link": "https://www.instagram.com/p/CQ-AWbtsjUN/",
+              "imagePosition": "top",
+              "textWrapAlign": "center",
+              "image": {
+                "ratio": "1:1",
+                "radius": "large",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/4-new-landing-pages/4-auragins/insta-4-1.jpg",
+                "position": "center-center",
+                "display": "cover"
+              },
+              "heading": null,
+              "content": null
+            },
+            {
+              "size": "small",
+              "imageFlexRatio": 5,
+              "link": "https://www.instagram.com/p/CLoxBkknksC/",
+              "imagePosition": "top",
+              "textWrapAlign": "center",
+              "image": {
+                "ratio": "1:1",
+                "radius": "large",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/4-new-landing-pages/4-auragins/insta-4-2.jpg",
+                "position": "center-center",
+                "display": "cover"
+              },
+              "heading": null,
+              "content": null
+            },
+            {
+              "size": "small",
+              "imageFlexRatio": 5,
+              "link": "https://www.instagram.com/p/CQNHVKQBXue/",
+              "imagePosition": "top",
+              "textWrapAlign": "center",
+              "image": {
+                "ratio": "1:1",
+                "radius": "large",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/4-new-landing-pages/4-auragins/insta-4-3.jpg",
+                "position": "center-center",
+                "display": "cover"
+              },
+              "heading": null,
+              "content": null
+            },
+            {
+              "size": "small",
+              "imageFlexRatio": 5,
+              "link": "https://www.instagram.com/p/CKTyXWxhQAG/",
+              "imagePosition": "top",
+              "textWrapAlign": "center",
+              "image": {
+                "ratio": "1:1",
+                "radius": "large",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/4-new-landing-pages/4-auragins/insta-4-4.jpg",
+                "position": "center-center",
+                "display": "cover"
+              },
+              "heading": null,
+              "content": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "keys": ["set-2-ban-chai-dien-halio-sonic-whitening-electric-toothbrush-pro-rose-gold-midnight-blue"],
+    "data": [
+      {
+        "layout": "fixed",
+        "size": "medium",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": null,
+        "content": null,
+        "componentType": "VideoGallery",
+        "componentData": {
+          "size": "medium",
+          "list": [
+            {
+              "thumbnailImage": "https://upload.lixibox.com/image-assets/landing-page/ht/1.png",
+              "url": "https://video.lixibox.com/image-assets/landing-page/ht/1.mp4",
+              "youtubeVideoId": "",
+              "ratio": "1:1",
+              "type": "original",
+              "title": "Giới thiệu bàn chải điện Halio Sonic  PRO Midnight Blue - Limited Edition"
+            },
+            {
+              "thumbnailImage": "https://upload.lixibox.com/image-assets/landing-page/ht/2.png",
+              "url": "https://video.lixibox.com/image-assets/landing-page/ht/2.mp4",
+              "youtubeVideoId": "",
+              "ratio": "1:1",
+              "type": "original",
+              "title": "Unboxing bộ bàn chải điện Halio Sonic Pro"
+            },
+            {
+              "thumbnailImage": "https://upload.lixibox.com/image-assets/landing-page/ht/3.png",
+              "url": "https://video.lixibox.com/image-assets/landing-page/ht/3.mp4",
+              "youtubeVideoId": "",
+              "ratio": "1:1",
+              "type": "original",
+              "title": "Giới thiệu 5 chế độ rung chuyên biệt - Phù hợp mọi nhu cầu sử dụng"
+            }
+          ]
+        }
+      },
+      {
+        "layout": "fixed",
+        "size": "medium",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": null,
+        "content": null,
+        "componentType": "Image",
+        "componentData": {
+          "src": "https://js.lixibox.com/image-assets/landing-page/ht/i-3.png",
+          "ratio": "4:3"
+        }
+      },
+      {
+        "layout": "full",
+        "size": "large",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": null,
+        "content": null,
+        "ratio": "1:1",
+        "componentType": "ImageCarousel",
+        "contentLayout": "full",
+        "componentData": {
+          "list": [
+            {
+              "ratio": "1:1",
+              "radius": "none",
+              "link": "",
+              "src": "https://js.lixibox.com/image-assets/landing-page/ht/k-1.jpg",
+              "position": "center-center",
+              "display": "contain"
+            },
+            {
+              "ratio": "1:1",
+              "radius": "none",
+              "link": "",
+              "src": "https://js.lixibox.com/image-assets/landing-page/ht/k-2.jpg",
+              "position": "center-center",
+              "display": "contain"
+            },
+            {
+              "ratio": "1:1",
+              "radius": "none",
+              "link": "",
+              "src": "https://js.lixibox.com/image-assets/landing-page/ht/k-3.jpg",
+              "position": "center-center",
+              "display": "contain"
+            },
+            {
+              "ratio": "1:1",
+              "radius": "none",
+              "link": "",
+              "src": "https://js.lixibox.com/image-assets/landing-page/ht/k-4.jpg",
+              "position": "center-center",
+              "display": "contain"
+            },
+            {
+              "ratio": "1:1",
+              "radius": "none",
+              "link": "",
+              "src": "https://js.lixibox.com/image-assets/landing-page/ht/k-5.jpg",
+              "position": "center-center",
+              "display": "contain"
+            },
+            {
+              "ratio": "1:1",
+              "radius": "none",
+              "link": "",
+              "src": "https://js.lixibox.com/image-assets/landing-page/ht/k-6.jpg",
+              "position": "center-center",
+              "display": "contain"
+            },
+            {
+              "ratio": "1:1",
+              "radius": "none",
+              "link": "",
+              "src": "https://js.lixibox.com/image-assets/landing-page/ht/k-7.jpg",
+              "position": "center-center",
+              "display": "contain"
+            }
+          ]
+        }
+      },
+      {
+        "layout": "fixed",
+        "size": "large",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": {
+          "size": "large",
+          "text": "Bàn chải điện Halio Sonic Pro & Những con số làm nên tên tuổi"
+        },
+        "content": null,
+        "componentType": "ImageGallery",
+        "componentData": {
+          "column": 3,
+          "mobileColumn": 1,
+          "size": "small",
+          "list": [
+            {
+              "size": "small",
+              "imageFlexRatio": 5,
+              "link": "",
+              "imagePosition": "top",
+              "textWrapAlign": "center",
+              "image": {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/ht/l-1.jpg",
+                "position": "center-center",
+                "display": "contain",
+                "style": {
+                  "opacity": 1
+                }
+              },
+              "heading": null,
+              "content": null
+            },
+            {
+              "size": "small",
+              "imageFlexRatio": 5,
+              "link": "",
+              "imagePosition": "top",
+              "textWrapAlign": "center",
+              "image": {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/ht/l-2.jpg",
+                "position": "center-center",
+                "display": "contain",
+                "style": {
+                  "opacity": 1
+                }
+              },
+              "heading": null,
+              "content": null
+            },
+            {
+              "size": "small",
+              "imageFlexRatio": 5,
+              "link": "",
+              "imagePosition": "top",
+              "textWrapAlign": "center",
+              "image": {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/ht/l-3.jpg",
+                "position": "center-center",
+                "display": "contain",
+                "style": {
+                  "opacity": 1
+                }
+              },
+              "heading": null,
+              "content": null
+            }
+          ]
+        }
+      },
+      {
+        "layout": "fixed",
+        "size": "large",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": {
+          "size": "small",
+          "text": "Tìm kiếm về #halio"
+        },
+        "content": {
+          "size": "small",
+          "text": "<img style='align-self: center;' src='https://js.lixibox.com/image-assets/halio-landing-page/insta.png' />"
+        },
+        "componentType": "ImageGallery",
+        "componentData": {
+          "column": 4,
+          "size": "small",
+          "list": [
+            {
+              "size": "small",
+              "imageFlexRatio": 5,
+              "link": "https://www.instagram.com/p/CSjp6DGpHQj/",
+              "imagePosition": "top",
+              "textWrapAlign": "center",
+              "image": {
+                "ratio": "1:1",
+                "radius": "large",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/ht/is-1.jpg",
+                "position": "center-center",
+                "display": "cover"
+              },
+              "heading": null,
+              "content": null
+            },
+            {
+              "size": "small",
+              "imageFlexRatio": 5,
+              "link": "https://www.instagram.com/p/Cgl66t4LWpP/",
+              "imagePosition": "top",
+              "textWrapAlign": "center",
+              "image": {
+                "ratio": "1:1",
+                "radius": "large",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/ht/is-2.jpg",
+                "position": "center-center",
+                "display": "cover"
+              },
+              "heading": null,
+              "content": null
+            },
+            {
+              "size": "small",
+              "imageFlexRatio": 5,
+              "link": "https://www.instagram.com/p/CN7jLy3nDWL/",
+              "imagePosition": "top",
+              "textWrapAlign": "center",
+              "image": {
+                "ratio": "1:1",
+                "radius": "large",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/4-new-landing-pages/1-tooth-brush/insta-1-3.jpg",
+                "position": "center-center",
+                "display": "cover"
+              },
+              "heading": null,
+              "content": null
+            },
+            {
+              "size": "small",
+              "imageFlexRatio": 5,
+              "link": "https://www.instagram.com/p/CNgodIqnfR-/",
+              "imagePosition": "top",
+              "textWrapAlign": "center",
+              "image": {
+                "ratio": "1:1",
+                "radius": "large",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/4-new-landing-pages/1-tooth-brush/insta-1-4.jpg",
+                "position": "center-center",
+                "display": "cover"
+              },
+              "heading": null,
+              "content": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "keys": ["may-tay-triet-long-ca-nhan-halio-ipl-hair-removal-device"],
+    "data": [
+      {
+        "layout": "fixed",
+        "size": "medium",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": null,
+        "content": null,
+        "componentType": "VideoGallery",
+        "componentData": {
+          "size": "medium",
+          "list": [
+            {
+              "thumbnailImage": "https://upload.lixibox.com/image-assets/landing-page/hr/1-2.png",
+              "url": "https://video.lixibox.com/image-assets/landing-page/hr/1-1.mp4",
+              "youtubeVideoId": "",
+              "type": "original",
+              "title": "",
+              "heading": {
+                "text": "Máy Triệt Lông Cá Nhân Halio IPL Hair Removal",
+                "textAlign": "left",
+                "fontSize": "extra-large",
+                "fontWeight": "semi",
+                "style": {
+                  "mobile": {
+                    "padding": 16
+                  },
+                  "desktop": {}
+                }
+              },
+              "content": {
+                "text": "Công nghệ IPL sử dụng xung ánh sáng cường độ cao, tác động đến các hắc sắc tố (melanin) của sợi lông, từ đó chuyển hóa thành nhiệt năng giúp triệt tiêu tận gốc nang lông và mầm sống nuôi dưỡng lông. Đồng thời tia IPL giúp làm sáng và trẻ hóa vùng da được điều trị.",
+                "textAlign": "left",
+                "size": "none"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "layout": "fixed",
+        "size": "medium",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": {
+          "text": "Đánh giá từ khách hàng",
+          "textAlign": "left",
+          "fontWeight": "semi",
+          "isDisplayViewMore": true,
+          "textTranform": "uppercase"
+        },
+        "content": null,
+        "componentType": "Rating",
+        "componentData": {
+          "size": "medium",
+          "isDisplaySold": false
+        }
+      },
+      {
+        "layout": "full",
+        "size": "medium",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": null,
+        "content": null,
+        "componentType": "Image",
+        "contentLayout": "full",
+        "componentData": {
+          "src": {
+            "mobile": "https://js.lixibox.com/image-assets/landing-page/hr/2-mobile.png",
+            "desktop": "https://js.lixibox.com/image-assets/landing-page/hr/2-1.png"
+          },
+          "ratio": "4:1",
+          "radius": "none",
+          "style": {
+            "mobile": {
+              "paddingTop": "75%",
+              "background": "var(--colorF5)"
+            },
+            "desktop": {
+              "paddingTop": "36%",
+              "background": "var(--colorF5)"
+            }
+          }
+        }
+      },
+      {
+        "layout": "full",
+        "size": "medium",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": null,
+        "content": null,
+        "ratio": "1:1",
+        "contentLayout": "full",
+        "componentType": "ImageCarousel",
+        "componentData": {
+          "list": {
+            "mobile": [
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hr/3-1.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hr/3-2.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hr/3-3.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hr/3-4.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hr/3-5.jpg",
+                "position": "center-center",
+                "display": "contain"
+              }
+            ],
+            "desktop": [
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hr/3-4.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hr/3-5.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hr/3-1.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hr/3-2.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hr/3-3.jpg",
+                "position": "center-center",
+                "display": "contain"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "layout": "fixed",
+        "size": "medium",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": {
+          "text": "Câu hỏi thường gặp",
+          "textAlign": "left",
+          "fontWeight": "semi",
+          "textTranform": "uppercase"
+        },
+        "content": null,
+        "componentType": "Accordion",
+        "componentData": {
+          "data": [
+            {
+              "id": 1,
+              "title": "Máy sử dụng lâu dài có an toàn không?",
+              "content": "<p style='padding: 0 10px'>Hoàn toàn an toàn. Tia IPL hiện nay rất phổ biến và được sử dụng nhiều trong ngành thẩm mỹ. Tia IPL đi xuống da được các hắc sắc tố trong nang lông hấp thụ sau đó chuyển hóa thành nhiệt và đốt cháy nang lông giúp phá hủy nang lông và mầm sống. Ngoài ra, tia IPL còn giúp làm sáng và trẻ hóa làn da.</p>"
+            },
+            {
+              "id": 2,
+              "title": "Triệt lông xong bị ngứa thì giải quyết như thế nào?",
+              "content": "<p style='padding: 0 10px'>Bạn có thể tham khảo những cách sau để cải thiện tình trạng da bị ngứa <br /> - Thoa gel nha đam lên vùng da bị ngứa <br /> - Mặc quần áo rộng rãi giúp da khô thoáng và tránh ma sát <br />- Nên tẩy da chết trước 24 tiếng và vệ sinh sạch sẽ vùng da cần điều trị tránh kích ứng sau khi triệt</p>"
+            },
+            {
+              "id": 3,
+              "title": "Triệt lông bao lâu thì có kết quả?",
+              "content": "<p style='padding: 0 10px'>Liệu trình tham khảo khi sử dụng máy triệt lông Halio<br/> - Tháng đầu tiên: 1 lần/tuần - Lông vẫn sẽ mọc lại<br />- Tháng thứ 2 và 3: 2 tuần/lần - Lông trở nên mềm và dễ rụng<br />- Tháng thứ 4: 1 lần/tháng - Lông thưa mảnh, da đều màu. Tiếp tục duy trì để đạt kết quả mong muốn<br /><br /><i>*Lưu ý: Thời gian và hiệu quả tùy thuộc vào cơ địa của mỗi người. Tuân thủ theo liệu trình được khuyến cáo để đạt hiệu quả tốt nhất.</i></p>"
+            },
+            {
+              "id": 4,
+              "title": "Triệt bikini cần lưu ý gì?",
+              "content": "<p style='padding: 0 10px'>Những lưu ý bạn cần biết khi triệt lông bikini<br/><br />1. Trước khi triệt:<br /> - Tẩy da chết trước 24 tiếng tránh kích ứng<br />- Tỉa lông ngắn để dễ cạo hơn <br />- Sử dụng thêm bọt cạo hoặc phấn rôm để giảm ma sát khi cạo <br />- Cạo sạch lông trên bề mặt da<br /><br />2. Trong khi triệt:<br />- Lần đầu triệt nên sử dụng ánh sáng ở mức 1 rồi tăng dần đến mức độ phù hợp với da<br /><br />3. Sau khi triệt<br />- Bôi gel nha đam sau 5 phút<br />- Tránh đụng nước sau 3 tiếng và có thể dưỡng da sau 24 tiếng</p></p>"
+            },
+            {
+              "id": 5,
+              "title": "Phụ nữ đang mang thai có sử dụng được không?",
+              "content": "<p style='padding: 0 10px'>Trong thời gian mang thai và cho con bú, nội tiết tố cũng thay đổi nhiều, việc sử dụng máy triệt lông sẽ không đạt được hiệu quả tối đa. Bạn nên đợi sau sinh ít nhất 6 tháng rồi hãy sử dụng máy nhé</p>"
+            },
+            {
+              "id": 6,
+              "title": "Sau khi triệt, vệ sinh và bảo quản máy như thế nào?",
+              "content": "<p style='padding: 0 10px'>Bảo quản máy theo các bước sau:<br />- Tắt máy sau khi kết thúc quá trình triệt lông <br />- Vệ sinh thấu kính bằng khăn khô và bảo quản máy nơi khô ráo <br />- Không sử dụng các chất tẩy rửa mạnh để vệ sinh máy <br />- Tránh chạm vào thấu kính ít nhất 5 phút để tránh bị bỏng <br /></p>"
+            }
+          ],
+          "selectedIndex": 0,
+          "styles": {
+            "common": {
+              "borderLeft": "none",
+              "borderRight": "none"
+            },
+            "desktop": {},
+            "mobile": {
+              "padding": "0 16px",
+              "border": "none"
+            },
+            "heading": {
+              "background": "var(--colorWhite)",
+              "paddingLeft": 0
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "keys": ["halio-instawave-premium-hair-styler"],
+    "data": [
+      {
+        "layout": "fixed",
+        "size": "medium",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": null,
+        "content": null,
+        "componentType": "VideoGallery",
+        "componentData": {
+          "size": "medium",
+          "list": [
+            {
+              "thumbnailImage": "https://upload.lixibox.com/image-assets/landing-page/hig/1-2.png",
+              "url": "https://video.lixibox.com/image-assets/landing-page/hig/1-v2.mp4",
+              "youtubeVideoId": "",
+              "type": "original",
+              "title": "",
+              "heading": {
+                "text": "Bí kíp sở hữu tóc xoăn sóng thời thượng của hội Tiktokers",
+                "textAlign": "left",
+                "size": "small",
+                "fontSize": "extra-large"
+              },
+              "content": {
+                "text": "Tóc xoăn nước bóng mượt, sóng to bồng bềnh thời thượng, đồng thời rút ngắn thời gian làm tóc chỉ mất từ 10-15 phút đã khiến Tiktokers Hoa Mỹ, Rachel cùng hàng ngàn cô gái đã lựa chọn máy uốn sóng Halio instaGlam.",
+                "textAlign": "left",
+                "size": "none"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "layout": "fixed",
+        "size": "medium",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": {
+          "text": "Đánh giá từ khách hàng",
+          "textAlign": "left",
+          "fontWeight": "semi",
+          "isDisplayViewMore": true,
+          "textTranform": "uppercase"
+        },
+        "content": null,
+        "componentType": "Rating",
+        "componentData": {
+          "size": "medium",
+          "isDisplaySold": false
+        }
+      },
+      {
+        "layout": "full",
+        "size": "medium",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": null,
+        "content": null,
+        "componentType": "Image",
+        "contentLayout": "full",
+        "componentData": {
+          "src": {
+            "mobile": "https://js.lixibox.com/image-assets/landing-page/hig/2-mobile.jpg",
+            "desktop": "https://js.lixibox.com/image-assets/landing-page/hig/2.jpg"
+          },
+          "ratio": "4:1",
+          "radius": "none",
+          "style": {
+            "mobile": {
+              "paddingTop": "75%"
+            },
+            "desktop": {
+              "paddingTop": "36%"
+            }
+          }
+        }
+      },
+      {
+        "layout": "full",
+        "size": "medium",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": null,
+        "content": null,
+        "ratio": "1:1",
+        "contentLayout": "full",
+        "componentType": "ImageCarousel",
+        "componentData": {
+          "list": {
+            "mobile": [
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hig/3-1.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hig/3-2.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hig/3-3.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hig/3-4.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hig/3-7.jpg",
+                "position": "center-center",
+                "display": "contain"
+              }
+            ],
+            "desktop": [
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hig/3-4.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hig/3-7.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hig/3-1.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hig/3-2.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hig/3-3.jpg",
+                "position": "center-center",
+                "display": "contain"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "layout": "fixed",
+        "size": "medium",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": {
+          "text": "Câu hỏi thường gặp",
+          "textAlign": "left",
+          "fontWeight": "semi",
+          "textTranform": "uppercase"
+        },
+        "content": null,
+        "componentType": "Accordion",
+        "componentData": {
+          "data": [
+            {
+              "id": 1,
+              "title": "Máy có tự động tắt sau khi ngưng sử dụng không?",
+              "content": "<p style='padding: 0 10px'>Có. Máy sẽ tự động tắt sau 30 phút nhờ chức năng Smart Timer để đảm bảo an toàn và tiết kiệm điện năng.</p>"
+            },
+            {
+              "id": 2,
+              "title": "Tóc yếu, tóc hư tổn có dùng được sản phẩm không?",
+              "content": "<p style='padding: 0 10px'>Có. Thiết bị có 3 chế độ nhiệt 160 - 180 - 200°C phù hợp với đa dạng chất tóc kể cả tóc yếu và tóc hư tổn.<br />- Mức nhiệt 160°C: Tóc mỏng, tóc yếu, tóc hư tổn<br />- Mức nhiệt 180°C: Tóc thường, tóc khoẻ<br />- Mức nhiệt 200°C: Tóc cứng, tóc xoăn</p>"
+            },
+            {
+              "id": 3,
+              "title": "Sử dụng máy có dễ bị bỏng không?",
+              "content": "<p style='padding: 0 10px'>Không. Halio InstaGlam Premium Hair Styler có lớp phủ an toàn giúp hạn chế tối đa việc bị bỏng.</p>"
+            }
+          ],
+          "selectedIndex": 0,
+          "styles": {
+            "common": {
+              "borderLeft": "none",
+              "borderRight": "none"
+            },
+            "desktop": {},
+            "mobile": {
+              "padding": "0 16px",
+              "border": "none"
+            },
+            "heading": {
+              "background": "var(--colorWhite)",
+              "padding-left": 0
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "keys": ["halio-instacurl-premium-automatic-hair-styler"],
+    "data": [
+      {
+        "layout": "fixed",
+        "size": "medium",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": null,
+        "content": null,
+        "componentType": "VideoGallery",
+        "componentData": {
+          "size": "medium",
+          "list": [
+            {
+              "thumbnailImage": "https://upload.lixibox.com/image-assets/landing-page/hic/1-2.png",
+              "url": "https://video.lixibox.com/image-assets/landing-page/hic/2-v5.mp4",
+              "youtubeVideoId": "",
+              "type": "original",
+              "title": "",
+              "heading": {
+                "text": "TÓC ÓNG Ả, XOĂN BỒNG BỀNH BAO ẢNH \"INSTAGRAM\"",
+                "textAlign": "left",
+                "size": "small",
+                "fontSize": "extra-large"
+              },
+              "content": {
+                "text": "Tạm biệt máy uốn tóc thường khó thao tác, dễ bỏng, máy uốn tóc tự xoay Halio instaCurl giúp bạn tạo kiểu tóc xoăn bồng bềnh dễ dàng chỉ trong 10 phút.",
+                "textAlign": "left",
+                "size": "none"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "layout": "fixed",
+        "size": "medium",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": {
+          "text": "Đánh giá từ khách hàng",
+          "textAlign": "left",
+          "fontWeight": "semi",
+          "isDisplayViewMore": true,
+          "textTranform": "uppercase"
+        },
+        "content": null,
+        "componentType": "Rating",
+        "componentData": {
+          "size": "medium",
+          "isDisplaySold": false
+        }
+      },
+      {
+        "layout": "full",
+        "size": "medium",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": null,
+        "content": null,
+        "componentType": "Image",
+        "contentLayout": "full",
+        "componentData": {
+          "src": {
+            "mobile": "https://js.lixibox.com/image-assets/landing-page/hic/2-mobile.jpg",
+            "desktop": "https://js.lixibox.com/image-assets/landing-page/hic/2.jpg"
+          },
+          "ratio": "4:1",
+          "radius": "none",
+          "style": {
+            "mobile": {
+              "paddingTop": "75%"
+            },
+            "desktop": {
+              "paddingTop": "36%"
+            }
+          }
+        }
+      },
+      {
+        "layout": "full",
+        "size": "medium",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": null,
+        "content": null,
+        "ratio": "1:1",
+        "contentLayout": "full",
+        "componentType": "ImageCarousel",
+        "componentData": {
+          "list": {
+            "mobile": [
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hic/3-1-v2.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hic/3-2.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hic/3-3.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hic/3-7-v2.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hic/3-4.jpg?v=2",
+                "position": "center-center",
+                "display": "contain"
+              }
+            ],
+            "desktop": [
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hic/3-7-v2.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hic/3-4.jpg?v=2",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hic/3-1-v2.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hic/3-2.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hic/3-3.jpg",
+                "position": "center-center",
+                "display": "contain"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "layout": "fixed",
+        "size": "medium",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": {
+          "text": "Câu hỏi thường gặp",
+          "textAlign": "left",
+          "fontWeight": "semi",
+          "textTranform": "uppercase"
+        },
+        "content": null,
+        "componentType": "Accordion",
+        "componentData": {
+          "data": [
+            {
+              "id": 1,
+              "title": "Máy có tự động tắt sau khi ngưng sử dụng không?",
+              "content": "<p style='padding: 0 10px'>Có. Máy uốn tóc tự xoay Halio instaCurl Premium Automatic Hair Styler sở hữu chức năng Smart Timer nên sau 30 phút sử dụng máy sẽ tự động tắt để đảm bảo an toàn và tiết kiệm điện năng.</p>"
+            },
+            {
+              "id": 2,
+              "title": "Tóc yếu, tóc hư tổn có dùng được sản phẩm không?",
+              "content": "<p style='padding: 0 10px'>Có. Thiết bị có 3 chế độ nhiệt 170 - 190 - 210°C phù hợp với đa dạng chất tóc.<br />- Mức nhiệt 170°C: Tóc mỏng, tóc yếu<br /> - Mức nhiệt 190°C: Tóc thường, tóc khoẻ<br />- Mức nhiệt 210°C: Tóc cứng, tóc xoăn</p>"
+            },
+            {
+              "id": 3,
+              "title": "Làm thế nào nhận biết được lọn tóc xoăn hoàn thành?",
+              "content": "<p style='padding: 0 10px'>Khi lọn tóc uốn xong, máy sẽ tự động phát 4 tiếng bíp để người dùng nhận biết.</p>"
+            },
+            {
+              "id": 4,
+              "title": "Sử dụng máy có dễ bị bỏng không?",
+              "content": "<p style='padding: 0 10px'>Không. Halio instaCurl Premium Automatic Hair Styler có các ngạnh an toàn nằm trên thân và đầu máy giúp hạn chế tối đa việc bị bỏng.</p>"
+            }
+          ],
+          "selectedIndex": 0,
+          "styles": {
+            "common": {
+              "borderLeft": "none",
+              "borderRight": "none"
+            },
+            "desktop": {},
+            "mobile": {
+              "padding": "0 16px",
+              "border": "none"
+            },
+            "heading": {
+              "background": "var(--colorWhite)",
+              "paddingLeft": 0
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "keys": ["may-lam-xoan-tu-dong-xoay-360-do-halio-auto-rotating-hair-curler"],
+    "data": [
+      {
+        "layout": "fixed",
+        "size": "medium",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": null,
+        "content": null,
+        "componentType": "VideoGallery",
+        "componentData": {
+          "size": "medium",
+          "list": [
+            {
+              "thumbnailImage": "https://upload.lixibox.com/image-assets/landing-page/hac/1-2.png",
+              "url": "https://video.lixibox.com/image-assets/landing-page/hac/video/HAC-video.mp4",
+              "youtubeVideoId": "",
+              "type": "original",
+              "title": "",
+              "heading": {
+                "text": "Hướng dẫn uốn xoăn chỉ 15 phút cùng máy uốn tóc tự xoay ion âm Halio",
+                "textAlign": "left",
+                "size": "small",
+                "fontSize": "extra-large"
+              },
+              "content": {
+                "text": "\"Dễ dàng uốn tóc tại nhà, không lo bị cháy hư tổn\" khi dùng máy uốn tự xoay ion âm Halio. Cùng theo dõi video sau để biết các bước hướng dẫn làm tóc xoăn chỉ trong vòng 15 phút nhé!",
+                "textAlign": "left",
+                "size": "none"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "layout": "fixed",
+        "size": "medium",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": {
+          "text": "Đánh giá từ khách hàng",
+          "textAlign": "left",
+          "fontWeight": "semi",
+          "isDisplayViewMore": true,
+          "textTranform": "uppercase"
+        },
+        "content": null,
+        "componentType": "Rating",
+        "componentData": {
+          "size": "medium",
+          "isDisplaySold": false
+        }
+      },
+      {
+        "layout": "full",
+        "size": "medium",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": null,
+        "content": null,
+        "componentType": "Image",
+        "contentLayout": "full",
+        "componentData": {
+          "src": {
+            "mobile": "https://js.lixibox.com/image-assets/landing-page/hac/banner/mobile.png",
+            "desktop": "https://js.lixibox.com/image-assets/landing-page/hac/banner/web.png"
+          },
+          "ratio": "4:1",
+          "radius": "none",
+          "style": {
+            "mobile": {
+              "paddingTop": "75%"
+            },
+            "desktop": {
+              "paddingTop": "36%"
+            }
+          }
+        }
+      },
+      {
+        "layout": "full",
+        "size": "medium",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": null,
+        "content": null,
+        "ratio": "1:1",
+        "contentLayout": "full",
+        "componentType": "ImageCarousel",
+        "componentData": {
+          "list": {
+            "mobile": [
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hac/carousel/1.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hac/carousel/2.png",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hac/carousel/3.png",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hac/carousel/4.png",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hac/carousel/5.png",
+                "position": "center-center",
+                "display": "contain"
+              }
+            ],
+            "desktop": [
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hac/carousel/4.png",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hac/carousel/5.png",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hac/carousel/1.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hac/carousel/2.png",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hac/carousel/3.png",
+                "position": "center-center",
+                "display": "contain"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "keys": ["may-say-toc-ion-am-halio-hypersonic-hair-dryer"],
+    "data": [
+      {
+        "layout": "fixed",
+        "size": "medium",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": null,
+        "content": null,
+        "componentType": "VideoGallery",
+        "componentData": {
+          "size": "medium",
+          "list": [
+            {
+              "thumbnailImage": "https://upload.lixibox.com/image-assets/landing-page/hhd/carousel/video.jpg",
+              "url": "https://video.lixibox.com/image-assets/landing-page/hhd/carousel/video.mp4",
+              "youtubeVideoId": "",
+              "type": "original",
+              "title": "",
+              "heading": {
+                "text": "Hướng dẫn sử dụng Máy sấy tóc Halio Hypersonic",
+                "textAlign": "left",
+                "fontSize": "extra-large",
+                "fontWeight": "semi",
+                "style": {
+                  "mobile": {
+                    "padding": 16
+                  },
+                  "desktop": {}
+                }
+              },
+              "content": {
+                "text": "Máy sấy Halio Hypersonic cảm biến nóng lạnh giúp sấy nhanh, giảm khô rối, bảo vệ tóc và da đầu dành cho gia đình hiện đại. Máy sử dụng công nghệ Hypersonic từ động cơ không chổi than, sản sinh nano ion âm giúp sấy nhanh gấp 2 lần và hạn chế tình trạng hư tổn, gãy rụng. Cùng xem video này để hiểu rõ hơn về công dụng và cách sử dụng của Máy sấy tóc Halio Hypersonic nhé!",
+                "textAlign": "left",
+                "size": "none"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "layout": "full",
+        "size": "medium",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": null,
+        "content": null,
+        "componentType": "Image",
+        "contentLayout": "full",
+        "componentData": {
+          "src": {
+            "mobile": "https://js.lixibox.com/image-assets/landing-page/hhd/banner/mobile.jpg",
+            "desktop": "https://js.lixibox.com/image-assets/landing-page/hhd/banner/desk.jpg"
+          },
+          "ratio": "4:1",
+          "radius": "none",
+          "style": {
+            "mobile": {
+              "paddingTop": "75%",
+              "background": "var(--colorF5)"
+            },
+            "desktop": {
+              "paddingTop": "36%",
+              "background": "var(--colorF5)"
+            }
+          }
+        }
+      },
+      {
+        "layout": "full",
+        "size": "medium",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": null,
+        "content": null,
+        "ratio": "1:1",
+        "contentLayout": "full",
+        "componentType": "ImageCarousel",
+        "componentData": {
+          "list": {
+            "mobile": [
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hhd/carousel/1.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hhd/carousel/2.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hhd/carousel/3.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hhd/carousel/4.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hhd/carousel/5.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hhd/carousel/6.jpg",
+                "position": "center-center",
+                "display": "contain"
+              }
+            ],
+            "desktop": [
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hhd/carousel/1.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hhd/carousel/2.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hhd/carousel/3.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hhd/carousel/4.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hhd/carousel/5.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hhd/carousel/6.jpg",
+                "position": "center-center",
+                "display": "contain"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "layout": "fixed",
+        "size": "medium",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": {
+          "text": "Câu hỏi thường gặp",
+          "textAlign": "left",
+          "fontWeight": "semi",
+          "textTranform": "uppercase"
+        },
+        "content": null,
+        "componentType": "Accordion",
+        "componentData": {
+          "data": [
+            {
+              "id": 1,
+              "title": "Hypersonic là công nghệ gì?",
+              "content": "<p style='padding: 0 10px'>- Là công nghệ từ động cơ không chổi than 110.000 vòng/phút kết hợp 13 cánh quạt thiết kế tạo ra luồng khí với tốc độ cao giúp tóc khô nhanh hơn, giảm xơ rối.<br>- Bộ cảm biến thông minh đo nhiệt độ không khí 100 lần/ giây và tự điều chỉnh nhiệt độ phù hợp, bảo vệ tóc và da đầu.<br>- Công nghệ sản sinh 200 triệu nano ion âm/ giây cùng chức năng tự động xen kẽ không khí nóng, mát nhằm giảm tiếp xúc với nhiệt, giúp tóc luôn bóng mượt, đủ độ ẩm cần thiết, hạn chế tối đa tình trạng hư tổn, gãy rụng.</p>"
+            },
+            {
+              "id": 2,
+              "title": "Máy sấy tóc Halio Hypersonic có an toàn khi sử dụng cho trẻ em không?",
+              "content": "<p style='padding: 0 10px'>Máy sấy tóc Halio Hypersonic có chế độ dành riêng cho trẻ em với 3 mức nhiệt, âm thanh siêu nhỏ chỉ 58dB tạo cảm giác êm dịu nhất trẻ khi sấy tóc. Khi sấy, bạn cần duy trì khoảng cách sấy an toàn, cách da đầu khoảng<strong> 7 - 15 cm.</strong></p>"
+            },
+            {
+              "id": 3,
+              "title": "Bảo quản máy sấy tóc Halio Hypersonic như thế nào?",
+              "content": "<p style='padding: 0 10px'>Sau khi sử dụng xong, để máy nguội hoàn toàn trong nhiệt độ phòng trước khi cất. Bạn nên vệ sinh lưới lọc định kỳ để lấy đi bụi bẩn và đảm bảo tuổi thọ cho máy.</p>"
+            },
+            {
+              "id": 4,
+              "title": "Tôi nên vệ sinh bộ lọc bao lâu 1 lần?",
+              "content": "<p style='padding: 0 10px'>Để duy trì hiệu suất tối ưu, máy sấy tóc Halio Hypersonic cần được chăm sóc và bảo dưỡng thường xuyên, bạn nên vệ sinh bộ lọc <strong>mỗi tháng một lần</strong>.</p>"
+            },
+            {
+              "id": 5,
+              "title": "Cách vệ sinh bộ lọc như thế nào?",
+              "content": "<p style='padding: 0 10px'>Để vệ sinh bộ lọc của máy sấy tóc Halio Hypersonic, bạn chỉ cần tháo đầu lọc ra, sau đó dùng cọ lông mềm hoặc khăn khô có chất liệu bông mềm, phủi bụi khỏi màng lọc. Sau khi vệ sinh xong thì lắp lại và sử dụng bình thường. </p>"
+            }
+          ],
+          "selectedIndex": 0,
+          "styles": {
+            "common": {
+              "borderLeft": "none",
+              "borderRight": "none"
+            },
+            "desktop": {},
+            "mobile": {
+              "padding": "0 16px",
+              "border": "none"
+            },
+            "heading": {
+              "background": "var(--colorWhite)",
+              "paddingLeft": 0
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "keys": [
+      "may-rua-mat-halio-multi-tasking-cleansing-massaging-device",
+      "may-rua-mat-massage-tich-hop-lieu-phap-anh-sang-va-nhiet-halio-multi-task-cleansing-massaging-device-with-red-blue-light-therapy-5-in-1-ice-blue",
+      "may-rua-mat-massage-tich-hop-lieu-phap-anh-sang-va-nhiet-halio-multi-task-cleansing-and-massaging-device-with-red-blue-light-therapy-5-in-1-peach-fuzz"
+    ],
+    "data": [
+      {
+        "layout": "fixed",
+        "size": "medium",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": null,
+        "content": null,
+        "componentType": "VideoGallery",
+        "componentData": {
+          "size": "medium",
+          "list": [
+            {
+              "thumbnailImage": "https://upload.lixibox.com/image-assets/landing-page/hm/1.thumb.png",
+              "url": "https://video.lixibox.com/image-assets/landing-page/hm/1.mp4",
+              "youtubeVideoId": "",
+              "type": "original",
+              "title": "",
+              "heading": {
+                "text": "Máy rửa mặt Halio 5 trong 1: Làm sạch - Nóng - Lạnh - Ánh sáng đỏ - Ánh sáng xanh",
+                "textAlign": "left",
+                "fontSize": "extra-large",
+                "fontWeight": "semi",
+                "style": {
+                  "mobile": {
+                    "padding": 16
+                  },
+                  "desktop": {}
+                }
+              },
+              "content": {
+                "text": "Đây là sự kết hợp hoàn hảo giữa máy rửa mặt Halio + máy đẩy tinh chất massage Halio - hai siêu phẩm bán chạy của thương hiệu Halio. Tích hợp liệu pháp Red & Blue Light Therapy đang làm mưa gió tại thị trường Mỹ cùng chế độ nhiệt nóng - lạnh, sản phẩm mang lại hiệu quả làm sạch sâu, tăng sinh collagen, hỗ trợ trị mụn và làm mờ lỗ chân lông.",
+                "textAlign": "left",
+                "size": "none"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "layout": "full",
+        "size": "medium",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": null,
+        "content": null,
+        "ratio": "1:1",
+        "contentLayout": "full",
+        "componentType": "ImageCarousel",
+        "componentData": {
+          "list": {
+            "mobile": [
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hm/carousel-1.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hm/carousel-2.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hm/carousel-3.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hm/carousel-4.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hm/carousel-5.jpg",
+                "position": "center-center",
+                "display": "contain"
+              }
+            ],
+            "desktop": [
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hm/carousel-4.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hm/carousel-5.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hm/carousel-1.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hm/carousel-2.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/hm/carousel-3.jpg",
+                "position": "center-center",
+                "display": "contain"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "layout": "fixed",
+        "size": "medium",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": {
+          "text": "FAQ",
+          "textAlign": "left",
+          "fontWeight": "semi",
+          "textTranform": "uppercase"
+        },
+        "content": null,
+        "componentType": "Accordion",
+        "componentData": {
+          "data": [
+            {
+              "id": 1,
+              "title": "Da nhạy cảm, da mụn hay viêm da cơ địa có dùng được máy không?",
+              "content": "<p style='padding: 0 10px'>Có. Máy rửa mặt Halio 5 trong 1 sử dụng đầu Silicone y tế siêu mảnh 0.6mm kháng khuẩn nên an toàn với mọi loại da, kể cả da nhạy cảm.</p>"
+            },
+            {
+              "id": 2,
+              "title": "Cần sạc máy trong bao lâu và dùng được trong bao nhiêu ngày?",
+              "content": "<p style='padding: 0 10px'>Thiết bị mất 1.5 giờ để sạc đầy pin, 1 lần sạc dùng được đến 30 ngày.</p>"
+            },
+            {
+              "id": 3,
+              "title": "Máy có tự động tắt sau khi ngưng sử dụng không?",
+              "content": "<p style='padding: 0 10px'>Có. Máy có chế độ Smart Timer tự tắt sau 15 phút giúp đảm bảo an toàn và tiết kiệm điện năng.</p>"
+            },
+            {
+              "id": 4,
+              "title": "Dùng một thời gian, các sợi lông ở đầu rửa mặt có bị đen không?",
+              "content": "<p style='padding: 0 10px'>- Máy sử dụng đầu Silicone kháng khuẩn nên không bám bẩn. Tuy nhiên, bạn cần vệ sinh máy sau mỗi lần dùng để đảm bảo hiệu quả làm sạch da và tuổi thọ máy tốt nhất.<br />- Sau khi tắt, bạn cần làm sạch máy bằng nước ấm pha với chất tẩy rửa trung tính, rồi lau khô nhẹ nhàng bằng vải sạch. Bảo quản máy khô ráo, tránh ánh nắng trực tiếp và không tiếp xúc với nhiệt độ cao hoặc nước sôi, đồng thời để xa tầm tay trẻ em.</p>"
+            },
+            {
+              "id": 5,
+              "title": "Loại sữa rửa mặt nào không phù hợp sử dụng với máy?",
+              "content": "<p style='padding: 0 10px'>Cần tránh dùng sữa rửa mặt hoặc tẩy tế bào chết dạng hạt scrub vì có thể làm trầy xước, hư hỏng sợi lông Silicone của máy.</p>"
+            },
+            {
+              "id": 6,
+              "title": "Dùng máy nhưng không kết hợp cùng serum/ kem dưỡng có được không?",
+              "content": "<p style='padding: 0 10px'>Được. Nhưng vẫn nên dùng chung với mỹ phẩm để đạt hiệu quả dưỡng da tốt nhất.</p>"
+            }
+          ],
+          "selectedIndex": 0,
+          "styles": {
+            "common": {
+              "borderLeft": "none",
+              "borderRight": "none"
+            },
+            "desktop": {},
+            "mobile": {
+              "padding": "0 16px",
+              "border": "none"
+            },
+            "heading": {
+              "background": "var(--colorWhite)",
+              "paddingLeft": 0
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "keys": ["the-auragins-glow-complexion-serum-14-vitamin-c-6-berries-extracts-15ml"],
+    "data": [
+      {
+        "layout": "fixed",
+        "size": "medium",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": null,
+        "content": null,
+        "componentType": "VideoGallery",
+        "componentData": {
+          "size": "medium",
+          "list": [
+            {
+              "thumbnailImage": "https://upload.lixibox.com/image-assets/landing-page/ta/1.thumb.png",
+              "url": "https://video.lixibox.com/image-assets/landing-page/ta/1.mp4",
+              "youtubeVideoId": "",
+              "type": "original",
+              "title": "",
+              "heading": {
+                "text": "THAY ĐỔI LÀN DA SAU 14 NGÀY",
+                "textAlign": "left",
+                "fontSize": "extra-large",
+                "fontWeight": "semi",
+                "style": {
+                  "mobile": {
+                    "padding": 16
+                  },
+                  "desktop": {}
+                }
+              },
+              "content": {
+                "text": "Tinh chất The Auragins 14% Vitamin C + 6 Berries Extracts là giải pháp ngăn các tác nhân gây hại cho da, mang đến làn da rạng ngời, tươi trẻ nhờ 14% L-Ascorbic Acid, Ferulic Acid, và Fullerene (chất chống oxy hoá đạt giải Nobel), ...<br/><br/>Cùng xem kết quả sau 14 ngày trong video kế bên nhé!",
+                "textAlign": "left",
+                "size": "none"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "layout": "full",
+        "size": "medium",
+        "backgroundColor": "#FFFFFF",
+        "backgroundImagePosition": "middle",
+        "backgroundImageDisplay": "cover",
+        "backgroundImageScrolling": "scroll",
+        "backgrounOpacity": 1,
+        "heading": null,
+        "content": null,
+        "ratio": "1:1",
+        "contentLayout": "full",
+        "componentType": "ImageCarousel",
+        "componentData": {
+          "list": {
+            "mobile": [
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/ta/carousel-1.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/ta/carousel-2.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/ta/carousel-3.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/ta/carousel-4.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/ta/carousel-5.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/ta/carousel-6.jpg",
+                "position": "center-center",
+                "display": "contain"
+              }
+            ],
+            "desktop": [
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/ta/carousel-5.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/ta/carousel-6.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/ta/carousel-1.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/ta/carousel-2.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/ta/carousel-3.jpg",
+                "position": "center-center",
+                "display": "contain"
+              },
+              {
+                "ratio": "1:1",
+                "radius": "none",
+                "link": "",
+                "src": "https://js.lixibox.com/image-assets/landing-page/ta/carousel-4.jpg",
+                "position": "center-center",
+                "display": "contain"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+]

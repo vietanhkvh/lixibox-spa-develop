@@ -1,0 +1,28 @@
+.discountCodePrompt {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--colorWhite);
+  padding: 17px;
+  border-top: 1px solid var(--colorF0);
+
+  .prompt {
+    background-color: var(--colorBlueCD);
+    border-radius: 4px;
+    margin: 5px 0;
+    border-bottom: none;
+    font-size: 14px;
+  }
+
+  .referralHint {
+    color: var(--colorBlue);
+    fill: var(--colorBlue);
+  }
+}
+
+.bold {
+  font-weight: var(--fontSemiBold);
+}
+
+.noDisplay {
+  display: none;
+}

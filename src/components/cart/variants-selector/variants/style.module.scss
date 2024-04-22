@@ -1,0 +1,188 @@
+.variantWrapper {
+  margin-top: 10px;
+
+  .title {
+    display: flex;
+
+    .type {
+      font-style: normal;
+      font-weight: var(--fontBold);
+      font-size: 14px;
+      line-height: 19px;
+      margin-right: 10px;
+      color: var(--color20);
+    }
+
+    .field {
+      font-style: normal;
+      font-weight: var(--fontBold);
+      font-size: 14px;
+      line-height: 19px;
+      margin-right: 10px;
+      color: var(--color8A);
+    }
+  }
+
+  .containerBox {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+
+    .smallWrapperItem {
+      width: 32px;
+      margin-right: 10px;
+    }
+
+    .bigWrapperItem {
+      min-width: 85px;
+      white-space: nowrap;
+    }
+  }
+}
+
+.removeConfirmation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-left: 15px;
+  padding-right: 21px;
+  z-index: var(--zIndex6);
+  height: 100%;
+  width: calc(100% - 80px);
+  background: var(--colorWhite);
+  transition: var(--transitionNormal);
+  transform: translateX(100%);
+  visibility: hidden;
+  max-width: 360px;
+
+  .text {
+    font-weight: var(--fontSemiBold);
+    font-size: 14px;
+    color: var(--colorPrimary);
+    margin-bottom: 21px;
+    padding-right: 5px;
+  }
+
+  .action {
+    display: flex;
+    justify-content: space-between;
+
+    .button {
+      width: 150px;
+      height: 44px !important;
+      margin: 0 5px;
+    }
+
+    .cancelButton {
+      background-color: var(--colorF5) !important;
+
+      .title {
+        color: var(--color20);
+      }
+    }
+  }
+}
+
+.removeConfirmationVisible {
+  transform: translateX(0);
+  visibility: visible;
+}
+
+.quantity {
+  opacity: 1;
+}
+
+.quantityHidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.trash {
+  width: 40px;
+  height: 40px;
+  color: var(--colorCC);
+}
+
+.trashOuter {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+  transition: var(--transitionNormal);
+}
+
+.icon {
+  width: 12px;
+  height: 12px;
+  color: var(--color8A);
+  cursor: pointer;
+}
+
+.compactCloseIcon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 17px;
+  width: calc(12px + 17px * 2);
+  height: calc(12px + 17px * 2);
+  color: var(--color8A);
+  cursor: pointer;
+}
+
+.iconInner {
+  width: 12px;
+  height: auto;
+}
+
+.purchaseLaterIcon {
+  color: var(--color20);
+}
+
+.wishlistOuter {
+  font-size: 10px;
+  height: 24px;
+  line-height: 24px;
+  position: absolute;
+  bottom: 8px;
+  right: 40px;
+  padding: 0 7px;
+  text-transform: uppercase;
+  background: var(--colorF7);
+  border: 1px solid var(--colorF0);
+  color: var(--color75);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: var(--transitionNormal);
+}
+
+.trashInner {
+  width: 16px;
+  height: auto;
+}
+
+.cancelIcon {
+  width: 12px;
+  height: 12px;
+}
+
+.iconHeartBuyLater {
+  width: 16px;
+  height: 16px;
+  color: var(--colorWhite);
+}
+
+.iconTrashRemove {
+  width: 16px;
+  height: 16px;
+  color: var(--colorWhite);
+
+  svg {
+    fill: var(--colorWhite) !important;
+  }
+}

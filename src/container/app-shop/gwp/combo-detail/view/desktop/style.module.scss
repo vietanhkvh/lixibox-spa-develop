@@ -1,0 +1,166 @@
+.gwpDetailContainer {
+  display: flex;
+  flex-direction: column;
+
+  .banner {
+    margin: 0 16px;
+    width: calc(100% - 32px);
+    padding-bottom: calc(75% - 32px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    position: relative;
+
+    .outOfStockLabel {
+      display: flex;
+      position: absolute;
+      left: calc(50% - 76px);
+      top: calc(50% - 23.5px);
+      padding: 10px 40px;
+      border-radius: 4px;
+      background-color: rgb(32 32 32 / 80%);
+      color: var(--colorWhite);
+      font-size: 20px;
+      font-weight: var(--fontRegular);
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .bottomSection {
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px 22px;
+    background-color: var(--colorWhite);
+
+    .schemeTitle {
+      margin-top: 21px;
+      font-size: 16px;
+      font-weight: var(--fontBold);
+      color: var(--color20);
+    }
+
+    .description {
+      margin-top: 8px;
+      font-size: 13px;
+      font-weight: var(--fontLight);
+      color: var(--color20);
+    }
+
+    .valueInfo {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .valueIcon {
+        width: 20px;
+        height: 20px;
+
+        svg {
+          fill: var(--colorPrimary);
+        }
+      }
+
+      .valueText {
+        margin-left: 5px;
+        font-size: 18px;
+        font-weight: var(--fontRegular);
+        color: var(--colorPrimary);
+      }
+    }
+
+    .warningMessage {
+      margin-top: 16px;
+      font-size: 14px;
+      font-weight: var(--fontSemiBold);
+      color: var(--colorRed);
+    }
+
+    .discountCodeSection {
+      margin-top: 30px;
+
+      .discountCodeTitle {
+        margin-bottom: 16px;
+      }
+    }
+
+    .giftBoxesSection {
+      display: flex;
+      flex-direction: column;
+      margin-top: 9px;
+
+      .giftBoxesTitle {
+        font-size: 16px;
+        font-weight: var(--fontSemiBold);
+        color: var(--color20);
+        margin-bottom: 12px;
+      }
+
+      .giftBoxesIndex {
+        display: flex;
+        flex-direction: column;
+
+        .giftBox {
+          display: flex;
+          cursor: pointer;
+
+          &:not(:first-child) {
+            margin-top: 12px;
+          }
+
+          &:not(:last-child) {
+            border-bottom: 1px solid var(--colorD8);
+          }
+
+          .giftBoxLeftSection {
+            height: 80px;
+            width: 80px;
+            min-width: 80px;
+
+            img {
+              width: 100%;
+              max-width: 100%;
+              min-width: 80px;
+            }
+          }
+
+          .giftBoxRightSection {
+            display: flex;
+            flex-direction: column;
+            padding: 5px 10px;
+
+            .giftBoxTitle {
+              display: flex;
+
+              .giftBoxTitleQuantity {
+                font-size: 16px;
+                font-weight: var(--fontBold);
+                color: var(--color2E);
+              }
+
+              .giftBoxTitleName {
+                margin-left: 5px;
+                font-size: 16px;
+                font-weight: var(--fontRegular);
+                color: var(--color2E);
+              }
+            }
+
+            .giftBoxPrice {
+              font-size: 16px;
+              font-weight: var(--fontBold);
+              color: var(--color2E);
+              margin-top: 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.noContentPlaceholder {
+  padding: 100px 0;
+}

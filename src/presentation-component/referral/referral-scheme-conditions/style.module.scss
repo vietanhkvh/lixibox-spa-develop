@@ -1,0 +1,54 @@
+.referralSchemeConditions {
+  display: flex;
+  flex-direction: column;
+
+  .status {
+    font-weight: var(--fontLight);
+    font-size: 13px;
+    color: var(--color20);
+
+    span {
+      font-weight: var(--fontBold);
+      font-size: inherit;
+      color: inherit;
+    }
+  }
+
+  .progress {
+    margin-top: 10px;
+  }
+
+  .conditions {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+
+    .condition {
+      display: flex;
+      align-items: center;
+      fill: var(--color20);
+      color: var(--color20);
+
+      &:not(:first-child) {
+        margin-top: 8px;
+      }
+
+      .checkbox {
+        width: 16px;
+        height: 16px;
+      }
+
+      .name {
+        margin-left: 10px;
+        color: inherit;
+        font-size: 14px;
+        font-weight: var(--fontLight);
+      }
+    }
+
+    .conditionSatisfied {
+      fill: var(--colorSecondaryBlue);
+      color: var(--colorSecondaryBlue);
+    }
+  }
+}

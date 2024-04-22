@@ -1,0 +1,20 @@
+{
+    "applinks": {
+        "apps": [ ],
+        "details": [
+            {
+                "appID": "R9F7PZ8G9B.test.lixibox.app",
+                "paths": [
+                    "NOT /info",
+                    "NOT /info/*",
+                    "NOT /forgot-password",
+                    "NOT /users/password",
+                    "NOT /users/password/edit",
+                    "NOT /orders/trackings/",
+                    "*",
+                    "/"
+                ]
+            }
+        ]
+    }
+}

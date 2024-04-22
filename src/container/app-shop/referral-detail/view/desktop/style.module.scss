@@ -1,0 +1,31 @@
+.referralDetailContainer {
+  display: flex;
+  flex-direction: column;
+
+  .primarySection {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 30px;
+    background-color: var(--colorWhite);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+    .title {
+      font-size: 18px;
+      font-weight: var(--fontSemiBold);
+      margin-bottom: 24px;
+    }
+
+    .scoop {
+      background-color: var(--colorWhite);
+    }
+
+    .genericNote {
+      margin: 16px 10%;
+      color: var(--color8A);
+      font-weight: var(--fontLight);
+      font-size: 13px;
+      text-align: center;
+    }
+  }
+}

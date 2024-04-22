@@ -1,0 +1,23 @@
+.inputField {
+  padding-top: 0;
+  margin-bottom: 3px;
+}
+
+.fieldErrorMobile {
+  color: var(--colorWhite) !important;
+}
+
+.errorModal {
+  .prompt {
+    color: var(--color20);
+    text-align: center;
+  }
+
+  .button {
+    background-color: var(--color3E) !important;
+  }
+}
+
+.noDisplay {
+  display: none;
+}

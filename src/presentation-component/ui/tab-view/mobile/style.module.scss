@@ -1,0 +1,35 @@
+.tabView {
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    background-color: var(--colorWhite);
+    z-index: var(--zIndex5);
+
+    .entry {
+      flex-grow: 1;
+      text-align: center;
+      height: 50px;
+      line-height: 50px;
+      border-bottom: 0.96px solid var(--colorE4);
+      font-weight: var(--fontLight);
+      font-size: 14px;
+      color: var(--color20);
+      cursor: pointer;
+    }
+
+    .activeEntry {
+      font-weight: var(--fontSemiBold);
+      font-size: 14px;
+      color: var(--colorPrimary);
+      border-bottom: 2px solid var(--colorPrimary);
+    }
+  }
+
+  .body {
+    margin-top: 50px;
+  }
+}

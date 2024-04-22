@@ -1,0 +1,72 @@
+.balancePreviewItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .balancePreviewItemValue {
+    display: flex;
+    align-items: center;
+
+    .itemIcon {
+      width: 20px;
+      height: 20px;
+      min-width: 20px;
+      min-height: 20px;
+
+      svg {
+        fill: var(--colorPrimary);
+      }
+    }
+
+    .itemContent {
+      font-size: 22px;
+      font-weight: var(--fontBold);
+      color: var(--colorPrimary);
+
+      .itemContentSuffix {
+        margin-left: 5px;
+        font-size: 14px;
+        font-weight: var(--fontBold);
+        color: var(--colorPrimary);
+      }
+    }
+
+    .itemContentWithIcon {
+      margin-left: 5px;
+    }
+  }
+
+  .balancePreviewItemInfo {
+    font-size: 12px;
+    font-weight: var(--fontLight);
+    color: var(--color20);
+    text-align: center;
+
+    .expirableValue {
+      font-weight: var(--fontBold);
+      margin-right: 5px;
+    }
+  }
+}
+
+.balancePreviewItemPending {
+  .balancePreviewItemValue {
+    .itemContent {
+      font-size: 18px;
+      font-weight: var(--fontSemiBold);
+      color: var(--color8A);
+
+      .itemContentSuffix {
+        margin-left: 5px;
+        font-size: 14px;
+        font-weight: var(--fontSemiBold);
+        color: var(--color8A);
+      }
+    }
+  }
+
+  .balancePreviewItemInfo {
+    color: var(--color8A);
+  }
+}

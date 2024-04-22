@@ -1,0 +1,26 @@
+.pill {
+  font-size: 12px;
+  border-radius: 4px;
+  padding: 2px 9.5px;
+  flex-shrink: 0;
+
+  &.color-greenBold,
+  &.color-default {
+    font-weight: var(--fontSemiBold);
+    color: var(--colorGreenDark);
+    background-color: var(--colorGreenLight);
+  }
+
+  &.color-primary {
+    font-weight: var(--fontSemiBold);
+    color: var(--colorPrimary);
+    background-color: rgb(254 44 109 / 15%);
+  }
+
+  &.color-greyOutlined {
+    font-weight: var(--fontLight);
+    color: var(color59);
+    background-color: initial;
+    border: 1px solid var(--colorE4);
+  }
+}

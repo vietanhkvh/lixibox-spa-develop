@@ -1,0 +1,18 @@
+.keywordRows {
+  border-bottom: 1px solid var(--colorE9);
+
+  .header {
+    margin-bottom: 12px;
+  }
+
+  .rows {
+    display: flex;
+    flex-direction: column;
+
+    .row {
+      &:not(:first-child) {
+        margin-top: 12px;
+      }
+    }
+  }
+}

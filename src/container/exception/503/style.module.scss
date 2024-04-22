@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    display: flex;
+    border-bottom: 1px solid var(--colorE9);
+    padding: 0 16px;
+    color: var(--color20);
+    font-size: 16px;
+    line-height: 50px;
+    font-weight: var(--fontSemiBold);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .clientArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 550px;
+    padding: 50px 0 120px;
+    margin: 0 auto;
+    height: 100vh;
+  }
+
+  .maintenancePlaceholder {
+    padding: 50px 0;
+  }
+}

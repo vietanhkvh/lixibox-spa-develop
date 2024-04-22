@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+
+  .badge {
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: var(--fontBold);
+    margin: 0 4px 4px 0;
+    box-shadow: var(--shadow2);
+    line-height: 19px;
+  }
+}

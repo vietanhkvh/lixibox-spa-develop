@@ -1,0 +1,33 @@
+.miniCategory {
+  width: 100%;
+  min-width: 200px;
+  background-color: var(--colorF1);
+  border-radius: 8px;
+  padding: 12px 20px;
+
+  .title {
+    font-size: 18px;
+    font-weight: var(--fontSemiBold);
+    color: var(--color20);
+    line-height: 36px;
+  }
+
+  .categoryList {
+    margin-left: 16px;
+
+    .categoryItem {
+      line-height: 20px;
+      padding: 8px 0;
+
+      &.active {
+        font-weight: var(--fontSemiBold);
+      }
+
+      &:hover {
+        cursor: pointer;
+        transition: var(--transitionColor);
+        color: var(--colorPrimary);
+      }
+    }
+  }
+}

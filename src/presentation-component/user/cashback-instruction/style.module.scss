@@ -1,0 +1,60 @@
+.instructionItem {
+  display: flex;
+  padding: 13px 0;
+  align-items: center;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid var(--colorF0);
+  }
+
+  .iconSection {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    min-height: 44px;
+
+    svg {
+      fill: var(--color20);
+    }
+  }
+
+  .infoSection {
+    margin-left: 20px;
+
+    .title {
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: var(--fontSemiBold);
+      color: var(--color20);
+    }
+
+    .info {
+      margin-top: 1px;
+      font-size: 13px;
+      font-weight: var(--fontRegular);
+      color: var(--color2E);
+    }
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 13px 16px;
+
+  .title {
+    font-size: 16px;
+    font-weight: var(--fontSemiBold);
+    color: var(--color20);
+  }
+
+  .instructions {
+    margin-top: 11px;
+    display: flex;
+    flex-direction: column;
+
+    .instructionItem {
+      margin-left: 12px;
+    }
+  }
+}

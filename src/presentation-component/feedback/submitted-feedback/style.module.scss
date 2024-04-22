@@ -1,0 +1,142 @@
+.container {
+  position: relative;
+  border-bottom: 1px solid var(--colorF0);
+  padding: 16px 0;
+
+  &:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+
+  .boxLink {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+
+  .boxImage {
+    display: block;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border: 1px dashed var(--color8A);
+    margin-right: 10px;
+    border-radius: 4px;
+  }
+
+  .boxInfo {
+    flex: 1;
+  }
+
+  .boxName {
+    font-size: 14px;
+    line-height: 20px;
+    max-height: 40px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    color: var(--color20);
+    margin-bottom: 2px;
+    font-weight: var(--fontRegular);
+  }
+
+  .ratingGroup {
+    display: flex;
+  }
+
+  .rating {
+    height: 18px;
+  }
+
+  .time {
+    padding: 0 10px;
+    height: 18px;
+    line-height: 18px;
+    font-size: 13px;
+    color: var(--color8A);
+    font-weight: var(--fontLight);
+  }
+
+  .feedbackDetail {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 10px;
+  }
+
+  .description {
+    font-size: 13px;
+    line-height: 20px;
+    color: var(--color20);
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    font-weight: var(--fontLight);
+    margin-bottom: 14px;
+  }
+
+  .icon {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    margin-bottom: 0;
+    color: var(--colorBlack);
+    width: 40px;
+    height: 40px;
+  }
+
+  .innerIcon {
+    width: 15px;
+  }
+
+  .buttonList {
+    display: flex;
+  }
+
+  .buttonListMobile {
+    justify-content: space-between;
+  }
+
+  .button {
+    top: auto !important;
+    margin-top: 0;
+    transition: var(--transitionOpacity);
+  }
+
+  .buttonMobile {
+    width: calc(50% - 5px);
+  }
+
+  .buttonDesktop {
+    width: 140px;
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+
+  .imgList {
+    display: flex;
+    width: calc(100% + 16px);
+    overflow-x: auto;
+    padding-bottom: 10px;
+  }
+
+  .img {
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+    cursor: pointer;
+  }
+}

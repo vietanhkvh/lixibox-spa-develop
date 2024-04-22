@@ -1,0 +1,13 @@
+.bankTransferBlock {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--colorWhite);
+}
+
+.promptText {
+  color: var(--color20) !important;
+}
+
+.promptPrimaryButton {
+  background-color: var(--color20) !important;
+}

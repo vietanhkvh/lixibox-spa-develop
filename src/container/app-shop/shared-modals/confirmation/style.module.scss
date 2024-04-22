@@ -1,0 +1,23 @@
+.confirmationModalDesktop {
+  width: 400px;
+  overflow: auto;
+}
+
+.confirmation {
+  display: flex;
+  flex-direction: column;
+  margin: 13px 16px;
+
+  .message {
+    margin-bottom: 13px;
+    text-align: center;
+  }
+
+  .primaryButton {
+    margin-bottom: 0;
+  }
+}
+
+.modalBaseOverlay {
+  z-index: var(--zIndexMax) !important;
+}

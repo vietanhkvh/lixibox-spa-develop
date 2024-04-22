@@ -1,0 +1,31 @@
+.container {
+  display: block;
+  width: 100%;
+  max-width: var(--breakPoint1280);
+  margin: 0 auto;
+  padding: 0;
+
+  &.smaller {
+    max-width: var(--breakPoint960);
+  }
+
+  &.larger {
+    max-width: var(--breakPoint1440);
+  }
+
+  &.largest {
+    max-width: var(--breakPoint1920);
+  }
+}
+
+@media (width >= 960px) {
+  .container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+
+    &.larger {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.nRowListDynamicSize {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  width: 100%;
+
+  .item {
+    display: flex;
+  }
+
+  .moreButton {
+    display: flex;
+    align-items: center;
+    background-color: var(--colorE4);
+    border-radius: 4px;
+    cursor: pointer;
+
+    .content {
+      color: var(--color4D);
+    }
+  }
+}
+
+.noDisplay {
+  display: none !important;
+}
+
+.moreSize {
+  margin: 5px 10px 10px 0;
+  height: 40px;
+  padding: 0 3px;
+
+  .content {
+    font-size: 18px;
+  }
+}

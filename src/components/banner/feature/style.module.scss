@@ -1,0 +1,136 @@
+.container {
+  width: 100%;
+}
+
+.containerMobile {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: block;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.containerDesktop {
+  justify-content: space-between;
+  margin-bottom: 50px;
+  display: flex;
+}
+
+.containerMulti {
+  overflow-x: scroll;
+}
+
+.panel {
+  white-space: nowrap;
+}
+
+.panelDesktop {
+  width: 100%;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.panelMobile {
+  justify-content: space-between;
+  width: calc(200% - 21px);
+  max-width: 940px;
+  padding-left: 10px;
+  display: block;
+}
+
+.panelMulti {
+  width: 180%;
+}
+
+.link {
+  position: relative;
+  white-space: nowrap;
+  flex: 1;
+  cursor: pointer;
+  padding-top: 21%;
+  transition: var(--transitionNormal);
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.linkDesktop {
+  display: block;
+  max-width: calc(50% - 10px);
+  border-radius: 12px;
+  overflow: hidden;
+  width: calc(50% - 10px);
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.linkMobile {
+  display: inline-block;
+  vertical-align: top;
+  max-width: calc(50% - 5px);
+  width: calc(50% - 5px);
+  margin-right: 10px;
+  padding-right: 10px;
+  box-shadow: var(--shadowBlur);
+}
+
+.innerLink {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.navLink {
+  display: block;
+  height: 100%;
+  flex: 1;
+}
+
+.placeholder {
+  width: 100%;
+
+  .productList {
+    flex-wrap: wrap;
+    display: flex;
+  }
+
+  .productListMobile {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .productListDesktop {
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: 40px;
+  }
+
+  .productItemContainer {
+    flex: 1;
+    min-width: 20%;
+    width: 20%;
+  }
+
+  .productItemContainerDesktop {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    height: 237;
+  }
+
+  .productItemContainerMobile {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 10px;
+    height: 119px;
+  }
+
+  .productMobileItem {
+    min-width: 50%;
+    width: 50%;
+  }
+}

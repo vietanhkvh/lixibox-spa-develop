@@ -1,0 +1,147 @@
+.placeholder {
+  width: 100%;
+  display: flex;
+  margin-bottom: 35px;
+
+  .product {
+    flex: 1;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    image {
+      width: 100%;
+      height: auto;
+      padding-top: 84%;
+      margin-bottom: 10px;
+    }
+
+    text {
+      width: 94%;
+      height: 30px;
+      margin-bottom: 10px;
+    }
+
+    .lasttext {
+      width: 65%;
+      height: 30px;
+    }
+  }
+}
+
+.slider {
+  .body {
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 10px 0 0;
+    position: relative;
+    transition: var(--transitionOpacity);
+    opacity: 1;
+    scroll-snap-type: x mandatory;
+
+    .productContainer {
+      padding: 0 0 4px;
+      scroll-snap-align: 2;
+    }
+  }
+}
+
+.sliderPagination {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  z-index: var(--zIndex9);
+  left: 0;
+  bottom: 20px;
+  width: 100%;
+  transition: var(--transitionNormal);
+
+  .item {
+    display: block;
+    min-width: 12px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 5px;
+    background: var(--colorBlack);
+    cursor: pointer;
+  }
+
+  .itemActive {
+    background: var(--colorWhite);
+    box-shadow: 0 0 0 1px var(--colorBlack) inset;
+  }
+}
+
+.sliderPaginationVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.sliderNavigation {
+  .navSegment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    line-height: 100%;
+    background: var(--colorBlack);
+    transition: var(--transitionNormal);
+    z-index: var(--zIndex9);
+    cursor: pointer;
+    top: 50%;
+  }
+
+  .navSegmentLeft {
+    left: 0;
+  }
+
+  .navSegmentRight {
+    right: 0;
+  }
+}
+
+.productSlideContainer {
+  position: relative;
+  overflow: hidden;
+
+  .pagination {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  .leftNav {
+    width: 40px;
+    height: 60px;
+    opacity: 0;
+    transform: translate(-60px, -88px);
+    visibility: hidden;
+  }
+
+  .rightNav {
+    width: 40px;
+    height: 60px;
+    opacity: 0;
+    transform: translate(60px, -88px);
+    visibility: hidden;
+  }
+
+  &:hover {
+    .pagination {
+      opacity: 1;
+      transform: translateY(18px);
+    }
+
+    .leftNav {
+      opacity: 1;
+      transform: translate(0, -88px);
+      visibility: visible;
+    }
+
+    .rightNav {
+      opacity: 1;
+      transform: translate(0, -88px);
+      visibility: visible;
+    }
+  }
+}

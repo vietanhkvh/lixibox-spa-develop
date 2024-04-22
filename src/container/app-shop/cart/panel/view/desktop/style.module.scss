@@ -1,0 +1,36 @@
+.sidePanel {
+  position: sticky;
+  top: 20px;
+
+  .codSuggestion {
+    border-radius: 8px;
+    margin-top: 15px;
+  }
+}
+
+.bodyContainer {
+  .sidePanelContainer {
+    margin: 58px 0 20px;
+    border-left: none;
+  }
+
+  .sidePanelContainerPayment {
+    margin: 0 0 20px;
+  }
+}
+
+.mainContainer {
+  .title {
+    font-weight: var(--fontSemiBold);
+    font-size: 28px;
+    color: var(--color20);
+    margin-bottom: 20px;
+
+    span {
+      font-weight: var(--fontLight);
+      font-size: 14px;
+      color: var(--color20);
+      margin-left: 5px;
+    }
+  }
+}

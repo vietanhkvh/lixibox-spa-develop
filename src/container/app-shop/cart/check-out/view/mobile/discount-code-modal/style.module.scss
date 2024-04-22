@@ -1,0 +1,30 @@
+.generalModalContainer {
+  max-width: 440px;
+}
+
+.redeemDiscountCodeModal {
+  margin: 16px;
+
+  .entrySection {
+    margin: 4px 0 16px;
+  }
+
+  .notificationSection {
+    color: var(--colorRed);
+    text-align: center;
+  }
+
+  .listSection {
+    margin-top: 16px;
+
+    .title {
+      font-weight: var(--fontSemiBold);
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+  }
+
+  .noPromoPlaceholder {
+    padding: 50px 0;
+  }
+}

@@ -1,0 +1,33 @@
+.userMembership {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  align-items: center;
+
+  .membershipImage {
+    width: 130px;
+    height: 130px;
+    min-width: 130px;
+    min-height: 130px;
+  }
+
+  .username {
+    margin-top: 16px;
+    font-size: 18px;
+    font-weight: var(--fontSemiBold);
+    color: var(--color20);
+  }
+
+  .info {
+    margin-top: 6px;
+    font-size: 14px;
+    font-weight: var(--fontLight);
+    color: var(--color20);
+    text-align: center;
+  }
+
+  .button {
+    margin-top: 8px;
+    margin-bottom: 0;
+  }
+}

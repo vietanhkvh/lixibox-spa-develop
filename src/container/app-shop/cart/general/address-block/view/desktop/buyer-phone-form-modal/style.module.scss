@@ -1,0 +1,21 @@
+.buyerPhoneFormModal {
+  // TODO: Refactor
+  min-width: 350px; // Note: Ensures that long title can be fully visible
+  margin-bottom: 70px;
+
+  .body {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 17px 0 15px;
+    margin-bottom: calc(70px + 37px); // TODO: Refactor general modal
+  }
+
+  .primaryButton {
+    // TODO: Remove `important`. Dependency: SubmitButton (inline style removal required)
+    background-color: var(--color3E) !important;
+  }
+}
+
+.entry {
+  margin-top: 8px;
+}

@@ -1,0 +1,17 @@
+.stores {
+  display: flex;
+  flex-direction: column;
+
+  .searchHeader {
+    width: calc(100% - 40px);
+    margin-top: 20px;
+  }
+
+  .index {
+    margin: 20px;
+  }
+}
+
+.noContentPlaceholderMobile {
+  height: calc(100vh - 50px - 44px - 100px);
+}

@@ -1,0 +1,496 @@
+version: 2.1
+
+orbs:
+  codecov: codecov/codecov@1.0.2
+executors:
+  base-node:
+    parameters:
+      node_env:
+        type: string
+        default: ""
+    shell: /bin/bash --login
+    docker:
+      - image: cimg/node:18.18
+        environment:
+          NODE_ENV: << parameters.node_env >>
+    resource_class: small
+  lint-node:
+    parameters:
+      node_env:
+        type: string
+        default: ""
+    shell: /bin/bash --login
+    docker:
+      - image: cimg/node:18.18
+        environment:
+          NODE_ENV: << parameters.node_env >>
+    resource_class: small
+  test-node:
+    parameters:
+      node_env:
+        type: string
+        default: ""
+    shell: /bin/bash --login
+    docker:
+      - image: cimg/node:18.18
+        environment:
+          NODE_ENV: << parameters.node_env >>
+    resource_class: xlarge
+  build-node:
+    parameters:
+      node_env:
+        type: string
+        default: ""
+    shell: /bin/bash --login
+    docker:
+      - image: cimg/node:18.18
+        environment:
+          NODE_ENV: << parameters.node_env >>
+    resource_class: medium+
+  deploy-node:
+    parameters:
+      deploy_env:
+        type: string
+        default: ""
+    shell: /bin/bash --login
+    docker:
+      - image: circleci/ruby:2.7.4-bullseye
+        environment:
+          DEPLOY_ENV: << parameters.deploy_env >>
+          BUNDLE_JOBS: 4
+          BUNDLE_RETRY: 3
+          BUNDLE_PATH: vendor/bundle
+    resource_class: small
+
+commands:
+  fast_checkout:
+    steps:
+      - attach_workspace:
+          at: ~/project
+jobs:
+  setup:
+    parallelism: 1
+    executor: base-node
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - v3-dependencies-{{ checksum "yarn.lock" }}
+      - run:
+          name: Install dependencies
+          command: yarn install --frozen-lockfile && yarn autoclean --force
+      - save_cache:
+          paths:
+            - node_modules
+          key: v3-dependencies-{{ checksum "yarn.lock" }}
+      - run:
+          name: Remove unnecessary directories
+          command: 'rm -rf .git dist docs *.md *.log'
+      - persist_to_workspace:
+          root: ~/project
+          paths:
+            - .
+
+  lint-es:
+    parallelism: 1
+    executor:
+      name: lint-node
+      node_env: test
+    steps:
+      - fast_checkout
+      - run:
+          name: Run ES linter
+          command: yarn lint:es:all
+      - run:
+          name: Fail fast
+          when: on_fail
+          command: |
+            echo "Canceling workflow to save resources as a linter resulted in failure"
+            curl -X POST --header "Content-Type: application/json" "https://circleci.com/api/v2/workflow/${CIRCLE_WORKFLOW_ID}/cancel?circle-token=${CIRCLE_TOKEN}"
+
+  lint-prettier:
+    parallelism: 1
+    executor:
+      name: lint-node
+      node_env: test
+    steps:
+      - fast_checkout
+      - run:
+          name: Run Prettier formatting checker
+          command: yarn lint:prettier:all
+      - run:
+          name: Fail fast
+          when: on_fail
+          command: |
+            echo "Canceling workflow to save resources as a linter resulted in failure"
+            curl -X POST --header "Content-Type: application/json" "https://circleci.com/api/v2/workflow/${CIRCLE_WORKFLOW_ID}/cancel?circle-token=${CIRCLE_TOKEN}"
+
+  lint-style:
+    parallelism: 1
+    executor:
+      name: lint-node
+      node_env: test
+    steps:
+      - fast_checkout
+      - run:
+          name: Run style linter
+          command: yarn lint:style:all
+      - run:
+          name: Fail fast
+          when: on_fail
+          command: |
+            echo "Canceling workflow to save resources as a linter resulted in failure"
+            curl -X POST --header "Content-Type: application/json" "https://circleci.com/api/v2/workflow/${CIRCLE_WORKFLOW_ID}/cancel?circle-token=${CIRCLE_TOKEN}"
+
+  test:
+    parallelism: 1
+    executor:
+      name: test-node
+      node_env: test
+    environment:
+      CIRCLE_TEST_REPORTS: /tmp/circleci-test-results
+      CIRCLE_ARTIFACTS: /tmp/circleci-artifacts
+    steps:
+      - fast_checkout
+      - run:
+          name: Create report directories
+          command: mkdir -p $CIRCLE_ARTIFACTS $CIRCLE_TEST_REPORTS
+      - run:
+          name: Run tests
+          command: yarn coverage:ci
+      - run:
+          name: Upload coverage to Codecov
+          command: bash <(curl -s https://codecov.io/bash)
+      - store_test_results:
+          path: /tmp/circleci-test-results
+      - store_artifacts:
+          path: coverage
+      - run:
+          name: Fail fast
+          when: on_fail
+          command: |
+            echo "Canceling workflow to save resources as a test step resulted in failure"
+            curl -X POST --header "Content-Type: application/json" "https://circleci.com/api/v2/workflow/${CIRCLE_WORKFLOW_ID}/cancel?circle-token=${CIRCLE_TOKEN}"
+
+  build:
+    parallelism: 1
+    parameters:
+      node_env:
+        type: string
+        default: staging
+    executor:
+      name: build-node
+      node_env: << parameters.node_env >>
+    steps:
+      - fast_checkout
+      - run:
+          name: Build
+          command: |
+            export CI='' # FIXME: Remove temporary CI warning suppressor after fixing warnings
+            echo "Selected build environment: $NODE_ENV"
+            if [[ "$NODE_ENV" == "staging" ]]; then
+              yarn build:staging
+            elif [[ "$NODE_ENV" == "staging-fe" ]]; then
+              yarn build:staging-fe
+            elif [[ "$NODE_ENV" == "staging-be" ]]; then
+              yarn build:staging-be
+            elif [[ "$NODE_ENV" == "staging-mb" ]]; then
+              yarn build:staging-mb
+            elif [[ "$NODE_ENV" == "qa" ]]; then
+              yarn build:qa
+            else
+              yarn build:production
+            fi
+      - persist_to_workspace:
+          root: ~/project
+          paths:
+            - build/
+
+  deploy:
+    parallelism: 1
+    parameters:
+      deploy_env:
+        type: string
+        default: staging
+    executor:
+      name: deploy-node
+      deploy_env: << parameters.deploy_env >>
+    steps:
+      - fast_checkout
+      - run:
+          name: Install bundler
+          command: |
+            gem install bundler -v 2.4.22
+      - run:
+          name: Install gems
+          command: |
+            echo 'gem: --no-document' > ~/.gemrc
+            bundle check || bundle install
+      - run:
+          name: Install rsync
+          command: |
+            sudo apt install rsync
+      - run:
+          name: Install Sentry CLI
+          command: curl -sL https://sentry.io/get-cli/ | bash
+      - add_ssh_keys:
+          fingerprints:
+            - F4:45:C9:DE:12:81:9F:39:AA:3E:BC:EA:58:E4:B5:8C
+      - deploy:
+          name: Deploy
+          command: |
+            DEPLOY_ENV="${DEPLOY_ENV:-staging}"
+            echo "Selected deployment environment: $DEPLOY_ENV"
+            if [[ "$DEPLOY_ENV" == "staging" ]]; then
+              bundle exec cap staging deploy
+            elif [[ "$DEPLOY_ENV" == "staging-fe" ]]; then
+              bundle exec cap staging-fe deploy
+            elif [[ "$DEPLOY_ENV" == "staging-be" ]]; then
+              bundle exec cap staging-be deploy
+            elif [[ "$DEPLOY_ENV" == "staging-mb" ]]; then
+              bundle exec cap staging-mb deploy
+            elif [[ "$DEPLOY_ENV" == "qa" ]]; then
+              bundle exec cap qa deploy
+            elif [[ "$DEPLOY_ENV" == "production" ]]; then
+              bundle exec cap production deploy
+            else
+              echo "Deployment skipped. No matching 'DEPLOY_ENV' found"
+            fi
+workflows:
+  version: 2
+  test_build_and_deploy:
+    jobs:
+      - setup:
+          filters:
+            tags:
+              only:
+                - /^\d+\.\d+\.\d+$/
+      - lint-es:
+          requires:
+            - setup
+          filters:
+            tags:
+              only:
+                - /^\d+\.\d+\.\d+$/
+      - lint-prettier:
+          requires:
+            - setup
+          filters:
+            tags:
+              only:
+                - /^\d+\.\d+\.\d+$/
+      - lint-style:
+          requires:
+            - setup
+          filters:
+            tags:
+              only:
+                - /^\d+\.\d+\.\d+$/
+      - test:
+          requires:
+            - setup
+          filters:
+            tags:
+              only:
+                - /^\d+\.\d+\.\d+$/
+      # Staging FE build and deploy (Development and test flow)
+      - build:
+          name: build_staging_fe
+          node_env: staging-fe
+          requires:
+            - test
+            - lint-es
+            - lint-prettier
+            - lint-style
+          filters:
+            branches:
+              only:
+                - deploy_staging_fe
+            tags:
+              ignore:
+                - /.*/
+      - deploy:
+          name: deploy_staging_fe
+          deploy_env: staging-fe
+          requires:
+            - build_staging_fe
+          filters:
+            branches:
+              only:
+                - deploy_staging_fe
+            tags:
+              ignore:
+                - /.*/
+      # Staging BE build and deploy (Development and test flow)
+      - build:
+          name: build_staging_be
+          node_env: staging-be
+          requires:
+            - test
+            - lint-es
+            - lint-prettier
+            - lint-style
+          filters:
+            branches:
+              only:
+                - deploy_staging_be
+            tags:
+              ignore:
+                - /.*/
+      - deploy:
+          name: deploy_staging_be
+          deploy_env: staging-be
+          requires:
+            - build_staging_be
+          filters:
+            branches:
+              only:
+                - deploy_staging_be
+            tags:
+              ignore:
+                - /.*/
+      # Staging MB build and deploy (Development and test flow)
+      - build:
+          name: build_staging_mb
+          node_env: staging-mb
+          requires:
+            - test
+            - lint-es
+            - lint-prettier
+            - lint-style
+          filters:
+            branches:
+              only:
+                - deploy_staging_mb
+            tags:
+              ignore:
+                - /.*/
+      - deploy:
+          name: deploy_staging_mb
+          deploy_env: staging-mb
+          requires:
+            - build_staging_mb
+          filters:
+            branches:
+              only:
+                - deploy_staging_mb
+            tags:
+              ignore:
+                - /.*/
+      # QA build and deploy (Development and test flow)
+      - build:
+          name: build_qa
+          node_env: qa
+          requires:
+            - test
+            - lint-es
+            - lint-prettier
+            - lint-style
+          filters:
+            branches:
+              only:
+                - deploy_qa
+            tags:
+              ignore:
+                - /.*/
+      - deploy:
+          name: deploy_qa
+          deploy_env: qa
+          requires:
+            - build_qa
+          filters:
+            branches:
+              only:
+                - deploy_qa
+            tags:
+              ignore:
+                - /.*/
+      # Pre-production manual build and deploy (Development and test flow)
+      - build:
+          name: build_manual_pre_production
+          node_env: staging
+          requires:
+            - test
+            - lint-es
+            - lint-prettier
+            - lint-style
+          filters:
+            branches:
+              only:
+                - deploy_pre_production
+            tags:
+              ignore:
+                - /.*/
+      - deploy:
+          name: deploy_manual_pre_production
+          deploy_env: staging
+          requires:
+            - build_manual_pre_production
+          filters:
+            branches:
+              only:
+                - deploy_pre_production
+            tags:
+              ignore:
+                - /.*/
+      # Pre-production build and deploy on changes to develop branch (Release flow)
+      - build:
+          name: build_pre_production
+          node_env: staging
+          requires:
+            - test
+            - lint-es
+            - lint-prettier
+            - lint-style
+          filters:
+            branches:
+              ignore:
+                - deploy_staging_fe
+                - deploy_staging_be
+                - deploy_staging_mb
+                - deploy_qa
+                - deploy_pre_production
+            tags:
+              ignore:
+                - /.*/
+      - deploy:
+          name: deploy_pre_production
+          deploy_env: staging
+          requires:
+            - build_pre_production
+          filters:
+            branches:
+              only:
+                - develop
+                - /lx-1411-.*/
+            tags:
+              ignore:
+                - /.*/
+      # Production build on changes to master branch (Release flow)
+      - build:
+          name: build_production
+          node_env: production
+          requires:
+            - test
+            - lint-es
+            - lint-prettier
+            - lint-style
+          filters:
+            branches:
+              only:
+                - master
+            tags:
+              only:
+                - /^\d+\.\d+\.\d+$/
+      # Production deploy on new tag publish (Release flow)
+      - deploy:
+          name: deploy_production
+          deploy_env: production
+          requires:
+            - build_production
+          filters:
+            branches:
+              ignore: /.*/
+            tags:
+              only:
+                - /^\d+\.\d+\.\d+$/

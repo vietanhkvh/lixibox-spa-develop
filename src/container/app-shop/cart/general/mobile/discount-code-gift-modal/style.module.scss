@@ -1,0 +1,17 @@
+.discountCodeGiftModal {
+  .body {
+    margin-top: 20px;
+    margin-bottom: 70px;
+    padding-bottom: 70px;
+  }
+
+  .primaryButton {
+    // TODO: Remove `important`. Dependency: SubmitButton (inline style removal required)
+    background-color: var(--color3E) !important;
+  }
+}
+
+.discountCodeGiftItemWithAction {
+  padding-left: 0;
+  padding-right: 0;
+}

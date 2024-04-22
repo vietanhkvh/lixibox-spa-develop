@@ -1,0 +1,20 @@
+.priceItemTitle {
+  line-height: 18px;
+  font-size: 14px;
+  color: var(-color4D);
+  transition: var(--transitionColor);
+
+  &:hover {
+    color: var(--colorPink);
+  }
+}
+
+.mobileVersionPriceItemTitle {
+  font-size: 12px;
+  color: var(--colorBlack09);
+  transition: var(--transitionColor);
+
+  &:hover {
+    color: var(--colorPink);
+  }
+}

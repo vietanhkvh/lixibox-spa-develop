@@ -1,0 +1,39 @@
+.productVerticalList {
+  width: 100%;
+
+  .panel {
+    overflow-x: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .child {
+    scroll-snap-align: center;
+    display: flex;
+    min-width: 50%;
+    max-width: 50%;
+    padding: 10px 8px 32px;
+    width: 100%;
+
+    &.col-2 {
+      min-width: 50%;
+      max-width: 50%;
+    }
+
+    &.col-3 {
+      min-width: 33%;
+      max-width: 33%;
+    }
+
+    &.col-4 {
+      min-width: 25%;
+      max-width: 25%;
+    }
+
+    &.col-5 {
+      min-width: 20%;
+      max-width: 20%;
+    }
+  }
+}

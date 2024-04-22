@@ -1,0 +1,158 @@
+.gwpIndexContainer {
+  display: flex;
+  flex-direction: column;
+
+  .primaryBannerSection {
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding-top: 41.67%; /* for 12:5 aspect ratio */
+    overflow: hidden;
+    margin-bottom: 16px;
+
+    video,
+    .image,
+    .placeholder {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .largeSchemeSection {
+    display: flex;
+    flex-direction: column;
+    margin: 27px 0 0;
+
+    .largeSchemeContent {
+      margin-top: 28px;
+    }
+  }
+
+  .smallSchemesSection {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+
+    .smallSchemesIndex {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 28px;
+
+      $productSpacing: 40px;
+      $productInARow: 3;
+      $productsWithMarginRight: $productInARow - 1;
+      $productWidth: calc((100% - #{$productSpacing} * #{$productsWithMarginRight}) / #{$productInARow});
+
+      .smallScheme {
+        width: $productWidth;
+        border-radius: 8px;
+        box-shadow: var(--shadow2);
+
+        // No margin-right for last item in a row
+        &:nth-child(3n) {
+          margin-right: 0;
+        }
+
+        // Add margin-right for items not in the last position of a row
+        &:not(:nth-child(3n)) {
+          margin-right: $productSpacing;
+        }
+
+        // From the second row, add margin-top
+        &:nth-child(n + 4) {
+          margin-top: $productSpacing;
+        }
+      }
+    }
+  }
+
+  .testimonialsSection {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+
+    .testimonials {
+      margin-top: 18px;
+
+      $paddingBetweenTestimonials: 40px;
+
+      .testimonialContainer {
+        padding-left: calc(#{$paddingBetweenTestimonials} / 2);
+        padding-right: calc(#{$paddingBetweenTestimonials} / 2);
+
+        .testimonial {
+          border-radius: 8px;
+          box-shadow: var(--shadow2);
+        }
+      }
+    }
+  }
+
+  .faqSection {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+
+    .faqContainer {
+      margin-top: 28px;
+
+      .faq {
+        border-radius: 8px;
+        padding: 0 32px;
+
+        &:not(:first-child) {
+          margin-top: 24px;
+        }
+      }
+    }
+  }
+
+  .otherBannersSection {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+
+    .otherBanners {
+      margin-top: 28px;
+      display: flex;
+      flex-wrap: wrap;
+
+      $spacingBetweenBanners: 40px;
+
+      .otherBanner {
+        width: calc((100% - #{$spacingBetweenBanners}) / 2);
+        margin-top: $spacingBetweenBanners;
+        margin-right: $spacingBetweenBanners;
+
+        // no margin-top for the first row
+        &:nth-child(-n + 2) {
+          margin-top: 0;
+        }
+
+        &:nth-child(even) {
+          margin-right: 0;
+        }
+
+        img {
+          width: 100%;
+          max-width: 100%;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+
+  .bottomSection {
+    margin-bottom: 120px;
+  }
+}
+
+.sectionHeader {
+  font-size: 25px;
+  font-weight: var(--fontSemiBold);
+  color: var(--color20);
+  border-bottom: solid 1px var(--color8A);
+}

@@ -1,0 +1,93 @@
+.socialAccountIntegrator {
+  display: flex;
+  position: relative;
+
+  .container {
+    height: 50px;
+    display: flex;
+    flex: 1;
+    padding: 0 16px;
+    align-items: center;
+    align-self: center;
+    max-width: 100%;
+    cursor: pointer;
+
+    .title {
+      font-weight: var(--fontLight);
+      font-size: 14px;
+      color: var(--color20);
+      line-height: 50px;
+      letter-spacing: 0;
+      white-space: nowrap;
+      padding-right: 30px;
+      margin-left: 10px;
+      flex: 1;
+    }
+
+    .value {
+      font-weight: var(--fontRegular);
+      font-size: 14px;
+      color: var(--color20);
+      text-align: right;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      max-width: calc(100% - 140px);
+      min-width: 110px;
+
+      .text {
+        font-weight: var(--fontRegular);
+        font-size: 14px;
+        color: var(--color20);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: calc(100% - 20px);
+      }
+
+      .textDisabled {
+        color: var(--color8E);
+      }
+    }
+
+    // TODO: Refactor
+    .iconArrow {
+      width: 8px;
+      height: 14px;
+      margin-left: 12px;
+    }
+
+    .iconClose {
+      width: 14px;
+      height: 14px;
+      margin-left: 6px;
+    }
+
+    .socialIcon {
+      width: 20px;
+      height: 20px;
+    }
+
+    .socialIconAppleVisualAdjustment {
+      height: 25px;
+    }
+
+    .hide {
+      opacity: 0;
+    }
+
+    .svg {
+      min-width: 8px;
+      fill: var(--color20);
+    }
+  }
+}
+
+.linkerLoader {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(0 0 0 / 20%);
+  pointer-events: none;
+}

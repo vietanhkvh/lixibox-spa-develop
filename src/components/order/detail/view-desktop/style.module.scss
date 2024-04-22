@@ -1,0 +1,438 @@
+.iconLayout.desktop {
+  border: 1px solid var(--colorE9);
+  width: 100%;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.iconLayoutList.desktop {
+  display: flex;
+  flex-wrap: wrap;
+
+  .iconLayout.desktop {
+    border: 1px solid var(--colorE9);
+    max-width: calc(50% - 20px);
+    width: calc(50% - 20px);
+    border-radius: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+.outerIconLayout {
+  padding: 16px 0;
+}
+
+.iconLayout {
+  display: flex;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--colorE9);
+}
+
+.outerIconLayout .iconLayout {
+  border-bottom: none;
+  padding: 0;
+}
+
+.iconCol {
+  width: 48px;
+  padding-left: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.generalIconCopy {
+  margin-left: 15px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.generalIconCopy svg {
+  width: 16px;
+  height: 16px;
+  fill: var(--color8A);
+}
+
+.iconCol .icon {
+  width: 22px;
+  height: 20px;
+}
+
+.iconCol .icon svg {
+  fill: var(--color20);
+  width: 20px;
+  height: 20px;
+}
+
+.iconCol .icon.receiver svg {
+  width: 19px;
+}
+
+.iconCol .icon.mark-location svg {
+  width: 16px;
+}
+
+.iconCol .icon.delivery svg {
+  width: 22px;
+}
+
+.mainCol {
+  flex: 1;
+  padding-right: 16px;
+}
+
+.topInfo {
+  /* empty style */
+}
+
+.topInfo .orderStatus {
+  /* empty style */
+}
+
+.topInfo .buttonAction {
+  padding-top: 10px;
+}
+
+.topInfo .orderIdRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.topInfo .orderId {
+  font-size: 14px;
+  font-weight: var(--fontSemiBold);
+  color: var(--colorBlue);
+  text-transform: uppercase;
+}
+
+.generalRow {
+  margin-bottom: 10px;
+}
+
+.generalBigRow {
+  margin-bottom: 12px;
+}
+
+.generalSmallRow {
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.generalRowSpaceBetween {
+  display: flex;
+  justify-content: space-between;
+}
+
+.generalTableRow {
+  display: table-row;
+  margin-bottom: 5px;
+}
+
+.generalTableRow > * {
+  display: table-cell;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.generalTableRow > div:first-child {
+  padding-right: 10px;
+  white-space: nowrap;
+}
+
+.generalTableRow > div:last-child {
+  min-width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bankInfo .bankInfoNote {
+  font-size: 13px;
+  font-weight: var(--fontLight);
+  line-height: 18px;
+  padding: 10px 0;
+}
+
+.generalRowText {
+  font-weight: var(--fontLight);
+  font-size: 14px;
+  color: var(--color20);
+  line-height: 20px;
+}
+
+.generalRowBoldText {
+  font-weight: var(--fontSemiBold);
+  font-size: 14px;
+  color: var(--color20);
+  line-height: 20px;
+}
+
+.generalRowBlueText {
+  color: var(--colorBlue);
+}
+
+.generalRowHeadingText {
+  font-weight: var(--fontSemiBold);
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--color20);
+  text-transform: uppercase;
+}
+
+.deliveryInfo {
+  /* empty style */
+}
+
+.checkPointContainer {
+  position: relative;
+}
+
+.checkPointContainer::before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background: var(--colorE9);
+  top: 4px;
+  left: -20px;
+}
+
+.checkPointContainer::after {
+  content: '';
+  position: absolute;
+  background: var(--colorBlue);
+  box-shadow: 0 0 0 3px rgb(24 135 219 / 30%);
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  top: 4px;
+  left: -24px;
+}
+
+.productListPanel {
+  padding: 0 16px;
+}
+
+.accompanyBrief {
+  font-size: 14px;
+
+  .accompany {
+    &:not(:first-child) {
+      margin-top: 15px;
+    }
+
+    .header {
+      font-weight: var(--fontSemiBold);
+      color: var(--color20);
+      margin-bottom: 5px;
+
+      span {
+        font-weight: inherit;
+        padding-left: 7px;
+      }
+
+      .typeFree {
+        color: var(--colorBlue18);
+      }
+
+      .typePremium {
+        color: var(--colorPrimary);
+      }
+    }
+
+    .preview {
+      font-weight: var(--fontLight);
+      color: var(--color20);
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
+
+  .hint {
+    font-weight: var(--fontLight);
+    color: var(--color8A);
+  }
+}
+
+.rowPurchaseType {
+  display: flex;
+  padding-bottom: 8px;
+  margin-right: 5px;
+
+  .content {
+    font-size: 12px;
+    font-weight: var(--fontSemiBold);
+    border-radius: 4px;
+    padding: 2px 9.5px;
+    color: var(--colorGreenDark);
+    background-color: var(--colorGreenLight);
+  }
+}
+
+.cancelledTag {
+  display: flex;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  .content {
+    font-size: 12px;
+    font-weight: var(--fontSemiBold);
+    border-radius: 4px;
+    padding: 2px 9.5px;
+    color: var(--colorBlack05);
+    background-color: var(--colorBlack005);
+  }
+}
+
+.onePayButtonIcon {
+  width: 50px;
+  max-width: 50px !important;
+  max-height: 25px !important;
+}
+
+.dashedDivider {
+  border-bottom: 1px dashed var(--colorC5);
+  margin: 10px 0;
+}
+
+.solidDivider {
+  border-bottom: 1px solid var(--colorC5);
+  margin: 10px 0;
+}
+
+.qrCode {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+
+  .dividerContainer {
+    display: flex;
+    width: 100%;
+    position: relative;
+    border-bottom: 1px dashed var(--colorC5);
+    padding: 10px 0;
+
+    .dividerText {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      font-weight: var(--fontSemiBold);
+      font-size: 12px;
+      color: #817d7d;
+      background-color: white;
+      padding: 0 10px;
+      transform: translate(-50%, 0%);
+    }
+  }
+
+  .text {
+    display: inline-block;
+    font-weight: var(--fontSemiBold);
+    font-size: 12px;
+    color: #817d7d;
+  }
+
+  .image {
+    margin: 10px 0;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+  padding: 0 10px;
+  grid-template-columns: repeat(2, 1fr);
+
+  .bankInfo {
+    grid-column: 2;
+    grid-row: 1 / span 4;
+  }
+}
+
+.accumulationsFromOrder {
+  padding: 16px;
+
+  .header {
+    display: flex;
+    align-items: center;
+
+    .icon {
+      width: 18px;
+      height: 18px;
+
+      svg {
+        fill: var(--color20);
+        width: 18px;
+        height: 18px;
+        min-width: 18px;
+        min-height: 18px;
+      }
+    }
+
+    .title {
+      font-size: 14px;
+      font-weight: var(--fontSemiBold);
+      color: var(--color20);
+      margin-left: 12px;
+    }
+  }
+
+  .accumulations {
+    margin-top: 14px;
+
+    .accumulation {
+      display: flex;
+      align-items: center;
+
+      &:not(:first-child) {
+        margin-top: 8px;
+      }
+
+      .title {
+        font-weight: var(--fontLight);
+        font-size: 14px;
+        color: var(--color20);
+      }
+
+      .value {
+        font-weight: var(--fontSemiBold);
+        font-size: 14px;
+        color: var(--colorGreenDark);
+        padding-left: 8px;
+        margin-left: auto;
+      }
+    }
+  }
+}
+
+.orderAccumulationSection {
+  padding: 20px 30px;
+  background: rgb(247 249 250);
+  border-radius: 8px;
+  flex: 1 1 0%;
+  margin-left: 10px;
+  max-width: calc(100% - 20px);
+  margin-top: 16px;
+}
+
+.pricingBreakdown {
+  padding: 20px 30px;
+  background: rgb(247 249 250);
+  border-radius: 8px;
+  flex: 1 1 0%;
+  margin-left: 10px;
+  max-width: calc(100% - 20px);
+  margin-top: 16px;
+}

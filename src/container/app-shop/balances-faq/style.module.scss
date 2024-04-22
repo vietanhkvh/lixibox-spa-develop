@@ -1,0 +1,13 @@
+.container {
+  min-height: 100vh;
+
+  .mainBlockSection {
+    background-color: var(--colorWhite);
+    overflow: hidden;
+    padding: 0 18px 18px;
+
+    .collapsibleList {
+      margin-bottom: 6px;
+    }
+  }
+}

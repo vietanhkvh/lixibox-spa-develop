@@ -1,0 +1,161 @@
+.pricingBreakdown {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  background-color: var(--colorWhite);
+  overflow: hidden;
+
+  // add 8px margin to the top to all the children except the first one
+  > *:not(:first-child) {
+    margin-top: 8px;
+  }
+
+  // add 10px margin top to the second child
+  > *:nth-child(2) {
+    margin-top: 10px;
+  }
+
+  .cartValue {
+    display: flex;
+    justify-content: center;
+
+    .cartValueTitle {
+      font-size: 14px;
+      font-weight: var(--fontRegular);
+      color: var(--color20);
+    }
+
+    .cartValueContent {
+      font-size: 14px;
+      font-weight: var(--fontRegular);
+      color: var(--color20);
+      flex-shrink: 0;
+      margin-left: auto;
+    }
+  }
+
+  .serviceChargeTotal {
+    display: flex;
+    justify-content: center;
+
+    .serviceChargeTotalTitle {
+      font-size: 12px;
+      font-weight: var(--fontRegular);
+    }
+
+    .serviceChargeTotalInfo {
+      width: 16px;
+      height: 16px;
+      color: var(--color8A);
+      cursor: pointer;
+      margin-left: 5px;
+
+      svg {
+        fill: var(--color20);
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    .serviceChargeTotalContent {
+      font-size: 12px;
+      font-weight: var(--fontRegular);
+      color: var(--color20);
+      flex-shrink: 0;
+      margin-left: auto;
+    }
+  }
+
+  .total {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px dashed rgba($color: #000204, $alpha: 20%);
+
+    .totalTitle {
+      font-size: 14px;
+      font-weight: var(--fontBold);
+      color: var(--color20);
+    }
+
+    .totalContent {
+      font-size: 20px;
+      font-weight: var(--fontBold);
+      color: var(--color20);
+      flex-shrink: 0;
+      margin-left: auto;
+    }
+  }
+}
+
+.chargeReductionItem {
+  display: flex;
+  justify-content: center;
+
+  .chargeReductionItemIcon {
+    width: 16px;
+    height: 16px;
+
+    svg {
+      fill: var(--colorPrimary);
+      width: 16px;
+      height: 16px;
+      min-width: 16px;
+      min-height: 16px;
+    }
+  }
+
+  .chargeReductionItemTitle {
+    font-size: 12px;
+    font-weight: var(--fontRegular);
+    color: var(--color20);
+    margin-left: 8px;
+  }
+
+  .chargeReductionItemValue {
+    font-size: 12px;
+    font-weight: var(--fontRegular);
+    color: var(--colorPrimary);
+    flex-shrink: 0;
+    margin-left: auto;
+    padding-left: 8px;
+  }
+}
+
+.serviceBreakdownPopupContent {
+  padding: 20px 16px;
+  width: 100%;
+
+  > *:not(:first-child) {
+    margin-top: 12px;
+  }
+
+  .serviceBreakdownPopupItem {
+    .serviceBreakdownPopupItemSection1 {
+      display: flex;
+
+      .serviceBreakdownPopupItemTitle {
+        font-size: 14px;
+        font-weight: var(--fontSemiBold);
+        color: var(--color20);
+      }
+
+      .serviceBreakdownPopupItemValue {
+        font-size: 14px;
+        font-weight: var(--fontRegular);
+        color: var(--color20);
+        flex-shrink: 0;
+        margin-left: auto;
+        padding-left: 8px;
+      }
+    }
+
+    .serviceBreakdownPopupItemDescription {
+      font-size: 13px;
+      font-weight: var(--fontLight);
+      color: var(--color20);
+    }
+  }
+}

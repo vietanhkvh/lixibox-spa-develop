@@ -1,0 +1,63 @@
+.searchHeader {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-self: center;
+
+  .searchInput {
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--colorF5);
+    font-size: 14px;
+    font-weight: var(--fontSemiBold);
+    color: var(--color20);
+    padding: 14px calc(14px + 16px + 14px) 14px calc(14px + 24px + 14px);
+  }
+
+  .locationIconContainer {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    padding: 0 14px;
+    cursor: pointer;
+
+    .locationIcon {
+      width: 24px;
+      height: 24px;
+      min-width: 24px;
+      min-height: 24px;
+      fill: var(--color20);
+    }
+
+    .locationIconActive {
+      fill: var(--colorPrimary);
+    }
+  }
+
+  .clearIconContainer {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    padding: 0 14px;
+    cursor: pointer;
+
+    .clearIcon {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: var(--colorCC);
+
+      svg {
+        width: 11px;
+        height: 11px;
+        fill: var(--colorWhite);
+      }
+    }
+  }
+}

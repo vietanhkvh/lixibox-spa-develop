@@ -1,0 +1,30 @@
+.alertOverlay {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: var(--zIndex9);
+  inset: 0;
+  transition: var(--transitionOpacity);
+  pointer-events: none;
+
+  /* Transition property */
+  opacity: 0;
+}
+
+.alertOverlayAfterOpen {
+  z-index: var(--zIndexMax);
+  opacity: 1;
+}
+
+.alertOverlayBeforeClose {
+  opacity: 0;
+}
+
+.alertContent {
+  font-size: inherit;
+}
+
+.alertContainer {
+  pointer-events: initial;
+}

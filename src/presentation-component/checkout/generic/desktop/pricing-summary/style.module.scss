@@ -1,0 +1,35 @@
+.pricingSummary {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+
+  .breakdown {
+    padding: 20px 0 9px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  .total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--color20);
+    height: 52px;
+    background-color: var(--colorWhite);
+    padding: 0 16px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top: 1px solid var(--colorF5);
+
+    .type {
+      font-weight: var(--fontRegular);
+    }
+
+    .value {
+      font-weight: var(--fontBold);
+      color: var(--colorPrimary);
+    }
+  }
+}

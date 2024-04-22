@@ -1,0 +1,80 @@
+.splitLayout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .leftStyle {
+    border-right: 1px solid var(--colorF0);
+    width: 100%;
+  }
+
+  .leftStyle-normal {
+    @media screen and (width >= 960px) {
+      width: 23%;
+    }
+  }
+
+  .leftStyle-larger {
+    @media screen and (width >= 960px) {
+      width: 30%;
+    }
+  }
+
+  .leftStyle-largest {
+    @media screen and (width >= 960px) {
+      width: 37%;
+    }
+  }
+
+  .leftWithoutBorderSplit {
+    border-right: 0 solid var(--colorF0);
+  }
+
+  .mainStyle {
+    width: 100%;
+  }
+
+  .mainStyle-normal {
+    @media screen and (width >= 960px) {
+      width: calc(77% - 20px);
+    }
+  }
+
+  .mainStyle-larger {
+    @media screen and (width >= 960px) {
+      width: calc(70% - 20px);
+    }
+  }
+
+  .mainStyle-largest {
+    @media screen and (width >= 960px) {
+      width: calc(63% - 20px);
+    }
+  }
+
+  .rightStyle {
+    border-left: 1px solid var(--colorF0);
+  }
+
+  .rightStyle-normal {
+    @media screen and (width >= 960px) {
+      width: 23%;
+    }
+  }
+
+  .rightStyle-larger {
+    @media screen and (width >= 960px) {
+      width: 30%;
+    }
+  }
+
+  .rightStyle-largest {
+    @media screen and (width >= 960px) {
+      width: 37%;
+    }
+  }
+
+  .rightWithoutBorderSplit {
+    border-left: 0 solid var(--colorF0);
+  }
+}

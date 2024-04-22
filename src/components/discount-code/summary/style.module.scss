@@ -1,0 +1,114 @@
+.info {
+  display: flex;
+  flex-direction: column;
+
+  .iconImage {
+    width: 70px;
+    height: 70px;
+    max-width: 70px;
+    max-height: 70px;
+    align-self: center;
+  }
+
+  .iconSvg {
+    width: 70px;
+    height: 70px;
+    align-self: center;
+
+    svg {
+      fill: var(--colorPrimary);
+      width: 70px;
+      height: 70px;
+      min-width: 70px;
+      min-height: 70px;
+    }
+  }
+
+  .title {
+    font-size: 14px;
+    font-weight: var(--fontSemiBold);
+    color: var(--color20);
+    align-self: center;
+    margin-top: 10px;
+  }
+
+  .description {
+    font-size: 13px;
+    font-weight: var(--fontLight);
+    color: var(--color20);
+    margin-top: 4px;
+    margin-bottom: 10px;
+    align-self: center;
+  }
+
+  .discountCodeContainer {
+    &:active {
+      opacity: 0.5;
+    }
+
+    .discountCode {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .content {
+        font-size: 18px;
+        font-weight: var(--fontSemiBold);
+        color: var(--colorBlack);
+        line-break: anywhere;
+      }
+
+      .copyButton {
+        width: 16px;
+        height: 16px;
+        min-width: 16px;
+        cursor: pointer;
+
+        svg {
+          fill: var(--color8A);
+        }
+      }
+    }
+  }
+
+  .button {
+    margin-bottom: 10px;
+  }
+
+  .applicability {
+    font-size: 13px;
+    font-weight: var(--fontRegular);
+    color: var(--colorPrimary);
+
+    span {
+      font-weight: var(--fontBold);
+    }
+  }
+
+  .termsHeader {
+    font-size: 14px;
+    font-weight: var(--fontLight);
+    color: var(--color20);
+    margin-top: 15px;
+  }
+
+  .terms {
+    font-size: 14px;
+    font-weight: var(--fontLight);
+    color: var(--color20);
+    margin-top: 0;
+  }
+
+  .hint {
+    font-size: 14px;
+    font-weight: var(--fontLight);
+    color: var(--color8A);
+  }
+
+  .separator {
+    border-bottom-style: solid;
+    border-bottom-color: var(--colorE4);
+    border-width: 1px;
+    margin: 30px 0 20px;
+  }
+}

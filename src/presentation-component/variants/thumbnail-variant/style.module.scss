@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  width: 36px;
+  min-width: 28px;
+  height: 36px;
+  padding: 3px;
+  margin-top: 4px;
+  margin-right: 4px;
+  border-radius: 4px;
+  background-size: cover;
+  transition: var(--transitionOpacity);
+  position: relative;
+  cursor: pointer;
+
+  img {
+    border-radius: 4px;
+    box-shadow: 0 0 0 1px var(--colorE4);
+    max-width: 30px;
+    min-width: 30px;
+    max-height: 30px;
+  }
+
+  .imgSelected {
+    box-shadow: 0 0 0 1px var(--colorE4), 0 0 0 2px #fff, 0 0 0 3px #000;
+  }
+}

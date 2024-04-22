@@ -1,0 +1,44 @@
+.tabHeader {
+  display: flex;
+  flex-direction: column;
+
+  .entries {
+    display: flex;
+    background-color: var(--colorWhite);
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--colorE4);
+
+    .entry {
+      display: flex;
+      cursor: pointer;
+
+      &:not(:first-child) {
+        margin-left: 50px;
+      }
+
+      .icon {
+        width: 16px;
+        height: 16px;
+
+        svg {
+          fill: var(--color8A);
+        }
+      }
+
+      .text {
+        font-weight: var(--fontSemiBold);
+        font-size: 14px;
+        padding-left: 9px;
+        color: var(--color20);
+      }
+    }
+
+    .activeEntry {
+      .icon {
+        svg {
+          fill: var(--colorSecondaryBlue);
+        }
+      }
+    }
+  }
+}

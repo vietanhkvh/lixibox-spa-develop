@@ -1,0 +1,82 @@
+.container {
+  width: 100%;
+  max-height: calc(var(--wh) - 60px - var(--sticky-top-banner-height, 0px));
+}
+
+.containerFullHeight {
+  min-height: calc(var(--wh) - 60px - var(--sticky-top-banner-height, 0px));
+}
+
+.heading {
+  height: 52px;
+  display: flex;
+  border-bottom: 1px solid var(--colorE4);
+  width: 100%;
+  position: fixed;
+  background-color: var(--colorWhite);
+  border-radius: 8px 8px 0 0;
+  z-index: var(--zIndex5);
+}
+
+.heading.withoutBorder {
+  border-color: var(--colorWhite);
+}
+
+.leftHeadingAction,
+.rightHeadingAction {
+  cursor: pointer;
+}
+
+.leftHeadingAction {
+  width: 55px;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.rightHeadingAction {
+  width: 55px;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.headingTitle {
+  font-size: 16px;
+  line-height: 52px;
+  flex: 1;
+  text-align: center;
+  font-weight: var(--fontBold);
+  color: var(--color20);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.headingActionIcon {
+  width: 51px;
+  height: 51px;
+}
+
+.headingActionIcon svg {
+  fill: var(--color3E);
+  width: 16px;
+}
+
+.headingActionText {
+  font-size: 13px;
+  line-height: 52px;
+  font-weight: var(--fontBold);
+  color: var(--color20);
+  padding: 0 16px;
+  white-space: nowrap;
+}
+
+.content {
+  width: 100%;
+  padding-top: 52px;
+}
+
+.contentNoHeader {
+  padding-top: 0;
+}

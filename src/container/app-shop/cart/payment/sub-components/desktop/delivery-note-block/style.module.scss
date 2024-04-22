@@ -1,0 +1,88 @@
+.deliveryNoteBlock {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--colorWhite);
+  padding: 24px 16px 22px;
+  margin: 15px 0 20px;
+  border-radius: 8px;
+  transition: var(--transitionBoxShadow);
+
+  .primarySection {
+    cursor: pointer;
+
+    .header {
+      display: flex;
+      align-items: center;
+
+      .status {
+        flex: 0 0 1px;
+
+        .icon {
+          width: 20px;
+          height: 20px;
+
+          svg {
+            fill: var(--color20);
+          }
+        }
+      }
+
+      .title {
+        font-weight: var(--fontRegular);
+        font-size: 14px;
+        color: var(--color20);
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .detailSection {
+    display: none;
+    flex-direction: column;
+    margin: 20px 30px 18px;
+
+    .entry {
+      background-color: var(--colorF5);
+      border-radius: 8px;
+      border: 1px dashed var(--colorDD);
+      padding: 14px 15px;
+      width: 100%;
+      font-weight: var(--fontLight);
+      font-size: 14px;
+      color: var(--color20);
+      resize: none;
+
+      &::placeholder {
+        color: var(--color8E);
+      }
+    }
+
+    .entryError {
+      box-shadow: 0 0 0 1px var(--colorRed);
+    }
+
+    .errorMessage {
+      font-weight: var(--fontLight);
+      font-size: 12px;
+      color: var(--colorRed);
+      margin-top: 2px;
+      margin-left: 15px;
+    }
+  }
+
+  .detailSectionWithError {
+    margin-bottom: 0;
+  }
+}
+
+.deliveryNoteBlockExpanded {
+  padding-bottom: 12px;
+
+  .detailSection {
+    display: flex;
+  }
+}
+
+.blockError {
+  box-shadow: var(--shadowBorderError);
+}

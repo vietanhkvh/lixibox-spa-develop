@@ -1,0 +1,5 @@
+import { ACTION_TYPE } from '../action.config';
+
+export const FETCH_BANNER = `${ACTION_TYPE.API_ACTION}/FETCH_BANNER`;
+export const FETCH_THEME = `${ACTION_TYPE.API_ACTION}/FETCH_THEME`;
+export const CLEAR_DATA_BANNER = `${ACTION_TYPE.API_ACTION}/CLEAR_DATA_BANNER`;

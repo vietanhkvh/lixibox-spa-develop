@@ -1,0 +1,10 @@
+.discussionHeading {
+  height: 50px;
+  line-height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: var(--fontSemiBold);
+  font-size: 16px;
+  color: var(--color20);
+}

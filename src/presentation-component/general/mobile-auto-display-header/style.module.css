@@ -1,0 +1,37 @@
+.container {
+  width: 100%;
+}
+
+.fixed {
+  width: 100%;
+  position: fixed;
+  z-index: var(--zIndex9);
+  background: var(--colorWhite);
+  top: 50px;
+  left: 0;
+  transform: translate3d(0, -100%, 0);
+  transition: var(--transitionNormal);
+  visibility: hidden;
+}
+
+.fixed.withDownloadAppBar {
+  top: 90px;
+}
+
+.isDisplay {
+  transform: translate3d(0, 0, 0);
+  visibility: visible;
+  opacity: 1;
+}
+
+.isFreePosition {
+  top: auto !important;
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+  transform: translate3d(0, 0, 0) !important;
+}
+
+.removeTop {
+  top: 0;
+}

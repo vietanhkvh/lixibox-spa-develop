@@ -1,0 +1,73 @@
+@mixin selectedIcon() {
+  svg {
+    transition: var(--transitionFill);
+    fill: var(--color20);
+  }
+}
+
+@mixin hoverItemStyle() {
+  color: var(--colorPink);
+  transition: var(--transitionColor);
+}
+
+.container {
+  position: relative;
+  color: var(--color20);
+  user-select: none;
+
+  .title {
+    font-weight: var(--fontSemiBold);
+    line-height: 32px;
+  }
+
+  .items {
+    margin-bottom: 16px;
+
+    .item {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      &:hover {
+        .icon {
+          @include selectedIcon;
+        }
+
+        .value {
+          @include hoverItemStyle;
+
+          &.selected {
+            @include hoverItemStyle;
+          }
+        }
+      }
+
+      .icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+
+        &.selected {
+          @include selectedIcon;
+        }
+
+        svg {
+          width: 20px;
+          fill: var(--color20);
+        }
+      }
+
+      .value {
+        font-size: 14px;
+        line-height: 34px;
+        color: var(--color20);
+
+        &.selected {
+          transition: var(--transitionColor);
+          color: var(--color20);
+          font-weight: var(--fontSemiBold);
+        }
+      }
+    }
+  }
+}

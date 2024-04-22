@@ -1,0 +1,52 @@
+.container {
+  padding-right: 16px;
+  margin-bottom: 15px;
+  display: flex;
+
+  .rating {
+    display: flex;
+    margin-left: -3px;
+    margin-bottom: 2px;
+
+    .count {
+      font-size: 14px;
+      color: var(--colorPrimary);
+      text-decoration: underline;
+      cursor: pointer;
+      font-weight: var(--fontLight);
+      line-height: 18px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .empty {
+      color: var(--color8A);
+      cursor: pointer;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  .love {
+    display: flex;
+    font-size: 14px;
+    font-weight: var(--fontLight);
+    color: var(--color8A);
+    padding: 0 10px;
+    line-height: 18px;
+
+    .icon {
+      width: 15px;
+      height: 18px;
+      margin-right: 10px;
+
+      svg {
+        fill: var(--colorBlack);
+      }
+    }
+  }
+}
+
+.containerMobile {
+  padding-left: 16px;
+}

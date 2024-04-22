@@ -1,0 +1,34 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 30px;
+
+  .image {
+    width: 175px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .content {
+    text-align: center;
+
+    .title {
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 10px;
+      font-weight: var(--fontBold);
+    }
+
+    .description {
+      font-size: 16px;
+      color: var(--color97);
+      max-width: 300px;
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+}

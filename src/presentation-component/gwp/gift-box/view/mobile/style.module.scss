@@ -1,0 +1,117 @@
+.container {
+  display: flex;
+  cursor: pointer;
+
+  .sectionLeft {
+    position: relative;
+    width: calc(50% - 8px);
+
+    .imageContainer {
+      display: flex;
+      position: relative;
+
+      .outOfStockLabel {
+        display: flex;
+        position: absolute;
+        left: calc(50% - 33.5px);
+        top: calc(50% - 12px);
+        padding: 4px 12px;
+        border-radius: 4px;
+        background-color: rgb(32 32 32 / 80%);
+        color: var(--colorWhite);
+        font-size: 12px;
+        font-weight: var(--fontRegular);
+        align-items: center;
+        justify-content: center;
+      }
+
+      .banner {
+        width: 100%;
+        border-radius: 8px;
+        padding-bottom: 75%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: var(--colorWhite);
+      }
+    }
+  }
+
+  .sectionRight {
+    margin-left: 16px;
+    width: calc(50% - 8px);
+    display: flex;
+    flex-direction: column;
+
+    .title {
+      margin-top: 30px;
+      font-size: 14px;
+      font-weight: var(--fontSemiBold);
+      color: var(--color20);
+    }
+
+    .value {
+      margin-top: 5px;
+      display: flex;
+      align-items: center;
+
+      .valueIcon {
+        width: 15px;
+        height: 15px;
+
+        svg {
+          fill: var(--colorPrimary);
+        }
+      }
+
+      .valueText {
+        margin-left: 5px;
+        font-size: 14px;
+        font-weight: var(--fontRegular);
+        color: var(--colorPrimary);
+      }
+    }
+
+    .button {
+      margin-top: 13px;
+      display: flex;
+      width: fit-content;
+      align-items: center;
+      padding: 2px 8px;
+      background-color: var(--colorGreenE7);
+      border-radius: 4px;
+
+      .buttonIcon {
+        margin-right: 5px;
+        width: 12px;
+        height: 12px;
+        min-width: 12px;
+        min-height: 12px;
+
+        svg {
+          fill: var(--colorGreenDark);
+        }
+      }
+
+      .buttonText {
+        font-size: 12px;
+        font-weight: var(--fontSemiBold);
+        color: var(--colorGreenDark);
+      }
+    }
+
+    .buttonDisabled {
+      background-color: var(--colorF1);
+
+      .buttonIcon {
+        svg {
+          fill: var(--color5C);
+        }
+      }
+
+      .buttonText {
+        color: var(--color5C);
+      }
+    }
+  }
+}

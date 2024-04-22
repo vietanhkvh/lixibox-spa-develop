@@ -1,0 +1,23 @@
+.membershipPreview {
+  display: flex;
+  flex-direction: column;
+
+  .coinView {
+    font-size: 22px;
+    font-weight: var(--fontBold);
+    color: var(--colorPrimary);
+
+    span {
+      margin-left: 5px;
+      font-size: 14px;
+      font-weight: var(--fontSemiBold);
+      color: var(--colorPrimary);
+    }
+  }
+
+  .progressbarView {
+    margin-top: 6px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

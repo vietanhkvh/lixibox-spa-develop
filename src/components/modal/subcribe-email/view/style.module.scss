@@ -1,0 +1,227 @@
+.minimalContainer {
+  width: 290px;
+  height: 42px;
+  position: fixed;
+  bottom: calc(290px + 50px);
+  left: 0;
+  transform: rotate(90deg);
+  transform-origin: left bottom;
+  z-index: var(--zIndex9);
+  cursor: pointer;
+  padding-left: 20px;
+  background: var(--colorBlack);
+}
+
+.heading {
+  width: 100%;
+  background-color: var(--colorBlack);
+  color: var(--colorWhite);
+  font-size: 20px;
+  font-weight: var(--fontSemiBold);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 42px;
+  line-height: 42px;
+  padding: 0;
+  letter-spacing: 5px;
+  white-space: nowrap;
+
+  .outerIcon {
+    width: 52px;
+    height: 42px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icon {
+    width: 16px;
+    height: 12px;
+    border-top: transparent;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 12px solid var(--colorWhite);
+
+    &.isOpen {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.message {
+  font-size: 13px;
+  line-height: 1.5;
+  font-weight: var(--fontLight);
+  color: var(--colorWhite);
+  padding: 10px 0;
+  margin: 0 auto 20px;
+  max-width: 310px;
+  text-align: center;
+
+  @media (width >= 960px) {
+    text-align: left;
+    margin-left: 0;
+  }
+
+  span {
+    border-radius: 3px;
+    display: inline-block;
+    background: var(--colorWhite);
+    color: var(--colorRed);
+    padding: 0 5px;
+    margin: 0 4px;
+    font-weight: var(--fontBold);
+    font-size: 13px;
+    line-height: 20px;
+    padding-top: 2px;
+  }
+}
+
+.inputForm {
+  display: flex;
+  width: 100%;
+  margin-bottom: 12px;
+
+  .inputContainer {
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    position: relative;
+    z-index: 10;
+    flex: 1 1 0%;
+    font-size: 12px;
+    height: 34px;
+
+    .inputInner {
+      width: 100%;
+      border: 1px solid var(--colorWhite09);
+      outline: none;
+      box-shadow: none;
+      height: 34px;
+      line-height: 34px;
+      font-size: 14px;
+      color: var(--colorBlack);
+      background: var(--colorWhite09);
+      border-radius: 4px 0 0 4px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .errorContainer {
+      margin: 6px 0;
+    }
+  }
+
+  .btnSubmit {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 70px;
+    height: 34px;
+    line-height: 34px;
+    border-radius: 0 4px 4px 0;
+  }
+}
+
+.productInfo {
+  background: var(--colorWhite);
+  border-radius: 16px;
+  max-width: 280px;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding: 16px;
+  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .image {
+    max-width: 100%;
+    height: 90px;
+    margin-bottom: 16px;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  .name {
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+  }
+}
+
+.desktopContainer {
+  background: var(--colorBlack);
+  width: 380px;
+  position: fixed;
+  bottom: 50px;
+  left: 0;
+  z-index: var(--zIndex9);
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 20px 22px 16px;
+
+  .mainForm {
+    flex: 1;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .productPanel {
+    width: 170px;
+    height: calc(100%);
+  }
+}
+
+.confirmationModal {
+  .mobileContainer {
+    background: var(--colorBlack);
+
+    .modelHeading {
+      padding: 10px 4px 20px 20px;
+    }
+
+    .mainContent {
+      padding: 0 22px 30px;
+    }
+  }
+}
+
+.stickyContainer {
+  display: flex;
+  position: fixed;
+  left: 20px;
+  bottom: calc(50px + 20px);
+  background: var(--colorBlack07);
+  border: 1px solid var(--colorWhite03);
+  width: 40px;
+  height: 40px;
+  z-index: 80;
+  transform: rotate(-45deg);
+  cursor: pointer;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+
+  .giftIcon {
+    margin: 0;
+    height: 40px;
+    width: 40px;
+
+    svg {
+      fill: var(--colorWhite);
+      width: 20px;
+      height: 20px;
+      transform: rotate(45deg);
+    }
+  }
+}

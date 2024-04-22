@@ -1,0 +1,50 @@
+.container {
+  width: 100%;
+  display: flex;
+  padding: 0 16px;
+
+  &.isWithIcon {
+    padding-left: 10px;
+  }
+}
+
+.icon {
+  width: 30px;
+  height: 44px;
+  cursor: pointer;
+
+  svg {
+    width: 18px;
+    fill: var(--color20);
+  }
+}
+
+.actionIcon {
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+
+  svg {
+    width: 5px;
+    fill: var(--color8A);
+  }
+}
+
+.title {
+  font-size: 16px;
+  height: 44px;
+  line-height: 44px;
+  color: var(--color20);
+  font-weight: var(--fontBold);
+  flex: 1;
+}
+
+.action {
+  display: flex;
+  color: var(--color8A);
+  font-weight: var(--fontSemiBold);
+  font-size: 12px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

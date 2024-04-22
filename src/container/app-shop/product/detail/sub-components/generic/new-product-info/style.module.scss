@@ -1,0 +1,192 @@
+.container {
+  width: 100%;
+}
+
+.containerWithBoreder {
+  border-radius: 8px;
+  border: 1px solid var(--colorF0);
+}
+
+.container svg {
+  fill: var(--color20);
+}
+
+.bigContainer {
+  display: flex;
+  border-bottom: 1px solid var(--colorF0);
+}
+
+.rowContainer {
+  padding: 0 16px;
+}
+
+.rowItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid var(--colorF0);
+  height: 50px;
+  width: 100%;
+}
+
+.rowItem.rowWithoutBorder {
+  border-bottom: none;
+}
+
+.rowItem:last-child {
+  border-bottom: none;
+}
+
+.bigItem {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 5px 16px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.text {
+  font-weight: var(--fontLight);
+  font-size: 12px;
+  color: var(--color20);
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 20px;
+}
+
+.rowItem .text {
+  flex: 1;
+  text-align: left;
+  padding-left: 12px;
+}
+
+.blueText {
+  font-size: 12px;
+  font-weight: var(--fontSemiBold);
+  color: var(--colorBlue);
+}
+
+.redText {
+  font-size: 12px;
+  font-weight: var(--fontRegular);
+  color: var(--colorRed);
+}
+
+.boldText {
+  font-size: 12px;
+  font-weight: var(--fontSemiBold);
+  line-height: 20px;
+  vertical-align: middle;
+}
+
+.link {
+  font-weight: var(--fontLight);
+  font-size: 12px;
+  display: inline-block;
+  color: var(--colorBlue);
+  letter-spacing: 0;
+  text-align: center;
+  vertical-align: middle;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.angleIcon {
+  width: 10px;
+  height: 50px;
+}
+
+.angleIcon svg {
+  width: 8px;
+}
+
+.dollarIcon {
+  width: 30px;
+  height: 30px;
+}
+
+.dollarIcon svg {
+  width: 20px;
+}
+
+.refurnIcon {
+  width: 30px;
+  height: 30px;
+}
+
+.refurnIcon svg {
+  width: 18px;
+}
+
+.deliveryIcon {
+  width: 30px;
+  height: 30px;
+}
+
+.deliveryIcon svg {
+  width: 28px;
+}
+
+.storeIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.storeIcon svg {
+  width: 20px;
+}
+
+.warningIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.warningIcon svg {
+  width: 19px;
+}
+
+.deliveryStatusIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.deliveryStatusIcon svg {
+  width: 20px;
+}
+
+.markLocationIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.markLocationIcon svg {
+  width: 18px;
+}
+
+.estTime {
+  background: var(--colorF5);
+  border-radius: 8px;
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 10px 32px;
+}
+
+.estTime .text {
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.estTime .text:last-child {
+  margin-bottom: 0;
+}
+
+.infoIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.infoIcon svg {
+  width: 14px;
+  fill: var(--color20);
+}

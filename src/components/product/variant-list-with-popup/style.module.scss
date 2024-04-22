@@ -1,0 +1,73 @@
+.moreButtonGrid {
+  align-items: center;
+}
+
+.variantListWithPopup {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+.showMore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--colorE4);
+  border-radius: 4px;
+  cursor: pointer;
+
+  .content {
+    color: var(--color4D);
+  }
+}
+
+.showMoreThumbnail {
+  height: calc(36px - 4px);
+  width: calc(36px - 4px);
+  margin-top: 4px;
+  margin-right: 4px;
+  margin-left: 2px;
+
+  .content {
+    font-size: 24px;
+  }
+}
+
+.showMoreColor {
+  height: 28px;
+  margin-left: 1px;
+
+  .content {
+    padding: 0 2px;
+    font-size: 22px;
+  }
+}
+
+.showMoreSize {
+  margin: 5px 10px 10px 0;
+  height: 40px;
+  padding: 0 3px;
+
+  .content {
+    font-size: 18px;
+  }
+}
+
+.variantsDropdownMobile {
+  width: 100%;
+  margin-bottom: 70px;
+}
+
+.variantsDropdownDesktop {
+  width: 410px;
+  box-shadow: var(--shadow1);
+  border-radius: 4px;
+  border: 1px solid var(--colorE4);
+  max-height: 400px;
+  min-height: 200px;
+}
+
+.container {
+  justify-content: flex-start;
+}

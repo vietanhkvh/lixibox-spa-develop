@@ -1,0 +1,85 @@
+.appleLoginContainer {
+  display: flex;
+  position: relative;
+  border-radius: 10px;
+}
+
+.appleLoginContainer:hover {
+  box-shadow: var(--shadow4);
+  transition: all 0.3s ease-in-out;
+}
+
+.appleLoginElementNonInteractive {
+  pointer-events: none;
+}
+
+.appleLoginLoader {
+  display: flex;
+  position: absolute;
+  width: calc(100% - 70px); /* Width with padding compensation */
+  height: 100%;
+  background: rgb(0 0 0 / 20%);
+  pointer-events: none;
+}
+
+.appleLoginLoaderDesktop {
+  width: 100%;
+}
+
+.appleLoginOverlay {
+  display: flex;
+  position: absolute;
+  width: calc(100% - 70px); /* Width with padding compensation */
+  height: 100%;
+  border-radius: 8px;
+  z-index: var(--zIndex1);
+  cursor: pointer;
+}
+
+.appleLoginOverlayDesktop {
+  width: 100%;
+}
+
+.signin-apple {
+  width: 100%;
+  border: 1px solid #000;
+  border-radius: 8px;
+  background-color: var(--colorWhite);
+}
+
+.signin-apple svg svg {
+  height: 45%;
+}
+
+.signin-apple svg svg text {
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.appleLoginButtonLabel {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.appleLoginButtonLabel .icon {
+  display: flex;
+  padding-right: 10px;
+}
+
+.appleLoginButtonLabel .text {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.appleLoginButtonLabelInnerBlock {
+  display: flex;
+  align-items: center;
+  min-width: 210px;
+}
+
+#appleid-signin > div > div + div {
+  display: none;
+}

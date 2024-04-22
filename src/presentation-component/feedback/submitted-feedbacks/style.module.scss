@@ -1,0 +1,27 @@
+.ratedList {
+  background: var(--colorWhite);
+  overflow: hidden;
+
+  .loading {
+    height: 100px;
+  }
+
+  .list {
+    width: 100%;
+    padding: 0 16px;
+  }
+}
+
+.ratedListDesktop {
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.noContentPlaceholderDesktop {
+  margin: 100px 0 calc(100px + 44px);
+}
+
+.noContentPlaceholderMobile {
+  height: calc(100vh - 44px - 50px);
+}

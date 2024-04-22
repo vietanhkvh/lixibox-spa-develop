@@ -1,0 +1,51 @@
+.contextMenu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 190px;
+  background-color: var(--colorWhite);
+  box-shadow: 0 3px 8px 0 rgb(0 0 0 / 5%), 0 0 6px 0 rgb(0 0 0 / 10%);
+  padding-top: 10px;
+  padding-bottom: 11px;
+  right: 35px;
+  z-index: var(--zIndex1);
+
+  .contextEntry {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 10px 19px;
+    width: 100%;
+    cursor: pointer;
+
+    .contextIconContainer {
+      flex: 0 0 20px;
+      height: 20px;
+
+      .icon {
+        width: 100%;
+        height: 100%;
+
+        svg {
+          fill: var(--color20);
+        }
+      }
+
+      .iconSelected svg {
+        fill: var(--colorSecondaryBlue);
+      }
+    }
+
+    .contextName {
+      font-weight: var(--fontLight);
+      font-size: 14px;
+      color: var(--color20);
+      margin-left: 15px;
+    }
+
+    &:hover {
+      background-color: var(--colorF7);
+    }
+  }
+}

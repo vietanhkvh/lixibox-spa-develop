@@ -1,0 +1,39 @@
+.magazineItemInfo {
+  display: flex;
+}
+
+.magazineItemInfo .link {
+  display: flex;
+  height: 24px;
+  line-height: 24px;
+  font-weight: var(--fontRegular);
+  font-size: 14px;
+  color: var(--color8A);
+  letter-spacing: 0;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 16px;
+}
+
+.magazineItemInfo .menuIcon {
+  width: 13px;
+  height: 13px;
+  margin-right: 7px;
+}
+
+.magazineItemInfo .menuIcon svg {
+  width: 9px;
+  fill: var(--color8A);
+}
+
+.magazineItemInfo .userIcon {
+  width: 13px;
+  height: 13px;
+  margin-right: 7px;
+  margin-top: -1px;
+}
+
+.magazineItemInfo .userIcon svg {
+  width: 13px;
+  fill: var(--color8A);
+}

@@ -1,0 +1,29 @@
+.container {
+  width: 100%;
+  padding: 16px;
+}
+
+@media only screen and (width >= 960px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+}
+
+.item {
+  width: 100%;
+
+  &.layout-100 {
+    width: 100%;
+  }
+
+  &.layout-50 {
+    width: calc(50% - 16px);
+  }
+
+  &.layout-33 {
+    width: calc(33.33% - 16px);
+  }
+}

@@ -1,0 +1,43 @@
+.productItemWithAction {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.button {
+  line-height: 44px;
+  height: 32px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: 1px solid var(--color3E);
+  color: var(--color20);
+  background-color: var(--colorWhite);
+
+  &:last-child {
+    margin-top: 0;
+  }
+
+  .icon {
+    width: 12.8px;
+    height: 12.8px;
+    margin: 0 11px 1px 0;
+
+    svg {
+      fill: var(--color3E);
+    }
+  }
+
+  .title {
+    font-size: 14px;
+    font-weight: var(--fontRegular);
+  }
+}
+
+.buttonDisabledState {
+  opacity: 0.5;
+}
+
+.buttonRemove {
+  background-color: var(--colorF5);
+  border: 1px solid var(--colorF5);
+}

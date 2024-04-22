@@ -1,0 +1,58 @@
+.userAddresses {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+  max-height: 270px;
+  padding: 2px 12px 0 2px;
+
+  .entry {
+    width: calc(50% - 6px);
+    margin-bottom: 14px;
+
+    &:nth-child(odd) {
+      margin-right: 6px;
+    }
+
+    &:nth-child(even) {
+      margin-left: 6px;
+    }
+  }
+
+  .addAddressSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border: 1px dashed var(--colorDB);
+    border-radius: 8px;
+    cursor: pointer;
+
+    .icon {
+      width: 26px;
+      height: 26px;
+
+      svg {
+        fill: var(--color20);
+      }
+    }
+
+    .title {
+      font-weight: var(--fontLight);
+      font-size: 14px;
+      color: var(--color20);
+      margin-top: 10px;
+    }
+  }
+}
+
+.addressFormModal {
+  margin-bottom: 70px;
+  min-width: 400px;
+}
+
+.regionSelectorModal {
+  display: flex;
+  min-width: 400px;
+  height: 90vh;
+}

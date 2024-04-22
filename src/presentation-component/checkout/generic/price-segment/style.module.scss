@@ -1,0 +1,23 @@
+.price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--color20);
+  font-size: 14px;
+  height: 30px;
+
+  .type {
+    font-weight: var(--fontLight);
+  }
+
+  .value {
+    color: var(--color20);
+    font-weight: var(--fontSemiBold);
+  }
+}
+
+.priceDisabled {
+  filter: grayscale(1) opacity(0.5);
+  pointer-events: none;
+}

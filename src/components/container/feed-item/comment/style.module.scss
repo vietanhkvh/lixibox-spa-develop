@@ -1,0 +1,48 @@
+.extraCommentInfo {
+  height: 34px;
+  display: flex;
+  padding: 0 10px;
+
+  .section {
+    padding: 0 6px;
+    height: 34px;
+    line-height: 34px;
+    font-size: 13px;
+    color: var(--color8A);
+    position: relative;
+
+    &:not(:last-child)::after {
+      display: block;
+      content: '';
+      width: 2px;
+      height: 2px;
+      border-radius: 50%;
+      background: var(--color8A);
+      position: absolute;
+      right: -1px;
+      top: 50%;
+      margin-top: -2px;
+    }
+  }
+
+  .date {
+    font-weight: var(--fontRegular);
+  }
+
+  .reply,
+  .more {
+    font-weight: var(--fontSemiBold);
+    cursor: pointer;
+  }
+}
+
+.commentOptions {
+  box-shadow: var(--shadow4);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+
+  .list {
+    border-radius: 4px;
+  }
+}

@@ -1,0 +1,64 @@
+.discountCodeSections {
+  display: flex;
+  flex-direction: column;
+}
+
+.errorPlaceholder {
+  margin-top: 50px;
+  width: 100%;
+
+  .logo {
+    max-width: 120px;
+  }
+}
+
+.desktopHeading {
+  height: 76px;
+  line-height: 76px;
+  font-weight: var(--fontSemiBold);
+  font-size: 18px;
+  color: var(--color20);
+  padding: 0 20px;
+}
+
+.coupons {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+  padding: 2px 12px 0 2px;
+  padding: 2px 20px;
+  max-height: initial;
+  margin-top: 20px;
+
+  .couponEntry {
+    border-radius: 8px;
+    position: relative;
+    min-height: 94px; // provides compatibility with slide-in actions panel
+    width: calc(50% - 6px);
+    margin-bottom: 14px;
+
+    &:nth-child(odd) {
+      margin-right: 6px;
+    }
+
+    &:nth-child(even) {
+      margin-left: 6px;
+    }
+  }
+}
+
+.couponsEmpty {
+  justify-content: center;
+}
+
+.mainContainer {
+  overflow: hidden;
+  border-radius: 8px;
+  background: var(--colorWhite);
+}
+
+.desktopWrapOuter {
+  background: var(--colorF5);
+  width: 100%;
+  padding: 20px 0;
+}

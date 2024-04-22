@@ -1,0 +1,246 @@
+.userAddressIndex {
+  margin: 20px 16px;
+
+  .addAddressSection {
+    display: flex;
+    align-items: center;
+    margin-top: 9px;
+    margin-bottom: 10px;
+    padding: 15px 16px 14px;
+    border: 1px dashed var(--colorDB);
+    border-radius: 8px;
+
+    .iconContainer {
+      flex: 0 0 15px;
+      height: 15px;
+
+      .icon {
+        max-width: 13.6px;
+        max-height: 13.6px;
+
+        svg {
+          fill: var(--color20);
+        }
+      }
+
+      .iconSelected svg {
+        fill: var(--colorSecondaryBlue);
+      }
+    }
+
+    .title {
+      font-weight: var(--fontLight);
+      font-size: 14px;
+      color: var(--colorDB);
+      margin-left: 15px;
+    }
+  }
+}
+
+.storeIndex {
+  margin: 20px 16px;
+
+  .searchSection {
+    margin-bottom: 17px;
+
+    .searchInput {
+      background-color: var(--colorF5);
+      border-radius: 8px;
+      border: none;
+      padding: 12px 15px 12px 41px;
+      width: 100%;
+      font-weight: var(--fontLight);
+      font-size: 14px;
+      color: var(--color20);
+      resize: none;
+
+      &::placeholder {
+        color: var(--color8E);
+      }
+    }
+
+    .iconContainer {
+      position: absolute;
+      margin-top: -43px;
+      height: 43px;
+      width: 31px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-left: 15px;
+
+      .icon {
+        width: 16px;
+        height: 16px;
+
+        svg {
+          fill: var(--color8E);
+        }
+      }
+    }
+  }
+}
+
+.addressModal {
+  height: 90vh;
+
+  .body {
+    padding: 14px 16px 6px;
+
+    .hint {
+      font-weight: var(--fontLight);
+      font-size: 13px;
+      color: var(--color8A);
+      margin-bottom: 10px;
+    }
+
+    .entry {
+      background-color: var(--colorF5);
+      border-radius: 8px;
+      border: none;
+      padding: 14px 15px;
+      width: 100%;
+      font-weight: var(--fontLight);
+      font-size: 14px;
+      color: var(--color20);
+      resize: none;
+
+      &::placeholder {
+        color: var(--color8E);
+      }
+    }
+  }
+
+  .primaryButton {
+    // TODO: Remove `important`. Dependency: SubmitButton (inline style removal required)
+    background-color: var(--color3E) !important;
+  }
+}
+
+.addressBlock {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--colorWhite);
+  border-radius: 8px;
+  transition: var(--transitionBoxShadow);
+  margin-bottom: 20px;
+
+  .primaryView {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 16px;
+    cursor: pointer;
+
+    .header {
+      display: flex;
+      align-items: center;
+
+      .status {
+        flex: 0 0 1px;
+
+        .icon {
+          width: 20px;
+          height: 20px;
+
+          svg {
+            fill: var(--color20);
+          }
+        }
+      }
+
+      .title {
+        font-weight: var(--fontRegular);
+        font-size: 14px;
+        text-transform: uppercase;
+        color: var(--color20);
+        margin-left: 10px;
+      }
+
+      .titleReceiver {
+        margin-left: 30px;
+      }
+
+      .action {
+        margin-left: auto;
+        padding-left: 15px;
+        font-weight: var(--fontSemiBold);
+        font-size: 13px;
+        color: var(--color8A);
+
+        .icon {
+          width: 15px;
+          height: 4px;
+
+          svg {
+            fill: var(--color8A);
+          }
+        }
+      }
+
+      &:hover {
+        .action {
+          .icon {
+            svg {
+              fill: var(--color20);
+            }
+          }
+        }
+      }
+    }
+
+    .brief {
+      margin: 15px 30px 0;
+      font-size: 14px;
+
+      .header,
+      .recipient {
+        font-weight: var(--fontSemiBold);
+        font-size: 14px;
+        color: var(--color20);
+        margin-top: 4px;
+      }
+
+      .address {
+        font-weight: var(--fontLight);
+        font-size: 14px;
+        color: var(--color20);
+        margin-top: 5px;
+
+        .label {
+          font-weight: var(--fontSemiBold);
+          font-size: 12px;
+          color: var(--colorBlue);
+          background-color: var(--colorBlueE5F2);
+          padding: 2px 8px;
+          margin-left: 7px;
+          border-radius: 4px;
+        }
+      }
+
+      .hint {
+        font-weight: var(--fontSemiBold);
+        color: var(--colorPrimary);
+      }
+    }
+
+    .payerBlock {
+      margin-top: 20px;
+    }
+  }
+
+  .extendedView {
+    padding: 6px 46px 30px;
+
+    .tabBody {
+      margin-top: 20px;
+    }
+  }
+}
+
+.noDisplay {
+  display: none;
+}
+
+.blockError {
+  box-shadow: var(--shadowBorderError);
+}

@@ -1,0 +1,79 @@
+.container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+
+  .tooltip {
+    position: absolute;
+    display: none;
+
+    .group {
+      height: 100%;
+      position: relative;
+
+      .text {
+        padding: 0 8px;
+        color: var(--colorWhite);
+        background-color: var(--colorBlack);
+        box-shadow: var(--shadowBlurSort);
+        white-space: nowrap;
+        line-height: 20px;
+        font-size: 12px;
+      }
+
+      .indicator {
+        position: absolute;
+        height: 5px;
+        width: 5px;
+        border-width: 6px;
+        border-style: solid;
+      }
+    }
+  }
+
+  .top {
+    .group {
+      .indicator {
+        bottom: -11px;
+        left: calc(50% - 6px);
+        border-color: var(--colorBlack) var(--colorTransparent) var(--colorTransparent) var(--colorTransparent);
+      }
+    }
+  }
+
+  .right {
+    .group {
+      .indicator {
+        left: -11px;
+        top: 20%;
+        border-color: var(--colorTransparent) var(--colorBlack) var(--colorTransparent) var(--colorTransparent);
+      }
+    }
+  }
+
+  .bottom {
+    .group {
+      .indicator {
+        top: -11px;
+        left: calc(50% - 6px);
+        border-color: var(--colorTransparent) var(--colorTransparent) var(--colorBlack) var(--colorTransparent);
+      }
+    }
+  }
+
+  .left {
+    .group {
+      .indicator {
+        right: -11px;
+        top: 20%;
+        border-color: var(--colorTransparent) var(--colorTransparent) var(--colorTransparent) var(--colorBlack);
+      }
+    }
+  }
+
+  &:hover {
+    .tooltip {
+      display: initial;
+    }
+  }
+}

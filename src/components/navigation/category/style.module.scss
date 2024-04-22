@@ -1,0 +1,14 @@
+.menuItemTitleTextMainContainer {
+  color: var(--color4D);
+  font-size: 16px;
+  font-weight: var(--fontSemiBold);
+  line-height: 30px;
+
+  &:hover {
+    color: var(--colorPink);
+  }
+}
+
+.menuItemTitleTextMainContainerActive {
+  color: var(--colorPink);
+}

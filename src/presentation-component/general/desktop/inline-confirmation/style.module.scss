@@ -1,0 +1,94 @@
+.inlineConfirmation {
+  display: flex;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+
+  .contentContainer {
+    display: flex;
+    position: relative;
+    width: 100%;
+
+    .cover {
+      position: absolute;
+      background-color: var(--colorWhite);
+      opacity: 0.9;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      transition: all 500ms;
+    }
+
+    .content {
+      display: flex;
+      position: absolute;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+      padding-right: 15px;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      transition: all 500ms;
+      pointer-events: initial;
+
+      .promptMessage {
+        font-weight: var(--fontSemiBold);
+        font-size: 14px;
+      }
+
+      .actions {
+        display: flex;
+        margin-top: 10px;
+
+        .action {
+          height: 35px !important;
+          margin: 0;
+          border-radius: 4px;
+
+          &:not(:last-child) {
+            margin-right: 10px;
+          }
+
+          .icon {
+            svg {
+              fill: var(--colorWhite);
+            }
+          }
+        }
+
+        .cancelAction {
+          background-color: var(--colorE4) !important;
+
+          .title {
+            color: var(--color20);
+          }
+
+          .icon {
+            svg {
+              fill: var(--color20);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.inlineConfirmationHidden {
+  .contentContainer {
+    .cover {
+      opacity: 0;
+    }
+
+    .content {
+      right: -100%;
+    }
+  }
+}

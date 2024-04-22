@@ -1,0 +1,75 @@
+.magazineItemInfo {
+  display: flex;
+
+  .link {
+    display: flex;
+    height: 24px;
+    line-height: 24px;
+    font-weight: var(--fontRegular);
+    font-size: 14px;
+    color: var(--color8A);
+    letter-spacing: 0;
+    justify-content: flex-start;
+    align-items: center;
+    padding-right: 16px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  .menuIcon {
+    width: 13px;
+    height: 13px;
+    min-width: 13px;
+    margin-right: 7px;
+
+    svg {
+      width: 9px;
+      fill: var(--color8A);
+    }
+  }
+
+  .userIcon {
+    width: 13px;
+    height: 13px;
+    min-width: 13px;
+    margin-right: 7px;
+    margin-top: -1px;
+
+    svg {
+      width: 13px;
+      fill: var(--color8A);
+    }
+  }
+
+  &.white {
+    .link {
+      color: var(--colorWhite);
+      font-size: 16px;
+    }
+
+    .menuIcon,
+    .userIcon {
+      width: 20px;
+      height: 20px;
+      min-width: 20px;
+      margin-right: 10px;
+
+      svg {
+        fill: var(--colorWhite);
+      }
+    }
+
+    .menuIcon {
+      svg {
+        width: 14px;
+      }
+    }
+
+    .userIcon {
+      svg {
+        width: 16px;
+      }
+    }
+  }
+}

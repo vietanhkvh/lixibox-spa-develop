@@ -1,0 +1,39 @@
+.userAddressIndex {
+  margin: 20px 16px calc(20px + 64px);
+
+  .stickyAddAddressSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: var(--colorWhite);
+    box-shadow: 0 -1px 2px rgb(0 0 0 / 10%);
+
+    .button {
+      margin: 0;
+
+      .icon {
+        svg {
+          fill: var(--colorWhite);
+        }
+      }
+    }
+  }
+}
+
+.userAddressEntry {
+  padding: 16px 22px;
+}
+
+.addressFormModal {
+  display: flex;
+  margin-bottom: 70px;
+}
+
+.regionSelectorModal {
+  display: flex;
+}

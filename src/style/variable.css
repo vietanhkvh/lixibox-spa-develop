@@ -1,0 +1,261 @@
+:root {
+  --colorPrimary: #fe2c6d;
+
+  /** COLOR LIST */
+  --colorTransparent: rgb(0 0 0 / 0%);
+
+  /** Color group: black */
+  --colorBlack: #000204;
+  --colorBlack005: rgb(0 2 4 / 5%);
+  --colorBlack01: rgb(0 2 4 / 10%);
+  --colorBlack02: rgb(0 2 4 / 20%);
+  --colorBlack03: rgb(0 2 4 / 30%);
+  --colorBlack04: rgb(0 2 4 / 40%);
+  --colorBlack05: rgb(0 2 4 / 50%);
+  --colorBlack06: rgb(0 2 4 / 60%);
+  --colorBlack07: rgb(0 2 4 / 70%);
+  --colorBlack08: rgb(0 2 4 / 80%);
+  --colorBlack09: rgb(0 2 4 / 90%);
+  --colorBlack095: rgb(0 2 4 / 95%);
+
+  /** Color group: white */
+  --colorWhite: #fff;
+  --colorWhite005: rgb(255 255 255 / 5%);
+  --colorWhite01: rgb(255 255 255 / 10%);
+  --colorWhite15: rgb(255 255 255 / 15%);
+  --colorWhite02: rgb(255 255 255 / 20%);
+  --colorWhite03: rgb(255 255 255 / 30%);
+  --colorWhite04: rgb(255 255 255 / 40%);
+  --colorWhite05: rgb(255 255 255 / 50%);
+  --colorWhite06: rgb(255 255 255 / 60%);
+  --colorWhite07: rgb(255 255 255 / 70%);
+  --colorWhite08: rgb(255 255 255 / 80%);
+  --colorWhite09: rgb(255 255 255 / 90%);
+  --colorWhite095: rgb(255 255 255 / 95%);
+
+  /** Color group: pink */
+  --colorPink: #fe2c6d;
+  --colorPink01: rgb(255 43 112 / 10%);
+  --colorPink02: rgb(255 43 112 / 20%);
+  --colorPink03: rgb(255 43 112 / 30%);
+  --colorPink04: rgb(255 43 112 / 40%);
+  --colorPink05: rgb(255 43 112 / 50%);
+  --colorPink06: rgb(255 43 112 / 60%);
+  --colorPink07: rgb(255 43 112 / 70%);
+  --colorPink08: rgb(255 43 112 / 80%);
+  --colorPink09: rgb(255 43 112 / 90%);
+  --colorPinkFF: #ffe8ef;
+
+  /** Color group: red */
+  --colorRed: #fe2c6d;
+
+  /** Color group: pink */
+  --colorpinkHightLight: #ffe0e9;
+  --colorPinkLighter: #fe4a81;
+  --colorPinkFE: #fe2c6d;
+  --colorPinkDarker: #c71762;
+  --colorPinkdb: #db046c;
+  --colorF00: #f00;
+  --colorPinkFE29: #fee9f0;
+  --colorPinkFFD4: #ffd4d3;
+  --colorPinkE5CF: #e5cfcf;
+  --colorPink900: #650120;
+  --colorPink800: #c8124c;
+  --colorPink700: #f4014e;
+
+  /* pini 600 = primary */
+  --colorPink500: #fe719e;
+  --colorPink400: #ff99b9;
+  --colorPink300: #ffadc7;
+  --colorPink200: #ffc2d5;
+  --colorPink100: #ffd6e3;
+  --colorPink50: #ffebf1;
+  --colorPink10: #fff7f9;
+
+  /** Color group: yellow */
+  --colorYellowDarker: #93712d;
+  --colorYellowLighter: #f8d38b;
+  --colorYellowF9: #f9f0e1;
+  --colorYellowFF: #fffbf1;
+  --colorYellowLightest: #fff2da;
+  --colorYellow: #f7ab13;
+  --colorYellowF7: #f7ab30;
+  --colorYellowFE: #fef5e6;
+
+  /** Color group: green */
+  --colorGreen: #2ba832;
+  --colorGreenDark: #2ba845;
+  --colorGreenLight: #e2f0e5;
+  --colorGreenHighlight: #0f0;
+  --colorGreenE7: #e7f5ea;
+
+  /** Color group: others 1 */
+  --colorBlue: #1887db;
+  --colorBlueLight: #00b0ff;
+  --colorSecondaryBlue: #00b0dd;
+  --colorSecondaryBlueOpacity10: rgb(0 176 221 / 10%);
+  --colorBlue18: #1887db;
+  --colorBlue5E: #5eabe6;
+  --colorBlueE5: #e5f7fb;
+  --colorBlueE5F2: #e5f2fb;
+  --colorBlueE6: #e6f2fb;
+  --colorBlueCD: #cdeff7;
+  --colorBlueF3: #f3f9fd;
+
+  /** Color group: others 2 */
+  --colorMember: #919293;
+  --colorSilver: #919293;
+  --colorGold: #ebc920;
+  --colorAmber: #b0834a;
+  --colorDiamond: #3291b5;
+
+  /** Color group: loyalty */
+  --colorLoyalyColor0: #dfe2f3;
+  --colorLoyalyColor1: #6d6d6d;
+  --colorLoyalyColor2: #cca500;
+  --colorLoyalyColor3: #1b597b;
+
+  /** Color group: others 3 */
+  --color20: #202020;
+  --color2E: #2e3e4e;
+  --color3E: #3e4048;
+  --color4D: #4d4e4f;
+  --color47: #474952;
+  --color5C: #5c5959;
+  --color59: #595959;
+  --color75: #757779;
+  --color8A: #8a8d90;
+  --color8E: #8e9dab;
+  --color97: #97999a;
+  --color9A: #9a9a9a;
+  --colorA2: #a2a3a5;
+  --colorB0: #b0b2b4;
+  --colorC5: #c5c5c5;
+  --colorCC: #ccc;
+  --colorC6: #c6ced5;
+  --colorC7: #c7cfd6;
+  --colorC7D6: #c7d6d6;
+  --colorD1: #d1d2d3;
+  --colorD2: #dddfe2;
+  --colorD8: #d8d8d8;
+  --colorDB: #dbdcdd;
+  --colorDD: #dddedf;
+  --colorE1: #e1e4e8;
+  --colorE4: #e4e4ea;
+  --colorE5: #e5ebee;
+  --colorE8: #e8e8e9;
+  --colorE9: #e9ebee;
+  --colorED: #edeeee;
+  --colorEF: #eff2f5;
+  --colorF0: #f0f2f5;
+  --colorF0F0: #f0f0f0;
+  --colorF1: #f1f2f2;
+  --colorF2: #f2f2f2;
+  --colorF4: #f4f5f6;
+  --colorF5: #f5f6f6;
+  --colorF7: #f7f9fa;
+  --colorFA: #fafcfe;
+  --colorFE: #fefefd;
+  --colorMomo: #b0006e;
+  --colorGoldenFE: #fed37f;
+
+  /** Color group: brands */
+  --colorBrandFacebook: #1877fe;
+  --colorBrandFacebookLighter: #1877fe;
+  --colorBrandInstagram: #8a3ab9;
+  --colorBrandYoutube: #ff0202;
+  --colorBrandPinterest: #bd081c;
+  --colorBrandMomo: #b0006e;
+  --colorBrandTwitter: #00aafb;
+
+  /** BOX SHADOW */
+  --shadowInsetBottom: 0 -2px 2px rgb(0 0 0 / 25%) inset;
+  --shadowInsetTop: 0 1px 2px rgb(0 0 0 / 25%) inset;
+  --shadowInsetMiddle: 0 0 2px rgb(0 0 0 / 25%) inset;
+  --shadowText: 0 2px 2px rgb(0 0 0 / 90%);
+  --shadowTextBlur: 0 1px 2px rgb(0 0 0 / 20%), 0 1px 10px rgb(0 0 0 / 20%), 0 1px 20px rgb(0 0 0 / 30%);
+  --shadowTextSort: 0 1px 1px rgb(0 0 0 / 25%);
+  --shadowReverse: 0 -5px 7px rgb(0 0 0 / 10%);
+  --shadowReverseSort: 0 -1px 3px 0 rgb(0 0 0 / 12%), 0 0 1px 0 rgb(0 0 0 / 14%);
+  --shadowReverse2: 0 -5px 8px rgb(0 0 0 / 25%);
+  --shadow1: 0 5px 7px rgb(0 0 0 / 10%);
+  --shadow2: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 12.4%);
+  --shadow3: 0 2px 6px rgb(0 0 0 / 10%), 0 3px 6px rgb(0 0 0 / 10%);
+  --shadow4: 0 3px 8px rgb(0 0 0 / 15%), 0 6px 6px rgb(0 0 0 / 20%);
+  --shadow5: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
+  --shadow6: 0 19px 38px rgb(0 0 0 / 30%), 0 15px 12px rgb(0 0 0 / 22%);
+  --shadowInsetBorderTop: inset 0 8px 6px -6px rgb(0 0 0 / 10%);
+  --shadowPopUp: 0 2px 20px rgb(0 0 0 / 20%);
+  --shadowBottom: 0px 4px 4px rgb(0 0 0 / 3%), 0px 4px 1px rgb(0 0 0 / 2%);
+
+  /** Shadow blur group */
+  --shadowBlur: 0 0 0 1px rgb(0 0 0 / 2.5%), 1px 1px 1px 1px rgb(0 0 0 / 3%);
+  --shadowBlurSort: 0 0 0 1px rgb(0 0 0 / 2.5%), 1px 1px 1px 1px rgb(0 0 0 / 3%);
+
+  /** Shadow dropdown */
+  --shadowDropdown: 0 -1px 10px rgb(0 0 0 / 12.4%);
+
+  /** Shadow border group */
+  --shadowBorderGray: 0 0 0 2px #fff, 0 0 0 5px #ddd;
+  --shadowBorderBlack: 0 0 0 2px #fff, 0 0 0 5px #000;
+  --shadowBorderError: 0 0 0 1px var(--colorRed);
+
+  /** BREAK POINT */
+
+  --breakPoint1920: 1920px;
+  --breakPoint1600: 1600px;
+  --breakPoint1440: 1440px;
+  --breakPoint1366: 1366px;
+  --breakPoint1280: 1280px;
+  --breakPoint1170: 1170px;
+  --breakPoint1024: 1024px;
+  --breakPoint960: 960px;
+  --breakPoint959: 959px;
+  --breakPoint768: 768px;
+  --breakPoint610: 610px;
+  --breakPoint480: 480px;
+  --breakPoint320: 320px;
+
+  /** Z INDEX LAYER */
+
+  --zIndexNegative: -1;
+  --zIndex1: 10;
+  --zIndex2: 20;
+  --zIndex3: 30;
+  --zIndex4: 40;
+  --zIndex5: 50;
+  --zIndex6: 60;
+  --zIndex7: 70;
+  --zIndex8: 80;
+  --zIndex9: 90;
+  --zIndexMin: 0;
+  --zIndexMax: 100;
+
+  /** TRANSITION */
+
+  --transitionOpacity: 0.3s opacity ease-out 0s;
+  --transitionTransform: 0.3s transform ease-out 0s;
+  --transitionOpacityTransform: 0.3s opacity ease-out 0s, 0.3s transform ease-out 0s;
+  --transitionNormal: 0.3s all ease-out 0s;
+  --transitionNormalFast: 0.3s all ease-out 0s;
+  --transitionNormalSlow: 0.6s all ease-out 0s;
+  --transitionHeight: 0.3s height ease-out 0s;
+  --transitionWidth: 0.3s width ease-out 0s;
+  --transitionOpacityTop: 0.3s opacity ease-out 0s, 0.3s top ease-out 0s;
+  --transitionBackground: 0.3s background ease-out 0s;
+  --transitionColor: 0.3s color ease-out 0s;
+  --transitionFill: 0.3s fill ease-out 0s;
+  --transitionTop: 0.3s top ease-out 0s;
+  --transitionLeft: 0.3s left ease-out 0s;
+  --transitionBoxShadow: box-shadow 0.3s ease-in-out;
+
+  /** DEFINED BLUR */
+  --blur5: blur(5px);
+  --blur10: blur(10px);
+  --blur15: blur(15px);
+  --blur20: blur(20px);
+  --fontLight: 300;
+  --fontRegular: 400;
+  --fontSemiBold: 600;
+  --fontBold: 600;
+}

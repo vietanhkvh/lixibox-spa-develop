@@ -1,0 +1,29 @@
+.baseImage {
+  text-indent: initial;
+}
+
+.magnifier {
+  position: absolute;
+  z-index: var(--zIndex7);
+  background-color: rgb(0 0 0 / 10%);
+  pointer-events: none;
+}
+
+.magnifiedViewContainer {
+  position: absolute;
+  z-index: var(--zIndex7);
+  background-color: var(--colorWhite);
+  overflow: hidden;
+  box-shadow: var(--shadow3);
+  pointer-events: none;
+
+  .magnifiedViewInnerContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.invisible {
+  display: none;
+}

@@ -1,0 +1,63 @@
+.redeemLixicoinModal {
+  .body {
+    padding-bottom: 108px;
+
+    .divider {
+      background-color: var(--colorE4);
+      height: 1px;
+    }
+
+    .viewMoreContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .viewMore {
+        white-space: nowrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--color8A);
+        font-weight: var(--fontRegular);
+        font-size: 14px;
+        padding: 0 12px 12px;
+        margin-bottom: 12px;
+
+        .icon {
+          width: 22px;
+          height: 22px;
+
+          svg {
+            width: 8px;
+            fill: var(--color8A);
+          }
+        }
+      }
+    }
+  }
+
+  .primaryButton {
+    // TODO: Remove `important`. Dependency: SubmitButton (inline style removal required)
+    background-color: var(--color3E) !important;
+  }
+}
+
+.bold {
+  font-weight: var(--fontSemiBold);
+}
+
+.redeemableItemWithAction {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.redeemPromptBody {
+  display: flex;
+  flex-direction: column;
+
+  .line {
+    font-weight: var(--fontLight);
+    font-size: 13px;
+    line-height: 20px;
+  }
+}

@@ -1,0 +1,43 @@
+.citySelectionModal {
+  display: flex;
+  height: 800px;
+}
+
+.stickyTestimonial {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.stickyVideo {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding: 0;
+  background-color: var(--colorBlack);
+}
+
+.feedbackReviewModal {
+  padding: 0 16px;
+
+  .feedbackReviewModalContent {
+    padding: 10px 5px 0 10px;
+    text-align: center;
+  }
+
+  .feedbackReviewModalSubmit {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.cashbackTag {
+  align-self: flex-start;
+  margin-bottom: 16px;
+}
+
+.cashbackInfoModal {
+  width: 400px;
+}
+
+.badgeBlock {
+  margin-bottom: 8px;
+}

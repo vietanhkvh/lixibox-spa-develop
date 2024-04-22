@@ -1,0 +1,157 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  max-height: calc(var(--wh) - 60px);
+
+  @media (width <= 959px) {
+    padding-top: 49px;
+  }
+}
+
+.panel {
+  display: flex;
+  padding-left: 12px;
+  padding-right: 12px;
+  overflow: auto;
+}
+
+.list {
+  width: calc(100% - 41px);
+  max-height: 94px;
+  flex: 1;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+
+  .item {
+    scroll-snap-align: center;
+  }
+
+  .discountCodeItem {
+    background-color: var(--colorWhite);
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 13px;
+    cursor: pointer;
+
+    .description {
+      font-weight: var(--fontLight);
+      color: var(--color20);
+      line-height: 20px;
+      max-height: 20px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      font-size: 13px;
+    }
+
+    .action {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 6px;
+
+      .code {
+        font-weight: var(--fontSemiBold);
+        font-size: 11px;
+        background-color: var(--colorF0);
+        color: var(--color20);
+        border-radius: 4px;
+        padding: 2px 4px;
+        position: relative;
+        overflow: hidden;
+        height: 20px;
+        max-width: calc(100% - 40px);
+        margin-right: 20px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+
+      .button {
+        bottom: 10px;
+        right: 15px;
+        font-weight: var(--fontSemiBold);
+        color: var(--colorPrimary);
+        white-space: nowrap;
+        text-align: right;
+        height: 20px;
+      }
+    }
+  }
+
+  &.isShowFullList {
+    max-height: 100%;
+    padding-bottom: 12px;
+
+    .discountCodeItem {
+      .description {
+        max-height: 100%;
+        white-space: pre-wrap;
+        overflow: visible;
+      }
+    }
+  }
+
+  &.isShowInModal {
+    max-height: 550px;
+    padding-bottom: 20px;
+  }
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .navItem {
+    width: 18px;
+    height: 42px;
+    cursor: pointer;
+    margin-left: 6px;
+    overflow: hidden;
+
+    svg {
+      width: 12px;
+      fill: var(--colorA2);
+      position: relative;
+      transition: var(--transitionNormal);
+    }
+
+    &:first-child {
+      margin-bottom: 4px;
+
+      svg {
+        transform: translate3d(0, 18px, 0);
+      }
+
+      &:hover {
+        svg {
+          transform: translate3d(0, 13px, 0);
+        }
+      }
+    }
+
+    &:last-child {
+      margin-top: 4px;
+
+      svg {
+        transform: translate3d(0, -18px, 0);
+      }
+
+      &:hover {
+        svg {
+          transform: translate3d(0, -13px, 0);
+        }
+      }
+    }
+  }
+}
+
+.desktopListAllModal {
+  min-width: 360px;
+  max-width: 360px;
+  padding-bottom: 16px;
+}

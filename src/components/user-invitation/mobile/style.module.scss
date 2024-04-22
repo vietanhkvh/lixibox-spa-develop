@@ -1,0 +1,30 @@
+.userInvitation {
+  padding-bottom: 27px;
+  background-color: var(--colorF5);
+
+  .title {
+    font-weight: var(--fontSemiBold);
+    font-size: 14px;
+    color: var(--color20);
+    background-color: var(--colorWhite);
+    padding: 13px 16px;
+    margin-bottom: 21px;
+  }
+
+  .invitation {
+    margin: 0 16px 17px;
+
+    .invitationScoop {
+      background-color: var(--colorF5) !important;
+    }
+  }
+
+  .additionalNotes {
+    margin: 0 16px;
+    color: var(--color8A);
+    font-weight: var(--fontLight);
+    font-size: 13px;
+    text-align: center;
+    padding: 0 16px;
+  }
+}

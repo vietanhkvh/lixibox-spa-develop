@@ -1,0 +1,362 @@
+.listNav {
+  width: 100%;
+  padding: 10px 0;
+
+  &.withOutBottomPadding {
+    padding-bottom: 0;
+  }
+}
+
+.listNavWithTitle {
+  background: var(--colorWhite);
+  padding-top: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: var(--transitionHeight);
+
+  &.isHiddenContent {
+    padding-bottom: 15px;
+  }
+
+  .heading {
+    cursor: pointer;
+    height: 40px;
+    line-height: 40px;
+    font-weight: var(--fontSemiBold);
+    font-size: 18px;
+    color: var(--color20);
+    padding: 0 12px 0 23px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+
+    svg {
+      width: 20px;
+      fill: var(--color20);
+    }
+  }
+
+  .content {
+    padding: 0 10px;
+    width: 100%;
+    transition: var(--transitionNormal);
+    opacity: 0;
+
+    &.isOpen {
+      opacity: 1;
+    }
+  }
+}
+
+.listNavItem {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  .navItemIcon {
+    width: 52px;
+    min-width: 52px;
+    height: 50px;
+
+    svg {
+      height: 20px;
+      width: auto;
+      fill: var(--color20);
+    }
+
+    &.delivery svg {
+      width: 24px;
+      height: auto;
+    }
+
+    &.eye svg {
+      width: 20px;
+      height: auto;
+    }
+
+    &.heart-line svg {
+      width: 20px;
+      height: auto;
+    }
+
+    &.discount-code svg {
+      width: 19px;
+      height: auto;
+    }
+
+    &.user-plus svg {
+      width: 20px;
+      height: 18px;
+    }
+
+    &.user-referral svg {
+      width: 24px;
+      height: 22px;
+    }
+
+    &.store svg {
+      width: 21px;
+      height: 18px;
+    }
+
+    &.message-question svg {
+      height: 18px;
+    }
+
+    &.tip svg {
+      height: 24px;
+    }
+  }
+
+  .infoItem {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: calc(100% - 52px);
+    max-width: 252px;
+  }
+
+  .title {
+    font-weight: var(--fontRegular);
+    font-size: 14px;
+    line-height: 26px;
+    color: var(--color20);
+    display: flex;
+    align-items: flex-start;
+
+    .badge {
+      background: var(--colorPrimary);
+      color: var(--colorWhite);
+      display: inline-block;
+      border-radius: 12px;
+      height: 24px;
+      line-height: 24px;
+      padding: 0 12px;
+      margin: 0 12px;
+    }
+
+    .infoIcon {
+      width: 20px;
+      height: 20px;
+      margin: 0 8px;
+    }
+  }
+
+  .description {
+    font-weight: var(--fontLight);
+    font-size: 13px;
+    color: var(--color20);
+    letter-spacing: 0;
+    line-height: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+  }
+}
+
+.orederMav {
+  background: var(--colorWhite);
+  border-radius: 8px;
+
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0 16px;
+
+    .title {
+      height: 50px;
+      line-height: 50px;
+      font-weight: var(--fontRegular);
+      font-size: 14px;
+      color: var(--color20);
+
+      &.desktop {
+        font-weight: var(--fontSemiBold);
+        font-size: 18px;
+      }
+    }
+
+    .viewall {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: var(--fontSemiBold);
+      font-size: 12px;
+      color: var(--color8A);
+      white-space: nowrap;
+    }
+
+    .viewAllIcon {
+      width: 12px;
+      height: 12px;
+      margin-right: 2px;
+    }
+
+    .viewAllIcon svg {
+      width: 6px;
+      fill: var(--color8A);
+    }
+  }
+
+  .firstRow {
+    display: flex;
+    padding: 12px 0 17px;
+  }
+
+  .orderItem {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+
+    &.isLargeItem {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .orderItemIcon {
+      width: 34px;
+      height: 28px;
+      margin-bottom: 5px;
+    }
+
+    &.isLargeItem .orderItemIcon {
+      width: 21px;
+      height: 21px;
+      margin-right: 12px;
+    }
+
+    .orderItemIcon svg {
+      height: 28px;
+      fill: var(--color20);
+    }
+
+    .orderItemIcon.receiver svg {
+      width: 28px;
+      height: auto;
+      fill: var(--color20);
+    }
+
+    &.isLargeItem .orderItemIcon svg {
+      height: 21px;
+    }
+
+    .name {
+      font-weight: var(--fontRegular);
+      font-size: 11px;
+      color: var(--color20);
+      line-height: 16px;
+      text-align: center;
+    }
+
+    .orderCount {
+      height: 16px;
+      line-height: 16px;
+      min-width: 16px;
+      text-align: center;
+      padding: 0 5px;
+      color: var(--colorWhite);
+      background: var(--colorPink);
+      font-size: 10px;
+      font-weight: var(--fontBold);
+      border-radius: 8px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+    }
+  }
+
+  .secondRow {
+    display: flex;
+    padding: 15px 0;
+    border-top: 1px solid var(--colorF5);
+
+    .orderItem {
+      height: 20px;
+
+      .orderItemIcon {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.socialLink {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 8px 50px 18px;
+
+  .listNavItem .navItemIcon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .listNavItem .navItemIcon.social-fb svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .listNavItem .navItemIcon.social-insta svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .listNavItem .navItemIcon.social-youtube svg {
+    width: 32px;
+    height: 25px;
+  }
+
+  .listNavItem .navItemIcon.social-messenger svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .listNavItem .navItemIcon.social-pinterest svg {
+    width: 26px;
+    height: 26px;
+  }
+
+  .listNavItem .navItemIcon.zalo svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.signOut {
+  padding: 16px;
+  background: var(--colorF5);
+
+  .icon {
+    fill: var(--color20) !important;
+  }
+}
+
+.signOutConfirmation {
+  padding: 22px;
+
+  .message {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .icon {
+    svg {
+      fill: var(--colorWhite);
+    }
+  }
+}

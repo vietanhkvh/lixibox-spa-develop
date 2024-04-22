@@ -1,0 +1,226 @@
+.deliveryMethodEntry {
+  flex-grow: 1;
+  margin: 10px 13px 0 0;
+  padding: 13px 9px 13px 15px;
+  border: 1px solid var(--colorE8);
+  border-radius: 8px;
+  cursor: pointer;
+  max-width: 50%;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+
+    .iconContainer {
+      flex: 0 0 17px;
+      height: 17px;
+
+      .icon {
+        max-width: 17px;
+        max-height: 17px;
+
+        svg {
+          fill: var(--color8A);
+        }
+      }
+
+      .iconSelected svg {
+        fill: var(--colorSecondaryBlue);
+      }
+    }
+
+    .title {
+      font-weight: var(--fontSemiBold);
+      font-size: 14px;
+      color: var(--color20);
+      margin-left: 15px;
+
+      span {
+        padding-left: 10px;
+        font-weight: inherit;
+
+        &.free {
+          color: var(--colorBlue18);
+        }
+
+        &.paid {
+          color: var(--colorPrimary);
+        }
+      }
+    }
+  }
+
+  .brief {
+    margin: 2px 0 0 29px;
+
+    .timeline {
+      font-weight: var(--fontLight);
+      font-size: 13px;
+      line-height: 19px;
+      color: var(--color20);
+
+      span {
+        font-weight: var(--fontSemiBold);
+        padding-left: 5px;
+        color: var(--color20);
+      }
+    }
+
+    .notification {
+      font-weight: var(--fontSemiBold);
+      font-size: 13px;
+      line-height: 18px;
+      color: var(--colorPrimary);
+    }
+  }
+}
+
+.deliveryMethodEntrySelected {
+  box-shadow: 0 0 0 1.5px var(--colorBlue5E);
+}
+
+.deliveryMethodEntryDisabled {
+  background-color: var(--colorF5);
+  box-shadow: none;
+  cursor: initial;
+
+  .header,
+  .brief .description {
+    filter: opacity(0.5);
+  }
+}
+
+.deliveryMethodBlock {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--colorWhite);
+  padding: 24px 27px 24px 16px;
+  margin-top: 20px;
+  border-radius: 8px;
+  transition: var(--transitionBoxShadow);
+
+  .header {
+    display: flex;
+    align-items: center;
+
+    .status {
+      flex: 0 0 1px;
+
+      .icon {
+        width: 20px;
+        height: 20px;
+
+        svg {
+          fill: var(--color20);
+        }
+      }
+    }
+
+    .title {
+      font-weight: var(--fontRegular);
+      font-size: 14px;
+      color: var(--color20);
+      margin-left: 12px;
+    }
+
+    .action {
+      margin-left: auto;
+      padding-left: 15px;
+      font-weight: var(--fontSemiBold);
+      font-size: 13px;
+      color: var(--color8A);
+
+      .icon {
+        width: 15px;
+        height: 4px;
+
+        svg {
+          fill: var(--color8A);
+        }
+      }
+    }
+
+    &:hover {
+      .action {
+        .icon {
+          svg {
+            fill: var(--color20);
+          }
+        }
+      }
+    }
+  }
+
+  .brief {
+    margin: 10px 32px 0;
+    display: flex;
+
+    .timeline {
+      font-weight: var(--fontSemiBold);
+      font-size: 14px;
+      line-height: 19px;
+      color: var(--color20);
+
+      span {
+        font-weight: var(--fontSemiBold);
+        padding: 0 5px;
+        color: var(--color20);
+      }
+    }
+
+    .free {
+      font-weight: var(--fontSemiBold);
+      font-size: 14px;
+      color: var(--colorBlue);
+    }
+  }
+
+  .body {
+    display: flex;
+    flex-direction: column;
+    margin: 19px 32px 0;
+
+    .methods {
+      display: flex;
+      margin-bottom: 23px;
+    }
+
+    .currentMethodNote {
+      height: 38px;
+      margin: 0 5px;
+      font-weight: var(--fontLight);
+      font-size: 14px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+
+      span {
+        font-weight: var(--fontSemiBold);
+        font-size: inherit;
+        padding-right: 5px;
+      }
+    }
+  }
+}
+
+.deliveryMethodBlockCollapsed {
+  padding-bottom: 24px;
+
+  .body {
+    display: none;
+  }
+}
+
+.noDisplay {
+  display: none;
+}
+
+.blockError {
+  box-shadow: var(--shadowBorderError);
+}

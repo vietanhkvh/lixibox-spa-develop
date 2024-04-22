@@ -1,0 +1,106 @@
+.socialFbButtonIcon {
+  width: 22px !important;
+  height: 22px !important;
+  max-width: 22px !important;
+  max-height: 22px !important;
+
+  svg {
+    fill: var(--colorWhite) !important;
+  }
+}
+
+.mobileHeading {
+  padding-top: 25px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .logoFull {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 15px;
+
+    svg {
+      width: 40px;
+      fill: var(--colorWhite);
+    }
+  }
+
+  .logoText {
+    width: 118px;
+    height: 16px;
+
+    svg {
+      width: 118px;
+      fill: var(--colorWhite);
+    }
+  }
+}
+
+.mobileHeadingTitle {
+  min-height: 30px;
+  line-height: 30px;
+  font-weight: var(--fontSemiBold);
+  font-size: 22px;
+  color: var(--colorWhite);
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.mobileHeadingDescription {
+  min-height: 14px;
+  font-weight: var(--fontLight);
+  font-size: 14px;
+  color: var(--colorF5);
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.mobileBottomLink {
+  font-weight: var(--fontLight);
+  font-size: 14px;
+  color: var(--colorWhite);
+  line-height: 30px;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+
+  .link {
+    font-weight: var(--fontSemiBold);
+    font-size: 14px;
+    color: var(--colorWhite);
+    line-height: 30px;
+    height: 30px;
+    padding: 0 5px;
+    text-decoration: underline;
+  }
+}
+
+.appleLoginContainerMobile {
+  display: flex;
+  min-height: 44px;
+  height: 44px;
+  cursor: pointer;
+  padding-left: 35px;
+  padding-right: 35px;
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.googleSigninContainerMobile,
+.facebookSigninContainerMobile {
+  display: flex;
+  min-height: 44px;
+  height: 44px;
+  cursor: pointer;
+  padding-left: 35px;
+  padding-right: 35px;
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto 10px;
+}

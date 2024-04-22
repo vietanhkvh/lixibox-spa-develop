@@ -1,0 +1,128 @@
+@mixin flexCenter() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxMessage {
+  width: 100%;
+  background-color: var(--colorWhite);
+  overflow: hidden;
+
+  @media (width >= 960px) {
+    margin-bottom: 10px;
+    border-radius: 8px;
+  }
+
+  .panelColor {
+    height: 63px;
+    width: 100%;
+    background-color: var(--colorPinkFF);
+    position: relative;
+    margin-bottom: 26px;
+
+    .iconWrap {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      z-index: var(--zIndex1);
+
+      .round {
+        @include flexCenter;
+
+        border-radius: 50%;
+        border: 0.5px solid var(--colorWhite06);
+      }
+
+      .firstRound {
+        width: 160px;
+        height: 160px;
+      }
+
+      .secondRound {
+        width: 102px;
+        height: 102px;
+      }
+
+      .thirdRound {
+        @include flexCenter;
+
+        align-items: flex-start;
+        position: relative;
+        width: 82px;
+        height: 82px;
+        background-color: var(--colorWhite);
+        border-radius: 50%;
+      }
+
+      .iconGift {
+        position: absolute;
+        top: -3px;
+        width: 60px;
+        height: 60px;
+      }
+
+      .iconPaper {
+        position: absolute;
+        top: 9px;
+        width: 42px;
+        height: 49px;
+      }
+    }
+  }
+
+  .message {
+    position: relative;
+    text-align: center;
+    z-index: var(--zIndex2);
+
+    .title {
+      span {
+        font-size: 22px;
+        line-height: 30px;
+        font-weight: var(--fontSemiBold);
+        color: var(--colorPinkFE);
+        text-transform: uppercase;
+
+        &.happyMessage {
+          color: var(--colorBlack);
+        }
+      }
+    }
+
+    .description {
+      line-height: 20px;
+      color: var(--color20);
+    }
+  }
+
+  .button {
+    @include flexCenter;
+
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 16px;
+
+    .submitBtn {
+      height: 36px !important;
+      width: 176px;
+      margin: 16px 0 5px;
+
+      &.memberBtn {
+        margin: 5px 0;
+      }
+    }
+
+    .subDescription {
+      font-size: 12px;
+      padding-bottom: 2px;
+      color: var(--color75);
+      max-width: 90%;
+
+      &.memberSubMessage {
+        margin-top: 4px;
+      }
+    }
+  }
+}

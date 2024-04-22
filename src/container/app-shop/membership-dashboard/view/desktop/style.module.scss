@@ -1,0 +1,97 @@
+@keyframes highlight {
+  0% {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: var(--colorPrimary);
+  }
+
+  100% {
+    border-color: transparent;
+  }
+}
+
+.container {
+  min-height: 100vh;
+  background-color: var(--colorF2);
+
+  .sidebarSection {
+    margin-top: 20px;
+    margin-bottom: 28px;
+
+    > * {
+      &:not(:first-child) {
+        margin-top: 12px;
+      }
+    }
+
+    .membershipInfo {
+      border-radius: 8px;
+      background-color: var(--colorWhite);
+    }
+
+    .membershipInfoSkeleton {
+      border-radius: 8px;
+      height: 345px;
+    }
+
+    .lixicoinPreview {
+      border-radius: 8px;
+      background-color: var(--colorWhite);
+      padding: 16px;
+    }
+
+    .lixicoinPreviewSkeleton {
+      border-radius: 8px;
+      height: 137px;
+    }
+  }
+
+  .mainBlockSection {
+    margin-top: 20px;
+    margin-bottom: 28px;
+    overflow: hidden;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+    .bodySection {
+      padding: 18px;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      background-color: var(--colorWhite);
+
+      .benefitsSection {
+        margin-top: 0;
+      }
+
+      .benefitsSectionHighlighted {
+        border-radius: 8px;
+        box-shadow: 0 0 8px var(--colorPrimary);
+        animation: highlight 500ms infinite;
+      }
+
+      .benefitsSectionSkeleton {
+        height: 390px;
+      }
+
+      .banner {
+        margin-top: 20px;
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 8px;
+      }
+
+      .bannerSkeleton {
+        margin-top: 20px;
+        border-radius: 8px;
+        height: 305px;
+      }
+    }
+
+    .faqSection {
+      margin-top: 16px;
+    }
+  }
+}

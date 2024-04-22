@@ -1,0 +1,4 @@
+import { ACTION_TYPE } from '../action.config';
+
+export const GET_GWP_SCHEMES = `${ACTION_TYPE.API_ACTION}/GET_GWP_SCHEMES`;
+export const GET_GWP_SCHEME_DETAIL = `${ACTION_TYPE.API_ACTION}/GET_GWP_SCHEME_DETAIL`;

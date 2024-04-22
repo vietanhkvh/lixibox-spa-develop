@@ -1,0 +1,42 @@
+.wrapperFAQ {
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+  flex-direction: column;
+
+  @media (width > 960px) {
+    width: calc(100% - 420px);
+  }
+
+  .main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: var(--colorWhite);
+    padding: 20px 0;
+
+    @media (width > 960px) {
+      padding: 20px;
+      max-width: calc(100% - 22px);
+    }
+
+    .header {
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+}
+
+.imageWrapper {
+  position: relative;
+  padding-top: 50%;
+
+  .image {
+    padding: 0 !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

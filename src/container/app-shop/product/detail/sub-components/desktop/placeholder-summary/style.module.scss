@@ -1,0 +1,45 @@
+.placeholder {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  height: 500px;
+
+  .placeholderSummary {
+    width: 100%;
+    height: 300px;
+
+    .title {
+      width: 100%;
+      height: 100px;
+      margin-bottom: 20px;
+    }
+
+    .price {
+      width: 100%;
+      height: 40px;
+      margin-bottom: 20px;
+    }
+
+    .rate {
+      width: 100%;
+      height: 30px;
+      margin-bottom: 20px;
+    }
+
+    .summary {
+      width: 100%;
+      height: 35px;
+    }
+
+    .btnGroup {
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-between;
+
+      .btn {
+        width: calc(50% - 10px);
+        height: 40px;
+      }
+    }
+  }
+}

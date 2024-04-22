@@ -1,0 +1,117 @@
+.container {
+  width: 100%;
+}
+
+.list {
+  display: flex;
+
+  &.desktop-item {
+    width: calc(100% + 24px);
+    margin-left: -12px;
+  }
+}
+
+.item {
+  flex: 1;
+  padding: 4px;
+  cursor: pointer;
+
+  .imageWrap {
+    overflow: hidden;
+    position: relative;
+    padding-top: 56.25%;
+
+    &::before {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: var(--transitionNormal);
+      background: var(--colorBlack);
+      opacity: 0.45;
+      z-index: var(--zIndex3);
+    }
+
+    &::after {
+      display: block;
+      content: '';
+      position: absolute;
+      transition: var(--transitionNormal);
+      transform: translate3d(-50%, -50%, 0) scale(0.75);
+      top: 50%;
+      left: 50%;
+      width: 20px;
+      height: 24px;
+      z-index: var(--zIndex5);
+      border-top: 12px solid transparent;
+      border-bottom: 12px solid transparent;
+      border-left: 20px solid var(--colorWhite);
+      box-sizing: border-box;
+    }
+
+    &:hover {
+      &::before {
+        opacity: 0.25;
+      }
+
+      &::after {
+        transform: translate3d(-50%, -50%, 0) scale(1.2);
+      }
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+  }
+
+  .title {
+    font-size: 16px;
+    line-height: 22px;
+    padding: 16px 0;
+    font-weight: var(--fontRegular);
+    width: 100%;
+    text-align: center;
+  }
+
+  &.selected {
+    .imageWrap {
+      box-shadow: var(--shadowBlur);
+
+      &::before {
+        opacity: 0 !important;
+      }
+
+      &::after {
+        transform: translate3d(-50%, -50%, 0) scale(0) !important;
+      }
+    }
+
+    // .title {
+    // }
+  }
+
+  &.desktop-item {
+    padding: 12px;
+
+    .imageWrap {
+      overflow: hidden;
+
+      &::after {
+        width: 40px;
+        height: 50px;
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+        border-left: 40px solid var(--colorWhite);
+      }
+    }
+  }
+}

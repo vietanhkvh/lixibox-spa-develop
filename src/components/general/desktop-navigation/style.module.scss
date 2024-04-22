@@ -1,0 +1,67 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--colorBlack);
+  opacity: 0.5;
+  z-index: var(--zIndex5);
+
+  .modal {
+    width: 100%;
+    height: 100%;
+
+    .body {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.sub-navigation-shopping {
+  &::-webkit-scrollbar {
+    display: block;
+    width: 6px;
+    background-color: var(--colorBlack005);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-clip: padding-box;
+    border-radius: 8px;
+    background-color: var(--colorBlack05);
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 8px;
+  }
+}
+
+.subBoxItem {
+  flex: 1;
+  margin: 10px;
+  max-width: 20%;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  transition: var(--transitionNormal);
+  cursor: pointer;
+  padding-top: 15.384%;
+
+  &:hover {
+    box-shadow: var(--shadow3);
+  }
+}
+
+.subCategoryTitle {
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--color2E);
+  margin-bottom: 5px;
+
+  &:hover {
+    color: var(--colorRed);
+  }
+}

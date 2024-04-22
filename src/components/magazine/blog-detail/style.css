@@ -1,0 +1,143 @@
+/** Box's image */
+.image-box-wrap {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.5+100 */
+
+  /* NOTE: Removing legacy attributes as we're no longer supporting these browsers */
+
+  /* background: -moz-linear-gradient(top, rgba(0 0 0 / 0%) 0%, rgba(0 0 0 / 50%) 100%); FF3.6-15 */
+
+  /* background: -webkit-linear-gradient(top, rgba(0 0 0 / 0%) 0%, rgba(0 0 0 / 50%) 100%); Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0 0 0 / 0%) 0%, rgba(0 0 0 / 50%) 100%);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=0); /* IE6-9 */
+  padding: 10px;
+  margin: 0 !important;
+  position: absolute;
+  width: calc(100vw - 32px);
+  left: 16px;
+  transform: translate3d(0, calc(-100% - 20px), 0);
+}
+
+.desktop.image-box-wrap {
+  width: calc(100% - 40px);
+  left: 20px;
+  transform: translate3d(0, calc(-100% - 26px), 0);
+}
+
+.image-box-wrap input {
+  display: none !important;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.image-box-wrap .toggle-icon {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 2px rgba(0 0 0 / 20%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-box-wrap .toggle-icon .cart-icon {
+  width: 20px !important;
+  max-width: 20px !important;
+  height: auto;
+}
+
+.image-box-wrap .toggle-icon .angle-icon {
+  width: 20px !important;
+  max-width: 20px !important;
+  height: auto;
+}
+
+.image-box-wrap input + .toggle-icon .angle-icon {
+  display: none !important;
+}
+
+.image-box-wrap input:checked + .toggle-icon .angle-icon {
+  display: block !important;
+}
+
+.image-box-wrap input:checked + .toggle-icon .cart-icon {
+  display: none !important;
+}
+
+.image-box-wrap .image-box-panel {
+  margin: 0 !important;
+  transition: 0.3s all ease-out 0s !important;
+  overflow: hidden;
+}
+
+.desktop.image-box-wrap .image-box-panel {
+  margin: 0 !important;
+}
+
+.image-box-wrap .image-box-panel > * {
+  transition: 0.3s all ease-out 0s !important;
+}
+
+/* stylelint-disable-next-line */
+.image-box-wrap input ~ .image-box-panel {
+  height: 0;
+}
+
+.image-box-wrap input ~ .image-box-panel > * {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.image-box-wrap input:checked ~ .image-box-panel {
+  height: 100px;
+}
+
+.image-box-wrap input:checked ~ .image-box-panel > * {
+  opacity: 1;
+  visibility: visible;
+}
+
+.image-box-wrap .image-box-heading {
+  font-weight: var(--fontBold) !important;
+  font-size: 14px !important;
+  color: #fff !important;
+  height: 40px !important;
+  line-height: 40px !important;
+  text-shadow: 0 1px 4px rgba(0 0 0 / 79%);
+  margin: 0 !important;
+}
+
+.desktop.image-box-wrap .image-box-heading {
+  margin: 0 !important;
+}
+
+.image-box-wrap .image-box-list {
+  display: flex;
+  margin: 0 !important;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.image-box-wrap.desktop .image-box-list {
+  margin: 0 !important;
+}
+
+.image-box-wrap .image-box-item {
+  display: block;
+  min-width: 60px;
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 0 2px rgba(0 0 0 / 20%);
+  background: #fff;
+  margin-right: 10px !important;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.image-box-wrap .image-box-item img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain;
+  margin: 0 !important;
+}

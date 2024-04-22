@@ -1,0 +1,124 @@
+.container {
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    .sortFilter {
+      opacity: 1;
+      visibility: visible;
+
+      .sortList {
+        transform: scaleY(1);
+      }
+    }
+  }
+
+  .sortFilter {
+    position: absolute;
+    right: 20px;
+    z-index: var(--zIndex9);
+    visibility: hidden;
+    opacity: 0;
+    transition: var(--transitionNormal);
+
+    .sortList {
+      width: 100%;
+      padding: 12px 0;
+      background-color: var(--colorWhite);
+      transform: scaleY(0);
+      transform-origin: top;
+      transition: var(--transitionNormal);
+      box-shadow: 0 2px 20px rgb(0 0 0 / 20%);
+      border: 1px solid var(--colorE8);
+    }
+  }
+
+  .sortItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 200px;
+    height: 40px;
+    padding: 0 4px;
+    margin: 0 12px;
+    white-space: nowrap;
+    cursor: pointer;
+
+    &:hover {
+      background: var(--colorFA);
+
+      .tickIcon {
+        svg {
+          fill: var(--colorPink);
+        }
+      }
+
+      .sortItemTitle {
+        color: var(--colorPink);
+      }
+    }
+
+    .tickIcon {
+      width: 32px;
+
+      svg {
+        width: 15px;
+      }
+    }
+
+    .sortItemTitle {
+      text-align: right;
+      width: 100%;
+      line-height: 40px;
+      color: var(--color20);
+      font-size: 14px;
+      font-weight: var(--fontSemiBold);
+    }
+  }
+
+  .headingPanel {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 0 14px;
+
+    &.left {
+      align-items: flex-start;
+    }
+
+    .heading {
+      font-weight: var(--fontMedium);
+      font-size: 14px;
+      line-height: 16px;
+      color: var(--color20);
+      white-space: nowrap;
+
+      .value {
+        color: var(--color20);
+        font-weight: var(--fontSemiBold);
+      }
+    }
+
+    .angleIcon {
+      width: 16px;
+      margin-left: 5px;
+
+      svg {
+        width: 12px;
+        fill: var(--colorr3E);
+        transform: rotate(-90deg);
+        transition: var(--transitionNormal);
+      }
+    }
+
+    .title {
+      color: var(--color20);
+      font-size: 13px;
+      line-height: 20px;
+      font-weight: var(--fontLight);
+    }
+  }
+}

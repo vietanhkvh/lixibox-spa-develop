@@ -1,0 +1,26 @@
+export const AUTH_VIEW = Object.freeze({
+  CHECKOUT_FAST_TRACK: 'CHECKOUT_FAST_TRACK' as const,
+  LOGIN: 'LOGIN' as const,
+  SIGNUP: 'SIGNUP' as const,
+  FORGOT_PASSWORD: 'FORGOT_PASSWORD' as const,
+  SIGNUP_VERIFY_PHONE: 'SIGNUP_VERIFY_PHONE' as const,
+  SIGNUP_PHONE_REGISTERED: 'SIGNUP_PHONE_REGISTERED' as const,
+  LOGIN_UNCONFIRMED_PHONE_PROMPT: 'LOGIN_UNCONFIRMED_PHONE_PROMPT' as const,
+  LOGIN_ATTACH_PHONE_STEP_1: 'LOGIN_ATTACH_PHONE_STEP_1' as const,
+  LOGIN_ATTACH_PHONE_STEP_2: 'LOGIN_ATTACH_PHONE_STEP_2' as const
+});
+
+export const InLineNotificationType = Object.freeze({
+  ERROR: 'ERROR' as const,
+  SUCCESS: 'SUCCESS' as const
+});
+
+export const ModalCloseTimeoutMs = 300;
+
+export const ModalCloseRequestReason = Object.freeze({
+  OVERLAY_CLICK_OR_ESC_PRESS: 'OVERLAY_CLICK_OR_ESC_PRESS' as const,
+  LOGIN_SUCCESS: 'LOGIN_SUCCESS' as const,
+  SIGNUP_SUCCESS: 'SIGNUP_SUCCESS' as const,
+  RESET_PASSWORD_SUCCESS: 'RESET_PASSWORD_SUCCESS' as const,
+  FAST_TRACK_SUCCESS: 'FAST_TRACK_SUCCESS' as const
+});

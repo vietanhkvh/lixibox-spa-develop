@@ -1,0 +1,87 @@
+.variantsDropdown {
+  .productPreview {
+    margin: 10px 10px 20px;
+  }
+
+  .popupStickyButton {
+    background-color: var(--color3E) !important;
+  }
+}
+
+.variants {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--colorWhite);
+  padding: 10px;
+  overflow-y: auto;
+
+  .variant {
+    display: flex;
+    flex-direction: column;
+
+    &:not(:first-child) {
+      margin-top: 20px;
+    }
+
+    &:last-child {
+      margin-bottom: 50px;
+    }
+
+    .header {
+      font-weight: var(--fontLight);
+      font-size: 16px;
+      color: var(--color8A);
+
+      .title {
+        font-weight: var(--fontRegular);
+        font-size: 16px;
+        color: var(--color20);
+        margin-right: 5px;
+      }
+    }
+
+    .headerMobile {
+      font-size: 14px;
+
+      .title {
+        font-size: 14px;
+      }
+    }
+
+    .index {
+      display: flex;
+      flex-flow: row wrap;
+      margin-top: 10px;
+      margin-left: -5px;
+      margin-right: -5px;
+      justify-content: flex-start;
+
+      .item {
+        display: flex;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+    }
+
+    .indexGrid {
+      display: grid;
+      justify-content: space-around;
+      grid-gap: 0;
+      margin-top: 10px;
+
+      .item {
+        display: flex;
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+
+    .indexGridColor {
+      grid-template-columns: repeat(auto-fill, 36px);
+    }
+
+    .indexGridThumbnail {
+      grid-template-columns: repeat(auto-fill, 40px);
+    }
+  }
+}

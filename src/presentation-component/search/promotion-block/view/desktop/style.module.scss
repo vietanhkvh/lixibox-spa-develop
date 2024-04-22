@@ -1,0 +1,59 @@
+.promotionBlock {
+  display: flex;
+  padding: 13px 16px;
+  background-color: var(--colorPinkFE29);
+  align-items: center;
+
+  .giftIcon {
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
+
+    svg {
+      fill: var(--colorPrimary);
+    }
+  }
+
+  .message {
+    margin-left: 16px;
+    font-size: 14px;
+    font-weight: var(--fontBold);
+    color: var(--colorPrimary);
+    flex-grow: 1;
+  }
+
+  .navIcon {
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    min-height: 16px;
+
+    svg {
+      fill: var(--color20);
+    }
+  }
+
+  .keyword {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &.desktop {
+      max-width: 400px;
+    }
+
+    &.mobile {
+      max-width: 86%;
+    }
+  }
+
+  .arrowPasteIcon {
+    width: 16px;
+    height: 16px;
+
+    svg {
+      fill: var(--color8A);
+    }
+  }
+}

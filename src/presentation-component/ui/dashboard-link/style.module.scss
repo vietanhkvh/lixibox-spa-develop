@@ -1,0 +1,36 @@
+.dashboardLink {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+
+  .dashboardLinkIcon {
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
+
+    svg {
+      fill: var(--color20);
+    }
+  }
+
+  .dashboardLinkTitle {
+    margin-left: 14px;
+    font-size: 14px;
+    font-weight: var(--fontSemiBold);
+    color: var(--color20);
+  }
+
+  .dashboardLinkArrow {
+    width: 17px;
+    height: 17px;
+    min-width: 17px;
+    min-height: 17px;
+    margin-left: auto;
+
+    svg {
+      fill: var(--color20);
+    }
+  }
+}

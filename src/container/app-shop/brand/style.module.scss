@@ -1,0 +1,15 @@
+.filterContainer {
+  width: 100%;
+  max-width: 100%;
+
+  .filterItem {
+    position: relative;
+  }
+}
+
+.div {
+  height: 1px;
+  width: 100%;
+  background-color: var(--color8E);
+  margin: 24px 0;
+}

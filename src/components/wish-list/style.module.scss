@@ -1,0 +1,26 @@
+.indexContainer {
+  &.desktopLayout {
+    margin: 0 20px;
+  }
+}
+
+.desktopHeading {
+  height: 76px;
+  line-height: 76px;
+  font-weight: var(--fontSemiBold);
+  font-size: 18px;
+  color: var(--color20);
+  padding: 0 20px;
+}
+
+.verticalList {
+  width: 100%;
+}
+
+.noContentPlaceholderDesktop {
+  margin-top: 100px;
+}
+
+.noContentPlaceholderMobile {
+  height: calc(100vh - 44px - 50px);
+}

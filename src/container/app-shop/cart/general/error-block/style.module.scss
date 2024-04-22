@@ -1,0 +1,25 @@
+.errorBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: var(--fontSemiBold);
+  padding: 5px 8px;
+  color: var(--colorF00);
+  border: 1px solid var(--colorRed);
+  border-radius: 8px;
+
+  .message {
+    font-size: 10px;
+  }
+
+  .action {
+    .icon {
+      width: 12px;
+      height: 15px;
+
+      svg {
+        fill: var(--colorF00);
+      }
+    }
+  }
+}

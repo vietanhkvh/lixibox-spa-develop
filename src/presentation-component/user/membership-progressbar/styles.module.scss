@@ -1,0 +1,103 @@
+.container {
+  width: 100%;
+
+  .level-member {
+    color: var(--colorMember);
+  }
+
+  .level-silver {
+    color: var(--colorSilver);
+  }
+
+  .level-gold {
+    color: var(--colorGold);
+  }
+
+  .level-diamond {
+    color: var(--colorDiamond);
+  }
+
+  @keyframes levelDescAnimation {
+    from {
+      transform: scale(0);
+    }
+
+    to {
+      transform: scale(1);
+    }
+  }
+
+  .levelDesc {
+    transform-origin: top right;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 12px 0 12px 12px;
+    background: var(--colorF0);
+    border-radius: 8px;
+    position: relative;
+    animation-name: levelDescAnimation;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+
+    &::before {
+      display: block;
+      position: absolute;
+      content: ' ';
+      width: 20px;
+      height: 10px;
+      box-sizing: border-box;
+      border-bottom: 10px solid var(--colorF0);
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      top: -10px;
+    }
+
+    &.left {
+      &::before {
+        left: 10px;
+      }
+    }
+
+    &.right {
+      &::before {
+        right: 10px;
+      }
+    }
+
+    .heading {
+      font-size: 14px;
+      font-weight: var(--fontBold);
+      margin-bottom: 4px;
+    }
+
+    .content {
+      padding: 4px 0;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      .icon {
+        width: 16px;
+        height: 16px;
+        min-width: 16px;
+        margin-right: 8px;
+      }
+
+      .text {
+        flex: 1;
+        font-size: 14px;
+
+        span {
+          font-size: inherit;
+          font-weight: var(--fontLight);
+        }
+
+        b {
+          font-size: inherit;
+          font-weight: var(--fontBold);
+        }
+      }
+    }
+  }
+}

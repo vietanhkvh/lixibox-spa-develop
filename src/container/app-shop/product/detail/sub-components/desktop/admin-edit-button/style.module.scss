@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--colorBlack07);
+  border-radius: 3px;
+  padding: 5px 10px;
+  height: 40px;
+  width: 80px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.icon {
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+
+  svg {
+    fill: var(--colorBlack);
+  }
+}

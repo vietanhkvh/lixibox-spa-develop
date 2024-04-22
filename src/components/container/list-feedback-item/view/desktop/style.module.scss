@@ -1,0 +1,54 @@
+.actionSection {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 46px;
+
+  .feedbackAction {
+    display: flex;
+    align-items: center;
+    margin: 0 0 20px;
+    cursor: pointer;
+
+    .icon {
+      width: 20px;
+      height: 20px;
+
+      svg {
+        fill: var(--color8E);
+      }
+    }
+
+    .text {
+      margin-left: 10px;
+      font-size: 14px;
+      font-weight: var(--fontRegular);
+      color: var(--color8E);
+    }
+  }
+
+  .feedbackActionActive {
+    .icon {
+      svg {
+        fill: var(--colorPrimary);
+      }
+    }
+
+    .text {
+      color: var(--colorPrimary);
+    }
+  }
+}
+
+.bottomSection {
+  border-bottom: 1px solid var(--colorF0);
+}
+
+.loaderContainer {
+  height: 20px;
+  width: initial;
+
+  .loaderInnerContainer {
+    width: 20px;
+    margin: 0;
+  }
+}

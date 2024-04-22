@@ -1,0 +1,24 @@
+.inputField {
+  padding-top: 0;
+  margin-bottom: 3px;
+}
+
+.fieldErrorMobile {
+  color: var(--colorWhite) !important;
+}
+
+.noDisplay {
+  display: none;
+}
+
+.appleLoginContainerDesktop {
+  display: flex;
+  height: 44px;
+  cursor: pointer;
+}
+
+.googleSigninContainerDesktop,
+.facebookSigninContainerDesktop {
+  display: flex;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,39 @@
+.invoiceFormModal {
+  margin-bottom: 70px;
+
+  &.invoiceFormModalDesktop {
+    display: flex;
+    width: 440px;
+  }
+
+  .body {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 17px 0 15px;
+    margin-bottom: calc(70px + 37px); // TODO: Refactor general modal
+  }
+
+  .notes {
+    margin-top: 18px;
+    font-weight: var(--fontLight);
+    font-size: 14px;
+
+    div {
+      font-weight: var(--fontSemiBold);
+      font-size: 13px;
+    }
+  }
+
+  .primaryButton {
+    // TODO: Remove `important`. Dependency: SubmitButton (inline style removal required)
+    background-color: var(--color3E) !important;
+  }
+}
+
+.entry {
+  margin-top: 8px;
+}
+
+.noDisplay {
+  display: none;
+}

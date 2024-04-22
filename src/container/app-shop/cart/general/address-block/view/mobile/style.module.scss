@@ -1,0 +1,245 @@
+.userAddressIndex {
+  margin: 20px 16px;
+
+  .addAddressSection {
+    display: flex;
+    align-items: center;
+    margin-top: 9px;
+    margin-bottom: 10px;
+    padding: 15px 16px 14px;
+    border: 1px dashed var(--colorDB);
+    border-radius: 8px;
+
+    .iconContainer {
+      flex: 0 0 15px;
+      height: 15px;
+
+      .icon {
+        max-width: 13.6px;
+        max-height: 13.6px;
+
+        svg {
+          fill: var(--color20);
+        }
+      }
+
+      .iconSelected svg {
+        fill: var(--colorSecondaryBlue);
+      }
+    }
+
+    .title {
+      font-weight: var(--fontLight);
+      font-size: 14px;
+      color: var(--color20);
+      margin-left: 15px;
+    }
+  }
+}
+
+.storeIndex {
+  margin: 20px 16px;
+
+  .searchSection {
+    margin-bottom: 17px;
+
+    .searchInput {
+      background-color: var(--colorF5);
+      border-radius: 8px;
+      border: none;
+      padding: 12px 15px 12px 41px;
+      width: 100%;
+      font-weight: var(--fontLight);
+      font-size: 14px;
+      color: var(--color20);
+      resize: none;
+
+      &::placeholder {
+        color: var(--color8E);
+      }
+    }
+
+    .iconContainer {
+      position: absolute;
+      margin-top: -43px;
+      height: 43px;
+      width: 31px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-left: 15px;
+
+      .icon {
+        width: 16px;
+        height: 16px;
+
+        svg {
+          fill: var(--color8E);
+        }
+      }
+    }
+  }
+}
+
+.addressBlock {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--colorWhite);
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: var(--transitionBoxShadow);
+
+  &.addressBlockEmpty {
+    .header {
+      .status {
+        .icon {
+          svg {
+            fill: var(--colorPrimary);
+          }
+        }
+      }
+
+      .title {
+        color: var(--colorPrimary);
+      }
+
+      .action {
+        .icon {
+          svg {
+            fill: var(--colorPrimary);
+          }
+        }
+      }
+    }
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+
+    .status {
+      flex: 0 0 1px;
+
+      .icon {
+        width: 20px;
+        height: 20px;
+
+        svg {
+          fill: var(--color20);
+        }
+      }
+    }
+
+    .title {
+      font-weight: var(--fontSemiBold);
+      font-size: 14px;
+      color: var(--color20);
+      flex: 1;
+      margin-left: 10px;
+    }
+
+    .titleReceiver {
+      margin-left: 32px;
+    }
+
+    .action {
+      padding-left: 15px;
+      font-weight: var(--fontSemiBold);
+      font-size: 13px;
+      color: var(--color8A);
+
+      .icon {
+        width: 9px;
+        height: 15px;
+
+        svg {
+          fill: var(--color20);
+        }
+      }
+    }
+  }
+
+  .brief {
+    margin: 0 30px;
+    font-size: 14px;
+
+    .header {
+      font-weight: var(--fontSemiBold);
+      color: var(--color20);
+    }
+
+    .address {
+      font-weight: var(--fontLight);
+      color: var(--color20);
+      margin-top: 5px;
+    }
+
+    .contact {
+      font-weight: var(--fontLight);
+      color: var(--color20);
+      margin-top: 5px;
+    }
+
+    .hint {
+      font-weight: var(--fontSemiBold);
+      color: var(--colorPrimary);
+    }
+  }
+
+  .payerBlock {
+    margin-top: 15px;
+  }
+}
+
+.addressModal {
+  height: 90vh;
+
+  .body {
+    padding: 14px 16px 6px;
+
+    .hint {
+      font-weight: var(--fontLight);
+      font-size: 13px;
+      color: var(--color8A);
+      margin-bottom: 10px;
+    }
+
+    .entry {
+      background-color: var(--colorF5);
+      border-radius: 8px;
+      border: none;
+      padding: 14px 15px;
+      width: 100%;
+      font-weight: var(--fontLight);
+      font-size: 14px;
+      color: var(--color20);
+      resize: none;
+
+      &::placeholder {
+        color: var(--color8E);
+      }
+    }
+  }
+
+  .primaryButton {
+    // TODO: Remove `important`. Dependency: SubmitButton (inline style removal required)
+    background-color: var(--color3E) !important;
+  }
+}
+
+.addressFormModal {
+  display: flex;
+
+  .addressFormModalForm {
+    padding-bottom: 70px;
+  }
+}
+
+.regionSelectorModal {
+  display: flex;
+}
+
+.blockError {
+  background-color: var(--colorPinkFE29);
+}

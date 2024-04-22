@@ -1,0 +1,48 @@
+.referralCode {
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    align-self: center;
+    font-weight: var(--fontSemiBold);
+    font-size: 16px;
+    color: var(--color20);
+    margin-bottom: 14px;
+  }
+
+  .code {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 40px;
+    border: 1px dashed var(--color9A);
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: var(--colorWhite);
+
+    &:active {
+      opacity: 0.5;
+    }
+
+    .content {
+      position: absolute;
+      font-weight: var(--fontBold);
+      font-size: 14px;
+      color: var(--colorPrimary);
+      width: 100%;
+      text-align: center;
+    }
+
+    .copyButton {
+      width: 20px;
+      height: 20px;
+      min-width: 20px;
+      margin: 0 15px;
+
+      svg {
+        fill: var(--color8A);
+      }
+    }
+  }
+}

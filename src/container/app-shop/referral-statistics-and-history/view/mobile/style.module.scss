@@ -1,0 +1,22 @@
+.referralStatisticsAndHistory {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--colorF5);
+
+  .placeholder {
+    margin-top: 100px;
+  }
+
+  .referralHistories {
+    padding: 16px;
+
+    .referralHistory {
+      border-radius: 8px;
+
+      &:not(:first-child) {
+        margin-top: 16px;
+      }
+    }
+  }
+}

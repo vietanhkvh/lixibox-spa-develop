@@ -1,0 +1,38 @@
+.container {
+  .title {
+    font-size: 16px;
+    font-weight: var(--fontBold);
+    color: var(--color20);
+    margin-bottom: 8px;
+  }
+
+  .ratings {
+    display: flex;
+    flex-direction: column;
+
+    .rating {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &:not(:first-child) {
+        margin-top: 8px;
+      }
+
+      .ratingTitle {
+        margin-right: 8px;
+        font-size: 14px;
+        font-weight: var(--fontRegular);
+        color: var(--color20);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .ratingScore {
+        width: 50%;
+        min-width: 50%;
+      }
+    }
+  }
+}

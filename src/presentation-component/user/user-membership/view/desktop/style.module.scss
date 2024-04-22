@@ -1,0 +1,52 @@
+.userMembership {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  align-items: center;
+
+  .membershipImage {
+    width: 130px;
+    height: 130px;
+    min-width: 130px;
+    min-height: 130px;
+  }
+
+  .userName {
+    margin-top: 16px;
+    font-size: 18px;
+    font-weight: var(--fontSemiBold);
+    color: var(--color20);
+  }
+
+  .level {
+    margin-top: 16px;
+    height: 28px;
+    min-height: 28px;
+    width: auto;
+  }
+
+  .info {
+    margin-top: 16px;
+    font-size: 14px;
+    font-weight: var(--fontLight);
+    text-align: center;
+
+    .infoIcon {
+      margin-left: 10px;
+      width: 16px;
+      height: 16px;
+      min-width: 16px;
+      min-height: 16px;
+      display: inline-block;
+      vertical-align: sub;
+
+      svg {
+        fill: var(--color20);
+      }
+    }
+  }
+
+  .infoClickable {
+    cursor: pointer;
+  }
+}

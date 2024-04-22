@@ -1,0 +1,115 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+
+  .sectionTopContainer {
+    position: relative;
+
+    .outOfStockLabel {
+      display: flex;
+      position: absolute;
+      left: calc(50% - 100px);
+      top: calc(50% - 25px);
+      width: 200px;
+      height: 50px;
+      border-radius: 4px;
+      background-color: rgb(32 32 32 / 80%);
+      color: var(--colorWhite);
+      font-size: 20px;
+      font-weight: var(--fontRegular);
+      align-items: center;
+      justify-content: center;
+    }
+
+    .sectionTop {
+      border-radius: 8px;
+      padding-bottom: 75%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: var(--colorWhite);
+    }
+  }
+
+  .sectionBottom {
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+
+    .title {
+      align-self: flex-start;
+      font-size: 18px;
+      font-weight: var(--fontRegular);
+      color: var(--color20);
+      height: 48px;
+    }
+
+    .value {
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+
+      .valueLeft {
+        display: flex;
+        align-items: center;
+
+        .valueIcon {
+          width: 18px;
+          height: 18px;
+
+          svg {
+            fill: var(--colorPrimary);
+          }
+        }
+
+        .valueText {
+          margin-left: 6px;
+          font-size: 18px;
+          font-weight: var(--fontRegular);
+          color: var(--colorPrimary);
+        }
+      }
+
+      .valueRight {
+        display: flex;
+        align-items: center;
+        padding: 2px 8px;
+        background-color: var(--colorGreenE7);
+        border-radius: 4px;
+
+        .buttonIcon {
+          margin-right: 6px;
+          width: 16px;
+          height: 16px;
+          min-width: 16px;
+          min-height: 16px;
+
+          svg {
+            fill: var(--colorGreenDark);
+          }
+        }
+
+        .buttonText {
+          font-size: 16px;
+          font-weight: var(--fontSemiBold);
+          color: var(--colorGreenDark);
+        }
+      }
+
+      .valueRightDisabled {
+        background-color: var(--colorF1);
+
+        .buttonIcon {
+          svg {
+            fill: var(--color5C);
+          }
+        }
+
+        .buttonText {
+          color: var(--color5C);
+        }
+      }
+    }
+  }
+}

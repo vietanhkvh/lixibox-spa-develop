@@ -1,0 +1,19 @@
+.modal {
+  padding: 16px;
+
+  @media (width >= 960px) {
+    min-width: 350px;
+  }
+
+  .text {
+    margin-bottom: 10px;
+
+    .bold {
+      font-weight: var(--fontSemiBold);
+    }
+  }
+}
+
+.modalDesktop {
+  max-width: 350px;
+}

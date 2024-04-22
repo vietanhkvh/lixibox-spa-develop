@@ -1,0 +1,13 @@
+.bankTransferBlock {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--colorWhite);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  margin-top: -8px;
+  background-size: cover;
+
+  .transferDetails {
+    margin: 28px 24% 40px;
+  }
+}

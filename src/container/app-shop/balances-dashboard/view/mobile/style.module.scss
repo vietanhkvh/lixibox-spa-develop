@@ -1,0 +1,99 @@
+.balancesDashboardContainer {
+  display: flex;
+  flex-direction: column;
+
+  .dashboardBody {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+
+    .membershipInfoSkeleton {
+      height: 94px;
+    }
+
+    .balancesPreview {
+      display: flex;
+      margin-top: 16px;
+
+      .separator {
+        border-color: var(--colorF0);
+        margin: 0 16px;
+      }
+
+      .balancePreviewItem {
+        width: calc(100% - 16px);
+      }
+    }
+
+    .balancesPreviewSkeleton {
+      margin-top: 16px;
+      height: 62px;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      border-radius: 8px;
+      border: 1px solid var(--colorF0);
+
+      .link {
+        &:not(:first-child) {
+          border-top: 1px solid var(--colorF0);
+        }
+      }
+    }
+
+    .linksAuthenticatedView {
+      margin-top: 24px;
+    }
+
+    .banner {
+      margin-top: 16px;
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .bannerSkeleton {
+      margin-top: 16px;
+      border-radius: 8px;
+      height: 135px;
+    }
+
+    .boxesSection {
+      margin-top: 16px;
+    }
+
+    .paginationSection {
+      align-items: center;
+    }
+
+    .skeletons {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 16px;
+      margin-bottom: 16px;
+
+      .skeleton {
+        margin: 0 8px 16px;
+        width: calc(50% - 16px);
+        border-radius: 8px;
+      }
+    }
+
+    .placeholder {
+      margin-top: 16px;
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.infoModal {
+  .faqModalBody {
+    .collapsibleList {
+      padding: 0 16px 16px;
+    }
+  }
+}

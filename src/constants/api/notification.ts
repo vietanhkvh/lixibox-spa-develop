@@ -1,0 +1,3 @@
+import { ACTION_TYPE } from './action.config';
+
+export const FETCH_NOTIFICATION_LIST = `${ACTION_TYPE.API_ACTION}/FETCH_NOTIFICATION_LIST`;

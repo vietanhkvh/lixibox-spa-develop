@@ -1,0 +1,11 @@
+.lixicoinRedeemAllModal {
+  .body {
+    margin-top: 20px;
+    margin-bottom: 108px;
+  }
+
+  .primaryButton {
+    // TODO: Remove `important`. Dependency: SubmitButton (inline style removal required)
+    background-color: var(--color3E) !important;
+  }
+}

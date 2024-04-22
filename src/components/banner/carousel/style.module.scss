@@ -1,0 +1,149 @@
+.container {
+  width: 100%;
+}
+
+.containerMobile {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: block;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+}
+
+.containerDesktop {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.containerMobileIndicator {
+  padding-bottom: 22px;
+}
+
+.containerGreyBg {
+  background-color: var(--colorF5);
+}
+
+.panel {
+  white-space: nowrap;
+  transition: var(--transitionTransform);
+}
+
+.panelMobile {
+  justify-content: space-between;
+  width: 100%;
+  max-width: 940px;
+  padding-left: 16px;
+  display: block;
+}
+
+.panelDesktop {
+  width: 100%;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.link {
+  position: relative;
+  white-space: nowrap;
+  flex: 1;
+  cursor: pointer;
+  padding-top: 41%;
+  transition: var(--transitionNormal);
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.linkMobile {
+  display: inline-block;
+  width: calc(100% - 16px);
+  vertical-align: top;
+  max-width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--colorFA);
+  margin-right: 16px;
+  padding-right: 0;
+}
+
+.linkDesktop {
+  display: block;
+  max-width: calc(50% - 10px);
+  width: calc(50% - 10px);
+  margin-right: 0;
+  padding-right: 0;
+  box-shadow: var(--shadowBlur);
+}
+
+.lastLink {
+  margin-right: 16px;
+}
+
+.innerLink {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.navLink {
+  display: block;
+  height: 100%;
+  flex: 1;
+}
+
+.placeholder {
+  width: 100%;
+  padding: 16px;
+  position: relative;
+
+  .innerPlaceholder {
+    width: 100%;
+    padding-top: 43.5%;
+    border-radius: 8px;
+    background: var(--colorF5);
+  }
+
+  .indicatorPlaceholder {
+    width: 20px;
+    height: 4px;
+    background: var(--colorF5);
+    position: absolute;
+    bottom: 6px;
+    border-radius: 2px;
+    left: 50%;
+    margin-left: -10px;
+  }
+}
+
+.placeholderWithIndicator {
+  margin-bottom: 6px;
+}
+
+.indicator {
+  width: 100%;
+  height: 22px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.indicatorItem {
+  width: 4px;
+  height: 4px;
+  margin: 0 2px;
+  border-radius: 2px;
+  background: var(--colorE1);
+}
+
+.indicatorItemSelected {
+  width: 14px;
+  background: var(--color3E);
+}

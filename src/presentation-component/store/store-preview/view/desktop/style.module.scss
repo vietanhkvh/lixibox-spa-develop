@@ -1,0 +1,32 @@
+.storePreview {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 210px;
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 330px;
+    border-radius: 8px;
+    background-position-y: center;
+    background-color: var(--colorF7);
+
+    .background {
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+    }
+  }
+
+  .content {
+    position: absolute;
+    top: 85%;
+    margin: 0 25px;
+    left: 0;
+    right: 0;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 8px;
+  }
+}

@@ -1,0 +1,44 @@
+.productPreview {
+  display: flex;
+  padding: 8px;
+
+  .leftSection {
+    .image {
+      max-width: 48px;
+      max-height: 48px;
+      min-width: 48px;
+      min-height: 48px;
+      object-fit: contain;
+    }
+  }
+
+  .rightSection {
+    margin-left: 12px;
+
+    .title {
+      font-size: 14px;
+      font-weight: var(--fontRegular);
+      color: var(--color20);
+    }
+
+    .review {
+      margin-top: 4px;
+      display: flex;
+      align-items: center;
+
+      .rating {
+        .star {
+          width: 12px;
+          height: 12px;
+        }
+      }
+
+      .reviewCount {
+        margin-left: 4px;
+        font-size: 14px;
+        font-weight: var(--fontLight);
+        color: var(--color8A);
+      }
+    }
+  }
+}

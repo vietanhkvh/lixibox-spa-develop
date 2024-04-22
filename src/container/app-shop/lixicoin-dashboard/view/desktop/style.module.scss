@@ -1,0 +1,95 @@
+.container {
+  min-height: 100vh;
+  background-color: var(--colorF2);
+
+  .sidebarSection {
+    margin-top: 20px;
+    margin-bottom: 28px;
+
+    > * {
+      &:not(:first-child) {
+        margin-top: 12px;
+      }
+    }
+
+    .membershipInfo {
+      border-radius: 8px;
+      background-color: var(--colorWhite);
+    }
+
+    .membershipInfoSkeleton {
+      border-radius: 8px;
+      height: 345px;
+    }
+
+    .lixicoinPreview {
+      border-radius: 8px;
+      background-color: var(--colorWhite);
+      padding: 16px;
+    }
+
+    .lixicoinPreviewSkeleton {
+      border-radius: 8px;
+      height: 80px;
+    }
+
+    .redeemButton {
+      padding: 16px;
+      border-radius: 8px;
+      background-color: var(--colorWhite);
+      margin: 0;
+    }
+
+    .lixicoinEarningInstruction {
+      border-radius: 8px;
+      background-color: var(--colorWhite);
+    }
+
+    .lixicoinEarningInstructionSkeleton {
+      border-radius: 8px;
+      height: 410px;
+    }
+  }
+
+  .mainBlockSection {
+    margin-top: 20px;
+    margin-bottom: 28px;
+    overflow: hidden;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+    .bodySection {
+      padding: 18px;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      background-color: var(--colorWhite);
+
+      .paginationSection {
+        align-items: center;
+      }
+
+      .skeletons {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 16px;
+        margin-bottom: 16px;
+
+        .skeleton {
+          margin: 0 8px 16px;
+          width: calc(25% - 16px);
+          height: 220px;
+          border-radius: 8px;
+        }
+      }
+
+      .placeholder {
+        margin-top: 24px;
+        margin-bottom: 24px;
+      }
+    }
+
+    .faqSection {
+      margin-top: 16px;
+    }
+  }
+}

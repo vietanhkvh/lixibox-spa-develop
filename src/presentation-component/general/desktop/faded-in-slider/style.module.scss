@@ -1,0 +1,80 @@
+$navBtnWidth: 40px;
+
+.fadedInWarpper {
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    .navBtn {
+      visibility: visible;
+      opacity: 1;
+
+      &.left,
+      &.right {
+        transform: translate(0, 0);
+      }
+    }
+  }
+
+  .navBtn {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: $navBtnWidth;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: var(--transitionNormal);
+
+    .navIcon {
+      height: 100%;
+
+      svg {
+        fill: var(--colorA2);
+        width: 14px;
+      }
+    }
+
+    &.left {
+      left: 0;
+      transform: translate(-$navBtnWidth, 0);
+      background: linear-gradient(
+        -90deg,
+        rgb(255 255 255 / 0%) 0%,
+        rgb(255 255 255 / 50%) 50%,
+        rgb(255 255 255 / 80%) 100%
+      );
+
+      .navIcon {
+        svg {
+          width: 32px;
+        }
+      }
+    }
+
+    &.right {
+      right: 0;
+      transform: translate($navBtnWidth, 0);
+      background: linear-gradient(
+        90deg,
+        rgb(255 255 255 / 0%) 0%,
+        rgb(255 255 255 / 50%) 50%,
+        rgb(255 255 255 / 80%) 100%
+      );
+    }
+  }
+
+  .fadedInSlider {
+    display: flex;
+    align-items: center;
+    overflow: auto hidden;
+    scroll-behavior: smooth;
+
+    .listContainer {
+      display: flex;
+      column-gap: 8px;
+    }
+  }
+}

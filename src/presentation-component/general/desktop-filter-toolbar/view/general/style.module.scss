@@ -1,0 +1,42 @@
+.headingPanel {
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  cursor: pointer;
+
+  &.left {
+    align-items: flex-start;
+  }
+
+  .heading {
+    display: flex;
+    font-weight: var(--fontSemiBold);
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--color20);
+    text-transform: uppercase;
+    margin-bottom: 2px;
+
+    .angleIcon {
+      width: 16px;
+      height: 16px;
+      margin-left: 5px;
+    }
+
+    .angleIcon svg {
+      width: 12px;
+      fill: var(--colorr3E);
+      transform: rotate(-90deg);
+      transition: var(--transitionNormal);
+    }
+  }
+
+  .title {
+    color: var(--color20);
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: var(--fontLight);
+  }
+}

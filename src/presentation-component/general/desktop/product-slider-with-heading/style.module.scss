@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--colorWhite);
+  margin-bottom: 10px;
+
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .titleSection {
+    font-weight: var(--fontSemiBold);
+    font-size: 22px;
+    color: var(--color20);
+    margin: 20px 0 28px 10px;
+    text-transform: capitalize;
+  }
+
+  .viewMore {
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color8A);
+    font-weight: var(--fontRegular);
+    font-size: 14px;
+  }
+
+  .icon {
+    width: 22px;
+    height: 16px;
+
+    svg {
+      width: 8px;
+      fill: var(--color8A);
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.keywordPill {
+  max-width: 250px;
+  background: var(--colorF5);
+  color: var(--color20);
+  font-size: 14px;
+  font-weight: var(--fontRegular);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 12px;
+  margin-right: 8px;
+  border-radius: 8px;
+  display: block;
+  transition: var(--transitionNormal);
+  padding: 8px 12px;
+
+  &:hover,
+  &:focus {
+    background-color: var(--colorF5);
+    color: var(--colorPrimary);
+  }
+}

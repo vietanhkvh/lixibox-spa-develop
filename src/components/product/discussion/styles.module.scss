@@ -1,0 +1,45 @@
+.replyPanel {
+  background-color: var(--colorF5);
+  height: 36px;
+  width: 100%;
+  padding: 0 0 0 16px;
+  font-size: 13px;
+  line-height: 36px;
+  font-weight: 300;
+  display: flex;
+  color: var(--color8A);
+  border-top: 1px solid var(--colorBlack005);
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  @media (width >= 960px) {
+    position: relative;
+    margin-top: 10px;
+    border-top: none;
+    border-radius: 18px;
+  }
+
+  .userName {
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+    margin-left: 5px;
+    max-width: 50%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .closeButton {
+    position: absolute;
+    top: 0;
+    right: 4px;
+    width: 36px;
+    height: 36px;
+
+    svg {
+      width: 12px;
+    }
+  }
+}

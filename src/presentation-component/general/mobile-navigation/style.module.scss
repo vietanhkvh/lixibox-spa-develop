@@ -1,0 +1,261 @@
+.container {
+  height: 50px;
+  width: 100%;
+  position: relative;
+
+  .fixed {
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    top: var(--sticky-top-banner-height, 0);
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--colorWhite);
+    z-index: var(--zIndexMax);
+    border-bottom: 1px solid var(--colorE9);
+
+    &.withDownloadAppBar {
+      top: calc(40px + var(--sticky-top-banner-height, 0px));
+    }
+  }
+
+  &.isTransparent {
+    height: 0;
+
+    .fixed {
+      /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0.5+0,0+100;White+to+Transparent */
+
+      /* FF3.6-15 */
+      background: linear-gradient(
+        to top,
+        rgb(255 255 255 / 50%) 0%,
+        rgb(255 255 255 / 0%) 100%
+      ); /* Chrome10-25,Safari5.1-6 */
+
+      background: linear-gradient(
+        to bottom,
+        rgb(255 255 255 / 50%) 0%,
+        rgb(255 255 255 / 0%) 100%
+      ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ /* IE6-9 */
+      border-bottom: none;
+      filter: invert(1);
+
+      .dropdown {
+        filter: invert(1);
+      }
+    }
+  }
+}
+
+.left {
+  display: flex;
+}
+
+.right {
+  display: flex;
+}
+
+.logoIcon {
+  width: 90px;
+  height: 50px;
+  transition: var(--transitionNormal);
+  transform: translate3d(0, 0, 0);
+}
+
+.container.isHomePage .logoIcon {
+  transform: translate3d(-34px, 0, 0);
+}
+
+.logoIcon svg {
+  width: 117px;
+  height: 15px;
+  fill: var(--colorBlack);
+}
+
+.backIcon {
+  width: 50px;
+  height: 50px;
+  visibility: visible;
+  transition: var(--transitionNormal);
+  opacity: 1;
+}
+
+.container.isHomePage .backIcon {
+  transform: scale(0);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.backIcon svg {
+  width: 20px;
+  fill: var(--color3E);
+}
+
+.search {
+  width: 50px;
+  height: 50px;
+}
+
+.search svg {
+  width: 20px;
+  fill: var(--color3E);
+}
+
+.cart {
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+
+.cart svg {
+  width: 20px;
+  fill: var(--color3E);
+}
+
+.more {
+  width: 50px;
+  height: 50px;
+  max-width: 50px;
+  visibility: visible;
+  transition: var(--transitionNormal);
+  opacity: 1;
+}
+
+.more.hidden {
+  width: 0;
+  max-width: 0;
+  transform: scale(0);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.more svg {
+  width: 20px;
+  fill: var(--color3E);
+}
+
+.cartNumber {
+  position: absolute;
+  display: inline-block;
+  background: var(--colorRed);
+  color: var(--colorWhite);
+  height: 16px;
+  min-width: 16px;
+  line-height: 16px;
+  text-align: center;
+  font-size: 10px;
+  font-weight: var(--fontBold);
+  border-radius: 8px;
+  padding: 0 4px;
+  right: 10px;
+  top: 10px;
+}
+
+.dropdownOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--colorTransparent);
+  width: 100vw;
+  height: 100vh;
+}
+
+.dropdown {
+  position: absolute;
+  right: 6px;
+  top: 59px;
+  border-radius: 4px;
+  box-shadow: 0 3px 8px rgb(0 0 0 / 5%), 0 0 6px rgb(0 0 0 / 10%);
+  background: var(--colorWhite);
+  padding: 10px 0;
+  transition: var(--transitionNormal);
+  transform: scale(0);
+  transform-origin: top right;
+  opacity: 0;
+}
+
+.dropdown.show {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.downdownItem {
+  height: 42px;
+  width: 220px;
+  display: flex;
+}
+
+.downdownItem:hover {
+  background: var(--colorFA);
+}
+
+.dropdownTitle {
+  line-height: 42px;
+  flex: 1;
+  font-size: 14px;
+}
+
+.dropdownIcon {
+  min-width: 50px;
+  width: 42px;
+  height: 42px;
+
+  svg {
+    width: 20px;
+  }
+}
+
+.dropdownIcon-bell svg {
+  width: 20px;
+  fill: var(--color3E);
+}
+
+.dropdownIcon-history svg {
+  width: 20px;
+  fill: var(--color3E);
+}
+
+.dropdownIcon-heart-line svg {
+  width: 18px;
+  fill: var(--color3E);
+}
+
+.dropdownIcon-share svg {
+  width: 20px;
+  fill: var(--color3E);
+}
+
+.dropdownIcon-warning svg {
+  width: 20px;
+  fill: var(--color3E);
+}
+
+.dropdownIcon-cart svg {
+  width: 20px;
+  fill: var(--color3E);
+}
+
+.dropdownIcon-user svg {
+  width: 20px;
+  fill: var(--color3E);
+}
+
+.modalContainerMobile {
+  display: flex;
+  flex-direction: column;
+  overflow: initial;
+
+  .header {
+    position: static;
+  }
+
+  .clientArea {
+    padding-top: inherit;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 52px);
+  }
+}

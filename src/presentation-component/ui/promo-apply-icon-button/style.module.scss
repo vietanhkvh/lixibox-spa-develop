@@ -1,0 +1,51 @@
+.promoApplyIconButton {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+
+  &.animate {
+    animation: rotate 1s infinite;
+    background-color: var(--colorWhite) !important;
+    filter: grayscale(100%);
+
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
+
+  &.disabled {
+    cursor: initial;
+    filter: grayscale(100%);
+  }
+
+  svg {
+    width: 14px;
+    height: 14px;
+    min-width: 14px;
+    min-height: 14px;
+  }
+
+  &.applicable {
+    border-radius: 12px;
+    background-color: rgb(254 44 109 / 15%);
+
+    svg {
+      fill: var(--colorPrimary);
+    }
+  }
+
+  &.applied {
+    border-radius: 12px;
+    background-color: var(--colorPrimary);
+
+    svg {
+      fill: var(--colorWhite);
+    }
+  }
+}

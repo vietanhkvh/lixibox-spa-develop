@@ -1,0 +1,10 @@
+.checkoutSuccess {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -70px;
+  background-color: var(--colorF0);
+
+  .invitationBlock {
+    margin: 20px 16px 33px;
+  }
+}

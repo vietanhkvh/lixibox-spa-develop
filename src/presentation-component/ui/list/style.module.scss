@@ -1,0 +1,40 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--colorWhite);
+  padding: 3px 0;
+  min-width: 120px; // enclosure + icon + 4 characters minimum
+
+  .item {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    cursor: pointer;
+    padding: 0 15px 0 5px;
+
+    &:hover {
+      background-color: var(--colorED);
+    }
+
+    .iconContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+
+      .icon {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    .title {
+      margin: 0 15px;
+      font-weight: var(--fontRegular);
+      font-size: 14px;
+      color: var(--color20);
+      white-space: nowrap;
+    }
+  }
+}

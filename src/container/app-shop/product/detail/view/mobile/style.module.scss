@@ -1,0 +1,84 @@
+.productDetail {
+  display: flex;
+  flex-direction: column;
+}
+
+.storeMapModal {
+  height: 800px;
+}
+
+.citySelectionModal {
+  display: flex;
+  height: 800px;
+}
+
+.savingSet {
+  display: flex;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+
+  .info {
+    flex: 1;
+  }
+
+  .title {
+    font-weight: var(--fontSemiBold);
+    font-size: 16px;
+    color: var(--color20);
+    letter-spacing: 0;
+    line-height: 26px;
+  }
+
+  .desc {
+    font-weight: var(--fontLight);
+    font-size: 13px;
+    color: var(--color20);
+    line-height: 20px;
+  }
+
+  .desc span {
+    font-weight: var(--fontSemiBold);
+  }
+
+  .img {
+    width: 45px;
+    height: 45px;
+    border-radius: 4px;
+    border: 1px dashed var(--color8A);
+    object-fit: contain;
+    display: block;
+    margin-right: 10px;
+  }
+
+  .icon {
+    width: 17px;
+    height: 17px;
+
+    img {
+      width: 7px;
+      fill: var(--color20);
+    }
+  }
+}
+
+.savingBoxList {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.productDetailLoader {
+  display: flex;
+  height: 100vh;
+}
+
+.cashbackTag {
+  margin-left: 16px;
+  margin-right: 16px;
+  align-self: flex-start;
+  margin-bottom: 16px;
+}
+
+.badgeBlock {
+  margin: 0 16px 8px;
+}

@@ -1,0 +1,21 @@
+.comboDetailModal {
+  display: flex;
+  flex-direction: column;
+  overflow: initial;
+
+  .header {
+    position: static;
+  }
+
+  .clientArea {
+    padding-top: inherit;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 52px);
+  }
+}
+
+.comboDetailModalDesktop {
+  width: 400px;
+}

@@ -1,0 +1,71 @@
+.facebookSigninContainer {
+  display: flex;
+  position: relative;
+}
+
+.facebookSigninButton:hover {
+  box-shadow: var(--shadow4);
+}
+
+.facebookSigninButton {
+  transition: var(--transitionNormal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  width: 100%;
+  border: 1px solid;
+  border-radius: 8px;
+  background: var(--colorWhite);
+  cursor: pointer;
+}
+
+.facebookSigninButton .button-icon {
+  width: 20px !important;
+
+  /* 2px reduced as a compensation for larger visual appearance than other same sized icons. Suggested by Thanh */
+  height: 20px !important;
+}
+
+.facebookSigninButton .button-label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.facebookSigninElementNonInteractive {
+  pointer-events: none;
+}
+
+.facebookSigninButtonInnerBlock {
+  display: flex;
+  min-width: 210px;
+}
+
+.facebookSigninLoader {
+  display: flex;
+  position: absolute;
+  width: calc(100% - 70px);
+  height: 100%;
+  background: rgb(0 0 0 / 20%);
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+.facebookSigninLoaderDesktop {
+  width: 100%;
+}
+
+.facebookSigninOverlay {
+  display: flex;
+  position: absolute;
+  width: calc(100% - 70px);
+  height: 100%;
+  border-radius: 8px;
+  z-index: var(--zIndex1);
+  cursor: pointer;
+}
+
+.facebookSigninOverlayDesktop {
+  width: 100%;
+}

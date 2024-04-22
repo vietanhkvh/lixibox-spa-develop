@@ -1,0 +1,19 @@
+.referralDetailContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--colorF5);
+
+  .referralDetail {
+    padding: 16px;
+  }
+
+  .genericNote {
+    margin: 0 16px;
+    color: var(--color8A);
+    font-weight: var(--fontLight);
+    font-size: 13px;
+    text-align: center;
+    padding: 0 44px 16px;
+  }
+}

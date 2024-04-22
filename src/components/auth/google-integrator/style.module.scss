@@ -1,0 +1,21 @@
+.confirmationModal {
+  margin-bottom: 70px;
+  min-width: 320px;
+
+  .body {
+    padding: 21px 16px 26px;
+
+    .entryTitle {
+      margin-bottom: 10px;
+      font-weight: var(--fontRegular);
+      font-size: 14px;
+      color: var(--color20);
+      text-align: center;
+    }
+  }
+
+  .primaryButton {
+    // TODO: Remove `important`. Dependency: SubmitButton (inline style removal required)
+    background-color: var(--color3E) !important;
+  }
+}

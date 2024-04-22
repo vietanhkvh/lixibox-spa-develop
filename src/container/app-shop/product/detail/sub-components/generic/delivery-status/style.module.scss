@@ -1,0 +1,37 @@
+.container {
+  width: 100%;
+  padding: 0 16px;
+  margin-bottom: 8px;
+
+  @media only screen and (width >= 960px) {
+    padding: 0;
+  }
+
+  .panel {
+    background-color: var(--colorSecondaryBlueOpacity10);
+    border-radius: 4px;
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icon {
+    margin: 0 15px;
+    width: 16px;
+    height: 16px;
+
+    svg {
+      fill: var(--color20);
+    }
+  }
+
+  .text {
+    flex: 1;
+    fill: var(--color20);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: var(--fontLight);
+    padding-right: 20px;
+  }
+}

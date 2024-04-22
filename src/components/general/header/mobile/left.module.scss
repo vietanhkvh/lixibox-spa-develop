@@ -1,0 +1,19 @@
+.loginPanelButton {
+  background-color: var(--colorWhite);
+  border: 1px solid var(--colorWhite);
+  color: var(--color4D);
+  width: auto;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 30px;
+  font-size: 15px;
+  border-radius: 22px;
+  box-shadow: var(--shadowBlur);
+  cursor: pointer;
+
+  &:hover {
+    color: var(--colorPink);
+    background-color: var(--colorWhite);
+  }
+}

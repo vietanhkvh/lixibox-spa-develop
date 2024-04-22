@@ -1,0 +1,76 @@
+/** VALIDATION */
+export const VALIDATION = {
+  REQUIRED: 'REQUIRED',
+  EMAIL_FORMAT: 'EMAIL_FORMAT',
+  NUMBER_FORMAT: 'NUMBER_FORMAT',
+  TEXT_FORMAT: 'TEXT_FORMAT',
+  PHONE_FORMAT: 'PHONE_FORMAT',
+  CHECK_BY_VALUE: 'CHECK_BY_VALUE'
+};
+
+/** INPUT ICON */
+export const INPUT_ICON = {
+  EMAIL: 'EMAIL',
+  PASSWORD: 'PASSWORD'
+};
+
+/** APPLICATION VERSION */
+export const APP_VERSION = {
+  MOBILE: 'MOBILE',
+  TABLET: 'TABLET',
+  DESKTOP: 'DESKTOP'
+};
+
+/** DATE TIME TYPE */
+export const DATETIME_TYPE_FORMAT = {
+  SHORT_DATE: 'DD/MM/YY',
+  FULL_TIME: 'HH:MM - DD/MM/YY',
+  DAY_MONTH_DATE: 'DD/MM',
+  MONTH_YEAR_DATE: 'MM/YYYY'
+};
+
+export const DATETIME_FORMAT_TYPE = {
+  DD_MM: 'DD/MM',
+  DD_MM_YYYY: 'L',
+  DD_MM_YYYY_HH_MM: 'lll',
+  FULL_INFO: 'llll',
+  HH_MM: 'LT',
+  HH_MM_SS: 'LTS'
+};
+
+/** TOKEN TYPE */
+export const TOKEN_TYPE = {
+  ACCESS_TOKEN: 'access_token',
+  CSRF_TOKEN: 'csrf_token'
+};
+
+/** SIGN_IN STATUS */
+export const SIGN_IN_STATE = {
+  NO_LOGIN: 'NO_LOGIN' as const,
+  LOGIN_SUCCESS: 'LOGIN_SUCCESS' as const,
+  LOGIN_FAIL: 'LOGIN_FAIL' as const
+};
+
+/** SELECT BOX FILTER SEARCH SUGGESTION */
+export const FILTER_SUGGESTION_TYPE = {
+  BEAUTY_BOX: 'BEAUTY_BOX',
+  INDIVIDUAL_BOX: 'INDIVIDUAL_BOX'
+};
+
+export const FILTER_SUGGESTION_LIST = [
+  {
+    id: 1,
+    title: 'Tất cả',
+    value: [FILTER_SUGGESTION_TYPE.BEAUTY_BOX, FILTER_SUGGESTION_TYPE.INDIVIDUAL_BOX]
+  },
+  {
+    id: 2,
+    title: 'Beauty Box',
+    value: [FILTER_SUGGESTION_TYPE.BEAUTY_BOX]
+  },
+  {
+    id: 3,
+    title: 'Sản phẩm',
+    value: [FILTER_SUGGESTION_TYPE.INDIVIDUAL_BOX]
+  }
+];

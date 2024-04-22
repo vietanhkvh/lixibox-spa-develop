@@ -1,0 +1,82 @@
+.lixicoinDashboardContainer {
+  display: flex;
+  flex-direction: column;
+
+  .dashboardBody {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+
+    .membershipInfoSkeleton {
+      height: 94px;
+    }
+
+    .lixicoinPreview {
+      margin-top: 26px;
+    }
+
+    .lixicoinPreviewSkeleton {
+      margin-top: 26px;
+      height: 48px;
+    }
+
+    .redeemButton {
+      margin-top: 12px;
+      margin-bottom: 0;
+    }
+
+    .redeemButtonAuthenticatedView {
+      margin-top: 16px;
+    }
+
+    .links {
+      margin-top: 16px;
+      display: flex;
+      flex-direction: column;
+      border-radius: 8px;
+      border: 1px solid var(--colorF0);
+
+      .link {
+        &:not(:first-child) {
+          border-top: 1px solid var(--colorF0);
+        }
+      }
+    }
+
+    .boxesSection {
+      margin-top: 16px;
+    }
+
+    .paginationSection {
+      align-items: center;
+    }
+
+    .skeletons {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 16px;
+      margin-bottom: 16px;
+
+      .skeleton {
+        margin: 0 8px 16px;
+        width: calc(50% - 16px);
+        border-radius: 8px;
+      }
+    }
+
+    .placeholder {
+      margin-top: 16px;
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.infoModal {
+  .infoModalBody {
+    display: flex;
+
+    .lixicoinEarningInstructionSkeleton {
+      height: 410px;
+    }
+  }
+}

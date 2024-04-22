@@ -1,0 +1,19 @@
+.container {
+  width: 100%;
+  padding: 12px 0;
+
+  a {
+    display: block;
+    width: 100%;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    object-position: center;
+  }
+}

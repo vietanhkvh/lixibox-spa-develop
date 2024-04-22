@@ -1,0 +1,195 @@
+.likeIcon {
+  width: 20px;
+  height: 48px;
+  cursor: pointer;
+}
+
+.likeIcon svg {
+  fill: var(--color8A);
+}
+
+.messageIcon {
+  width: 20px;
+  height: 48px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.messageIcon svg {
+  fill: var(--color8A);
+}
+
+.rightActionsContainer {
+  display: flex;
+  overflow: hidden;
+  column-gap: 16px;
+}
+
+.moreIcon {
+  width: 20px;
+  height: 48px;
+  cursor: pointer;
+
+  svg {
+    fill: var(--color8A);
+  }
+}
+
+.contextActions {
+  width: 160px;
+  border-radius: 8px;
+  right: 16px;
+  visibility: hidden;
+  opacity: 0;
+  transform: translate(0, -24px);
+  transition: var(--transitionNormal);
+  top: 40px;
+
+  &.visible {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.shareIcon {
+  width: 20px;
+  height: 48px;
+  cursor: pointer;
+}
+
+.shareIcon svg {
+  fill: var(--color8A);
+}
+
+.likeIcon.isActive svg {
+  fill: var(--colorPrimary);
+}
+
+.messageIcon.isActive svg {
+  fill: var(--colorPrimary);
+}
+
+.iconText {
+  color: var(--color8A);
+  font-size: 14px;
+  font-weight: var(--fontRegular);
+  line-height: 48px;
+  padding: 0 5px;
+  cursor: pointer;
+}
+
+.iconText.isActive {
+  color: var(--colorPrimary);
+}
+
+.likeCommentIconGroup::before {
+  display: block;
+  content: '';
+  position: absolute;
+  width: calc(100% - 32px);
+  height: 1px;
+  top: 0;
+  left: 16px;
+  background: var(--colorF0);
+}
+
+.ProductInFeed {
+  /* empty */
+}
+
+.ProductInFeedTitle {
+  padding: 0 16px;
+  font-size: 14px;
+  font-weight: var(--fontSemiBold);
+  height: 38px;
+  line-height: 38px;
+  color: var(--color20);
+}
+
+.ProductInFeedContent {
+  padding: 2px 16px 16px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.ProductInFeedPanel {
+  display: flex;
+}
+
+.ProductInFeedItem {
+  width: 50px;
+  min-width: 50px;
+  height: 50px;
+  border-radius: 4px;
+  margin-right: 10px;
+  box-shadow: 0 0 2px var(--colorBlack02);
+  display: block;
+}
+
+.ProductInFeedLastItem {
+  width: 6px;
+  height: 10px;
+  min-width: 6px;
+}
+
+.ProductInFeedImg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.commentGroup::after {
+  display: block;
+  content: '';
+  position: absolute;
+  width: calc(100% - 32px);
+  height: 1px;
+  top: 0;
+  left: 16px;
+  background: var(--colorF0);
+}
+
+.pictureCover {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  background: var(--colorWhite);
+  border-bottom: 1px solid var(--colorE5);
+  border-radius: 0;
+  width: 100%;
+  padding-top: 70%;
+}
+
+.pictureList {
+  padding-top: 100%;
+  position: relative;
+  margin-bottom: 0;
+  background: var(--colorWhite);
+  display: block;
+  width: 100%;
+}
+
+.squareStyle {
+  padding-top: 50%;
+}
+
+.pictureSingle {
+  display: block;
+  position: relative;
+  background: var(--colorWhite);
+  border-bottom: 1px solid var(--colorE5);
+  width: 100%;
+  overflow: hidden;
+}
+
+.imageContainerInner {
+  width: 100%;
+  height: 100%;
+
+  .unboxingVideoIcon {
+    background: none !important;
+    z-index: var(--zIndex5);
+  }
+}

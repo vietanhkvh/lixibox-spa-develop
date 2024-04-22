@@ -1,0 +1,30 @@
+.sectionHeader {
+  font-size: 14px;
+  color: var(--color20);
+  font-weight: var(--fontBold);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &.desktop {
+    font-size: 16px;
+  }
+
+  .headingViewMoreLink {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: var(--color8A);
+    font-weight: var(--fontRegular);
+
+    .icon {
+      margin-left: 8px;
+      width: 16px;
+      height: 16px;
+
+      svg {
+        fill: var(--color8A);
+      }
+    }
+  }
+}

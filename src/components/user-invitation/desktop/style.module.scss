@@ -1,0 +1,30 @@
+.userInvitation {
+  margin-top: 1px;
+  border-radius: 8px;
+  background-color: var(--colorWhite);
+  padding: 26px 30px;
+
+  .title {
+    font-weight: var(--fontSemiBold);
+    font-size: 18px;
+    color: var(--color20);
+    margin-bottom: 25px;
+  }
+
+  .invitation {
+    margin-bottom: 30px;
+
+    .scoopClass {
+      background-color: var(--colorWhite) !important;
+    }
+  }
+
+  .additionalNotes {
+    margin: 0 16px;
+    color: var(--color8A);
+    font-weight: var(--fontLight);
+    font-size: 13px;
+    text-align: center;
+    padding: 24px 44px;
+  }
+}

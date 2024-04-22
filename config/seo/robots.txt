@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow: /search/
+Disallow: /tag/
+Disallow: /badges/*
+Sitemap: https://lixibox.com/sitemap.xml.gz

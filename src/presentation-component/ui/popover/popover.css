@@ -1,0 +1,9 @@
+.popoverOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: var(--zIndexMax);
+}
+
+.popoverContent {
+  position: absolute;
+}

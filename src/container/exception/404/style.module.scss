@@ -1,0 +1,29 @@
+.linkShop {
+  display: flex;
+  border: 1px solid var(--colorA2);
+  margin: 5px 10px;
+  border-radius: 22px;
+  padding-right: 25px;
+  padding-left: 10px;
+  height: 44px;
+  transition: var(--transitionNormal);
+
+  &:hover {
+    box-shadow: var(--shadow3);
+  }
+}
+
+.linkMagazine {
+  display: flex;
+  border: 1px solid var(--colorA2);
+  margin: 5px 10px;
+  border-radius: 22px;
+  padding-right: 25px;
+  padding-left: 10px;
+  height: 44px;
+  transition: var(--transitionNormal);
+
+  &:hover {
+    box-shadow: var(--shadow3);
+  }
+}

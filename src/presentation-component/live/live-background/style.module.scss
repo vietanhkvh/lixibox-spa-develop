@@ -1,0 +1,142 @@
+.container {
+  position: fixed;
+  bottom: calc(62px);
+  transform: translate3d(0, calc(var(--safe-area-inset-bottom) * -1), 0);
+  left: 12px;
+  z-index: var(--zIndex9);
+  height: 60px;
+  overflow: hidden;
+  opacity: 1;
+
+  @media (width >= 960px) {
+    bottom: 112px;
+  }
+
+  &.isClosing {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  &.isPreviewMode {
+    width: calc(100vw - 24px);
+    border-radius: 8px;
+    box-shadow: var(--shadow3);
+    background: var(--colorWhite);
+
+    .panel {
+      padding-right: 6px;
+      background: var(--colorWhite07);
+
+      .info {
+        pointer-events: none;
+      }
+    }
+
+    @media (width >= 960px) {
+      width: 320px;
+    }
+  }
+
+  &.isMinimize {
+    width: 60px;
+
+    // border-radius: 50%;
+
+    .panel {
+      width: 100%;
+      padding-right: 0;
+      justify-content: center;
+
+      .liveDetailLink,
+      .closeIcon {
+        visibility: hidden;
+        opacity: 0;
+        display: none;
+      }
+
+      .arrowLeftIcon {
+        transform: scaleX(-1);
+      }
+    }
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(20px);
+  transform: scale(1.2);
+  object-fit: cover;
+}
+
+.panel {
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .liveDetailLink {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    height: 100%;
+  }
+
+  .info {
+    width: 106px;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      max-width: 100%;
+      height: 100%;
+      object-fit: cover;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  .title {
+    font-size: 14px;
+    font-weight: var(--fontSemiBold);
+    color: var(--color4D);
+    flex: 1;
+    padding-left: 16px;
+    visibility: visible;
+    opacity: 1;
+    white-space: nowrap;
+  }
+
+  .arrowLeftIcon {
+    transition: var(--transitionNormal);
+    cursor: pointer;
+    width: 36px;
+    height: 40px;
+
+    svg {
+      width: 14px;
+      fill: var(--color4D);
+    }
+  }
+
+  .closeIcon {
+    cursor: pointer;
+    width: 36px;
+    height: 40px;
+
+    svg {
+      width: 16px;
+      fill: var(--color4D);
+    }
+  }
+}

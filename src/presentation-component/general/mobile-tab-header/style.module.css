@@ -1,0 +1,94 @@
+.container {
+  width: 100%;
+  height: 44px;
+  background: var(--colorWhite);
+  border-bottom: 1px solid var(--colorE9);
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+.isBorderStyle.container {
+  height: 70px;
+  padding: 15px;
+}
+
+.panel {
+  display: flex;
+  width: 100%;
+}
+
+.item {
+  height: 44px;
+  line-height: 44px;
+  padding: 0 16px;
+  text-align: center;
+  position: relative;
+  font-size: 14px;
+  font-weight: var(--fontRegular);
+  color: var(--color8A);
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.item.isSelected {
+  color: var(--colorPrimary);
+  font-weight: var(--fontBold);
+}
+
+.item.isSelected::after {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  background: var(--colorPrimary);
+}
+
+.item.isEqually {
+  flex: 1;
+}
+
+.isBorderStyle.container .item {
+  height: 40px;
+  line-height: 40px;
+  background: var(--colorF5);
+  margin-right: 10px;
+  font-weight: var(--fontLight);
+  color: var(--color20);
+  font-size: 14px;
+  border-radius: 8px;
+}
+
+.isBorderStyle.container .item.isSelected {
+  background: var(--colorBlack);
+  color: var(--colorWhite);
+  font-weight: var(--fontBold);
+}
+
+.isBorderStyle.container .item.isSelected::after {
+  display: none;
+}
+
+.icon {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.icon svg {
+  fill: var(--color8A);
+}
+
+.item.isSelected .icon svg {
+  fill: var(--colorPrimary);
+}
+
+.offset {
+  width: 1px;
+  min-width: 1px;
+  height: 1px;
+}

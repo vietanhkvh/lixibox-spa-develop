@@ -1,0 +1,223 @@
+.mobileProductCategory {
+  min-height: calc(var(--wh) - 50px - 44px - 50px) !important ;
+  width: 100%;
+  background-color: var(--colorF5);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &.modal {
+    min-height: calc(var(--wh) - 60px - 52px) !important ;
+    position: relative;
+
+    .leftZone {
+      top: 50px;
+    }
+  }
+
+  &.mobileAppView {
+    min-height: calc(var(--wh) - 44px) !important ;
+  }
+}
+
+.modalOverlay {
+  z-index: var(--zIndex7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--colorWhite09);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftZone {
+  width: 100px;
+  height: 0;
+  display: flex;
+  justify-content: flex-start;
+  position: sticky;
+  top: 94px;
+  left: 0;
+  z-index: var(--zIndex5);
+
+  &.mobileAppViewSticky {
+    top: 44px;
+  }
+}
+
+.leftZoneContent {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.node {
+  width: 100%;
+  min-height: 83px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-left: 2px solid var(--colorF5);
+}
+
+.nodeImage {
+  width: 33px;
+  margin-top: 14px;
+  border-radius: 6px;
+}
+
+.nodeIcon {
+  width: 28px;
+  height: 28px;
+  fill: var(--color8E);
+}
+
+.nodeText {
+  font-size: 14px;
+  color: var(--color8E);
+  font-weight: var(--fontBold);
+  line-height: 19px;
+  text-align: center;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  width: 100px;
+  padding: 0 8px;
+}
+
+.activeNode {
+  background-color: var(--colorWhite);
+  border-color: var(--colorPrimary);
+}
+
+.activeNodeIcon {
+  fill: var(--colorPrimary);
+}
+
+.activeNodeText {
+  color: var(--colorPrimary);
+}
+
+.rightZone {
+  padding: 0 0 0 100px;
+  overflow-y: auto;
+  min-height: 100%;
+  max-height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  .subNodes {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: var(--colorWhite);
+    padding-left: 16px;
+    padding-right: 16px;
+    flex: 1;
+  }
+
+  .subNodeWrapper {
+    &:not(:first-child) {
+      border-top: 1px solid var(--colorE4);
+    }
+
+    &.removeBorderBottom {
+      border-top: unset;
+    }
+  }
+
+  .subNode {
+    display: flex;
+    justify-content: space-between;
+
+    &.removeBorderBottom {
+      border-bottom: unset;
+    }
+
+    .rotateIcon {
+      transform: rotate(90deg);
+      transition: var(--transitionNormal);
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    transition: var(--transitionNormal);
+  }
+
+  .nodeName {
+    font-weight: var(--fontBold);
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--color20);
+    flex: 1;
+    padding: 16px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+  }
+
+  .subNodeIcon {
+    padding: 16px 5px 16px 16px;
+  }
+
+  .dropdownIcon {
+    width: 14px;
+    height: 14px;
+    fill: var(--color8E);
+  }
+
+  .subNodeProductContainer {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 16px;
+
+    .subNodeProductWrapper {
+      width: 78px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 13px;
+      height: 100%;
+      margin: 0 4px;
+
+      .subNodeProduct {
+        display: flex;
+        flex-direction: column;
+        width: 78px;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: 50px;
+          height: 50px;
+        }
+
+        .subNodeProductName {
+          text-align: center;
+          font-weight: var(--fontBold);
+          font-size: 14px;
+          line-height: 19px;
+          color: var(--color20);
+          margin-top: 10px;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          max-width: 100%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+}

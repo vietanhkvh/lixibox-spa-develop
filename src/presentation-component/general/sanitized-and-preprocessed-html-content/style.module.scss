@@ -1,0 +1,19 @@
+.sanitizedAndPreprocessedHtmlContent {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  display: flex;
+  flex-direction: column;
+
+  ul {
+    padding: revert;
+  }
+
+  li {
+    list-style: initial;
+  }
+}
+
+.formatRN {
+  white-space: pre-wrap;
+}

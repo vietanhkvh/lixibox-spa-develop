@@ -1,0 +1,140 @@
+.container {
+  width: 100%;
+
+  @media screen and (width >= 960px) {
+    max-width: 90vw;
+    width: 960px;
+  }
+
+  .description {
+    max-width: 480px;
+    margin: 0 auto 20px;
+    padding: 0 20px;
+
+    @media screen and (width <= 959px) {
+      padding-top: 20px;
+    }
+
+    @media screen and (width >= 960px) {
+      text-align: justify;
+    }
+
+    *:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  .productPanel {
+    padding-top: 10px;
+
+    @media screen and (width >= 960px) {
+      border-top: 1px solid var(--colorE1);
+    }
+
+    .productPanelHeading {
+      padding: 0 20px;
+      font-weight: var(--fontSemiBold);
+      font-size: 16px;
+
+      // background-color: red;
+      height: 40px;
+      line-height: 40px;
+    }
+
+    .productList {
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 10px;
+      padding-right: 10px;
+
+      // background-color: blue;
+      max-height: calc(80vh - 200px);
+
+      @media screen and (width >= 960px) {
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
+
+      &::-webkit-scrollbar {
+        display: block;
+        width: 6px;
+        background-color: var(--colorBlack005);
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-clip: padding-box;
+        border-radius: 8px;
+        background-color: var(--colorBlack05);
+      }
+
+      &::-webkit-scrollbar-track {
+        border-radius: 8px;
+      }
+    }
+
+    .productItem {
+      display: flex;
+      padding: 10px;
+
+      // background-color: green;
+      width: 100%;
+      max-width: 400px;
+
+      @media screen and (width >= 520px) {
+        max-width: 50%;
+      }
+
+      @media screen and (width >= 960px) {
+        max-width: 33.3%;
+      }
+
+      .productImage {
+        flex: 1;
+        min-width: 33%;
+
+        .imageOuter {
+          background-color: var(--colorE1);
+          width: 100%;
+          padding-top: 100%;
+          position: relative;
+          overflow: hidden;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: block;
+          color: #fff;
+          overflow: hidden;
+        }
+      }
+
+      .productInfo {
+        flex: 2;
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .productName {
+          @media screen and (width >= 960px) {
+            line-height: 20px;
+            height: 60px;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            overflow: hidden;
+          }
+        }
+
+        .button {
+          max-width: 150px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.lixicoinBonus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  margin-top: 15px;
+  background-color: var(--colorWhite);
+  height: 105px;
+
+  .title {
+    font-weight: var(--fontRegular);
+    font-size: 14px;
+  }
+
+  .value {
+    font-weight: var(--fontRegular);
+    font-size: 32px;
+    margin-top: 5px;
+  }
+}

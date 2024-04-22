@@ -1,0 +1,38 @@
+.discountCodeProductRedeemModalOverlay {
+  // FIXME: Remove after implementing modal stacking.
+  z-index: var(--zIndexMax);
+}
+
+.discountCodeProductRedeemModal {
+  .body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--colorWhite);
+    width: 850px;
+
+    .tabHeader {
+      margin: 0 21px 17px;
+      width: initial;
+    }
+  }
+
+  .action {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 21px 40px;
+
+    .continueButton {
+      margin: 0;
+      width: initial;
+      background-color: var(--color20) !important;
+    }
+  }
+}
+
+.productSliderTab {
+  padding: 0 25px;
+}
+
+.noDisplay {
+  display: none;
+}

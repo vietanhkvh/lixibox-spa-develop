@@ -1,0 +1,18 @@
+.addonSlider {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--colorWhite);
+  margin-bottom: 16px;
+
+  .titleSection {
+    font-weight: var(--fontSemiBold);
+    font-size: 22px;
+    text-transform: uppercase;
+    color: var(--color20);
+    margin: 34px 0 28px 21px;
+  }
+
+  .sliderSection {
+    padding: 0 16px;
+  }
+}

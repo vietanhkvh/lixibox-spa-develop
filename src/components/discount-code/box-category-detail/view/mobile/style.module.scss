@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 4px 0 20px;
+
+  .info {
+    padding: 0 16px;
+  }
+}
+
+.noContentPlaceholder {
+  margin-top: 50px;
+}

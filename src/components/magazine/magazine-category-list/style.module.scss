@@ -1,0 +1,26 @@
+.container {
+  width: 100%;
+  padding-bottom: 30px;
+
+  .list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .item {
+      height: 40px;
+      line-height: 40px;
+      border: 1px solid #454647;
+      margin: 5px;
+      border-radius: 4px;
+      padding: 0 16px;
+      font-size: 16px;
+
+      &:hover {
+        background: #454647;
+        color: #fff;
+      }
+    }
+  }
+}

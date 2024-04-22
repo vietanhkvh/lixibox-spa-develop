@@ -1,0 +1,35 @@
+.referralSchemes {
+  display: flex;
+  flex-direction: column;
+
+  .referralCode {
+    padding: 25px;
+
+    .button {
+      margin-bottom: 0;
+    }
+  }
+
+  .referralCodeUnauthenticated {
+    .code {
+      margin-bottom: 20px;
+    }
+  }
+
+  .index {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    background-color: var(--colorF5);
+
+    .referralScheme {
+      &:not(:first-child) {
+        margin-top: 16px;
+      }
+    }
+  }
+}
+
+.placeholder {
+  margin-top: 100px;
+}

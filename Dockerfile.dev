@@ -1,0 +1,39 @@
+FROM ubuntu:18.04
+
+WORKDIR /home
+SHELL ["/bin/bash", "--login", "-c"]
+# Install primary dependencies
+RUN apt update && \
+    DEBIAN_FRONTEND=noninteractive apt install -y libssl-dev rbenv wget vim tmux \
+      rsync zip git zlib1g-dev build-essential libssl-dev libreadline-dev \
+      libxml2-dev libxslt1-dev libcurl4-openssl-dev \
+      software-properties-common libffi-dev --install-recommends && \
+    apt purge -y libssl-dev && \
+    apt install -y libssl1.0-dev && \
+    apt autoremove -y && \
+    apt clean -y && \
+    rm -rf /var/lib/apt/lists/*
+# Install Ruby
+RUN echo 'eval "$(rbenv init -)"' >> ~/.bashrc && \
+    source ~/.bashrc && \
+    RUBY_CONFIGURE_OPTS=--disable-install-doc rbenv install 2.7.4 && \
+    rbenv global 2.7.4 && \
+    # In case bundler binary is not found, check the following link for more information:
+    # https://bundler.io/blog/2019/05/14/solutions-for-cant-find-gem-bundler-with-executable-bundle.html
+    gem install bundler --version 2.0.2
+# Install AWS CLI
+RUN wget -P /root/.cache/packages https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip && \
+    unzip /root/.cache/packages/awscli-exe-linux-x86_64.zip -d /root/.cache/packages && \
+    /root/.cache/packages/aws/install
+# Install Sentry CLI
+RUN curl -sL https://sentry.io/get-cli/ | SENTRY_CLI_VERSION="2.9.0" bash
+# Install NodeJS
+RUN wget -P /root/.cache/packages https://nodejs.org/download/release/v18.18.2/node-v18.18.2-linux-x64.tar.gz && \
+    mkdir -p /usr/local/lib/nodejs && \
+    tar -C /usr/local/lib/nodejs -xzf /root/.cache/packages/node-v18.18.2-linux-x64.tar.gz
+# Add NodeJS to PATH
+ENV PATH="${PATH}:/usr/local/lib/nodejs/node-v18.18.2-linux-x64/bin"
+# Install Yarn
+RUN corepack enable && corepack prepare yarn@1.22.19 --activate
+# Spawn shell
+CMD /bin/bash

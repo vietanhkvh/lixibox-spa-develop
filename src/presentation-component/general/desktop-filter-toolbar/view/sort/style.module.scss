@@ -1,0 +1,126 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  padding: 0 26px;
+}
+
+.sortContainer {
+  display: flex;
+  position: relative;
+}
+
+.filterIcon {
+  width: 44px;
+  height: 44px;
+}
+
+.filterIcon svg {
+  width: 20px;
+  fill: var(--colorr3E);
+}
+
+.tickIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.tickIcon svg {
+  width: 17px;
+  fill: var(--color20);
+}
+
+.openSortContainer .angleIcon svg {
+  transform: rotate(-270deg);
+}
+
+.filterContainer {
+  display: flex;
+}
+
+.activeFilterContainer .filterIcon svg {
+  fill: var(--colorPrimary);
+}
+
+.filterTitle {
+  color: var(--color20);
+  font-size: 14px;
+  line-height: 44px;
+  font-weight: var(--fontRegular);
+}
+
+.activeFilterContainer .filterTitle {
+  color: var(--colorPrimary);
+  font-weight: var(--fontSemiBold);
+}
+
+.sortPanel {
+  position: absolute;
+  z-index: var(--zIndex9);
+  top: 65px;
+  right: -26px;
+  visibility: hidden;
+  opacity: 0;
+  transition: var(--transitionNormal);
+
+  .sortOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    transition: var(--transitionNormal);
+    background-color: transparent;
+  }
+
+  .sortList {
+    width: 100%;
+    padding: 16px 0;
+    background-color: var(--colorWhite);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: var(--transitionNormal);
+    box-shadow: 0 2px 20px rgb(0 0 0 / 20%);
+    border: 1px solid var(--colorE8);
+    border-radius: 8px;
+  }
+
+  &.isOpen {
+    opacity: 1;
+    visibility: visible;
+
+    .sortOverlay {
+      opacity: 1;
+    }
+
+    .sortList {
+      transform: scaleY(1);
+    }
+  }
+}
+
+.sortItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  height: 40px;
+  padding: 0 26px 0 16px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.sortItem:hover {
+  background: var(--colorFA);
+}
+
+.sortItemTitle {
+  text-align: right;
+  width: 100%;
+  line-height: 40px;
+  color: var(--color20);
+  font-size: 14px;
+  font-weight: var(--fontRegular);
+}

@@ -1,0 +1,34 @@
+.cartSummaryCheckout {
+  .promotionsButton {
+    border-radius: 8px;
+    margin-top: 20px;
+    background-color: var(--colorWhite);
+  }
+
+  .discountCodeBlock {
+    border-radius: 8px;
+    margin: 15px 0 0;
+  }
+
+  .inCartProductsSection {
+    border-radius: 0;
+    box-shadow: var(--shadowBlurSort);
+    background: var(--colorWhite);
+    padding-top: 10px;
+  }
+
+  .redeemPrompt {
+    border-radius: 8px;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+
+  .pricingBreakdown {
+    margin-top: 20px;
+    border-radius: 8px;
+
+    > *:not(:first-child) {
+      margin-top: 12px;
+    }
+  }
+}

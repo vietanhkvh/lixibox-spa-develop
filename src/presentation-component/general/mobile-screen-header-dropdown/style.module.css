@@ -1,0 +1,69 @@
+.container {
+  position: absolute;
+  z-index: var(--zIndex9);
+  top: 44px;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  visibility: hidden;
+  opacity: 0;
+  transition: var(--transitionNormal);
+}
+
+.container.isOpen {
+  opacity: 1;
+  visibility: visible;
+}
+
+.list {
+  position: relative;
+  width: 100%;
+  padding: 10px 0;
+  background-color: var(--colorWhite);
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: var(--transitionNormal);
+}
+
+.isOpen .list {
+  transform: scaleY(1);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  transition: var(--transitionNormal);
+  background-color: var(--colorBlack05);
+}
+
+.isOpen .overlay {
+  opacity: 1;
+}
+
+.nav {
+  background: var(--colorWhite);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  padding: 0 16px;
+  line-height: 40px;
+  color: var(--color20);
+  font-size: 14px;
+  font-weight: var(--fontRegular);
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.icon svg {
+  width: 20px;
+  fill: var(--colorr3E);
+}

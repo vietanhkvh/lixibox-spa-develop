@@ -1,0 +1,65 @@
+.refereeEntryModalDesktop {
+  width: 400px;
+  overflow: auto;
+}
+
+.refereeEntry {
+  display: flex;
+  flex-direction: column;
+
+  .placeholder {
+    margin: 20px 0 50px;
+
+    .logo {
+      fill: var(--colorE9);
+    }
+  }
+
+  .title {
+    margin-top: 16px;
+    color: var(--color20);
+    font-size: 14px;
+    font-weight: var(--fontRegular);
+    align-self: center;
+  }
+
+  .icon {
+    margin-top: 20px;
+    width: 86px;
+    height: 86px;
+    align-self: center;
+  }
+
+  .referralCode {
+    margin-top: 16px;
+    padding: 0 30px;
+
+    .button {
+      margin-bottom: 0;
+    }
+  }
+
+  .offerTitle {
+    margin-top: 16px;
+    color: var(--color20);
+    font-size: 14px;
+    font-weight: var(--fontSemiBold);
+    align-self: flex-start;
+    padding: 0 20px;
+  }
+
+  .refereeSchemes {
+    display: flex;
+    flex-direction: column;
+    margin-top: 13px;
+    padding: 0 20px 16px;
+
+    .refereeScheme {
+      cursor: pointer;
+
+      &:not(:first-child) {
+        margin-top: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,222 @@
+.refereeScheme {
+  .body {
+    display: flex;
+    background-color: var(--colorWhite);
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 13px;
+    position: relative;
+    height: 100%;
+    cursor: pointer;
+
+    .imageSection {
+      .iconContainer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 37px;
+        height: 37px;
+        background-color: var(--colorPinkFF);
+        border-radius: 20px;
+        margin: 0 12px 12px 0;
+
+        .icon {
+          width: 20px;
+          height: 20px;
+
+          svg {
+            fill: var(--colorPrimary);
+          }
+        }
+      }
+    }
+
+    .descriptionSection {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+
+      .info {
+        font-weight: var(--fontBold);
+        color: var(--color20);
+      }
+
+      .coupon {
+        display: flex;
+        margin-top: 6px;
+
+        .content {
+          font-weight: var(--fontBold);
+          font-size: 11px;
+          color: var(--colorPrimary);
+          border-radius: 4px;
+          padding: 2px 4px;
+          position: relative;
+          overflow: hidden;
+
+          &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: var(--colorPrimary);
+            opacity: 0.15;
+            top: 0;
+            left: 0;
+          }
+        }
+      }
+
+      .guideline {
+        margin-top: 4px;
+        font-weight: var(--fontLight);
+        font-size: 14px;
+        color: var(--color20);
+      }
+
+      .bottomRow {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin-top: 10px;
+
+        .message {
+          font-weight: var(--fontLight);
+          font-size: 14px;
+          color: var(--color8A);
+          letter-spacing: 0;
+        }
+
+        .action {
+          display: flex;
+          flex-shrink: 0;
+          color: var(--colorPrimary);
+          fill: var(--colorPrimary);
+          padding-left: 20px;
+
+          .loader {
+            display: flex;
+            position: relative;
+            width: 20px;
+            height: 20px;
+
+            .loaderContainer {
+              height: 20px;
+            }
+          }
+
+          .content {
+            display: flex;
+            align-items: center;
+            font-weight: var(--fontSemiBold);
+
+            .icon {
+              width: 12px;
+              height: 12px;
+              margin-left: 1px;
+            }
+
+            .loader {
+              display: flex;
+              position: relative;
+              width: 20px;
+              height: 20px;
+
+              .loaderContainer {
+                height: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.refereeSchemeApplied {
+  .body {
+    background-color: var(--colorBlueF3);
+
+    .imageSection {
+      .iconContainer {
+        background-color: var(--colorBlueE6);
+
+        .icon {
+          width: 26px;
+          height: 26px;
+
+          svg {
+            fill: var(--colorBlue);
+          }
+        }
+      }
+    }
+
+    .descriptionSection {
+      .coupon {
+        .content {
+          color: var(--colorBlue);
+
+          &::before {
+            background-color: var(--colorSecondaryBlue);
+          }
+        }
+      }
+
+      .bottomRow {
+        .action {
+          color: var(--colorBlue);
+          fill: var(--colorBlue);
+        }
+      }
+    }
+  }
+}
+
+.refereeSchemeDisabled {
+  .body {
+    .imageSection {
+      filter: grayscale(1) opacity(0.4);
+    }
+
+    .descriptionSection {
+      .info {
+        color: var(--color8A);
+      }
+
+      .coupon {
+        filter: grayscale(1) opacity(0.7);
+
+        .content {
+          color: var(--colorBlue);
+
+          &::before {
+            background-color: var(--colorSecondaryBlue);
+          }
+        }
+      }
+
+      .guideline {
+        color: var(--color8A);
+      }
+    }
+
+    .action {
+      color: var(--color8A);
+    }
+  }
+}
+
+.progress {
+  margin-top: 4px;
+}
+
+.actionDisabled {
+  color: var(--color8E) !important;
+  fill: var(--color8E) !important;
+}
+
+.clickable {
+  cursor: pointer;
+}

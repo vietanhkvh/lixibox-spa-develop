@@ -1,0 +1,44 @@
+.confirmationPopover {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px;
+  background-color: var(--colorWhite);
+  border: 1px solid var(--colorDB);
+  border-radius: 0 8px 8px;
+  z-index: var(--zIndex3);
+
+  .header {
+    font-size: 16px;
+    font-weight: var(--fontBold);
+    color: var(--color20);
+    text-align: center;
+  }
+
+  .prompt {
+    font-size: 14px;
+    font-weight: var(--fontSemiBold);
+    color: var(--color20);
+    margin-top: 10px;
+  }
+
+  .actions {
+    display: flex;
+    margin-top: 10px;
+    padding: 0 28px;
+
+    .acceptButton {
+      margin-bottom: 0;
+
+      .icon {
+        svg {
+          fill: var(--colorWhite);
+        }
+      }
+    }
+
+    .rejectButton {
+      margin-bottom: 0;
+      margin-left: 10px;
+    }
+  }
+}

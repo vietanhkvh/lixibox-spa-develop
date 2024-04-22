@@ -1,0 +1,142 @@
+@mixin selectedIcon() {
+  svg {
+    transition: var(--transitionFill);
+    fill: var(--color20);
+  }
+}
+
+@mixin hoverItemStyle() {
+  color: var(--colorPink);
+  transition: var(--transitionColor);
+}
+
+.container {
+  position: relative;
+  color: var(--color20);
+  user-select: none;
+
+  .title {
+    font-weight: var(--fontSemiBold);
+    line-height: 32px;
+  }
+
+  .item {
+    margin-bottom: 16px;
+  }
+
+  .ipContainer {
+    display: flex;
+    align-items: center;
+
+    .ipWrapper {
+      min-width: 100px;
+      border-radius: 8px;
+      padding: 8px 4px;
+      color: var(--color20);
+      border: 1px solid var(--color8E);
+
+      .header {
+        font-size: 13px;
+        text-align: center;
+      }
+
+      .ipFieldContainer {
+        width: 100%;
+        font-weight: var(--fontSemiBold);
+        font-size: 16px;
+        border: none;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+
+        .input {
+          border: none;
+          height: initial;
+          line-height: 22px;
+          padding: 0;
+        }
+
+        .error {
+          color: var(--colorPink);
+        }
+      }
+    }
+
+    .subfix {
+      margin-left: 4px;
+      font-weight: var(--fontSemiBold);
+      font-size: 16px;
+    }
+  }
+
+  .divide {
+    font-weight: var(--fontSemiBold);
+    margin: 0 12px !important;
+    width: 14px !important;
+
+    svg {
+      width: 10px;
+      max-width: unset;
+    }
+  }
+
+  .selection {
+    display: flex;
+    flex-direction: column;
+
+    .selectionItem {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      cursor: pointer;
+
+      &:hover {
+        .icon {
+          @include selectedIcon;
+        }
+
+        .value {
+          @include hoverItemStyle;
+
+          &.selected {
+            @include hoverItemStyle;
+          }
+        }
+      }
+
+      .icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+
+        svg {
+          width: 20px;
+          fill: var(--color20);
+        }
+
+        &.selected {
+          @include selectedIcon;
+        }
+      }
+
+      .value {
+        font-weight: var(--fontLight);
+        font-size: 14px;
+        line-height: 34px;
+        color: var(--color20);
+
+        &.selected {
+          transition: var(--transitionColor);
+          color: var(--color20);
+          font-weight: var(--fontSemiBold);
+        }
+      }
+    }
+  }
+
+  .btnSubmit {
+    .btnWrapper {
+      margin: 0;
+    }
+  }
+}

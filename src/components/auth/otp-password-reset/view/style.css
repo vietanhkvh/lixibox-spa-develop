@@ -1,0 +1,44 @@
+.no-display {
+  display: none !important; /* TODO: Remove emphasis after refactoring InputField */
+}
+
+.inline-message {
+  color: var(--colorRed);
+  font-size: 13px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  overflow: hidden;
+  transition: var(--transitionNormal);
+  line-height: 18px;
+  min-height: 10px;
+  opacity: 0;
+}
+
+.inline-message-visible {
+  min-height: 28px;
+  opacity: 1;
+}
+
+.related-link {
+  width: 100%;
+  text-align: center;
+}
+
+.related-link .text {
+  color: var(--color2E);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: var(--fontSemiBold);
+}
+
+.link {
+  font-weight: var(--fontSemiBold);
+  color: var(--color4D);
+  font-size: 14px;
+  line-height: 20px;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-decoration: underline;
+}

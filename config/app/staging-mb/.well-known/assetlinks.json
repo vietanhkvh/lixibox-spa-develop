@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.lixibox",
+    "sha256_cert_fingerprints":
+    ["E2:6E:54:1D:E4:AB:2E:73:A7:FC:DD:01:18:25:DD:15:7C:60:5A:A6:DB:48:99:39:A4:13:8C:1E:61:A4:A3:FB"]
+  }
+}]

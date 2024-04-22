@@ -1,0 +1,120 @@
+.invoiceBlock {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--colorWhite);
+  padding: 24px 16px 0;
+  margin-top: 15px;
+  border-radius: 8px;
+  transition: var(--transitionBoxShadow);
+
+  .header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    .status {
+      flex: 0 0 1px;
+
+      .icon {
+        width: 20px;
+        height: 20px;
+
+        svg {
+          fill: var(--color20);
+        }
+      }
+    }
+
+    .title {
+      font-weight: var(--fontRegular);
+      font-size: 14px;
+      color: var(--color20);
+      margin-left: 10px;
+    }
+  }
+
+  .body {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 22px;
+
+    .form {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 25px 28px 0 30px;
+
+      .field {
+        width: 50% !important;
+        width: calc(50% - 29px) !important;
+
+        &:nth-child(odd) {
+          margin-right: 29px;
+        }
+
+        &:nth-child(even) {
+          margin-left: 29px;
+        }
+      }
+    }
+
+    .notes {
+      margin: 18px calc(30px + 5px) 0;
+      font-weight: var(--fontLight);
+      font-size: 14px;
+
+      span {
+        font-weight: var(--fontSemiBold);
+        font-size: inherit;
+        padding-right: 5px;
+      }
+    }
+  }
+}
+
+.invoiceBlockCollapsed {
+  padding-bottom: 22px;
+
+  .body {
+    display: none;
+  }
+}
+
+.invoiceModal {
+  margin-bottom: 70px;
+
+  .body {
+    padding: 21px 16px;
+
+    .entryTitle {
+      margin-bottom: 10px;
+      font-weight: var(--fontSemiBold);
+      font-size: 14px;
+      color: var(--color20);
+    }
+
+    .entry {
+      background-color: var(--colorF5);
+      border-radius: 8px;
+      border: none;
+      padding: 14px 15px;
+      width: 100%;
+      font-weight: var(--fontLight);
+      font-size: 14px;
+      color: var(--color20);
+      resize: none;
+
+      &::placeholder {
+        color: var(--color8E);
+      }
+    }
+  }
+
+  .primaryButton {
+    // TODO: Remove `important`. Dependency: SubmitButton (inline style removal required)
+    background-color: var(--color3E) !important;
+  }
+}
+
+.blockError {
+  box-shadow: var(--shadowBorderError);
+}

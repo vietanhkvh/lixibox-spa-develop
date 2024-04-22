@@ -1,0 +1,72 @@
+.container {
+  height: 50px;
+  width: 100%;
+  position: relative;
+  z-index: var(--zIndex9);
+}
+
+.fixed {
+  height: 50px;
+  width: 100%;
+  border-top: 1px solid var(--colorE9);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  background: var(--colorWhite);
+}
+
+.item {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 7px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.icon svg {
+  fill: var(--color8E);
+}
+
+.item.selectedItem .icon svg {
+  fill: var(--colorPrimary);
+}
+
+.title {
+  line-height: 24px;
+  font-weight: var(--fontSemiBold);
+  font-size: 11px;
+  color: var(--color8E);
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
+}
+
+.item.selectedItem .title {
+  font-weight: var(--fontBold);
+  color: var(--colorPrimary);
+}
+
+.notiCount {
+  position: absolute;
+  display: inline-block;
+  background: var(--colorRed);
+  color: var(--colorWhite);
+  height: 16px;
+  min-width: 16px;
+  line-height: 16px;
+  text-align: center;
+  font-size: 10px;
+  font-weight: var(--fontBold);
+  border-radius: 8px;
+  padding: 0 4px;
+  right: 10px;
+  top: 2px;
+}

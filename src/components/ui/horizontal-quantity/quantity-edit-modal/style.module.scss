@@ -1,0 +1,24 @@
+.popupModal {
+  .body {
+    padding: 20px 17px;
+    margin-bottom: calc(70px);
+    font-weight: var(--fontRegular);
+    font-size: 14px;
+    color: var(--color3E);
+
+    .input {
+      appearance: textfield;
+
+      &::-webkit-inner-spin-button,
+      &::-webkit-outer-spin-button {
+        appearance: none;
+        margin: 0;
+      }
+    }
+  }
+
+  .popupButton {
+    // TODO: Remove `important`. Dependency: SubmitButton (inline style removal required)
+    background-color: var(--color3E) !important;
+  }
+}

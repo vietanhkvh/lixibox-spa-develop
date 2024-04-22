@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  .step {
+    display: list-item;
+    margin-left: 16px;
+
+    &:not(:first-child) {
+      margin-top: 22px;
+    }
+
+    .paragraph {
+      font-size: 14px;
+      font-weight: var(--fontLight);
+
+      &:not(:first-child) {
+        margin-top: 10px;
+      }
+
+      .semiBold {
+        font-size: inherit;
+        font-weight: var(--fontSemiBold);
+      }
+
+      .regular {
+        font-size: inherit;
+        font-weight: var(--fontRegular);
+      }
+
+      .link {
+        font-size: inherit;
+        color: var(--colorPrimary);
+        font-weight: var(--fontSemiBold);
+      }
+    }
+  }
+
+  .illustration {
+    width: fit-content;
+    align-self: center;
+    max-width: 100%;
+
+    &:not(:first-child) {
+      margin-top: 22px;
+    }
+  }
+
+  .submitButton {
+    margin: 105px 0 0;
+  }
+}

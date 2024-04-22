@@ -1,0 +1,19 @@
+.mobileConfirmation {
+  display: flex;
+  flex-direction: column;
+
+  .prompt {
+    font-weight: var(--fontSemiBold);
+    font-size: 14px;
+    color: var(--colorPinkFE);
+    margin: 12px 30px;
+  }
+
+  .content {
+    margin: 12px 16px 12px 30px;
+  }
+
+  .confirmationButton {
+    margin: 0 16px;
+  }
+}

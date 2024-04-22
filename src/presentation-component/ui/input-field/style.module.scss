@@ -1,0 +1,185 @@
+/* Note: Style was ported from class component as is */
+
+.inputFieldContainer {
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+  padding-top: 20px;
+  padding-bottom: 16px;
+  position: relative;
+  z-index: var(--zIndex1);
+
+  .title {
+    width: 100%;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    color: var(--colorBlack);
+    position: absolute;
+    top: 0;
+    transition: var(--transitionNormal);
+    white-space: nowrap;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 40px;
+  }
+
+  .titleOnInput {
+    top: 20px;
+    font-size: 14px;
+    height: 34px;
+    line-height: 34px;
+    opacity: 0.65;
+  }
+
+  .titleError {
+    color: var(--colorRed);
+  }
+
+  .main {
+    position: relative;
+    z-index: var(--zIndex9);
+
+    .inputField {
+      width: 100%;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 1px solid var(--colorE5);
+      outline: none;
+      box-shadow: none;
+      height: 34px;
+      line-height: 34px;
+      font-size: 14px;
+      color: var(--colorBlack);
+      background: transparent;
+      white-space: nowrap;
+      max-width: 100%;
+      overflow: hidden;
+      margin: 0;
+      border-radius: 0;
+
+      &:read-only {
+        box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0%), inset 0 0 0 100px var(--colorE5) !important;
+      }
+    }
+
+    .inputRounded {
+      height: 30px;
+      line-height: 30px;
+      border: 1px solid var(--colorE5);
+      padding-left: 10px;
+      padding-right: 10px;
+      background: var(--colorF0);
+      border-radius: 3px;
+    }
+
+    .inputBigRounded {
+      height: 40px;
+      line-height: 40px;
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size: 14px;
+      font-weight: var(--fontLight);
+      color: var(--color20);
+      background: var(--colorWhite);
+      border-radius: 8px;
+    }
+
+    .inputWithIcon {
+      padding-right: 34px;
+    }
+
+    .icon {
+      width: 34px;
+      height: 34px;
+      color: var(--color75);
+      position: absolute;
+      right: 0;
+      top: 0;
+
+      svg {
+        width: 12px;
+      }
+    }
+
+    .icon-map-marker {
+      svg {
+        width: 11px;
+      }
+    }
+
+    .icon-email {
+      svg {
+        width: 16px;
+      }
+    }
+
+    .icon-user {
+      svg {
+        width: 14px;
+      }
+    }
+
+    .icon-call {
+      svg {
+        width: 15px;
+      }
+    }
+
+    .line {
+      width: 0;
+      height: 1px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      transition: var(--transitionNormal);
+      opacity: 0;
+      background: var(--colorBlack);
+    }
+
+    .lineValid {
+      background: var(--colorBlack);
+    }
+
+    .lineInvalid {
+      background: var(--colorRed);
+    }
+
+    .lineFocused {
+      opacity: 1;
+      width: 100%;
+    }
+  }
+
+  .error {
+    font-size: 10px;
+    width: 100%;
+    height: 16px;
+    line-height: 16px;
+    color: var(--colorRed);
+    text-transform: uppercase;
+    white-space: nowrap;
+    max-width: 100%;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    bottom: 8px;
+    opacity: 0;
+    transition: var(--transitionNormal);
+  }
+
+  .errorVisible {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+
+.inputFieldContainerReadOnly {
+  pointer-events: none;
+}
+
+.textTrasnformUppercase {
+  text-transform: uppercase;
+}

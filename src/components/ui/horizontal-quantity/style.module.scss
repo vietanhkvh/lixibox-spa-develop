@@ -1,0 +1,46 @@
+.valueContainer {
+  cursor: text;
+
+  .valueEditor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    text-align: center;
+    color: var(--colorBlack);
+    appearance: textfield;
+
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      appearance: none;
+      margin: 0;
+    }
+  }
+
+  .valueEditorSmall {
+    @extend .valueEditor;
+
+    font-size: 16px;
+  }
+
+  .valueEditorNormal {
+    @extend .valueEditor;
+
+    font-size: 20px;
+  }
+}
+
+.normalContainer {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 3px;
+  overflow: hidden;
+  transition: var(--transitionNormal);
+  border: 1px solid var(--colorBlack);
+
+  &:hover {
+    box-shadow: var(--shadow4);
+  }
+}

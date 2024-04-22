@@ -1,0 +1,152 @@
+@mixin selectedIcon() {
+  svg {
+    transition: var(--transitionFill);
+    fill: var(--color20);
+  }
+}
+
+@mixin hoverItemStyle() {
+  color: var(--colorPink);
+  transition: var(--transitionColor);
+}
+
+.brandPanel {
+  .brandList {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .searchBrand {
+    position: relative;
+    margin-bottom: 16px;
+
+    .searchBrandIcon {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      svg {
+        width: 16px;
+        z-index: var(--zIndex2);
+        fill: var(--color8E);
+      }
+    }
+
+    .searchInput {
+      height: 40px;
+      border-radius: 8px;
+      margin: 0;
+      padding: 0;
+
+      .innerInput {
+        width: 100%;
+        max-width: 100%;
+        background: var(--colorWhite);
+        border: 1px solid var(--colorC6);
+        height: 40px;
+        white-space: nowrap;
+        line-height: 30px;
+        border-radius: 8px;
+        padding-left: 40px;
+        padding-right: 10px;
+      }
+    }
+  }
+
+  .selectList {
+    .list {
+      max-height: 300px;
+      width: 100%;
+      overflow-x: hidden;
+      overflow-y: auto;
+      margin-bottom: 16px;
+
+      &::-webkit-scrollbar {
+        display: block;
+        width: 3px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: var(--colorBlack05);
+      }
+    }
+
+    .selectListItem {
+      height: 34px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      cursor: pointer;
+
+      &:hover {
+        span {
+          @include hoverItemStyle;
+
+          &.selected {
+            @include hoverItemStyle;
+          }
+        }
+
+        .icon {
+          @include selectedIcon;
+        }
+      }
+
+      .icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+
+        &.selected {
+          @include selectedIcon;
+        }
+
+        svg {
+          width: 20px;
+          fill: var(--color20);
+        }
+      }
+
+      .title {
+        font-weight: var(--fontLight);
+        font-size: 14px;
+        line-height: 34px;
+        color: var(--color20);
+
+        &.selected {
+          color: var(--color20);
+          font-weight: var(--fontSemiBold);
+        }
+      }
+
+      .count {
+        font-weight: var(--fontRegular);
+        font-size: 14px;
+        line-height: 34px;
+        color: var(--color20);
+        padding: 0 5px;
+
+        &.selected {
+          color: var(--color20);
+          font-weight: var(--fontSemiBold);
+        }
+      }
+    }
+
+    .action {
+      padding-top: 25px;
+      border-top: 1px solid var(--colorE4);
+      display: flex;
+    }
+  }
+}
+
+.input {
+  padding: 0;
+  margin: 0;
+  flex: 1;
+}
+
+.bottomButton {
+  margin: 0;
+}

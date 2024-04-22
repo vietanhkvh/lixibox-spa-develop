@@ -1,0 +1,71 @@
+.googleSigninContainer {
+  display: flex;
+  position: relative;
+}
+
+.googleSigninButton:hover {
+  box-shadow: var(--shadow4);
+}
+
+.googleSigninButton {
+  transition: var(--transitionNormal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  width: 100%;
+  border: 1px solid;
+  border-radius: 8px;
+  background: var(--colorWhite);
+  cursor: pointer;
+}
+
+.googleSigninButton .button-icon {
+  width: 20px !important;
+
+  /* 2px reduced as a compensation for larger visual appearance than other same sized icons. Suggested by Thanh */
+  height: 20px !important;
+}
+
+.googleSigninButton .button-label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.googleSigninElementNonInteractive {
+  pointer-events: none;
+}
+
+.googleSigninButtonInnerBlock {
+  display: flex;
+  min-width: 210px;
+}
+
+.googleSigninLoader {
+  display: flex;
+  position: absolute;
+  width: calc(100% - 70px);
+  height: 100%;
+  background: rgb(0 0 0 / 20%);
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+.googleSigninLoaderDesktop {
+  width: 100%;
+}
+
+.googleSigninOverlay {
+  display: flex;
+  position: absolute;
+  width: calc(100% - 70px);
+  height: 100%;
+  border-radius: 8px;
+  z-index: var(--zIndex1);
+  cursor: pointer;
+}
+
+.googleSigninOverlayDesktop {
+  width: 100%;
+}

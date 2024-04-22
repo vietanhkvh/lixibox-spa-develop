@@ -1,0 +1,56 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1170px;
+  padding: 10px 0;
+}
+
+.desktop-container {
+  // size
+  &.size-large {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  &.size-medium {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+
+  &.size-small {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  &.size-empty {
+    padding: 0;
+  }
+
+  // layout
+  &.layout-full {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  &.layout-fixed {
+    width: 100%;
+    max-width: var(--breakPoint1170);
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.contentLayout {
+  &.layout-full {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  &.layout-fixed {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1170px;
+  }
+}

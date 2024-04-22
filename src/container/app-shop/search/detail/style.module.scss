@@ -1,0 +1,27 @@
+.heading {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: var(--zIndex7);
+
+  .title {
+    font-weight: var(--fontSemiBold);
+    font-size: 22px;
+    color: var(--color20);
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    flex: 1;
+    max-width: 60%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.contentWrapper {
+  padding-bottom: 20px;
+}

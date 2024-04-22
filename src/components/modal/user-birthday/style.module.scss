@@ -1,0 +1,186 @@
+.formBirthdayContainer {
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: 12px;
+
+  &.mobile {
+    flex-direction: column;
+  }
+
+  .inputContainer {
+    margin-right: 10px;
+    padding-top: 5px;
+    position: relative;
+    z-index: 10;
+    flex: 1 1 0%;
+    width: 100%;
+    height: 34px;
+
+    &.mobile {
+      margin-bottom: 16px;
+
+      & > div {
+        padding-bottom: 4px;
+      }
+    }
+
+    .inputInner {
+      width: 100%;
+      border: 1px solid var(--colorWhite09);
+      outline: none;
+      box-shadow: none;
+      height: 30px;
+      line-height: 30px;
+      font-size: 14px;
+      color: var(--colorBlack);
+      background: var(--colorWhite09);
+      white-space: nowrap;
+      max-width: 100%;
+      overflow: hidden;
+      margin: 0;
+      border-radius: 3px;
+      padding-left: 10px;
+      padding-right: 10px;
+      text-align: center;
+
+      &.mobile {
+        height: 40px;
+        line-height: 40px;
+      }
+    }
+
+    .errorContainer {
+      margin: 6px 0;
+
+      &.mobile {
+        position: absolute;
+      }
+    }
+  }
+
+  .buttonContainer {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 20px;
+    background-color: var(--colorPink);
+    color: var(--colorWhite);
+    margin-top: 5px;
+    margin-bottom: 0;
+    width: 84px;
+    border-radius: 6px;
+
+    &.mobile {
+      height: 40px;
+      line-height: 40px;
+      width: 100%;
+    }
+  }
+}
+
+.headerContainer {
+  padding: 0 0 20px;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  z-index: var(--zIndex1);
+
+  .header {
+    width: 100%;
+    background-color: var(--colorBlack);
+    color: var(--colorWhite);
+    font-size: 20px;
+    font-weight: var(--fontSemiBold);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 42px;
+    line-height: 42px;
+    padding: 0;
+    letter-spacing: 5px;
+    white-space: nowrap;
+  }
+}
+
+.contentSuccess {
+  text-align: justify;
+  margin: 0 auto 20px;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--colorWhite08);
+}
+
+.directLink {
+  padding-right: 10px;
+  width: 100%;
+  margin: 0 auto 16px;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+
+  &.mobile {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .link {
+    color: var(--colorWhite);
+    text-decoration: underline;
+  }
+}
+
+.closeIcon {
+  cursor: pointer;
+  height: 42px;
+
+  svg {
+    fill: var(--colorWhite);
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.stickyContainer {
+  display: flex;
+  position: fixed;
+  left: 20px;
+  bottom: calc(50px + 20px);
+  background: var(--colorBlack07);
+  border: 1px solid var(--colorWhite03);
+  width: 40px;
+  height: 40px;
+  z-index: 80;
+  transform: rotate(-45deg);
+  cursor: pointer;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+
+  .giftIcon {
+    margin: 0;
+    height: 40px;
+    width: 40px;
+
+    svg {
+      fill: var(--colorWhite);
+      width: 20px;
+      height: 20px;
+      transform: rotate(45deg);
+    }
+  }
+}
+
+.birthdayModal {
+  background: var(--colorBlack);
+}
+
+.settedBirthDayMessage {
+  .message {
+    margin: 0 auto 16px;
+    line-height: 1.5;
+
+    &.mobile {
+      text-align: center;
+    }
+  }
+}

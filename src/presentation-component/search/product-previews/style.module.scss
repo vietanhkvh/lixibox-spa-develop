@@ -1,0 +1,13 @@
+.productPreviews {
+  .header {
+    margin-bottom: 12px;
+  }
+
+  .rows {
+    .row {
+      &:not(:first-child) {
+        margin-top: 8px;
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.lixicoinPreview {
+  display: flex;
+  justify-content: space-between;
+
+  .coinViewContainer {
+    display: flex;
+    flex-direction: column;
+
+    .coinView {
+      font-size: 22px;
+      font-weight: var(--fontBold);
+      color: var(--colorPrimary);
+
+      span {
+        margin-left: 5px;
+        font-size: 14px;
+        font-weight: var(--fontSemiBold);
+        color: var(--colorPrimary);
+      }
+    }
+
+    .info {
+      font-size: 13px;
+      font-weight: var(--fontLight);
+      color: var(--color20);
+    }
+  }
+
+  .infoView {
+    margin-top: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    .link {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      font-weight: var(--fontLight);
+      color: var(--color20);
+      cursor: pointer;
+
+      .linkIcon {
+        margin-left: 5px;
+        width: 16px;
+        height: 16px;
+        min-width: 16px;
+        min-height: 16px;
+
+        svg {
+          fill: var(--color20);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.entryAction {
+  display: flex;
+  font-weight: var(--fontRegular);
+  font-size: 14px;
+
+  .entry {
+    flex: auto;
+    background-color: var(--colorF5);
+    height: 40px;
+    border: none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 0 15px;
+    color: var(--color20);
+    font-weight: inherit;
+
+    &::placeholder {
+      color: var(--color8E);
+    }
+  }
+
+  .entryUppercase {
+    text-transform: uppercase;
+  }
+
+  .button {
+    background-color: var(--color20);
+    color: var(--colorWhite);
+    height: 40px;
+    border: none;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 0 15px;
+    transition: var(--transitionNormal);
+    font-size: 14px;
+    font-weight: var(--fontRegular);
+
+    &:active {
+      box-shadow: var(--shadow3);
+    }
+
+    &:disabled {
+      background-color: var(--color8E);
+      color: var(--colorE4);
+    }
+  }
+}
+
+.pointerCursor {
+  cursor: pointer;
+}

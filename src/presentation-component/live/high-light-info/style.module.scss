@@ -1,0 +1,208 @@
+.container {
+  width: 100%;
+}
+
+.topMessage {
+  opacity: 0.8;
+  position: relative;
+
+  .userInfo {
+    display: flex;
+    margin-bottom: 6px;
+
+    .avatar {
+      width: 20px;
+      height: 20px;
+      border-radius: 20px;
+      margin-right: 6px;
+    }
+
+    .username {
+      display: block;
+      max-width: 50%;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      font-size: 13px;
+      line-height: 20px;
+      height: 20px;
+      margin-right: 6px;
+      font-weight: var(--fontSemiBold);
+      color: var(--colorWhite);
+    }
+
+    .time {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      font-size: 12px;
+      line-height: 20px;
+      height: 20px;
+      font-weight: var(--fontLight);
+      color: var(--colorWhite);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &::before {
+        content: '';
+        display: block;
+        background: var(--colorWhite);
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        margin-right: 6px;
+      }
+    }
+  }
+
+  .content {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    font-size: 13px;
+    line-height: 20px;
+    margin-right: 5px;
+    font-weight: var(--fontLight);
+    color: var(--colorWhite);
+    text-align: left;
+    max-width: 80%;
+  }
+}
+
+.line {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  opacity: 0.125;
+  width: calc(100% + 32px);
+  margin-left: -16px;
+  height: 1px;
+
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+18,ffffff+18,ffffff+100&0+1,1+18,0+100 */
+
+  /* FF3.6-15 */
+
+  background: linear-gradient(
+    to left,
+    rgb(255 255 255 / 0%) 0%,
+    rgb(255 255 255 / 0%) 1%,
+    rgb(255 255 255 / 100%) 18%,
+    rgb(255 255 255 / 0%) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+
+  background: linear-gradient(
+    to right,
+    rgb(255 255 255 / 0%) 0%,
+    rgb(255 255 255 / 0%) 1%,
+    rgb(255 255 255 / 100%) 18%,
+    rgb(255 255 255 / 0%) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+  filter: progid:dximagetransform.microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+}
+
+.heading {
+  display: block;
+  max-width: 50%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 20px;
+  height: 20px;
+  margin-right: 6px;
+  margin-bottom: 3px;
+  font-weight: var(--fontSemiBold);
+  color: var(--colorWhite);
+}
+
+.discountCode {
+  opacity: 0.75;
+  position: relative;
+  padding-bottom: 2px;
+
+  .code {
+    background: var(--colorWhite05);
+    display: inline-block;
+    border-radius: 4px;
+    padding: 0 5px;
+    height: 20px;
+    line-height: 20px;
+    color: var(--colorBlack);
+    font-size: 12px;
+    font-weight: var(--fontRegular);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 70%;
+  }
+}
+
+.product {
+  position: relative;
+  opacity: 0.8;
+
+  .info {
+    display: flex;
+
+    img {
+      display: block;
+      height: 20px;
+      width: auto;
+      margin-right: 12px;
+      border-radius: 4px;
+    }
+
+    .productName {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+      font-size: 13px;
+      line-height: 20px;
+      height: 20px;
+      margin-right: 5px;
+      font-weight: var(--fontLight);
+      color: var(--colorWhite);
+      text-align: left;
+      max-width: 70%;
+    }
+  }
+}
+
+.angleIcon {
+  opacity: 0.5;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate3d(0, -50%, 0);
+
+  svg {
+    fill: var(--colorWhite);
+    width: 7px;
+  }
+}
+
+.emptyComment {
+  padding-bottom: 12px;
+
+  .title {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: var(--fontSemiBold);
+    color: var(--colorWhite);
+    margin-bottom: 4px;
+  }
+
+  .content {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: var(--fontRegular);
+    color: var(--colorWhite07);
+  }
+}

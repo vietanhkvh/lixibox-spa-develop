@@ -1,0 +1,163 @@
+.transactionItem {
+  display: flex;
+  border-radius: 8px;
+  background-color: var(--colorWhite);
+  padding: 12px;
+
+  &:not(:first-child) {
+    margin-top: 12px;
+  }
+
+  .leftSection {
+    .transactionIconContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px;
+      border-radius: 4px;
+
+      .transactionIcon {
+        min-width: 14px;
+        min-height: 14px;
+        width: 14px;
+        height: 14px;
+
+        svg {
+          fill: var(--colorWhite);
+        }
+      }
+    }
+  }
+
+  .rightSection {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-left: 8px;
+
+    .rightTopSection {
+      display: flex;
+      margin-top: 3px;
+      justify-content: space-between;
+
+      .info {
+        display: flex;
+        flex-direction: column;
+
+        .title {
+          font-size: 14px;
+          font-weight: var(--fontLight);
+          color: var(--color20);
+        }
+
+        .id {
+          font-size: 14px;
+          font-weight: var(--fontSemiBold);
+          color: var(--color20);
+          margin-top: 2px;
+        }
+
+        .timestamp {
+          font-size: 10px;
+          font-weight: var(--fontLight);
+          color: var(--color8A);
+          margin-top: 4px;
+        }
+      }
+
+      .values {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        min-width: 130px;
+
+        .delta {
+          font-size: 14px;
+          font-weight: var(--fontBold);
+        }
+
+        .currentValue {
+          font-size: 10px;
+          font-weight: var(--fontLight);
+          color: var(--color20);
+          margin-top: 2px;
+        }
+      }
+    }
+
+    .rightBottomSection {
+      margin-top: 8px;
+      display: flex;
+      flex-wrap: wrap;
+
+      .boxImage {
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+        min-height: 40px;
+        border: 1px dashed var(--color8A);
+        border-radius: 4px;
+        cursor: pointer;
+        margin-bottom: 5px;
+
+        &:not(:last-child) {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+.transactionItemAddition {
+  .leftSection {
+    .transactionIconContainer {
+      background-color: var(--colorGreenDark);
+    }
+  }
+
+  .rightSection {
+    .rightTopSection {
+      .values {
+        .delta {
+          color: var(--colorGreenDark);
+        }
+      }
+    }
+  }
+}
+
+.transactionItemSubtraction {
+  .leftSection {
+    .transactionIconContainer {
+      background-color: var(--colorPrimary);
+    }
+  }
+
+  .rightSection {
+    .rightTopSection {
+      .values {
+        .delta {
+          color: var(--colorPrimary);
+        }
+      }
+    }
+  }
+}
+
+.transactionItemExpired {
+  .leftSection {
+    .transactionIconContainer {
+      background-color: var(--colorYellowF7);
+    }
+  }
+
+  .rightSection {
+    .rightTopSection {
+      .values {
+        .delta {
+          color: var(--colorYellowF7);
+        }
+      }
+    }
+  }
+}

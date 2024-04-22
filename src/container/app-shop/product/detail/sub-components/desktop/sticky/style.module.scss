@@ -1,0 +1,26 @@
+.container {
+  width: 100%;
+
+  .title {
+    height: 60px;
+    font-size: 22px;
+    font-weight: var(--fontSemiBold);
+    letter-spacing: -0.5px;
+    line-height: 60px;
+    text-transform: capitalize;
+    color: var(--color20);
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    top: -1px;
+    background: var(--colorWhite);
+    z-index: var(--zIndex5);
+    position: relative;
+  }
+
+  .childrenContainer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}

@@ -1,0 +1,74 @@
+.referralStatisticsAndHistory {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--colorF5);
+
+  .statisticsSection {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 30px;
+    border-radius: 8px;
+    background-color: var(--colorWhite);
+    margin-bottom: 10px;
+    margin-top: 2px;
+
+    .title {
+      font-size: 18px;
+      font-weight: var(--fontSemiBold);
+      margin-bottom: 24px;
+    }
+
+    .referralStatistics {
+      border-radius: 8px;
+    }
+  }
+
+  .historySection {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--colorWhite);
+    border-radius: 8px;
+    min-height: 100px;
+
+    .tabSection {
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+
+    .referralHistories {
+      margin: 20px 0;
+
+      .referralHistory {
+        border-radius: 8px;
+
+        &:not(:first-child) {
+          margin-top: 20px;
+        }
+      }
+    }
+
+    .placeholder {
+      margin: 100px 0;
+    }
+  }
+
+  .referralCode {
+    min-width: 460px;
+    margin-top: 40px;
+    border-bottom: 1px solid var(--colorE4);
+    padding-bottom: 3px;
+    align-self: center;
+  }
+
+  .index {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 30px;
+
+    .referralScheme {
+      &:not(:first-child) {
+        margin-top: 30px;
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+.container {
+  width: 100%;
+  min-height: calc(100vh - 50px);
+
+  .desktopHeading {
+    height: 76px;
+    line-height: 76px;
+    font-weight: var(--fontSemiBold);
+    font-size: 18px;
+    color: var(--color20);
+    padding: 0 20px;
+  }
+
+  .clientArea {
+    padding: 0 20px;
+    margin-bottom: 76px;
+
+    .emailVerificationWarning {
+      margin-top: 15px;
+      font-size: 13px;
+      font-weight: var(--fontSemiBold);
+      color: var(--colorPrimary);
+    }
+
+    .emailVerifiedMessage {
+      margin-top: 24px;
+      font-size: 14px;
+      font-weight: var(--fontLight);
+      color: var(--color3E);
+
+      span {
+        font-size: inherit;
+        font-weight: var(--fontBold);
+        color: inherit;
+      }
+    }
+
+    .emailChangePrompt {
+      margin-top: 36px;
+      font-size: 14px;
+      font-weight: var(--fontLight);
+      color: var(--color3E);
+      text-align: center;
+
+      .link {
+        font-size: inherit;
+        font-weight: var(--fontBold);
+        text-decoration: underline;
+        color: inherit;
+      }
+    }
+
+    .formEmailVerification {
+      margin-top: 23px;
+
+      .emailVerificationInstruction {
+        margin-top: 15px;
+        font-size: 13px;
+        font-weight: var(--fontLight);
+        color: var(--color3E);
+      }
+
+      .noDisplay {
+        display: none;
+      }
+    }
+
+    .bottomPanel {
+      position: relative;
+      background: var(--colorWhite);
+      width: 100%;
+      padding: 0;
+      left: 0;
+      bottom: 0;
+      margin-top: 30px;
+    }
+  }
+}

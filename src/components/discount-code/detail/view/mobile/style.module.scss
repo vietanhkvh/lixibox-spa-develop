@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 4px 0 20px;
+
+  .info {
+    padding: 0 16px;
+  }
+}
+
+.noContentPlaceholder {
+  margin-top: 50px;
+}
+
+.carousel {
+  .child {
+    min-width: 50%;
+  }
+
+  .nonCompactChild {
+    min-width: 50%;
+  }
+}
+
+.compactSlider {
+  .compactSliderItem {
+    min-width: 50% !important;
+    max-width: 50% !important;
+    padding-bottom: 30px !important;
+  }
+}

@@ -1,0 +1,102 @@
+.variantSelector {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  height: 24px;
+  border-radius: 4px;
+  line-height: 16px;
+  padding-top: 12px;
+  margin-bottom: 7px;
+  padding-left: 17px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.itemList {
+  margin-right: 7px;
+  display: flex;
+  gap: 7px;
+}
+
+.smallItem {
+  font-weight: var(--fontBold);
+  font-size: 12px;
+  padding: 2px 5px;
+  line-height: 16px;
+  text-align: center;
+  color: var(--color8E);
+  background-color: var(--colorF5);
+  border-radius: 4px;
+  max-width: 65px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  &.bigItemWidth {
+    max-width: 120px;
+  }
+}
+
+.icon {
+  width: 17px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+.modalContainerMobile {
+  display: flex;
+  flex-direction: column;
+  overflow: initial;
+
+  .header {
+    position: static;
+  }
+
+  .clientArea {
+    padding-top: inherit;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 52px);
+  }
+}
+
+.modalContainerDesktop {
+  width: 476px;
+}
+
+.modalContainerCompact {
+  width: 400px;
+}
+
+.redeemDiscountCodeModal {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  overflow: auto;
+  height: 100%;
+  margin: 0;
+  padding: 16px;
+}
+
+.header {
+  z-index: var(--zIndex6);
+}
+
+.iconCollapse {
+  color: var(--color8E);
+  width: 10px;
+  height: 5px;
+}

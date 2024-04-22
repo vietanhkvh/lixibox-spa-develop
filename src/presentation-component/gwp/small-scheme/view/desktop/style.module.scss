@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 40px 32px;
+  background-color: var(--colorWhite);
+  overflow: hidden;
+
+  .banner {
+    width: 100%;
+    padding-bottom: 75%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+
+  .title {
+    justify-self: center;
+    margin-top: 16px;
+    font-size: 20px;
+    font-weight: var(--fontBold);
+    color: var(--color20);
+    height: 54px;
+    cursor: pointer;
+  }
+
+  .subtitle {
+    margin-top: 8px;
+    font-size: 20px;
+    font-weight: var(--fontBold);
+    color: var(--colorPrimary);
+    cursor: pointer;
+  }
+
+  .button {
+    margin: 16px 0 0;
+  }
+}

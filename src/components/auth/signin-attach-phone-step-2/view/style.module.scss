@@ -1,0 +1,56 @@
+.inputFieldEmail {
+  padding-top: 0;
+  margin-bottom: 3px;
+}
+
+.inputFieldPassword {
+  padding-top: 0;
+  margin-bottom: 3px;
+}
+
+.fieldErrorMobile {
+  color: var(--colorWhite) !important;
+}
+
+.errorModal {
+  .prompt {
+    color: var(--color20);
+    text-align: center;
+  }
+
+  .button {
+    background-color: var(--color3E) !important;
+  }
+}
+
+.noDisplay {
+  display: none;
+}
+
+.appleLoginContainerDesktop {
+  display: flex;
+  height: 44px;
+  cursor: pointer;
+}
+
+.googleSigninContainerDesktop,
+.facebookSigninContainerDesktop {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.retryButtonContainer {
+  display: flex;
+  justify-content: center;
+
+  .retryButton {
+    font-size: 14px;
+    font-weight: var(--fontSemiBold);
+    text-decoration: underline;
+    color: var(--color20);
+  }
+
+  .retryButtonMobile {
+    color: var(--colorWhite);
+  }
+}

@@ -1,0 +1,69 @@
+.loading {
+  margin-bottom: 30px;
+  height: 400px;
+
+  .icon {
+    height: 170px;
+  }
+}
+
+.empty {
+  border: 1px solid var(--colorF0);
+  background: var(--colorF7);
+  color: var(--colorRed);
+  border-radius: 5px;
+  margin-left: 48px;
+  margin-bottom: 30px;
+  line-height: 20px;
+  font-size: 14px;
+  padding: 10px 15px;
+}
+
+.list {
+  margin-bottom: 30px;
+}
+
+.container {
+  background: var(--colorWhite);
+
+  .editContainer {
+    position: relative;
+    padding: 16px;
+  }
+
+  .editContainerDesktop {
+    z-index: var(--zIndexMax);
+  }
+
+  .editContainerFull {
+    padding: 0;
+    background: var(--colorWhite);
+  }
+}
+
+.containerMobile {
+  padding-bottom: 50px;
+}
+
+.containerDesktop {
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.fullModeContaier {
+  position: relative;
+  z-index: var(--zIndex1);
+}
+
+.boxToFeedback {
+  background: var(--colorWhite);
+}
+
+.noContentPlaceholderDesktop {
+  margin: 100px 0 calc(100px + 44px);
+}
+
+.noContentPlaceholderMobile {
+  height: calc(100vh - 44px - 50px);
+}

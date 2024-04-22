@@ -1,0 +1,184 @@
+.invitation {
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 125px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: var(--colorF7);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+
+    .title1,
+    .title2 {
+      font-weight: var(--fontSemiBold);
+      font-size: 18px;
+      color: var(--color4D);
+      align-self: center;
+    }
+
+    .highlight {
+      background-color: var(--colorYellowLightest);
+      border-radius: 8px;
+      font-weight: var(--fontLight);
+      font-size: 32px;
+      color: var(--color20);
+      align-self: center;
+      height: 46px;
+      padding: 0 12.5px;
+      margin-top: 2px;
+
+      span {
+        font-weight: inherit;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .body {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border: 1px dashed var(--colorC5);
+    border-top: none;
+
+    .scoop {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      top: calc(50% - 15px);
+      background-color: var(--colorEF);
+    }
+
+    .scoopLeft {
+      border-right: 1px dashed var(--colorC5);
+      left: -16px;
+    }
+
+    .scoopRight {
+      border-left: 1px dashed var(--colorC5);
+      right: -16px;
+    }
+
+    .referralAction {
+      margin: 13px 20px 20px;
+    }
+
+    .promoInfo {
+      margin: 7px 17px 10px;
+      font-weight: var(--fontLight);
+      font-size: 14px;
+
+      .title {
+        text-align: center;
+        font-weight: inherit;
+        font-size: inherit;
+
+        span {
+          font-weight: var(--fontSemiBold);
+          font-size: inherit;
+        }
+      }
+
+      .indications {
+        font-weight: inherit;
+        font-size: inherit;
+        color: var(--color20);
+        margin-top: 18px;
+        list-style-type: disc;
+        margin-left: 17px;
+
+        .indication {
+          font-weight: inherit;
+          font-size: inherit;
+          margin-top: 10px;
+
+          span {
+            font-weight: var(--fontSemiBold);
+            font-size: inherit;
+          }
+        }
+      }
+    }
+
+    .hint {
+      font-weight: inherit;
+      font-size: inherit;
+      margin: 10px 0 0 17px;
+      color: var(--colorYellow);
+    }
+
+    .hintExpired {
+      color: var(--colorPinkFE);
+    }
+
+    .notes {
+      margin: 8px 23px 28px 30px;
+      font-weight: var(--fontLight);
+      font-size: 14px;
+
+      .title {
+        text-align: center;
+        font-weight: inherit;
+        font-size: inherit;
+      }
+
+      .statements {
+        margin-top: 7px;
+        font-weight: inherit;
+        font-size: inherit;
+
+        .statement {
+          margin-top: 7px;
+          font-weight: inherit;
+          font-size: inherit;
+        }
+      }
+    }
+  }
+}
+
+.invitationDesktop {
+  .body {
+    .referralAction {
+      .referralCode {
+        margin-left: 25%;
+        margin-right: 25%;
+      }
+
+      .shareButton {
+        width: initial;
+        margin: 10px 25% 0;
+      }
+    }
+
+    .promoInfo {
+      margin: 7px 10% 10px;
+
+      .title {
+        text-align: left;
+      }
+    }
+
+    .notes {
+      margin: 8px 10% 28px;
+
+      .title {
+        text-align: left;
+      }
+    }
+  }
+}

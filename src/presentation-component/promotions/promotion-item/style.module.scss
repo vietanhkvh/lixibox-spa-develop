@@ -1,0 +1,55 @@
+.promotionItem {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  cursor: pointer;
+
+  &.inactive {
+    filter: grayscale(1) opacity(0.7);
+  }
+
+  .iconSection {
+    &.imageIcon {
+      width: 36px;
+      height: auto;
+      max-height: 36px;
+    }
+
+    &.svgIcon {
+      width: 36px;
+      height: 36px;
+      border: 1px solid var(--colorPrimary);
+      border-radius: 18px;
+
+      svg {
+        fill: var(--colorPrimary);
+        width: 20px;
+        height: 20px;
+        min-width: 20px;
+        min-height: 20px;
+      }
+    }
+  }
+
+  .contentSection {
+    flex: 1;
+    margin-left: 10px;
+
+    .title {
+      font-size: 14px;
+      font-weight: var(--fontSemiBold);
+      color: var(--color20);
+    }
+
+    .description {
+      font-size: 12px;
+      font-weight: var(--fontLight);
+      color: var(--color20);
+      margin-top: 4px;
+    }
+  }
+
+  .actionSection {
+    margin-left: 6px;
+  }
+}

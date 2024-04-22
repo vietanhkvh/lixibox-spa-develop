@@ -1,0 +1,161 @@
+.container {
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1170px;
+  margin: 0 auto;
+
+  // size
+  &.size-large {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  &.size-medium {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  &.size-small {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  &-desktop {
+    padding-left: 0;
+    padding-right: 0;
+
+    // justify content text
+    &.justify-start {
+      justify-content: start;
+    }
+
+    &.justify-center {
+      justify-content: center;
+    }
+
+    &.justify-end {
+      justify-content: end;
+    }
+
+    &.justify-around {
+      justify-content: space-around;
+    }
+
+    &.justify-between {
+      justify-content: space-between;
+    }
+
+    // size
+    &.size-large {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    &.size-medium {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    &.size-small {
+      padding-top: 22px;
+      padding-bottom: 22px;
+    }
+  }
+
+  .viewMore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    font-size: 12px;
+    cursor: pointer;
+
+    &-desktop {
+      font-size: 13px;
+    }
+
+    .iconContainer {
+      width: 12px;
+      height: 12px;
+      margin-left: 3px;
+    }
+  }
+}
+
+.text {
+  width: 100%;
+
+  &-desktop {
+    &.tranform-uppercase {
+      text-transform: uppercase;
+    }
+
+    &.tranform-capitalize {
+      text-transform: capitalize;
+    }
+
+    &.tranform-normal {
+      text-transform: none;
+    }
+  }
+
+  // font-size
+  &.font-size-large {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  &.font-size-medium {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  &.font-size-extra-large {
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  &.font-size-extra-large-desktop {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  &.font-size-large-desktop {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  &.font-size-medium-desktop {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  // font-weight
+  &.font-weight-bold {
+    font-weight: var(--fontBold);
+  }
+
+  &.font-weight-semi {
+    font-weight: var(--fontSemiBold);
+  }
+
+  &.font-weight-normal {
+    font-weight: var(--fontRegular);
+  }
+
+  // align
+  &.align-left {
+    text-align: left;
+  }
+
+  &.align-center {
+    text-align: center;
+  }
+
+  &.align-right {
+    text-align: right;
+  }
+}

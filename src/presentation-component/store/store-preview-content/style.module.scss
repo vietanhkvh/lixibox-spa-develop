@@ -1,0 +1,71 @@
+.storePreviewContent {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: var(--colorWhite);
+
+  .title {
+    font-size: 16px;
+    font-weight: var(--fontBold);
+    color: var(--color20);
+  }
+
+  .info {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 10px;
+
+    .icon {
+      width: 20px;
+      height: 20px;
+      min-width: 20px;
+      min-height: 20px;
+      fill: var(--color20);
+    }
+
+    .sections {
+      display: flex;
+      flex-direction: column;
+      margin-left: 15px;
+
+      .brief {
+        display: flex;
+        align-items: flex-start;
+        font-size: 16px;
+        font-weight: var(--fontLight);
+        color: var(--color20);
+        word-break: break-word;
+
+        .name {
+          flex-shrink: 0;
+        }
+
+        .value {
+          align-self: center;
+        }
+      }
+
+      .highlightedBrief {
+        font-weight: var(--fontBold);
+      }
+
+      .highlightedPink {
+        font-weight: var(--fontBold);
+        color: var(--colorPink07);
+      }
+
+      .highlightedBlue {
+        font-weight: var(--fontBold);
+        color: var(--colorBlueLight);
+      }
+
+      .withLeftPadding {
+        padding-left: 5px;
+      }
+    }
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}

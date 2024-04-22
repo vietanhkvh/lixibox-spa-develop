@@ -1,0 +1,39 @@
+.itemIcon {
+  width: 10px;
+  height: 44px;
+}
+
+.itemIcon svg {
+  width: 7px;
+  fill: var(--color20);
+}
+
+.searchIcon {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+
+.searchIcon svg {
+  width: 16px;
+  fill: var(--color8E);
+}
+
+.item {
+  height: 44px;
+  min-height: 44px;
+  line-height: 44px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-weight: var(--fontLight);
+  color: var(--color20);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+
+  &:hover {
+    background-color: var(--colorF7);
+  }
+}

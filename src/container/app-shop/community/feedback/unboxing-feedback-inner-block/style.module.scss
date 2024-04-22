@@ -1,0 +1,53 @@
+.linkToGuideline {
+  display: flex;
+  cursor: pointer;
+  margin-bottom: 28px;
+}
+
+.linkToGuideline .icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.linkToGuideline .icon svg {
+  width: 20px;
+}
+
+.linkToGuideline .text {
+  font-weight: var(--fontLight);
+  font-size: 12;
+  line-height: 20px;
+  color: var(--color20);
+}
+
+.note {
+  strong {
+    font-weight: var(--fontSemiBold);
+  }
+}
+
+.note .heading {
+  font-weight: var(--fontSemiBold);
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--color20);
+  margin-bottom: 10px;
+}
+
+.note ul {
+  padding-left: 20px;
+}
+
+.note li {
+  font-weight: var(--fontLight);
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--color20);
+  list-style-type: disc;
+  margin-bottom: 5px;
+}
+
+.note li span {
+  font-weight: var(--fontSemiBold);
+}

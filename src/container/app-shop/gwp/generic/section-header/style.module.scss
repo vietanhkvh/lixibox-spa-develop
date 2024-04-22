@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  align-items: center;
+
+  &.desktopLayout {
+    .horizontalLine {
+      height: 4px;
+      width: 80px;
+    }
+
+    .title {
+      margin-left: 24px;
+      font-size: 24px;
+    }
+  }
+
+  .horizontalLine {
+    height: 2px;
+    width: 24px;
+    background-color: var(--color20);
+  }
+
+  .title {
+    margin-left: 16px;
+    font-size: 16px;
+    font-weight: var(--fontBold);
+    color: var(--color20);
+  }
+}

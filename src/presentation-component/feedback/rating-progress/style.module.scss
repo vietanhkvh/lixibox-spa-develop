@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  align-items: center;
+
+  .progressBar {
+    display: flex;
+    flex: 1;
+    background-color: var(--colorDD);
+    border-radius: 8px;
+    height: 8px;
+
+    .progress {
+      background-color: var(--color20);
+      border-radius: 8px;
+      height: 8px;
+    }
+  }
+
+  .ratingText {
+    margin-left: 8px;
+    font-size: 14px;
+    font-weight: var(--fontRegular);
+    color: var(--color20);
+    width: 22px;
+  }
+}

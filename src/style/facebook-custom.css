@@ -1,0 +1,51 @@
+@media only screen and (width <= 959px) {
+  #fb-root {
+    position: relative;
+    z-index: 100;
+    transition: 0.3s all ease-out 0s;
+  }
+
+  #fb-root.hide {
+    display: none !important;
+  }
+
+  .fb_dialog_content > iframe:first-child {
+    transition: var(--transitionNormal);
+    bottom: 90px !important;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  #fb-root.visible .fb_dialog_content > iframe:first-child {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@media only screen and (width >= 960px) {
+  .fb_dialog.fb_dialog_advanced {
+    position: fixed !important;
+    background: none !important;
+    bottom: 12px !important;
+    right: 1px !important;
+    top: auto !important;
+    transform: scale(0.7);
+    filter: grayscale(6);
+    border-radius: 0;
+  }
+
+  .fb-customerchat.fb_invisible_flow.fb_iframe_widget span > iframe {
+    bottom: 10px !important;
+    right: 73px !important;
+    visibility: hidden !important;
+  }
+
+  .fb-customerchat.fb_invisible_flow.fb_iframe_widget span > iframe.fb_customer_chat_bounce_in_v2 {
+    visibility: visible !important;
+  }
+
+  #fb-root {
+    z-index: 100;
+    position: relative;
+  }
+}

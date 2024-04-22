@@ -1,0 +1,106 @@
+.primaryContainer {
+  background: var(--colorWhite);
+  z-index: var(--zIndex6);
+  position: relative;
+  box-shadow: var(--shadowBlurSort);
+
+  .alignedContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0;
+
+    .leftSection {
+      display: flex;
+      align-items: flex-end;
+
+      .icon {
+        width: 50px;
+        height: 50px;
+
+        svg {
+          fill: var(--color20);
+        }
+      }
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        margin-left: 18px;
+
+        .logo {
+          width: 147px;
+          height: 20px;
+
+          svg: {
+            fill: var(--color20);
+          }
+        }
+
+        .phone {
+          font-weight: var(--fontSemiBold);
+          font-size: 16px;
+          color: var(--color20);
+          margin-top: 4px;
+        }
+      }
+    }
+
+    .rightSection {
+      display: flex;
+      align-items: center;
+
+      .phase {
+        display: flex;
+        align-items: center;
+
+        .indicator {
+          width: 30.4px;
+          height: 30.4px;
+          background-color: var(--color20);
+          border: none;
+          border-radius: 15px;
+
+          svg {
+            width: 15.81px;
+            height: 15.81px;
+            fill: var(--colorWhite);
+          }
+        }
+
+        .name {
+          font-weight: var(--fontSemiBold);
+          font-size: 16px;
+          color: var(--color20);
+          margin-left: 8.6px;
+          text-transform: uppercase;
+        }
+      }
+
+      .phaseDisabled {
+        .indicator {
+          background-color: var(--colorE4);
+        }
+
+        .name {
+          // font-weight: var(--fontLight);
+          color: var(--color8A);
+        }
+      }
+
+      .divider {
+        width: 23px;
+        height: 2.3px;
+        margin: 0 10px;
+        background-color: var(--color3E);
+        border: none;
+        border-radius: 8px;
+      }
+
+      .dividerDisabled {
+        background-color: var(--colorE4);
+      }
+    }
+  }
+}

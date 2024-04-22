@@ -1,0 +1,33 @@
+.redeemPromptBlock {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-bottom: 10px;
+  background-color: var(--colorWhite);
+  color: var(--color20);
+  padding: 16px 20px 16px 16px;
+
+  .leftSection {
+    .firstRow {
+      display: flex;
+
+      .title {
+        font-weight: var(--fontSemiBold);
+        font-size: 14px;
+        margin-left: 10px;
+      }
+    }
+
+    .secondRow {
+      font-weight: var(--fontLight);
+      font-size: 13px;
+      margin-left: 30px;
+    }
+  }
+
+  .rightSection {
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+  }
+}

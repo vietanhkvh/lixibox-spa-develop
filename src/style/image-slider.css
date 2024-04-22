@@ -1,0 +1,37 @@
+.image-slide-container .pagination {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.image-slide-container:hover .pagination {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.image-slide-container .left-nav {
+  width: 40px;
+  height: 60px;
+  opacity: 0;
+  transform: translate(-60px, -50%);
+  visibility: hidden;
+}
+
+.image-slide-container:hover .left-nav {
+  opacity: 1;
+  transform: translate(1px, -50%);
+  visibility: visible;
+}
+
+.image-slide-container .right-nav {
+  width: 40px;
+  height: 60px;
+  opacity: 0;
+  transform: translate(60px, -50%);
+  visibility: hidden;
+}
+
+.image-slide-container:hover .right-nav {
+  opacity: 1;
+  transform: translate(1px, -50%);
+  visibility: visible;
+}

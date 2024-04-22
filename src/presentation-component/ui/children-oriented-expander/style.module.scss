@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  .children {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+  }
+
+  .indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--colorWhite);
+    cursor: pointer;
+    padding: 6px 8px;
+
+    .indicatorLabel {
+      font-size: 13px;
+      font-weight: var(--fontRegular);
+      color: #6a778b;
+    }
+
+    .indicatorIcon {
+      width: 16px;
+      height: 16px;
+      margin-left: 8px;
+
+      svg {
+        fill: var(--color8A);
+      }
+    }
+  }
+}

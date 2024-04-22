@@ -1,0 +1,21 @@
+@mixin container {
+  display: block;
+  background-color: var(--colorFA);
+  position: relative;
+  z-index: var(--zIndex1);
+}
+
+.containerMobile {
+  @include container;
+}
+
+.containerDesktop {
+  @include container;
+
+  padding: 70px 0;
+  border-bottom: 1px solid var(--colorE5);
+}
+
+.signupVerifyPhone {
+  margin: 0 auto;
+}

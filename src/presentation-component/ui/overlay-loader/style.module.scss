@@ -1,0 +1,16 @@
+.overlayLoaderModalContainer {
+  position: fixed;
+  inset: 0;
+  background-color: rgb(255 255 255 / 75%);
+  z-index: var(--zIndex1);
+}
+
+.overlayLoaderModalContent {
+  position: absolute;
+  inset: 0;
+  overflow: auto;
+
+  .overlayLoader {
+    height: 100%;
+  }
+}

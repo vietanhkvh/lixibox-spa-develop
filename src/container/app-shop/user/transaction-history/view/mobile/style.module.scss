@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--colorF5);
+  min-height: 100vh;
+
+  .transactionSkeleton {
+    height: 70px;
+    padding: 0 16px;
+    border-radius: 8px;
+
+    &:not(:first-child) {
+      margin-top: 12px;
+    }
+  }
+
+  .placeholder {
+    margin: calc(50px + 20px) 0 50px;
+
+    .logo {
+      fill: var(--colorE9);
+    }
+  }
+
+  .headerSection {
+    display: flex;
+    height: 150px;
+    background: linear-gradient(298.8deg, #ff749f 16.05%, #fe2c6d 116.43%);
+    padding: 16px;
+    align-items: flex-start;
+
+    .tabCapsule {
+      width: 50%;
+    }
+  }
+
+  .transactionsSection {
+    padding: 0 16px;
+    z-index: var(--zIndex1);
+    margin-top: -50px;
+  }
+
+  .pagination {
+    margin-top: 12px;
+  }
+}

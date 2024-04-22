@@ -1,0 +1,131 @@
+.searchHeader {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 300px;
+
+  .headerBackground {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .headerOverlay {
+    background: rgb(0 2 4);
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .headerContent {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position-y: center;
+
+    .title1 {
+      font-size: 32px;
+      line-height: 40px;
+      font-weight: var(--fontRegular);
+      color: var(--colorWhite);
+      align-self: center;
+    }
+
+    .searchBox {
+      display: flex;
+      justify-content: space-between;
+      width: 600px;
+      max-width: 600px;
+      height: 40px;
+      max-height: 40px;
+      flex: 10 1 0%;
+      margin-bottom: 10px;
+      box-shadow: rgb(0 0 0 / 2%) 0 0 0 1px, rgb(0 0 0 / 3%) 1px 1px 1px 1px;
+      position: relative;
+      margin-top: 30px;
+
+      .searchInput {
+        font-size: 14px;
+        padding: 0 16px 0 0;
+        flex: 10 1 0%;
+        font-weight: 300;
+        color: rgb(77 78 79);
+        border: none;
+        background: var(--colorWhite);
+      }
+
+      .locationIconContainer {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        background: var(--colorWhite);
+        border-radius: 8px 0 0 8px;
+        padding: 0 10px;
+        cursor: pointer;
+
+        .locationIcon {
+          width: 17px;
+          height: 17px;
+          min-width: 17px;
+          min-height: 17px;
+          fill: var(--color20);
+
+          &:hover {
+            fill: var(--colorPrimary);
+          }
+        }
+
+        .locationIconActive {
+          fill: var(--colorPrimary);
+        }
+      }
+
+      .clearIconContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--colorWhite);
+        padding: 0 10px;
+        cursor: pointer;
+
+        .icon {
+          width: 17px;
+          height: 17px;
+          min-width: 17px;
+          min-height: 17px;
+          fill: var(--color20);
+        }
+      }
+
+      .searchIconContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70px;
+        cursor: pointer;
+        border-left: 1px solid rgb(221 223 226);
+        border-radius: 0 8px 8px 0;
+        background: var(--colorWhite);
+
+        .icon {
+          position: absolute;
+          width: 17px;
+          height: 17px;
+          min-width: 17px;
+          min-height: 17px;
+          fill: var(--color20);
+        }
+      }
+    }
+  }
+}

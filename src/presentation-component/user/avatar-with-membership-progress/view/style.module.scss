@@ -1,0 +1,104 @@
+.avatarWrapper {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--colorE1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.avatar {
+  background-size: cover;
+  background-position: center center;
+  background-color: var(--colorWhite);
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: 0 3px 8px rgb(0 0 0 / 5%), 0 0 6px rgb(0 0 0 / 10%);
+  cursor: pointer;
+  position: relative;
+}
+
+.avatarSmallView {
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.avatarSplitter {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background-color: var(--colorWhite);
+}
+
+.avatarLoader {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  justify-self: center;
+  background-color: var(--colorWhite);
+  pointer-events: none;
+}
+
+.avatarOverlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: rgb(37 37 37 / 62%);
+  box-shadow: 0 0 0 3.5px var(--colorWhite);
+  opacity: 0;
+  transition: var(--transitionOpacity);
+
+  &:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .avatarEditIcon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.loyaltyProgress {
+  background: var(--colorLoyalyColor0);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.loyaltyProgressItem {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background: var(--colorWhite);
+}
+
+.loyaltyProgressItemInner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.displayNone {
+  display: none;
+}

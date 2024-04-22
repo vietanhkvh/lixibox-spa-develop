@@ -1,0 +1,22 @@
+.container {
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  color: var(--color20);
+  font-weight: var(--fontLight);
+  display: flex;
+  padding: 0 16px;
+  margin-bottom: 25px;
+  cursor: pointer;
+
+  .sizeGuideIcon {
+    width: 20px;
+    height: 20px;
+    margin-right: 16px;
+
+    svg {
+      width: 20px;
+      fill: var(--color20);
+    }
+  }
+}
